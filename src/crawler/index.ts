@@ -29,7 +29,7 @@ const CONFIG = {
   githubRepo: {
     enabled: process.env.GITHUB_ACTIONS === 'true',
     owner: 'FIDEScommunity',
-    repo: 'rp-catalog',
+    repo: 'fides-rp-catalog',
     path: 'community-catalogs'
   }
 };

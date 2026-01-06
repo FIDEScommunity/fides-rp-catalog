@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: FIDES RP Catalog
- * Plugin URI: https://github.com/FIDEScommunity/rp-catalog
+ * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials
  * Version: 1.0.0
  * Author: FIDES Community
@@ -42,7 +42,7 @@ function fides_rp_catalog_enqueue_assets() {
     // Pass configuration to JavaScript
     wp_localize_script('fides-rp-catalog-script', 'fidesRPCatalog', array(
         'pluginUrl' => FIDES_RP_CATALOG_PLUGIN_URL,
-        'githubDataUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/rp-catalog/main/data/aggregated.json'
+        'githubDataUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json'
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_rp_catalog_enqueue_assets');

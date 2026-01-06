@@ -112,5 +112,6 @@ Apache 2.0 - See [LICENSE](LICENSE) for details.
 ## Related Projects
 
 - [FIDES Wallet Catalog](https://github.com/FIDEScommunity/fides-wallet-catalog) - Catalog of digital identity wallets
+- [FIDES RP Catalog](https://github.com/FIDEScommunity/fides-rp-catalog) - This repository
 - [FIDES Community](https://fides.community) - European digital identity community
 

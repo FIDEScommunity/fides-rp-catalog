@@ -15,7 +15,7 @@ jobs:
   crawl:
     runs-on: ubuntu-latest
     # Only run on the main repository
-    if: github.repository == 'FIDEScommunity/rp-catalog'
+    if: github.repository == 'FIDEScommunity/fides-rp-catalog'
     
     steps:
       - uses: actions/checkout@v4

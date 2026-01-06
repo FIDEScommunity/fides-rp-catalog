@@ -29,7 +29,7 @@
   // Configuration
   const config = window.fidesRPCatalog || {
     pluginUrl: '',
-    githubDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/rp-catalog/main/data/aggregated.json'
+    githubDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json'
   };
 
   // State
