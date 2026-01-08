@@ -102,8 +102,8 @@
         },
         "country": {
           "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "ISO 3166-1 alpha-2 country code where the relying party is based"
+          "pattern": "^[A-Z]{2}$|^EU$",
+          "description": "ISO 3166-1 alpha-2 country code where the relying party is based, or 'EU' for pan-European services"
         },
         "status": {
           "type": "string",
@@ -209,13 +209,6 @@
           "type": "string",
           "format": "uri",
           "description": "API endpoint for programmatic access"
-        },
-        "countries": {
-          "type": "array",
-          "description": "Countries where this RP is available",
-          "items": {
-            "type": "string"
-          }
         },
         "languages": {
           "type": "array",

@@ -1,0 +1,42 @@
+{
+    "provider": {
+      "name": "European Wallet Consortium",
+      "website": "https://www.eudiwalletconsortium.org/"
+    },
+    "relyingParties": [
+      {
+        "id": "ewc-rpcentric-signer",
+        "name": "EUDI RP-centric Signing Demo",
+        "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
+        "website": "https://rpcentric.signer.eudiw.dev/tester",
+        "type": "demo",
+        "country": "EU",
+        "status": "live",
+        "sectors": ["government", "finance", "other"],
+        "useCases": [
+          "Authentication",
+          "Remote signing initiation",
+          "Identity verification"
+        ],
+        "acceptedCredentials": [
+          "PID"
+        ],
+        "credentialFormats": [
+          "SD-JWT-VC"
+        ],
+        "presentationProtocols": [
+          "OpenID4VP"
+        ],
+        "interoperabilityProfiles": [
+          "EWC v3"
+        ],
+        "supportedWallets": [
+          "EUDI Reference Wallet"
+        ],
+        "languages": [
+          "en"
+        ]
+      }
+    ],
+    "lastUpdated": "2026-01-08T00:00:00+01:00"
+  }

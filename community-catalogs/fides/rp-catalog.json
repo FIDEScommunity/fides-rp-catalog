@@ -5,6 +5,90 @@
   },
   "relyingParties": [
     {
+      "id": "circulacity-sandbox",
+      "name": "CirculaCity",
+      "description": "Sandbox portal demonstrating how government applications can use wallet-based credentials to enable trusted digital interactions in areas such as procurement, recruitment, and compliance.",
+      "website": "https://circulacity.fides.community/",
+      "type": "sandbox",
+      "country": "NL",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": [
+        "Login",
+        "KYC/E",
+        "Recruitment",
+        "Procurement",
+        "HR"
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "LPID",
+        "ISO Certificate",
+        "Upper Secondary Certificate",
+        "Higher Education Diploma",
+        "Criminal Record Check",
+        "Verified Employee"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
+      "supportedWallets": [
+        "All DIIP v4 compliant personal wallets"
+      ],
+      "languages": [
+        "en",
+        "nl"
+      ]
+    },
+    {
+      "id": "rotterdam-sandbox",
+      "name": "Municipality of Rotterdam – Wallet Sandbox",
+      "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
+      "website": "https://rotterdam.fides.community/",
+      "type": "sandbox",
+      "country": "NL",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": [
+        "Login",
+        "KYC/E",
+        "Recruitment",
+        "Procurement",
+        "HR"
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "LPID",
+        "ISO Certificate",
+        "Upper Secondary Certificate",
+        "Higher Education Diploma",
+        "Criminal Record Check",
+        "Verified Employee"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
+      "supportedWallets": [
+        "All DIIP v4 compliant personal wallets"
+      ],
+      "languages": [
+        "en",
+        "nl"
+      ]
+    },
+    {
       "id": "mijnoverheid-sandbox",
       "name": "MijnOverheid",
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
@@ -20,7 +104,6 @@
       "interoperabilityProfiles": ["DIIP v4"],
       "supportedWallets": ["Heidi", "iGrant Data Wallet"],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "countries": ["NL"],
       "languages": ["nl"]
     },
     {
@@ -39,7 +122,6 @@
       "interoperabilityProfiles": ["DIIP v4"],
       "supportedWallets": ["Heidi", "iGrant Data Wallet"],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "countries": ["NL"],
       "languages": ["nl"]
     },
     {
@@ -58,7 +140,6 @@
       "interoperabilityProfiles": ["DIIP v4"],
       "supportedWallets": ["Heidi", "iGrant Data Wallet"],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "countries": ["NL"],
       "languages": ["nl"]
     }
   ],

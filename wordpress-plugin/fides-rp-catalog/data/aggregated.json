@@ -1,6 +1,152 @@
 {
   "relyingParties": [
     {
+      "id": "ewc-rpcentric-signer",
+      "name": "EUDI RP-centric Signing Demo",
+      "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
+      "website": "https://rpcentric.signer.eudiw.dev/tester",
+      "type": "demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government",
+        "finance",
+        "other"
+      ],
+      "useCases": [
+        "Authentication",
+        "Remote signing initiation",
+        "Identity verification"
+      ],
+      "acceptedCredentials": [
+        "PID"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
+      "supportedWallets": [
+        "EUDI Reference Wallet"
+      ],
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "European Wallet Consortium",
+        "website": "https://www.eudiwalletconsortium.org/"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
+      "fetchedAt": "2026-01-08T18:42:51.517Z",
+      "source": "local"
+    },
+    {
+      "id": "circulacity-sandbox",
+      "name": "CirculaCity",
+      "description": "Sandbox portal demonstrating how government applications can use wallet-based credentials to enable trusted digital interactions in areas such as procurement, recruitment, and compliance.",
+      "website": "https://circulacity.fides.community/",
+      "type": "sandbox",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Login",
+        "KYC/E",
+        "Recruitment",
+        "Procurement",
+        "HR"
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "LPID",
+        "ISO Certificate",
+        "Upper Secondary Certificate",
+        "Higher Education Diploma",
+        "Criminal Record Check",
+        "Verified Employee"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
+      "supportedWallets": [
+        "All DIIP v4 compliant personal wallets"
+      ],
+      "languages": [
+        "en",
+        "nl"
+      ],
+      "provider": {
+        "name": "FIDES Community",
+        "website": "https://fides.community"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "source": "local"
+    },
+    {
+      "id": "rotterdam-sandbox",
+      "name": "Municipality of Rotterdam – Wallet Sandbox",
+      "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
+      "website": "https://rotterdam.fides.community/",
+      "type": "sandbox",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Login",
+        "KYC/E",
+        "Recruitment",
+        "Procurement",
+        "HR"
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "LPID",
+        "ISO Certificate",
+        "Upper Secondary Certificate",
+        "Higher Education Diploma",
+        "Criminal Record Check",
+        "Verified Employee"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
+      "supportedWallets": [
+        "All DIIP v4 compliant personal wallets"
+      ],
+      "languages": [
+        "en",
+        "nl"
+      ],
+      "provider": {
+        "name": "FIDES Community",
+        "website": "https://fides.community"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "source": "local"
+    },
+    {
       "id": "mijnoverheid-sandbox",
       "name": "MijnOverheid",
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
@@ -31,9 +177,6 @@
         "iGrant Data Wallet"
       ],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -42,7 +185,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.330Z",
+      "fetchedAt": "2026-01-08T18:42:51.518Z",
       "source": "local"
     },
     {
@@ -81,9 +224,6 @@
         "iGrant Data Wallet"
       ],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -92,7 +232,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.332Z",
+      "fetchedAt": "2026-01-08T18:42:51.518Z",
       "source": "local"
     },
     {
@@ -130,9 +270,6 @@
         "iGrant Data Wallet"
       ],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -141,7 +278,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.332Z",
+      "fetchedAt": "2026-01-08T18:42:51.518Z",
       "source": "local"
     },
     {
@@ -170,9 +307,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -181,7 +315,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -209,9 +343,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -220,7 +351,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -249,9 +380,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -260,7 +388,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -288,9 +416,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -299,7 +424,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -329,9 +454,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -340,7 +462,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -368,9 +490,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -379,7 +498,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -408,9 +527,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -419,7 +535,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -448,9 +564,6 @@
       "supportedWallets": [
         "Yivi"
       ],
-      "countries": [
-        "NL"
-      ],
       "languages": [
         "nl"
       ],
@@ -459,7 +572,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -491,9 +604,6 @@
       "supportedWallets": [
         "Inji Wallet"
       ],
-      "countries": [
-        "global"
-      ],
       "languages": [
         "en"
       ],
@@ -502,7 +612,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     },
     {
@@ -538,11 +648,6 @@
         "Apple Wallet (mDL)",
         "EUDI-compatible mDoc wallets"
       ],
-      "countries": [
-        "US",
-        "EU",
-        "AU"
-      ],
       "languages": [
         "en"
       ],
@@ -551,11 +656,15 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-08T15:28:16.333Z",
+      "fetchedAt": "2026-01-08T18:42:51.519Z",
       "source": "local"
     }
   ],
   "providers": [
+    {
+      "name": "European Wallet Consortium",
+      "website": "https://www.eudiwalletconsortium.org/"
+    },
     {
       "name": "FIDES Community",
       "website": "https://fides.community"
@@ -573,24 +682,25 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-08T15:28:16.333Z",
+  "lastUpdated": "2026-01-08T18:42:51.519Z",
   "stats": {
-    "totalRPs": 13,
-    "totalProviders": 4,
+    "totalRPs": 16,
+    "totalProviders": 5,
     "byType": {
-      "demo": 10,
-      "sandbox": 3,
+      "demo": 11,
+      "sandbox": 5,
       "production": 0
     },
     "bySector": {
-      "government": 10,
-      "other": 6,
+      "government": 13,
+      "finance": 1,
+      "other": 7,
       "travel": 2,
       "entertainment": 1,
       "hospitality": 1
     },
     "byCredentialFormat": {
-      "SD-JWT-VC": 3,
+      "SD-JWT-VC": 6,
       "JWT-VC": 1,
       "mDL/mDoc": 1
     }

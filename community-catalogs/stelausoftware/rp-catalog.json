@@ -34,11 +34,6 @@
           "Apple Wallet (mDL)",
           "EUDI-compatible mDoc wallets"
         ],
-        "countries": [
-          "US",
-          "EU",
-          "AU"
-        ],
         "languages": [
           "en"
         ]

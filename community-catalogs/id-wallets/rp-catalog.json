@@ -26,7 +26,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -50,7 +49,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -74,7 +72,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -98,7 +95,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -126,7 +122,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -150,7 +145,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -177,7 +171,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       },
       {
@@ -204,7 +197,6 @@
           "Yivi / IRMA disclosure via QR"
         ],
         "supportedWallets": ["Yivi"],
-        "countries": ["NL"],
         "languages": ["nl"]
       }
     ],
