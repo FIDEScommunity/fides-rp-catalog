@@ -19,16 +19,10 @@ dist/
 *.log
 npm-debug.log*
 
-# Data files (except registry)
-data/*.json
-!data/did-registry.json
-
 # Test files
 coverage/
 .nyc_output/
 
-# WordPress plugin zips
+# WordPress plugin local data and zips (plugin fetches from GitHub)
+wordpress-plugin/*/data/
 wordpress-plugin/*.zip
-
-
-
