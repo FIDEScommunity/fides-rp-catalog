@@ -6,7 +6,7 @@
     "relyingParties": [
       {
         "id": "ewc-rpcentric-signer",
-        "name": "EUDI RP-centric Signing Demo",
+        "name": "QES Signing Demo",
         "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
         "website": "https://rpcentric.signer.eudiw.dev/tester",
         "type": "demo",

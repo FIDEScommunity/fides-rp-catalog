@@ -2,7 +2,7 @@
   "relyingParties": [
     {
       "id": "ewc-rpcentric-signer",
-      "name": "EUDI RP-centric Signing Demo",
+      "name": "QES Signing Demo",
       "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
       "website": "https://rpcentric.signer.eudiw.dev/tester",
       "type": "demo",
@@ -41,7 +41,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.517Z",
+      "fetchedAt": "2026-01-08T18:47:49.196Z",
       "source": "local"
     },
     {
@@ -92,12 +92,12 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "rotterdam-sandbox",
-      "name": "Municipality of Rotterdam – Wallet Sandbox",
+      "name": "Municipality of Rotterdam",
       "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
       "website": "https://rotterdam.fides.community/",
       "type": "sandbox",
@@ -143,7 +143,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
@@ -185,7 +185,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
@@ -232,7 +232,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
@@ -278,12 +278,12 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.518Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "nijmegen-iit",
-      "name": "Individual Income Supplement (IIT) – Nijmegen Demo",
+      "name": "Individual Income Supplement (IIT)",
       "description": "Demo application flow for the Individual Income Supplement, including scenarios with and without a partner. Requires demo data in the Yivi wallet.",
       "website": "https://iit-nijmegen-v2.framer.website",
       "type": "demo",
@@ -315,12 +315,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "nijmegen-vergoedingenpas",
-      "name": "Compensation Card – Nijmegen Demo",
+      "name": "Compensation Card",
       "description": "Demo for applying for and using a municipal compensation card. Requires demo data in the Yivi wallet.",
       "website": "https://vergoedingenpas.framer.website",
       "type": "demo",
@@ -351,12 +351,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "nijmegen-busvoordeel",
-      "name": "Discounted Bus Subscription – Demo",
+      "name": "Discounted Bus Subscription",
       "description": "Demo application flow for a discounted public transport subscription for residents with a low income.",
       "website": "https://busvoordeel.framer.website",
       "type": "demo",
@@ -388,12 +388,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "nijmegen-meedoenregeling",
-      "name": "Participation Scheme – Demo",
+      "name": "Participation Scheme",
       "description": "Demo application flow for a municipal participation scheme supporting access to sports, cultural, and social activities. Requires demo data in the Yivi wallet.",
       "website": "https://meedoenregeling.framer.website",
       "type": "demo",
@@ -424,12 +424,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "nijmegen-cultureel-erfgoed-pas",
-      "name": "Cultural Heritage Pass – Demo",
+      "name": "Cultural Heritage Pass",
       "description": "Fictional demo inspired by IntoNijmegen, showcasing a cultural pass with wallet-based issuance and usage for heritage venues.",
       "website": "https://cultureel-erfgoed.framer.website",
       "type": "demo",
@@ -462,12 +462,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "nijmegen-vergoedingencheck",
-      "name": "Compensation Eligibility Check – Demo",
+      "name": "Compensation Eligibility Check",
       "description": "Demo in which citizens share data once via their wallet to see which municipal schemes they are eligible for and activate them directly.",
       "website": "https://vergoedingencheck.framer.website",
       "type": "demo",
@@ -498,12 +498,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "machtigen-bewindvoerder-jansen-bewind",
-      "name": "Mandate – Court-Appointed Administrator (Jansen Bewind) – Demo",
+      "name": "Mandate – Court-Appointed Administrator",
       "description": "Demo for legal representation by a court-appointed administrator, enabling login with Yivi and acting on behalf of a client in a municipal application.",
       "website": "https://jansen-bewind.framer.website",
       "type": "demo",
@@ -535,12 +535,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
       "id": "machtigen-centraal-machtigingsregister",
-      "name": "Mandate – Voluntary Authorization (CMR) – Demo",
+      "name": "Mandate – Voluntary Authorization ",
       "description": "Demo of voluntary authorization using a fictional Central Mandates Register, integrated into a municipal application flow.",
       "website": "https://nijmegen-iit-cmr-demo.framer.website",
       "type": "demo",
@@ -572,7 +572,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.197Z",
       "source": "local"
     },
     {
@@ -612,7 +612,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.198Z",
       "source": "local"
     },
     {
@@ -656,7 +656,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:42:51.519Z",
+      "fetchedAt": "2026-01-08T18:47:49.198Z",
       "source": "local"
     }
   ],
@@ -682,7 +682,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-08T18:42:51.519Z",
+  "lastUpdated": "2026-01-08T18:47:49.198Z",
   "stats": {
     "totalRPs": 16,
     "totalProviders": 5,
