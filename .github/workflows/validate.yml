@@ -1,13 +1,21 @@
 name: Validate RP Catalogs
 
 on:
+  push:
+    paths:
+      - 'community-catalogs/**/rp-catalog.json'
+      - 'schemas/**'
+      - '.github/workflows/validate.yml'
+      - 'package.json'
   pull_request:
     paths:
       - 'community-catalogs/**/rp-catalog.json'
-      - 'schemas/rp-catalog.schema.json'
+      - 'schemas/**'
+  workflow_dispatch:
 
 jobs:
   validate:
+    name: Validate Schema
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,15 +29,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Install AJV CLI
-        run: npm install -g ajv-cli ajv-formats
-      
       - name: Validate RP catalogs
         run: |
-          for file in community-catalogs/**/rp-catalog.json; do
-            echo "Validating $file..."
-            ajv validate -s schemas/rp-catalog.schema.json -d "$file" --spec=draft2020 -c ajv-formats
-          done
+          echo "🔍 Validating RP catalogs against schema..."
+          npm run validate
+          echo "✅ All RP catalogs are valid!"
 
 
 

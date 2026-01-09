@@ -36,5 +36,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: Update aggregated RP data"
-          file_pattern: 'data/aggregated.json wordpress-plugin/fides-rp-catalog/data/aggregated.json'
+          file_pattern: 'data/aggregated.json'
 
