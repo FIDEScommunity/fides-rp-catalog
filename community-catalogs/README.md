@@ -29,7 +29,8 @@ Your `rp-catalog.json` must conform to the schema at `schemas/rp-catalog.schema.
 - `provider.name` - Your organization name
 - `relyingParties[].id` - Unique identifier (lowercase, hyphens)
 - `relyingParties[].name` - Display name
-- `relyingParties[].type` - One of: `demo`, `sandbox`, `production`
+- `relyingParties[].readiness` - One of: `technical-demo`, `use-case-demo`, `production-pilot`, `production`
+- `relyingParties[].country` - ISO 3166-1 alpha-2 country code (e.g., `NL`, `DE`) or `EU`
 
 ### Recommended Fields
 

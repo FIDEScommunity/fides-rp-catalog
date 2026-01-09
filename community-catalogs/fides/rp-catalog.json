@@ -1,6 +1,6 @@
 {
   "provider": {
-    "name": "FIDES Community",
+    "name": "FIDES Labs",
     "website": "https://fides.community"
   },
   "relyingParties": [
@@ -9,7 +9,7 @@
       "name": "CirculaCity",
       "description": "Sandbox portal demonstrating how government applications can use wallet-based credentials to enable trusted digital interactions in areas such as procurement, recruitment, and compliance.",
       "website": "https://circulacity.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": ["government"],
@@ -51,7 +51,7 @@
       "name": "Municipality of Rotterdam",
       "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
       "website": "https://rotterdam.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": ["government"],
@@ -93,7 +93,7 @@
       "name": "MijnOverheid",
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
       "website": "https://mijnoverheid.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": ["government"],
@@ -111,7 +111,7 @@
       "name": "Hak & Rein Vos Notarissen",
       "description": "Sandbox portal for a Dutch notary, showcasing a digital flow for entrepreneurs to provide the required information and documents to establish a company.",
       "website": "https://hrv.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": ["other"],
@@ -129,7 +129,7 @@
       "name": "Kamer van Koophandel Frontoffice",
       "description": "Sandbox portal for the Dutch Chamber of Commerce, showcasing a digital flow for entrepreneurs to provide the required information to register a sole proprietorship.",
       "website": "https://kvk.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": ["other"],

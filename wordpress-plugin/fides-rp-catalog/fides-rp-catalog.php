@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials
- * Version: 1.1.2
+ * Version: 1.1.4
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0

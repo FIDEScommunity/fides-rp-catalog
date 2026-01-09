@@ -20,7 +20,8 @@
     book: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>',
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
     wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path></svg>',
-    laptop: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>'
+    laptop: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>',
+    eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>'
   };
 
   // Selected RP for modal
@@ -67,7 +68,18 @@
     credentialFormats: [],
     interoperabilityProfiles: []
   };
-  let showFiltersPanel = false;
+
+  // Track which filter groups are expanded (true = expanded, false = collapsed)
+  const filterGroupState = {
+    type: true,
+    sectors: true,
+    country: false,
+    interoperabilityProfiles: false,
+    credentialFormats: false
+  };
+
+  // Chevron icon for collapsible filters
+  const chevronDown = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>';
 
   // DOM Elements
   let container;
@@ -152,9 +164,9 @@
         if (!matches) return false;
       }
 
-      // Type
+      // Readiness
       if (filters.type.length > 0) {
-        if (!filters.type.includes(rp.type)) return false;
+        if (!filters.type.includes(rp.readiness)) return false;
       }
 
       // Sectors
@@ -226,113 +238,184 @@
     
     let html = '';
 
-    // Search
-    if (settings.showSearch) {
-      html += `
-        <div class="fides-search-container">
-          <div class="fides-search-wrapper">
-            <span class="fides-search-icon">${icons.search}</span>
-            <input 
-              type="text" 
-              class="fides-search-input" 
-              placeholder="Search by name, description or provider..."
-              value="${escapeHtml(filters.search)}"
-              id="fides-search"
-            >
-            <button class="fides-search-clear ${filters.search ? '' : 'hidden'}" id="fides-search-clear" type="button">
-              ${icons.xSmall}
-            </button>
-          </div>
-        </div>
-      `;
-    }
+    // Mobile filter toggle button
+    html += `
+      <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
+        ${icons.filter}
+        <span>Filters</span>
+        ${activeFilterCount > 0 ? `<span class="fides-filter-count">${activeFilterCount}</span>` : ''}
+      </button>
+    `;
 
-    // Filter toggle bar
+    // Main layout with sidebar
+    html += `<div class="fides-main-layout">`;
+
+    // Sidebar with search and filters
     if (settings.showFilters) {
       html += `
-        <div class="fides-filter-bar">
-          <div class="fides-filter-bar-left">
-            <button class="fides-filter-toggle ${showFiltersPanel ? 'active' : ''}" id="fides-filter-toggle">
+        <aside class="fides-sidebar">
+          <div class="fides-sidebar-header">
+            <div class="fides-sidebar-title">
               ${icons.filter}
               <span>Filters</span>
               ${activeFilterCount > 0 ? `<span class="fides-filter-count">${activeFilterCount}</span>` : ''}
-            </button>
-            ${activeFilterCount > 0 ? `
-              <button class="fides-clear-all" id="fides-clear">
-                ${icons.x} Clear filters
+            </div>
+            <div class="fides-sidebar-actions">
+              ${activeFilterCount > 0 ? `
+                <button class="fides-clear-all" id="fides-clear">
+                  ${icons.x} Clear
+                </button>
+              ` : ''}
+              <button class="fides-sidebar-close" id="fides-sidebar-close" aria-label="Close filters">
+                ${icons.xLarge}
               </button>
+            </div>
+          </div>
+          <div class="fides-sidebar-content">
+            ${settings.showSearch ? `
+              <div class="fides-sidebar-search">
+                <div class="fides-search-wrapper">
+                  <span class="fides-search-icon">${icons.search}</span>
+                  <input 
+                    type="text" 
+                    class="fides-search-input" 
+                    placeholder="Search..."
+                    value="${escapeHtml(filters.search)}"
+                    id="fides-search"
+                  >
+                  <button class="fides-search-clear ${filters.search ? '' : 'hidden'}" id="fides-search-clear" type="button">
+                    ${icons.xSmall}
+                  </button>
+                </div>
+              </div>
             ` : ''}
-          </div>
-          <div class="fides-results-count">
-            ${filtered.length} relying part${filtered.length !== 1 ? 'ies' : 'y'} found
-          </div>
-        </div>
-      `;
-
-      // Filters panel
-      if (showFiltersPanel) {
-        html += `
-          <div class="fides-filters">
             ${!settings.type ? `
-              <div class="fides-filter-group">
-                <span class="fides-filter-label">Type</span>
-                <div class="fides-filter-buttons">
-                  <button class="fides-filter-btn ${filters.type.includes('demo') ? 'active' : ''}" data-filter="type" data-value="demo">Demo</button>
-                  <button class="fides-filter-btn ${filters.type.includes('sandbox') ? 'active' : ''}" data-filter="type" data-value="sandbox">Sandbox</button>
-                  <button class="fides-filter-btn ${filters.type.includes('production') ? 'active' : ''}" data-filter="type" data-value="production">Production</button>
+              <div class="fides-filter-group collapsible ${!filterGroupState.type ? 'collapsed' : ''} ${filters.type.length > 0 ? 'has-active' : ''}" data-filter-group="type">
+                <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.type}">
+                  <span class="fides-filter-label">Readiness</span>
+                  <span class="fides-filter-active-indicator"></span>
+                  ${chevronDown}
+                </button>
+                <div class="fides-filter-options">
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="type" data-value="technical-demo" ${filters.type.includes('technical-demo') ? 'checked' : ''}>
+                    <span>Technical Demo</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="type" data-value="use-case-demo" ${filters.type.includes('use-case-demo') ? 'checked' : ''}>
+                    <span>Use Case Demo</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="type" data-value="production-pilot" ${filters.type.includes('production-pilot') ? 'checked' : ''}>
+                    <span>Production Pilot</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="type" data-value="production" ${filters.type.includes('production') ? 'checked' : ''}>
+                    <span>Production</span>
+                  </label>
                 </div>
               </div>
             ` : ''}
             ${!settings.sector ? `
-              <div class="fides-filter-group">
-                <span class="fides-filter-label">Sector</span>
-                <div class="fides-filter-buttons">
-                  <button class="fides-filter-btn ${filters.sectors.includes('government') ? 'active' : ''}" data-filter="sectors" data-value="government">Government</button>
-                  <button class="fides-filter-btn ${filters.sectors.includes('finance') ? 'active' : ''}" data-filter="sectors" data-value="finance">Finance</button>
-                  <button class="fides-filter-btn ${filters.sectors.includes('healthcare') ? 'active' : ''}" data-filter="sectors" data-value="healthcare">Healthcare</button>
-                  <button class="fides-filter-btn ${filters.sectors.includes('education') ? 'active' : ''}" data-filter="sectors" data-value="education">Education</button>
-                  <button class="fides-filter-btn ${filters.sectors.includes('retail') ? 'active' : ''}" data-filter="sectors" data-value="retail">Retail</button>
+              <div class="fides-filter-group collapsible ${!filterGroupState.sectors ? 'collapsed' : ''} ${filters.sectors.length > 0 ? 'has-active' : ''}" data-filter-group="sectors">
+                <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.sectors}">
+                  <span class="fides-filter-label">Sector</span>
+                  <span class="fides-filter-active-indicator"></span>
+                  ${chevronDown}
+                </button>
+                <div class="fides-filter-options">
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="sectors" data-value="government" ${filters.sectors.includes('government') ? 'checked' : ''}>
+                    <span>Government</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="sectors" data-value="finance" ${filters.sectors.includes('finance') ? 'checked' : ''}>
+                    <span>Finance</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="sectors" data-value="healthcare" ${filters.sectors.includes('healthcare') ? 'checked' : ''}>
+                    <span>Healthcare</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="sectors" data-value="education" ${filters.sectors.includes('education') ? 'checked' : ''}>
+                    <span>Education</span>
+                  </label>
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="sectors" data-value="retail" ${filters.sectors.includes('retail') ? 'checked' : ''}>
+                    <span>Retail</span>
+                  </label>
                 </div>
               </div>
             ` : ''}
             ${getAvailableCountries().length > 0 ? `
-              <div class="fides-filter-group">
-                <span class="fides-filter-label">Country</span>
-                <div class="fides-filter-buttons">
+              <div class="fides-filter-group collapsible ${!filterGroupState.country ? 'collapsed' : ''} ${filters.country.length > 0 ? 'has-active' : ''}" data-filter-group="country">
+                <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.country}">
+                  <span class="fides-filter-label">Country</span>
+                  <span class="fides-filter-active-indicator"></span>
+                  ${chevronDown}
+                </button>
+                <div class="fides-filter-options">
                   ${getAvailableCountries().map(code => `
-                    <button class="fides-filter-btn ${filters.country.includes(code) ? 'active' : ''}" data-filter="country" data-value="${code}">
-                      <img src="https://flagcdn.com/w20/${code.toLowerCase()}.png" alt="${code}" style="width: 16px; height: 12px; margin-right: 4px; vertical-align: middle;">
-                      ${countryNames[code] || code}
-                    </button>
+                    <label class="fides-filter-checkbox">
+                      <input type="checkbox" data-filter="country" data-value="${code}" ${filters.country.includes(code) ? 'checked' : ''}>
+                      <span><img src="https://flagcdn.com/w20/${code.toLowerCase()}.png" alt="" class="fides-country-flag"> ${countryNames[code] || code}</span>
+                    </label>
                   `).join('')}
                 </div>
               </div>
             ` : ''}
-            <div class="fides-filter-group">
-              <span class="fides-filter-label">Interop Profile</span>
-              <div class="fides-filter-buttons">
-                <button class="fides-filter-btn ${filters.interoperabilityProfiles.includes('DIIP v4') ? 'active' : ''}" data-filter="interoperabilityProfiles" data-value="DIIP v4">DIIP v4</button>
-                <button class="fides-filter-btn ${filters.interoperabilityProfiles.includes('EWC v3') ? 'active' : ''}" data-filter="interoperabilityProfiles" data-value="EWC v3">EWC v3</button>
+            <div class="fides-filter-group collapsible ${!filterGroupState.interoperabilityProfiles ? 'collapsed' : ''} ${filters.interoperabilityProfiles.length > 0 ? 'has-active' : ''}" data-filter-group="interoperabilityProfiles">
+              <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.interoperabilityProfiles}">
+                <span class="fides-filter-label">Interop Profile</span>
+                <span class="fides-filter-active-indicator"></span>
+                ${chevronDown}
+              </button>
+              <div class="fides-filter-options">
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="interoperabilityProfiles" data-value="DIIP v4" ${filters.interoperabilityProfiles.includes('DIIP v4') ? 'checked' : ''}>
+                  <span>DIIP v4</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="interoperabilityProfiles" data-value="EWC v3" ${filters.interoperabilityProfiles.includes('EWC v3') ? 'checked' : ''}>
+                  <span>EWC v3</span>
+                </label>
               </div>
             </div>
-            <div class="fides-filter-group">
-              <span class="fides-filter-label">Credential Format</span>
-              <div class="fides-filter-buttons">
-                <button class="fides-filter-btn ${filters.credentialFormats.includes('SD-JWT-VC') ? 'active' : ''}" data-filter="credentialFormats" data-value="SD-JWT-VC">SD-JWT-VC</button>
-                <button class="fides-filter-btn ${filters.credentialFormats.includes('mDL/mDoc') ? 'active' : ''}" data-filter="credentialFormats" data-value="mDL/mDoc">mDL/mDoc</button>
-                <button class="fides-filter-btn ${filters.credentialFormats.includes('JWT-VC') ? 'active' : ''}" data-filter="credentialFormats" data-value="JWT-VC">JWT-VC</button>
+            <div class="fides-filter-group collapsible ${!filterGroupState.credentialFormats ? 'collapsed' : ''} ${filters.credentialFormats.length > 0 ? 'has-active' : ''}" data-filter-group="credentialFormats">
+              <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.credentialFormats}">
+                <span class="fides-filter-label">Credential Format</span>
+                <span class="fides-filter-active-indicator"></span>
+                ${chevronDown}
+              </button>
+              <div class="fides-filter-options">
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="SD-JWT-VC" ${filters.credentialFormats.includes('SD-JWT-VC') ? 'checked' : ''}>
+                  <span>SD-JWT-VC</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="mDL/mDoc" ${filters.credentialFormats.includes('mDL/mDoc') ? 'checked' : ''}>
+                  <span>mDL/mDoc</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="JWT-VC" ${filters.credentialFormats.includes('JWT-VC') ? 'checked' : ''}>
+                  <span>JWT-VC</span>
+                </label>
               </div>
             </div>
           </div>
-        `;
-      }
-    } else {
-      html += `
-        <div class="fides-results-info">
-          <span>${filtered.length} relying part${filtered.length !== 1 ? 'ies' : 'y'} found</span>
-        </div>
+        </aside>
       `;
     }
+
+    // Content area
+    html += `<div class="fides-content">`;
+
+    // Results count
+    html += `
+      <div class="fides-results-bar">
+        <span class="fides-results-count">${filtered.length} relying part${filtered.length !== 1 ? 'ies' : 'y'} found</span>
+      </div>
+    `;
 
     // RP grid
     if (filtered.length > 0) {
@@ -351,6 +434,9 @@
       `;
     }
 
+    html += '</div>'; // Close fides-content
+    html += '</div>'; // Close fides-main-layout
+
     container.innerHTML = html;
     attachEventListeners();
     
@@ -368,10 +454,11 @@
    * Render a single RP card
    */
   function renderRPCard(rp) {
-    const typeLabels = {
-      demo: 'Demo',
-      sandbox: 'Sandbox',
-      production: 'Production'
+    const readinessLabels = {
+      'technical-demo': 'Technical Demo',
+      'use-case-demo': 'Use Case Demo',
+      'production-pilot': 'Production Pilot',
+      'production': 'Production'
     };
 
     const sectorLabels = {
@@ -397,7 +484,7 @@
 
     return `
       <div class="fides-rp-card" data-rp-id="${rp.id}" role="button" tabindex="0">
-        <div class="fides-rp-header type-${rp.type}">
+        <div class="fides-rp-header readiness-${rp.readiness}">
           ${logoUrl 
             ? `<img src="${escapeHtml(logoUrl)}" alt="${escapeHtml(rp.name)}" class="fides-rp-logo">`
             : `<div class="fides-rp-logo-placeholder">${icons.globe}</div>`
@@ -406,7 +493,7 @@
             <h3 class="fides-rp-name">${escapeHtml(rp.name)}</h3>
             <p class="fides-rp-provider">${escapeHtml(rp.provider.name)}</p>
           </div>
-          <span class="fides-rp-type-badge ${rp.type}">${typeLabels[rp.type]}</span>
+          <span class="fides-rp-readiness-badge ${rp.readiness}">${readinessLabels[rp.readiness]}</span>
         </div>
         <div class="fides-rp-body">
           ${rp.description ? `<p class="fides-rp-description">${escapeHtml(rp.description)}</p>` : ''}
@@ -446,7 +533,7 @@
               </a>
             ` : ''}
           </div>
-          <span class="fides-view-details">View details →</span>
+          <span class="fides-view-details">${icons.eye} View details</span>
         </div>
       </div>
     `;
@@ -456,10 +543,11 @@
    * Render the RP detail modal
    */
   function renderModal(rp) {
-    const typeLabels = {
-      demo: 'Demo',
-      sandbox: 'Sandbox',
-      production: 'Production'
+    const readinessLabels = {
+      'technical-demo': 'Technical Demo',
+      'use-case-demo': 'Use Case Demo',
+      'production-pilot': 'Production Pilot',
+      'production': 'Production'
     };
 
     const statusLabels = {
@@ -496,8 +584,8 @@
           <div class="fides-modal-body">
             <!-- Type & Status badges -->
             <div class="fides-modal-badges">
-              <span class="fides-modal-badge type-${rp.type}">
-                ${typeLabels[rp.type]}
+              <span class="fides-modal-badge readiness-${rp.readiness}">
+                ${readinessLabels[rp.readiness]}
               </span>
               ${rp.status ? `
                 <span class="fides-modal-badge status-${rp.status}">
@@ -725,25 +813,55 @@
       });
     }
 
-    // Filter toggle
-    const filterToggle = document.getElementById('fides-filter-toggle');
-    if (filterToggle) {
-      filterToggle.addEventListener('click', () => {
-        showFiltersPanel = !showFiltersPanel;
-        render();
+    // Mobile filter toggle
+    const mobileFilterToggle = document.getElementById('fides-mobile-filter-toggle');
+    if (mobileFilterToggle) {
+      mobileFilterToggle.addEventListener('click', () => {
+        const sidebar = container.querySelector('.fides-sidebar');
+        if (sidebar) {
+          sidebar.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
       });
     }
 
-    // Filter buttons
-    container.querySelectorAll('.fides-filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const filterType = btn.dataset.filter;
-        const value = btn.dataset.value;
+    // Sidebar close button
+    const sidebarClose = document.getElementById('fides-sidebar-close');
+    if (sidebarClose) {
+      sidebarClose.addEventListener('click', () => {
+        const sidebar = container.querySelector('.fides-sidebar');
+        if (sidebar) {
+          sidebar.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+
+    // Collapsible filter toggles
+    container.querySelectorAll('.fides-filter-label-toggle').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const filterGroup = toggle.closest('.fides-filter-group');
+        if (filterGroup) {
+          filterGroup.classList.toggle('collapsed');
+          const isCollapsed = filterGroup.classList.contains('collapsed');
+          toggle.setAttribute('aria-expanded', !isCollapsed);
+          filterGroupState[filterGroup.dataset.filterGroup] = !isCollapsed;
+        }
+      });
+    });
+
+    // Filter checkboxes
+    container.querySelectorAll('.fides-filter-checkbox input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        const filterType = checkbox.dataset.filter;
+        const value = checkbox.dataset.value;
         
-        if (filters[filterType].includes(value)) {
-          filters[filterType] = filters[filterType].filter(v => v !== value);
+        if (checkbox.checked) {
+          if (!filters[filterType].includes(value)) {
+            filters[filterType].push(value);
+          }
         } else {
-          filters[filterType].push(value);
+          filters[filterType] = filters[filterType].filter(v => v !== value);
         }
         
         render();

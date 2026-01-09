@@ -5,7 +5,7 @@
       "name": "QES Signing Demo",
       "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
       "website": "https://rpcentric.signer.eudiw.dev/tester",
-      "type": "demo",
+      "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
       "sectors": [
@@ -41,7 +41,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.196Z",
+      "fetchedAt": "2026-01-09T18:18:34.645Z",
       "source": "local"
     },
     {
@@ -49,7 +49,7 @@
       "name": "CirculaCity",
       "description": "Sandbox portal demonstrating how government applications can use wallet-based credentials to enable trusted digital interactions in areas such as procurement, recruitment, and compliance.",
       "website": "https://circulacity.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -88,11 +88,11 @@
         "nl"
       ],
       "provider": {
-        "name": "FIDES Community",
+        "name": "FIDES Labs",
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -100,7 +100,7 @@
       "name": "Municipality of Rotterdam",
       "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
       "website": "https://rotterdam.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -139,11 +139,11 @@
         "nl"
       ],
       "provider": {
-        "name": "FIDES Community",
+        "name": "FIDES Labs",
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -151,7 +151,7 @@
       "name": "MijnOverheid",
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
       "website": "https://mijnoverheid.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -181,11 +181,11 @@
         "nl"
       ],
       "provider": {
-        "name": "FIDES Community",
+        "name": "FIDES Labs",
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -193,7 +193,7 @@
       "name": "Hak & Rein Vos Notarissen",
       "description": "Sandbox portal for a Dutch notary, showcasing a digital flow for entrepreneurs to provide the required information and documents to establish a company.",
       "website": "https://hrv.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -228,11 +228,11 @@
         "nl"
       ],
       "provider": {
-        "name": "FIDES Community",
+        "name": "FIDES Labs",
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -240,7 +240,7 @@
       "name": "Kamer van Koophandel Frontoffice",
       "description": "Sandbox portal for the Dutch Chamber of Commerce, showcasing a digital flow for entrepreneurs to provide the required information to register a sole proprietorship.",
       "website": "https://kvk.fides.community/",
-      "type": "sandbox",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -274,11 +274,11 @@
         "nl"
       ],
       "provider": {
-        "name": "FIDES Community",
+        "name": "FIDES Labs",
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -286,7 +286,7 @@
       "name": "Individual Income Supplement (IIT)",
       "description": "Demo application flow for the Individual Income Supplement, including scenarios with and without a partner. Requires demo data in the Yivi wallet.",
       "website": "https://iit-nijmegen-v2.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -315,7 +315,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -323,7 +323,7 @@
       "name": "Compensation Card",
       "description": "Demo for applying for and using a municipal compensation card. Requires demo data in the Yivi wallet.",
       "website": "https://vergoedingenpas.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -351,7 +351,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -359,7 +359,7 @@
       "name": "Discounted Bus Subscription",
       "description": "Demo application flow for a discounted public transport subscription for residents with a low income.",
       "website": "https://busvoordeel.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -388,7 +388,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -396,7 +396,7 @@
       "name": "Participation Scheme",
       "description": "Demo application flow for a municipal participation scheme supporting access to sports, cultural, and social activities. Requires demo data in the Yivi wallet.",
       "website": "https://meedoenregeling.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -424,7 +424,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -432,7 +432,7 @@
       "name": "Cultural Heritage Pass",
       "description": "Fictional demo inspired by IntoNijmegen, showcasing a cultural pass with wallet-based issuance and usage for heritage venues.",
       "website": "https://cultureel-erfgoed.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -462,7 +462,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -470,7 +470,7 @@
       "name": "Compensation Eligibility Check",
       "description": "Demo in which citizens share data once via their wallet to see which municipal schemes they are eligible for and activate them directly.",
       "website": "https://vergoedingencheck.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -498,7 +498,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -506,7 +506,7 @@
       "name": "Mandate – Court-Appointed Administrator",
       "description": "Demo for legal representation by a court-appointed administrator, enabling login with Yivi and acting on behalf of a client in a municipal application.",
       "website": "https://jansen-bewind.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -535,7 +535,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -543,7 +543,7 @@
       "name": "Mandate – Voluntary Authorization ",
       "description": "Demo of voluntary authorization using a fictional Central Mandates Register, integrated into a municipal application flow.",
       "website": "https://nijmegen-iit-cmr-demo.framer.website",
-      "type": "demo",
+      "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -572,7 +572,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.197Z",
+      "fetchedAt": "2026-01-09T18:18:34.647Z",
       "source": "local"
     },
     {
@@ -580,7 +580,7 @@
       "name": "Inji Web Verifier",
       "description": "Web-based verifier for MOSIP/Inji credentials, allowing users to upload or scan credentials for verification.",
       "website": "https://injiverify.collab.mosip.net/",
-      "type": "demo",
+      "readiness": "technical-demo",
       "country": "IN",
       "status": "beta",
       "sectors": [
@@ -612,7 +612,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.198Z",
+      "fetchedAt": "2026-01-09T18:18:34.648Z",
       "source": "local"
     },
     {
@@ -620,7 +620,7 @@
       "name": "mDoc Web Verifier",
       "description": "Browser-based verifier for ISO/IEC 18013-5 mDoc credentials using proximity flows.",
       "website": "https://mdoc-web-verifier.stelau.com/",
-      "type": "demo",
+      "readiness": "technical-demo",
       "country": "FR",
       "status": "live",
       "sectors": [
@@ -656,7 +656,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-08T18:47:49.198Z",
+      "fetchedAt": "2026-01-09T18:18:34.648Z",
       "source": "local"
     }
   ],
@@ -666,7 +666,7 @@
       "website": "https://www.eudiwalletconsortium.org/"
     },
     {
-      "name": "FIDES Community",
+      "name": "FIDES Labs",
       "website": "https://fides.community"
     },
     {
@@ -682,13 +682,14 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-08T18:47:49.198Z",
+  "lastUpdated": "2026-01-09T18:18:34.648Z",
   "stats": {
     "totalRPs": 16,
     "totalProviders": 5,
-    "byType": {
-      "demo": 11,
-      "sandbox": 5,
+    "byReadiness": {
+      "technical-demo": 3,
+      "use-case-demo": 13,
+      "production-pilot": 0,
       "production": 0
     },
     "bySector": {

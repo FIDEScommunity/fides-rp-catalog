@@ -9,7 +9,7 @@
         "name": "Inji Web Verifier",
         "description": "Web-based verifier for MOSIP/Inji credentials, allowing users to upload or scan credentials for verification.",
         "website": "https://injiverify.collab.mosip.net/",
-        "type": "demo",
+        "readiness": "technical-demo",
         "country": "IN",
         "status": "beta",
         "sectors": ["government", "other"],

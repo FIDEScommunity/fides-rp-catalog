@@ -27,5 +27,8 @@ data/*.json
 coverage/
 .nyc_output/
 
+# WordPress plugin zips
+wordpress-plugin/*.zip
+
 
 

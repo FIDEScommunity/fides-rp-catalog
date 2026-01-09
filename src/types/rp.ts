@@ -2,8 +2,8 @@
  * Type definitions for the FIDES Relying Party Catalog
  */
 
-// Deployment type for relying parties
-export type RPType = 'demo' | 'sandbox' | 'production';
+// Readiness level for relying parties
+export type Readiness = 'technical-demo' | 'use-case-demo' | 'production-pilot' | 'production';
 
 // Operational status
 export type RPStatus = 'development' | 'beta' | 'live' | 'deprecated';
@@ -57,7 +57,7 @@ export interface RelyingParty {
   description?: string;
   logo?: string;
   website?: string;
-  type: RPType;
+  readiness: Readiness;
   status?: RPStatus;
   
   // Classification
@@ -108,7 +108,7 @@ export interface AggregatedRPData {
   stats: {
     totalRPs: number;
     totalProviders: number;
-    byType: Record<RPType, number>;
+    byReadiness: Record<Readiness, number>;
     bySector: Record<string, number>;
     byCredentialFormat: Record<string, number>;
   };

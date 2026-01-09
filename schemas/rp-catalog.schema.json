@@ -70,7 +70,7 @@
     "RelyingParty": {
       "type": "object",
       "description": "A relying party (verifier) service or website",
-      "required": ["id", "name", "type", "country"],
+      "required": ["id", "name", "readiness", "country"],
       "properties": {
         "id": {
           "type": "string",
@@ -95,10 +95,10 @@
           "format": "uri",
           "description": "URL to the relying party website/service"
         },
-        "type": {
+        "readiness": {
           "type": "string",
-          "enum": ["demo", "sandbox", "production"],
-          "description": "Type of deployment: 'demo' for demonstration, 'sandbox' for testing, 'production' for live services"
+          "enum": ["technical-demo", "use-case-demo", "production-pilot", "production"],
+          "description": "Readiness level: 'technical-demo' for technical demonstrations, 'use-case-demo' for use case demos, 'production-pilot' for pilots, 'production' for live services"
         },
         "country": {
           "type": "string",

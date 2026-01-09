@@ -16,7 +16,7 @@ import type {
   NormalizedRP, 
   AggregatedRPData, 
   RPProvider,
-  RPType 
+  Readiness 
 } from '../types/rp.js';
 
 // Configuration
@@ -132,19 +132,20 @@ function deduplicateRPs(rps: NormalizedRP[]): NormalizedRP[] {
  * Calculate statistics
  */
 function calculateStats(rps: NormalizedRP[], providers: Map<string, RPProvider>): AggregatedRPData['stats'] {
-  const byType: Record<RPType, number> = {
-    demo: 0,
-    sandbox: 0,
-    production: 0
+  const byReadiness: Record<Readiness, number> = {
+    'technical-demo': 0,
+    'use-case-demo': 0,
+    'production-pilot': 0,
+    'production': 0
   };
   
   const bySector: Record<string, number> = {};
   const byCredentialFormat: Record<string, number> = {};
 
   for (const rp of rps) {
-    // Count by type
-    if (rp.type) {
-      byType[rp.type] = (byType[rp.type] || 0) + 1;
+    // Count by readiness
+    if (rp.readiness) {
+      byReadiness[rp.readiness] = (byReadiness[rp.readiness] || 0) + 1;
     }
 
     // Count by sector
@@ -165,7 +166,7 @@ function calculateStats(rps: NormalizedRP[], providers: Map<string, RPProvider>)
   return {
     totalRPs: rps.length,
     totalProviders: providers.size,
-    byType,
+    byReadiness,
     bySector,
     byCredentialFormat
   };
