@@ -183,9 +183,30 @@
         },
         "supportedWallets": {
           "type": "array",
-          "description": "List of wallets known to work with this RP",
+          "description": "List of wallets known to work with this RP. Can be simple strings or objects with deep link support.",
           "items": {
-            "type": "string"
+            "oneOf": [
+              {
+                "type": "string",
+                "description": "Wallet name (no deep link to wallet catalog)"
+              },
+              {
+                "type": "object",
+                "description": "Wallet with deep link to FIDES Wallet Catalog",
+                "required": ["name"],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Display name of the wallet"
+                  },
+                  "walletCatalogId": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9-]+$",
+                    "description": "Wallet ID from FIDES Wallet Catalog (enables deep link)"
+                  }
+                }
+              }
+            ]
           }
         },
         "features": {

@@ -96,6 +96,19 @@
   border-color: rgba(6, 182, 212, 0.3);
 }
 
+/* FIDES Theme - Wallet link styling for light background */
+.fides-rp-catalog[data-theme="fides"] a.fides-tag.wallet-link,
+.fides-rp-catalog[data-theme="light"] a.fides-tag.wallet-link {
+  background: #16a34a;
+  color: white;
+  border-color: #15803d;
+}
+
+.fides-rp-catalog[data-theme="fides"] a.fides-tag.wallet-link:hover,
+.fides-rp-catalog[data-theme="light"] a.fides-tag.wallet-link:hover {
+  background: #15803d;
+}
+
 /* FIDES Theme - Card shadow for light background */
 .fides-rp-catalog[data-theme="fides"] .fides-rp-card,
 .fides-rp-catalog[data-theme="light"] .fides-rp-card {
@@ -479,6 +492,10 @@
   font-weight: 600;
 }
 
+.fides-filter-count.hidden {
+  visibility: hidden;
+}
+
 .fides-clear-all {
   display: inline-flex;
   align-items: center;
@@ -494,6 +511,10 @@
 
 .fides-clear-all:hover {
   color: var(--fides-text-primary);
+}
+
+.fides-clear-all.hidden {
+  visibility: hidden;
 }
 
 .fides-results-count {
@@ -955,6 +976,29 @@
   background: rgba(6, 182, 212, 0.15);
   color: #67e8f9;
   border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+/* Wallet link tag - clickable links to wallet catalog */
+a.fides-tag.wallet-link {
+  background: var(--fides-success-dark, #16a34a);
+  color: white;
+  border-color: var(--fides-success-darker, #15803d);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+a.fides-tag.wallet-link:hover {
+  background: var(--fides-success-darker, #15803d);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a.fides-tag.wallet-link svg {
+  opacity: 0.8;
 }
 
 /* Section */

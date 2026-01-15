@@ -38,6 +38,12 @@ export type CredentialFormat =
 // Interoperability profiles
 export type InteropProfile = 'DIIP v4' | 'EWC v3';
 
+// Supported wallet reference (string or object with deep link)
+export type SupportedWallet = string | {
+  name: string;
+  walletCatalogId?: string;
+};
+
 // Provider/Organization information
 export interface RPProvider {
   name: string;
@@ -71,7 +77,7 @@ export interface RelyingParty {
   interoperabilityProfiles?: InteropProfile[];
   
   // Compatibility
-  supportedWallets?: string[];
+  supportedWallets?: SupportedWallet[];
   
   // Additional info
   features?: string[];

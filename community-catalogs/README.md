@@ -43,6 +43,31 @@ Your `rp-catalog.json` must conform to the schema at `schemas/rp-catalog.schema.
 - `relyingParties[].credentialFormats` - Supported formats (SD-JWT-VC, mDL/mDoc, etc.)
 - `relyingParties[].presentationProtocols` - Supported protocols (OpenID4VP, etc.)
 - `relyingParties[].interoperabilityProfiles` - DIIP v4, EWC v3, etc.
+- `relyingParties[].supportedWallets` - Wallets that work with this RP (see below)
+
+## Wallet Deep Links
+
+You can link to wallets in the FIDES Wallet Catalog by using the object format for `supportedWallets`:
+
+```json
+"supportedWallets": [
+  { "name": "Sphereon Wallet", "walletCatalogId": "sphereon-wallet" },
+  { "name": "Paradym Wallet", "walletCatalogId": "paradym-wallet" },
+  "Yivi"
+]
+```
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `name` | Yes | Display name shown in the UI |
+| `walletCatalogId` | No | Wallet ID from FIDES Wallet Catalog (enables clickable deep link) |
+
+**Finding wallet IDs**: Browse the [FIDES Wallet Catalog](https://wallets.fides.community) and note the `?wallet=` parameter when clicking a wallet, or check the `id` field in `community-catalogs/*/wallet-catalog.json` files.
+
+Simple strings are also supported (without deep link):
+```json
+"supportedWallets": ["Wallet A", "Wallet B"]
+```
 
 ## Validation
 

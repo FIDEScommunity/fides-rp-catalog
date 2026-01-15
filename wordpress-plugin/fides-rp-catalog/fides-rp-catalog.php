@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials
- * Version: 1.1.5
+ * Version: 1.3.1
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '1.0.0');
+define('FIDES_RP_CATALOG_VERSION', '1.3.1');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -42,7 +42,8 @@ function fides_rp_catalog_enqueue_assets() {
     // Pass configuration to JavaScript
     wp_localize_script('fides-rp-catalog-script', 'fidesRPCatalog', array(
         'pluginUrl' => FIDES_RP_CATALOG_PLUGIN_URL,
-        'githubDataUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json'
+        'githubDataUrl' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json',
+        'walletCatalogUrl' => get_option('fides_rp_catalog_wallet_url', 'https://wallets.fides.community')
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_rp_catalog_enqueue_assets');
@@ -108,12 +109,43 @@ function fides_rp_catalog_admin_menu() {
 add_action('admin_menu', 'fides_rp_catalog_admin_menu');
 
 /**
+ * Register plugin settings
+ */
+function fides_rp_catalog_register_settings() {
+    register_setting('fides_rp_catalog_settings', 'fides_rp_catalog_wallet_url', array(
+        'type' => 'string',
+        'default' => 'https://wallets.fides.community',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
+}
+add_action('admin_init', 'fides_rp_catalog_register_settings');
+
+/**
  * Settings page
  */
 function fides_rp_catalog_settings_page() {
     ?>
     <div class="wrap">
         <h1>FIDES RP Catalog</h1>
+        
+        <form method="post" action="options.php">
+            <?php settings_fields('fides_rp_catalog_settings'); ?>
+            <h2>Settings</h2>
+            <table class="form-table">
+                <tr>
+                    <th scope="row"><label for="fides_rp_catalog_wallet_url">Wallet Catalog URL</label></th>
+                    <td>
+                        <input type="url" id="fides_rp_catalog_wallet_url" name="fides_rp_catalog_wallet_url" 
+                               value="<?php echo esc_attr(get_option('fides_rp_catalog_wallet_url', 'https://wallets.fides.community')); ?>" 
+                               class="regular-text">
+                        <p class="description">Base URL for wallet deep links (e.g., https://wallets.fides.community)</p>
+                    </td>
+                </tr>
+            </table>
+            <?php submit_button(); ?>
+        </form>
+        
+        <hr>
         
         <h2>Shortcode Usage</h2>
         <p>Use the following shortcode to display the relying party catalog:</p>

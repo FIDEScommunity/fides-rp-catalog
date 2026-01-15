@@ -21,8 +21,13 @@
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
     wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path></svg>',
     laptop: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>',
-    eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>'
+    eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
+    externalLinkSmall: '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>'
   };
+  
+  // Wallet catalog base URL for deep links (configurable via WordPress settings)
+  const WALLET_CATALOG_URL = (window.fidesRPCatalog && window.fidesRPCatalog.walletCatalogUrl) 
+    || 'https://wallets.fides.community';
 
   // Selected RP for modal
   let selectedRP = null;
@@ -243,7 +248,7 @@
       <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
         ${icons.filter}
         <span>Filters</span>
-        ${activeFilterCount > 0 ? `<span class="fides-filter-count">${activeFilterCount}</span>` : ''}
+        <span class="fides-filter-count ${activeFilterCount > 0 ? '' : 'hidden'}">${activeFilterCount || 0}</span>
       </button>
     `;
 
@@ -258,14 +263,12 @@
             <div class="fides-sidebar-title">
               ${icons.filter}
               <span>Filters</span>
-              ${activeFilterCount > 0 ? `<span class="fides-filter-count">${activeFilterCount}</span>` : ''}
+              <span class="fides-filter-count ${activeFilterCount > 0 ? '' : 'hidden'}">${activeFilterCount || 0}</span>
             </div>
             <div class="fides-sidebar-actions">
-              ${activeFilterCount > 0 ? `
-                <button class="fides-clear-all" id="fides-clear">
-                  ${icons.x} Clear
-                </button>
-              ` : ''}
+              <button class="fides-clear-all ${activeFilterCount > 0 ? '' : 'hidden'}" id="fides-clear">
+                ${icons.x} Clear
+              </button>
               <button class="fides-sidebar-close" id="fides-sidebar-close" aria-label="Close filters">
                 ${icons.xLarge}
               </button>
@@ -763,7 +766,20 @@
                     ${icons.wallet} Supported Wallets
                   </div>
                   <div class="fides-modal-grid-value">
-                    ${rp.supportedWallets.map(w => `<span class="fides-tag">${escapeHtml(w)}</span>`).join('')}
+                    ${rp.supportedWallets.map(w => {
+                      // Handle both string and object format
+                      const name = typeof w === 'string' ? w : w.name;
+                      const walletId = typeof w === 'object' ? w.walletCatalogId : null;
+                      
+                      if (walletId) {
+                        // Render as clickable link to wallet catalog
+                        const walletUrl = WALLET_CATALOG_URL + '/?wallet=' + encodeURIComponent(walletId);
+                        return '<a href="' + walletUrl + '" target="_blank" rel="noopener" class="fides-tag wallet-link">' + escapeHtml(name) + ' ' + icons.externalLinkSmall + '</a>';
+                      } else {
+                        // Render as plain tag
+                        return '<span class="fides-tag">' + escapeHtml(name) + '</span>';
+                      }
+                    }).join('')}
                   </div>
                 </div>
               ` : ''}
