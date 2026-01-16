@@ -8,7 +8,7 @@
   "relyingParties": [
     {
       "id": "igrant-open-bank-account-demo",
-      "name": "Open Bank Account Demo",
+      "name": "Open Bank Account",
       "description": "Experience opening a new bank account using your EUDI wallet.",
       "website": "https://www.igrant.io/demo/open-bank-account.html",
       "readiness": "technical-demo",
