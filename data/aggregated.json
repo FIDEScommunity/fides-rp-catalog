@@ -2,7 +2,7 @@
   "relyingParties": [
     {
       "id": "eudi-cinema-age-verification",
-      "name": "Starfilm Cinema Age Verification Demo",
+      "name": "Starfilm Cinema Age Verification",
       "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
       "website": "https://cinema.ageverification.dev/",
       "readiness": "use-case-demo",
@@ -46,12 +46,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.593Z",
+      "fetchedAt": "2026-01-16T06:17:23.724Z",
       "source": "local"
     },
     {
       "id": "ewc-rpcentric-signer",
-      "name": "QES Signing Demo",
+      "name": "QES Signing",
       "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
       "website": "https://rpcentric.signer.eudiw.dev/tester",
       "readiness": "technical-demo",
@@ -90,7 +90,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.598Z",
+      "fetchedAt": "2026-01-16T06:17:23.729Z",
       "source": "local"
     },
     {
@@ -141,7 +141,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -192,7 +192,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -240,7 +240,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -293,7 +293,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -345,7 +345,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -382,7 +382,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -418,7 +418,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -455,7 +455,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -491,7 +491,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -529,7 +529,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -565,7 +565,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -602,7 +602,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
@@ -639,12 +639,12 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.599Z",
+      "fetchedAt": "2026-01-16T06:17:23.730Z",
       "source": "local"
     },
     {
       "id": "igrant-open-bank-account-demo",
-      "name": "Open Bank Account Demo",
+      "name": "Open Bank Account",
       "description": "Experience opening a new bank account using your EUDI wallet.",
       "website": "https://www.igrant.io/demo/open-bank-account.html",
       "readiness": "technical-demo",
@@ -684,7 +684,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.600Z",
+      "fetchedAt": "2026-01-16T06:17:23.731Z",
       "source": "local"
     },
     {
@@ -724,7 +724,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.600Z",
+      "fetchedAt": "2026-01-16T06:17:23.731Z",
       "source": "local"
     },
     {
@@ -768,7 +768,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-16T06:15:57.601Z",
+      "fetchedAt": "2026-01-16T06:17:23.732Z",
       "source": "local"
     }
   ],
@@ -804,7 +804,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-16T06:15:57.601Z",
+  "lastUpdated": "2026-01-16T06:17:23.732Z",
   "stats": {
     "totalRPs": 18,
     "totalProviders": 7,
