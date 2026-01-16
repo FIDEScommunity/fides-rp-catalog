@@ -1,0 +1,33 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "Google",
+    "website": "https://www.google.com",
+    "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "google-digital-credentials-demo",
+      "name": "Digital Credentials Demo",
+      "description": "Get started with the Digital Credential API - Request verified identity documents such as Mobile Driving Licenses or National ID cards",
+      "website": "https://digital-credentials.dev/",
+      "readiness": "technical-demo",
+      "country": "US",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": ["identity-verification"],
+      "acceptedCredentials": ["mDL", "National ID cards"],
+      "credentialFormats": ["mDL/mDoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "supportedWallets": [
+        {
+          "name": "Google Wallet",
+          "walletCatalogId": "google-wallet"
+        }
+      ],
+      "documentation": "https://digital-credentials.dev/",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2025-01-16T00:00:00+01:00"
+}
