@@ -45,8 +45,8 @@
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.682Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.585Z",
       "source": "local"
     },
     {
@@ -89,8 +89,8 @@
         "name": "European Wallet Consortium",
         "website": "https://www.eudiwalletconsortium.org/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.684Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.586Z",
       "source": "local"
     },
     {
@@ -138,11 +138,10 @@
       ],
       "provider": {
         "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.684Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -190,11 +189,10 @@
       ],
       "provider": {
         "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.684Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -239,11 +237,10 @@
       ],
       "provider": {
         "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.684Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -293,11 +290,10 @@
       ],
       "provider": {
         "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.684Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -346,16 +342,15 @@
       ],
       "provider": {
         "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.684Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
       "id": "google-digital-credentials-demo",
-      "name": "DC API",
+      "name": "Digital Credentials Demo",
       "description": "Get started with the Digital Credential API - Request verified identity documents such as Mobile Driving Licenses or National ID cards",
       "website": "https://digital-credentials.dev/",
       "readiness": "technical-demo",
@@ -392,8 +387,8 @@
         "website": "https://www.google.com",
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -429,8 +424,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -465,8 +460,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -502,8 +497,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -538,8 +533,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -576,8 +571,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -612,8 +607,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -649,8 +644,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -686,8 +681,8 @@
         "name": "ID-Wallets (Impact ID Wallets Pilot)",
         "website": "https://id-wallets.nl/demos/"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.685Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.587Z",
       "source": "local"
     },
     {
@@ -731,8 +726,8 @@
         "website": "https://www.igrant.io/",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.686Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.588Z",
       "source": "local"
     },
     {
@@ -771,8 +766,8 @@
         "name": "MOSIP",
         "website": "https://www.mosip.io"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.686Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.588Z",
       "source": "local"
     },
     {
@@ -815,8 +810,8 @@
         "name": "Stelau Software",
         "website": "https://www.stelau.com"
       },
-      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-16T11:32:35.686Z",
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
+      "fetchedAt": "2026-01-16T09:14:42.589Z",
       "source": "local"
     }
   ],
@@ -832,7 +827,6 @@
     },
     {
       "name": "FIDES Labs",
-      "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
       "website": "https://fides.community"
     },
     {
@@ -858,7 +852,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-16T11:32:35.687Z",
+  "lastUpdated": "2026-01-16T09:14:42.589Z",
   "stats": {
     "totalRPs": 19,
     "totalProviders": 8,
