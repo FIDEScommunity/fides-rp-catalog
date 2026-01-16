@@ -1,0 +1,33 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "Government of British Columbia",
+    "website": "https://www.gov.bc.ca/",
+    "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "bc-digital-trust-showcase",
+      "name": "BC Wallet Showcase",
+      "description": "Provincial showcase demonstrating digital trust and identity solutions for British Columbia residents and businesses. Features various digital credential implementations and verification services.",
+      "website": "https://digital.gov.bc.ca/digital-trust/showcase/",
+      "readiness": "use-case-demo",
+      "country": "CA",
+      "status": "live",
+      "sectors": ["government", "education"],
+      "useCases": ["identity-verification", "business-licensing", "service-access"],
+      "acceptedCredentials": ["Student Card"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VP"],
+      "supportedWallets": [
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        }
+      ],
+      "documentation": "https://digital.gov.bc.ca/digital-trust/",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2025-01-16T00:00:00+01:00"
+}

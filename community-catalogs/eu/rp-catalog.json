@@ -32,6 +32,74 @@
         ],
         "documentation": "https://github.com/eu-digital-identity-wallet/av-verifier-frontend-cinema",
         "languages": ["en"]
+      },
+      {
+        "id": "eudi-reference-verifier",
+        "name": "EUDI Reference Verifier",
+        "description": "Reference verifier/relying party backend implementing OpenID4VP (1.0). Acts as a trusted verifier endpoint and provides APIs for initializing transactions and receiving wallet responses. Intended as a development/reference tool, not a production-ready verifier service.",
+        "website": "https://verifier.eudiw.dev/home",
+        "readiness": "technical-demo",
+        "country": "EU",
+        "status": "live",
+        "sectors": ["government"],
+        "useCases": ["identity-verification", "credential-validation"],
+        "acceptedCredentials": ["Person Identification Data (PID)", "Mobile Driving Licence (MDL)", "Photo ID", "European Health Insurance Card (EHIC)", "European Health Insurance Card", "Portable Document A1 (PDA1)", "Learning Credential"],
+        "credentialFormats": ["mDL/mDoc", "SD-JWT-VC"],
+        "presentationProtocols": ["OpenID4VP"],
+        "interoperabilityProfiles": ["EUDI Wallet ARF"],
+        "supportedWallets": [
+          {
+            "name": "EUDI Wallet Reference Implementation",
+            "walletCatalogId": "eudi-reference-personal-wallet"
+          },
+          {
+            "name": "EUDI Age Verification App (Reference)",
+            "walletCatalogId": "eudi-age-verification-wallet"
+          }
+        ],
+        "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+        "languages": ["en"]
+      },
+      {
+        "id": "eudi-test-relying-party",
+        "name": "EUDI Test Relying Party",
+        "description": "Comprehensive test relying party for EUDI wallet ecosystem. Supports a wide range of credential types in both mDoc and SD-JWT-VC formats for testing various use cases including identity, health, finance, and mobility.",
+        "website": "https://tester.relyingparty.eudiw.dev/",
+        "readiness": "technical-demo",
+        "country": "EU",
+        "status": "live",
+        "sectors": ["government"],
+        "useCases": ["identity-verification", "health-services", "financial-services", "mobility", "education"],
+        "acceptedCredentials": [
+          "Certificate of Residence",
+          "European Health Insurance Card (EHIC)",
+          "Health ID",
+          "IBAN",
+          "Mobile Driving Licence (mDL)",
+          "MSISDN",
+          "Portable Document A1 (PDA1)",
+          "Photo ID",
+          "Person Identification Data (PID)",
+          "Power Of Representation",
+          "Age Over 18 Pseudonym",
+          "Tax Number",
+          "Reservation"
+        ],
+        "credentialFormats": ["mDL/mDoc", "SD-JWT-VC"],
+        "presentationProtocols": ["OpenID4VP"],
+        "interoperabilityProfiles": ["EUDI Wallet ARF"],
+        "supportedWallets": [
+          {
+            "name": "EUDI Wallet Reference Implementation",
+            "walletCatalogId": "eudi-reference-personal-wallet"
+          },
+          {
+            "name": "EUDI Age Verification App (Reference)",
+            "walletCatalogId": "eudi-age-verification-wallet"
+          }
+        ],
+        "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
+        "languages": ["en"]
       }
     ],
     "lastUpdated": "2025-01-16T00:00:00+01:00"

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "OpenWallet Foundation",
+    "website": "https://openwallet.foundation/",
+    "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "multipaz-verifier",
+      "name": "Multipaz Verifier",
+      "description": "Multipaz verifier for requesting digital documents such as Mobile Driving License (mDL) and EU PID using W3C Digital Credentials API and OpenID4VP protocols. Part of the OpenWallet Foundation's experimental software ecosystem.",
+      "website": "https://verifier.multipaz.org/",
+      "readiness": "technical-demo",
+      "country": "US",
+      "status": "live",
+      "sectors": ["other", "entertainment"],
+      "useCases": ["identity-verification", "transportation", "age-verification", "entertainment", "loyalty-programs"],
+      "acceptedCredentials": ["Driving License", "EU Personal ID", "German Personal ID", "Photo ID", "EU Certificate of Residency", "Utopia Naturalization Certificate", "Movie Ticket", "Google Wallet ID pass", "Age Verification Credential", "Loyalty"],
+      "credentialFormats": ["mDL/mDoc", "SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VP", "ISO 18013-5"],
+      "supportedWallets": [
+        "Multipaz Test App"
+      ],
+      "documentation": "https://github.com/openwallet-foundation-labs/multipaz",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2025-01-16T00:00:00+01:00"
+}
