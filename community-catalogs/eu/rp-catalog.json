@@ -1,0 +1,38 @@
+{
+    "$schema": "https://fides.community/schemas/rp-catalog/v1",
+    "provider": {
+      "name": "European Commission",
+      "website": "https://github.com/eu-digital-identity-wallet",
+      "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
+    },
+    "relyingParties": [
+      {
+        "id": "eudi-cinema-age-verification",
+        "name": "Starfilm Cinema Age Verification Demo",
+        "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
+        "website": "https://cinema.ageverification.dev/",
+        "readiness": "use-case-demo",
+        "country": "EU",
+        "status": "live",
+        "sectors": ["entertainment"],
+        "useCases": ["age-verification"],
+        "acceptedCredentials": ["Proof of Age"],
+        "credentialFormats": ["mDL/mDoc"],
+        "presentationProtocols": ["OpenID4VP"],
+        "interoperabilityProfiles": ["EUDI Wallet ARF"],
+        "supportedWallets": [
+          {
+            "name": "EUDI Age Verification App (Reference)",
+            "walletCatalogId": "eudi-age-verification-wallet"
+          },
+          {
+            "name": "EUDI Wallet Reference Implementation",
+            "walletCatalogId": "eudi-reference-personal-wallet"
+          }
+        ],
+        "documentation": "https://github.com/eu-digital-identity-wallet/av-verifier-frontend-cinema",
+        "languages": ["en"]
+      }
+    ],
+    "lastUpdated": "2025-01-16T00:00:00+01:00"
+  }

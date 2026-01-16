@@ -1,0 +1,34 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "iGrant.io",
+    "website": "https://www.igrant.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "igrant-open-bank-account-demo",
+      "name": "Open Bank Account Demo",
+      "description": "Experience opening a new bank account using your EUDI wallet.",
+      "website": "https://www.igrant.io/demo/open-bank-account.html",
+      "readiness": "technical-demo",
+      "country": "SE",
+      "status": "live",
+      "sectors": ["finance"],
+      "useCases": ["account-opening"],
+      "acceptedCredentials": ["PID"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2025-01-16T00:00:00+01:00"
+}
