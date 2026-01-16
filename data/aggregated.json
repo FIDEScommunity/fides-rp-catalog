@@ -1,6 +1,51 @@
 {
   "relyingParties": [
     {
+      "id": "bc-digital-trust-showcase",
+      "name": "BC Wallet Showcase",
+      "description": "Provincial showcase demonstrating digital trust and identity solutions for British Columbia residents and businesses. Features various digital credential implementations and verification services.",
+      "website": "https://digital.gov.bc.ca/digital-trust/showcase/",
+      "readiness": "use-case-demo",
+      "country": "CA",
+      "status": "live",
+      "sectors": [
+        "government",
+        "education"
+      ],
+      "useCases": [
+        "identity-verification",
+        "business-licensing",
+        "service-access"
+      ],
+      "acceptedCredentials": [
+        "Student Card"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        }
+      ],
+      "documentation": "https://digital.gov.bc.ca/digital-trust/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "Government of British Columbia",
+        "website": "https://www.gov.bc.ca/",
+        "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
+      "fetchedAt": "2026-01-16T15:42:39.784Z",
+      "source": "local"
+    },
+    {
       "id": "eudi-cinema-age-verification",
       "name": "Starfilm Cinema Age Verification",
       "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
@@ -46,7 +91,130 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.848Z",
+      "fetchedAt": "2026-01-16T15:42:39.785Z",
+      "source": "local"
+    },
+    {
+      "id": "eudi-reference-verifier",
+      "name": "EUDI Reference Verifier",
+      "description": "Reference verifier/relying party backend implementing OpenID4VP (1.0). Acts as a trusted verifier endpoint and provides APIs for initializing transactions and receiving wallet responses. Intended as a development/reference tool, not a production-ready verifier service.",
+      "website": "https://verifier.eudiw.dev/home",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "credential-validation"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Mobile Driving Licence (MDL)",
+        "Photo ID",
+        "European Health Insurance Card (EHIC)",
+        "European Health Insurance Card",
+        "Portable Document A1 (PDA1)",
+        "Learning Credential"
+      ],
+      "credentialFormats": [
+        "mDL/mDoc",
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        }
+      ],
+      "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-01-16T15:42:39.785Z",
+      "source": "local"
+    },
+    {
+      "id": "eudi-test-relying-party",
+      "name": "EUDI Test Relying Party",
+      "description": "Comprehensive test relying party for EUDI wallet ecosystem. Supports a wide range of credential types in both mDoc and SD-JWT-VC formats for testing various use cases including identity, health, finance, and mobility.",
+      "website": "https://tester.relyingparty.eudiw.dev/",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "health-services",
+        "financial-services",
+        "mobility",
+        "education"
+      ],
+      "acceptedCredentials": [
+        "Certificate of Residence",
+        "European Health Insurance Card (EHIC)",
+        "Health ID",
+        "IBAN",
+        "Mobile Driving Licence (mDL)",
+        "MSISDN",
+        "Portable Document A1 (PDA1)",
+        "Photo ID",
+        "Person Identification Data (PID)",
+        "Power Of Representation",
+        "Age Over 18 Pseudonym",
+        "Tax Number",
+        "Reservation"
+      ],
+      "credentialFormats": [
+        "mDL/mDoc",
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        }
+      ],
+      "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "European Commission",
+        "website": "https://github.com/eu-digital-identity-wallet",
+        "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-01-16T15:42:39.785Z",
       "source": "local"
     },
     {
@@ -90,7 +258,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.853Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -142,7 +310,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.853Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -194,7 +362,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.853Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -243,7 +411,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.853Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -297,7 +465,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.853Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -350,7 +518,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.853Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -393,7 +561,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.786Z",
       "source": "local"
     },
     {
@@ -430,7 +598,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -466,7 +634,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -503,7 +671,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -539,7 +707,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -576,7 +744,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -612,7 +780,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -648,7 +816,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -684,7 +852,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.854Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -729,7 +897,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.855Z",
+      "fetchedAt": "2026-01-16T15:42:39.787Z",
       "source": "local"
     },
     {
@@ -768,7 +936,62 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.855Z",
+      "fetchedAt": "2026-01-16T15:42:39.788Z",
+      "source": "local"
+    },
+    {
+      "id": "multipaz-verifier",
+      "name": "Multipaz Verifier",
+      "description": "Multipaz verifier for requesting digital documents such as Mobile Driving License (mDL) and EU PID using W3C Digital Credentials API and OpenID4VP protocols. Part of the OpenWallet Foundation's experimental software ecosystem.",
+      "website": "https://verifier.multipaz.org/",
+      "readiness": "technical-demo",
+      "country": "US",
+      "status": "live",
+      "sectors": [
+        "other",
+        "entertainment"
+      ],
+      "useCases": [
+        "identity-verification",
+        "transportation",
+        "age-verification",
+        "entertainment",
+        "loyalty-programs"
+      ],
+      "acceptedCredentials": [
+        "Driving License",
+        "EU Personal ID",
+        "German Personal ID",
+        "Photo ID",
+        "EU Certificate of Residency",
+        "Utopia Naturalization Certificate",
+        "Movie Ticket",
+        "Google Wallet ID pass",
+        "Age Verification Credential",
+        "Loyalty"
+      ],
+      "credentialFormats": [
+        "mDL/mDoc",
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        "Multipaz Test App"
+      ],
+      "documentation": "https://github.com/openwallet-foundation-labs/multipaz",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "OpenWallet Foundation",
+        "website": "https://openwallet.foundation/",
+        "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
+      "fetchedAt": "2026-01-16T15:42:39.788Z",
       "source": "local"
     },
     {
@@ -811,11 +1034,16 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-16T12:05:50.855Z",
+      "fetchedAt": "2026-01-16T15:42:39.788Z",
       "source": "local"
     }
   ],
   "providers": [
+    {
+      "name": "Government of British Columbia",
+      "website": "https://www.gov.bc.ca/",
+      "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
+    },
     {
       "name": "European Commission",
       "website": "https://github.com/eu-digital-identity-wallet",
@@ -849,31 +1077,37 @@
       "website": "https://www.mosip.io"
     },
     {
+      "name": "OpenWallet Foundation",
+      "website": "https://openwallet.foundation/",
+      "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
+    },
+    {
       "name": "Stelau Software",
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-16T12:05:50.856Z",
+  "lastUpdated": "2026-01-16T15:42:39.789Z",
   "stats": {
-    "totalRPs": 19,
-    "totalProviders": 8,
+    "totalRPs": 23,
+    "totalProviders": 10,
     "byReadiness": {
-      "technical-demo": 5,
-      "use-case-demo": 14,
+      "technical-demo": 8,
+      "use-case-demo": 15,
       "production-pilot": 0,
       "production": 0
     },
     "bySector": {
-      "entertainment": 2,
-      "government": 15,
+      "government": 18,
+      "education": 1,
+      "entertainment": 3,
       "finance": 2,
-      "other": 2,
+      "other": 3,
       "travel": 1,
       "hospitality": 1
     },
     "byCredentialFormat": {
-      "mDL/mDoc": 3,
-      "SD-JWT-VC": 7,
+      "SD-JWT-VC": 11,
+      "mDL/mDoc": 6,
       "JWT-VC": 1
     }
   }
