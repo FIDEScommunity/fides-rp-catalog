@@ -46,7 +46,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.585Z",
+      "fetchedAt": "2026-01-16T12:05:50.848Z",
       "source": "local"
     },
     {
@@ -90,7 +90,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.586Z",
+      "fetchedAt": "2026-01-16T12:05:50.853Z",
       "source": "local"
     },
     {
@@ -138,10 +138,11 @@
       ],
       "provider": {
         "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.853Z",
       "source": "local"
     },
     {
@@ -189,10 +190,11 @@
       ],
       "provider": {
         "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.853Z",
       "source": "local"
     },
     {
@@ -237,10 +239,11 @@
       ],
       "provider": {
         "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.853Z",
       "source": "local"
     },
     {
@@ -290,10 +293,11 @@
       ],
       "provider": {
         "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.853Z",
       "source": "local"
     },
     {
@@ -305,7 +309,7 @@
       "country": "NL",
       "status": "live",
       "sectors": [
-        "other"
+        "government"
       ],
       "useCases": [
         "Login",
@@ -342,15 +346,16 @@
       ],
       "provider": {
         "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.853Z",
       "source": "local"
     },
     {
       "id": "google-digital-credentials-demo",
-      "name": "Digital Credentials Demo",
+      "name": "DC API",
       "description": "Get started with the Digital Credential API - Request verified identity documents such as Mobile Driving Licenses or National ID cards",
       "website": "https://digital-credentials.dev/",
       "readiness": "technical-demo",
@@ -388,7 +393,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -425,7 +430,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -461,7 +466,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -498,7 +503,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -534,7 +539,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -547,8 +552,7 @@
       "status": "live",
       "sectors": [
         "entertainment",
-        "hospitality",
-        "other"
+        "hospitality"
       ],
       "useCases": [
         "Cultural pass",
@@ -572,7 +576,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -608,7 +612,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -620,8 +624,7 @@
       "country": "NL",
       "status": "live",
       "sectors": [
-        "government",
-        "other"
+        "government"
       ],
       "useCases": [
         "Representation and mandate",
@@ -645,7 +648,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -657,8 +660,7 @@
       "country": "NL",
       "status": "live",
       "sectors": [
-        "government",
-        "other"
+        "government"
       ],
       "useCases": [
         "Voluntary mandate",
@@ -682,7 +684,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.587Z",
+      "fetchedAt": "2026-01-16T12:05:50.854Z",
       "source": "local"
     },
     {
@@ -727,7 +729,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.588Z",
+      "fetchedAt": "2026-01-16T12:05:50.855Z",
       "source": "local"
     },
     {
@@ -739,8 +741,7 @@
       "country": "IN",
       "status": "beta",
       "sectors": [
-        "government",
-        "other"
+        "government"
       ],
       "useCases": [
         "Identity verification",
@@ -767,7 +768,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.588Z",
+      "fetchedAt": "2026-01-16T12:05:50.855Z",
       "source": "local"
     },
     {
@@ -779,8 +780,7 @@
       "country": "FR",
       "status": "live",
       "sectors": [
-        "government",
-        "travel"
+        "government"
       ],
       "useCases": [
         "Mobile Driving License verification",
@@ -811,7 +811,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-16T09:14:42.589Z",
+      "fetchedAt": "2026-01-16T12:05:50.855Z",
       "source": "local"
     }
   ],
@@ -827,6 +827,7 @@
     },
     {
       "name": "FIDES Labs",
+      "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
       "website": "https://fides.community"
     },
     {
@@ -852,7 +853,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-16T09:14:42.589Z",
+  "lastUpdated": "2026-01-16T12:05:50.856Z",
   "stats": {
     "totalRPs": 19,
     "totalProviders": 8,
@@ -864,10 +865,10 @@
     },
     "bySector": {
       "entertainment": 2,
-      "government": 14,
+      "government": 15,
       "finance": 2,
-      "other": 7,
-      "travel": 2,
+      "other": 2,
+      "travel": 1,
       "hospitality": 1
     },
     "byCredentialFormat": {
