@@ -58,9 +58,9 @@ Quick reference for providers to see which fields accept fixed values (enums) vs
 
 | Field | Type | Valid Values |
 |-------|------|--------------|
-| `credentialFormats` | 🔒 | `SD-JWT-VC`, `JWT-VC`, `JSON-LD VC`, `AnonCreds`, `mDL/mDoc`, `X.509` |
-| `presentationProtocols` | 📝 | Common: `OpenID4VP`, `ISO 18013-5`, `Yivi / IRMA disclosure via QR` |
-| `interoperabilityProfiles` | 🔒 | `DIIP v4`, `EWC v3` |
+| `credentialFormats` | 🔒 | `SD-JWT-VC`, `JWT-VC`, `JSON-LD VC`, `AnonCreds`, `Idemix`, `mDL/mDoc`, `X.509` |
+| `presentationProtocols` | 📝 | Common: `OpenID4VP`, `ISO 18013-5`, `IRMA Protocol` |
+| `interoperabilityProfiles` | 🔒 | `DIIP v4`, `EWC v3`, `HAIP v1`, `EUDI Wallet ARF` |
 
 ---
 

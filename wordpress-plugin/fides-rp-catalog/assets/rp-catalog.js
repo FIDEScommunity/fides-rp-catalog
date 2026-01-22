@@ -26,7 +26,7 @@
   };
   
   // Wallet catalog base URL for deep links (configurable via WordPress settings)
-  const WALLET_CATALOG_URL = (window.fidesRPCatalog && window.fidesRPCatalog.walletCatalogUrl)
+  const WALLET_CATALOG_URL = (window.fidesRPCatalog && window.fidesRPCatalog.walletCatalogUrl) 
     || 'https://wallets.fides.community';
 
   // Blue Pages base URL for DID lookups (configurable via WordPress settings)

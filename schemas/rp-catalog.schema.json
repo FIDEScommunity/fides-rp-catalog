@@ -158,6 +158,7 @@
               "JWT-VC",
               "JSON-LD VC",
               "AnonCreds",
+              "Idemix",
               "mDL/mDoc",
               "X.509"
             ]

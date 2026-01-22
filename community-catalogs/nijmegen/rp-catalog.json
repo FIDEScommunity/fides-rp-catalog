@@ -1,0 +1,33 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "Gemeente Nijmegen",
+    "website": "https://www.nijmegen.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "nijmegen-mijn-nijmegen-login",
+      "name": "Mijn Nijmegen - Yivi Login",
+      "description": "Login to Mijn Nijmegen using Yivi to securely share your personal attributes. One of the first production implementations of attribute-based authentication in Dutch municipal services.",
+      "website": "https://mijn.nijmegen.nl/login",
+      "readiness": "production",
+      "country": "NL",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": ["login", "identity-verification"],
+      "acceptedCredentials": ["Persoonsgegevens (Personal Data)", "Email Address", "Mobile Number"],
+      "credentialFormats": ["Idemix"],
+      "presentationProtocols": ["IRMA Protocol"],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "documentation": "https://privacybydesign.foundation/issuance/",
+      "languages": ["nl"]
+    }
+  ],
+  "lastUpdated": "2026-01-22T00:00:00+01:00"
+}

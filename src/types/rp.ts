@@ -32,11 +32,12 @@ export type CredentialFormat =
   | 'JWT-VC'
   | 'JSON-LD VC'
   | 'AnonCreds'
+  | 'Idemix'
   | 'mDL/mDoc'
   | 'X.509';
 
 // Interoperability profiles
-export type InteropProfile = 'DIIP v4' | 'EWC v3';
+export type InteropProfile = 'DIIP v4' | 'EWC v3' | 'HAIP v1' | 'EUDI Wallet ARF';
 
 // Supported wallet reference (string or object with deep link)
 export type SupportedWallet = string | {
