@@ -210,7 +210,11 @@
       if (a.isFeatured && !b.isFeatured) return -1;
       if (!a.isFeatured && b.isFeatured) return 1;
       
-      // Within same group, sort alphabetically by name
+      // Within same group (featured or regular), sort by provider name first
+      const providerCompare = a.provider.name.localeCompare(b.provider.name);
+      if (providerCompare !== 0) return providerCompare;
+      
+      // Within same provider, sort by RP name
       return a.name.localeCompare(b.name);
     });
 
@@ -432,7 +436,7 @@
     // Results count
     html += `
       <div class="fides-results-bar">
-        <span class="fides-results-count">${filtered.length} relying part${filtered.length !== 1 ? 'ies' : 'y'} found</span>
+        <span class="fides-results-count">${filtered.length} relying party website${filtered.length !== 1 ? 's' : ''} found</span>
       </div>
     `;
 
