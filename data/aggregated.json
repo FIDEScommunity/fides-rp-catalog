@@ -42,7 +42,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.931Z",
+      "fetchedAt": "2026-01-24T06:14:00.849Z",
       "source": "local",
       "isFeatured": false
     },
@@ -92,7 +92,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.936Z",
+      "fetchedAt": "2026-01-24T06:14:00.854Z",
       "source": "local",
       "isFeatured": false
     },
@@ -150,7 +150,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.936Z",
+      "fetchedAt": "2026-01-24T06:14:00.855Z",
       "source": "local",
       "isFeatured": false
     },
@@ -217,7 +217,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.936Z",
+      "fetchedAt": "2026-01-24T06:14:00.855Z",
       "source": "local",
       "isFeatured": false
     },
@@ -262,7 +262,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.937Z",
+      "fetchedAt": "2026-01-24T06:14:00.855Z",
       "source": "local",
       "isFeatured": false
     },
@@ -315,7 +315,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.937Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -368,7 +368,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.937Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -418,7 +418,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.937Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -473,7 +473,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.937Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -527,7 +527,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.937Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -571,7 +571,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -609,7 +609,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -646,7 +646,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -684,7 +684,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.856Z",
       "source": "local",
       "isFeatured": false
     },
@@ -721,7 +721,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.857Z",
       "source": "local",
       "isFeatured": false
     },
@@ -759,7 +759,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.857Z",
       "source": "local",
       "isFeatured": false
     },
@@ -796,7 +796,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.857Z",
       "source": "local",
       "isFeatured": false
     },
@@ -833,7 +833,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.857Z",
       "source": "local",
       "isFeatured": false
     },
@@ -870,7 +870,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.938Z",
+      "fetchedAt": "2026-01-24T06:14:00.857Z",
       "source": "local",
       "isFeatured": false
     },
@@ -916,7 +916,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.857Z",
       "source": "local",
       "isFeatured": false
     },
@@ -964,7 +964,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1012,7 +1012,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1060,7 +1060,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1109,7 +1109,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1158,7 +1158,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1207,7 +1207,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.939Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1247,7 +1247,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.940Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1293,7 +1293,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.940Z",
+      "fetchedAt": "2026-01-24T06:14:00.858Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1349,7 +1349,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.940Z",
+      "fetchedAt": "2026-01-24T06:14:00.859Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1393,7 +1393,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-23T06:15:59.941Z",
+      "fetchedAt": "2026-01-24T06:14:00.859Z",
       "source": "local",
       "isFeatured": false
     }
@@ -1456,7 +1456,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-23T06:15:59.941Z",
+  "lastUpdated": "2026-01-24T06:14:00.860Z",
   "stats": {
     "totalRPs": 30,
     "totalProviders": 12,
