@@ -1,0 +1,130 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "EUDIPLO",
+    "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+    "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "eudiplo-vineyard-select",
+      "name": "Vineyard Select",
+      "description": "Age verification for online alcohol purchases. Customer proves they're 18+ without revealing exact birthdate using selective disclosure.",
+      "website": "https://playground.eudi-wallet.org/alcohol-shop/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["retail"],
+      "useCases": ["age-verification"],
+      "acceptedCredentials": ["Age Over 18", "Person Identification Data (PID)"],
+      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": ["en"]
+    },
+    {
+      "id": "eudiplo-nordic-digital-bank",
+      "name": "Nordic Digital Bank",
+      "description": "Complete KYC identity verification for account opening. Full PID request with name, address, and national ID for comprehensive customer due diligence.",
+      "website": "https://playground.eudi-wallet.org/bank-onboarding/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["finance"],
+      "useCases": ["account-opening", "identity-verification", "kyc"],
+      "acceptedCredentials": ["Person Identification Data (PID)"],
+      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": ["en"]
+    },
+    {
+      "id": "eudiplo-techmarkt-sim-activation",
+      "name": "TechMarkt SIM-Activation",
+      "description": "Identity verification for prepaid SIM card activation per German telecommunications law (TKG §172). Replaces traditional video-ident with wallet-based verification.",
+      "website": "https://playground.eudi-wallet.org/sim-activation/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["telecom"],
+      "useCases": ["identity-verification", "sim-activation"],
+      "acceptedCredentials": ["Person Identification Data (PID)"],
+      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": ["en"]
+    },
+    {
+      "id": "eudiplo-berlin-history-museum",
+      "name": "Berlin History Museum",
+      "description": "Resident discount verification. Prove Berlin residency to receive 50% off museum admission without revealing other personal data using minimal disclosure.",
+      "website": "https://playground.eudi-wallet.org/museum-discount/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["entertainment"],
+      "useCases": ["residency-verification", "discount-eligibility"],
+      "acceptedCredentials": ["Person Identification Data (PID)", "Certificate of Residence"],
+      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": ["en"]
+    },
+    {
+      "id": "eudiplo-swiftbox-parcel-locker",
+      "name": "SwiftBox Parcel Locker",
+      "description": "Minimal disclosure for parcel pickup. Only verify your name matches the recipient – no birthdate, address, or ID required. Demonstrates privacy-preserving identity verification.",
+      "website": "https://playground.eudi-wallet.org/parcel-pickup/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["retail"],
+      "useCases": ["identity-verification", "parcel-pickup"],
+      "acceptedCredentials": ["Person Identification Data (PID)"],
+      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2026-01-22T16:00:00Z"
+}

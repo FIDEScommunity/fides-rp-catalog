@@ -42,7 +42,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.217Z",
+      "fetchedAt": "2026-01-26T07:57:15.062Z",
       "source": "local",
       "isFeatured": false
     },
@@ -92,7 +92,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.220Z",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
       "source": "local",
       "isFeatured": false
     },
@@ -150,7 +150,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.220Z",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
       "source": "local",
       "isFeatured": false
     },
@@ -217,7 +217,253 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.220Z",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "eudiplo-vineyard-select",
+      "name": "Vineyard Select",
+      "description": "Age verification for online alcohol purchases. Customer proves they're 18+ without revealing exact birthdate using selective disclosure.",
+      "website": "https://playground.eudi-wallet.org/alcohol-shop/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "retail"
+      ],
+      "useCases": [
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Age Over 18",
+        "Person Identification Data (PID)"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "EUDIPLO",
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "eudiplo-nordic-digital-bank",
+      "name": "Nordic Digital Bank",
+      "description": "Complete KYC identity verification for account opening. Full PID request with name, address, and national ID for comprehensive customer due diligence.",
+      "website": "https://playground.eudi-wallet.org/bank-onboarding/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "finance"
+      ],
+      "useCases": [
+        "account-opening",
+        "identity-verification",
+        "kyc"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "EUDIPLO",
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "eudiplo-techmarkt-sim-activation",
+      "name": "TechMarkt SIM-Activation",
+      "description": "Identity verification for prepaid SIM card activation per German telecommunications law (TKG §172). Replaces traditional video-ident with wallet-based verification.",
+      "website": "https://playground.eudi-wallet.org/sim-activation/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "telecom"
+      ],
+      "useCases": [
+        "identity-verification",
+        "sim-activation"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "EUDIPLO",
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "eudiplo-berlin-history-museum",
+      "name": "Berlin History Museum",
+      "description": "Resident discount verification. Prove Berlin residency to receive 50% off museum admission without revealing other personal data using minimal disclosure.",
+      "website": "https://playground.eudi-wallet.org/museum-discount/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "entertainment"
+      ],
+      "useCases": [
+        "residency-verification",
+        "discount-eligibility"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Certificate of Residence"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "EUDIPLO",
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "eudiplo-swiftbox-parcel-locker",
+      "name": "SwiftBox Parcel Locker",
+      "description": "Minimal disclosure for parcel pickup. Only verify your name matches the recipient – no birthdate, address, or ID required. Demonstrates privacy-preserving identity verification.",
+      "website": "https://playground.eudi-wallet.org/parcel-pickup/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "retail"
+      ],
+      "useCases": [
+        "identity-verification",
+        "parcel-pickup"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "EUDIPLO",
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-01-26T07:57:15.064Z",
       "source": "local",
       "isFeatured": false
     },
@@ -262,7 +508,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.220Z",
+      "fetchedAt": "2026-01-26T07:57:15.065Z",
       "source": "local",
       "isFeatured": false
     },
@@ -315,7 +561,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.065Z",
       "source": "local",
       "isFeatured": false
     },
@@ -368,7 +614,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.065Z",
       "source": "local",
       "isFeatured": false
     },
@@ -418,7 +664,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.065Z",
       "source": "local",
       "isFeatured": false
     },
@@ -473,7 +719,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.065Z",
       "source": "local",
       "isFeatured": false
     },
@@ -527,7 +773,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.065Z",
       "source": "local",
       "isFeatured": false
     },
@@ -571,7 +817,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -609,7 +855,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -646,7 +892,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -684,7 +930,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -721,7 +967,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -759,7 +1005,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -796,7 +1042,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -833,7 +1079,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -870,7 +1116,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.221Z",
+      "fetchedAt": "2026-01-26T07:57:15.066Z",
       "source": "local",
       "isFeatured": false
     },
@@ -916,7 +1162,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -964,7 +1210,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1012,7 +1258,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1060,7 +1306,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1109,7 +1355,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1158,7 +1404,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1207,7 +1453,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.222Z",
+      "fetchedAt": "2026-01-26T07:57:15.067Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1247,7 +1493,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.223Z",
+      "fetchedAt": "2026-01-26T07:57:15.068Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1293,7 +1539,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.223Z",
+      "fetchedAt": "2026-01-26T07:57:15.068Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1349,7 +1595,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.223Z",
+      "fetchedAt": "2026-01-26T07:57:15.068Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1393,7 +1639,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-22T13:48:21.223Z",
+      "fetchedAt": "2026-01-26T07:57:15.069Z",
       "source": "local",
       "isFeatured": false
     }
@@ -1408,6 +1654,11 @@
       "name": "European Commission",
       "website": "https://github.com/eu-digital-identity-wallet",
       "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
+    },
+    {
+      "name": "EUDIPLO",
+      "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
     },
     {
       "name": "European Wallet Consortium",
@@ -1456,29 +1707,30 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-22T13:48:21.224Z",
+  "lastUpdated": "2026-01-26T07:57:15.069Z",
   "stats": {
-    "totalRPs": 30,
-    "totalProviders": 12,
+    "totalRPs": 35,
+    "totalProviders": 13,
     "byReadiness": {
       "technical-demo": 8,
-      "use-case-demo": 21,
+      "use-case-demo": 26,
       "production-pilot": 0,
       "production": 1
     },
     "bySector": {
       "government": 21,
       "education": 1,
-      "entertainment": 3,
-      "finance": 5,
+      "entertainment": 4,
+      "retail": 3,
+      "finance": 6,
+      "telecom": 1,
       "other": 3,
       "travel": 1,
-      "hospitality": 1,
-      "retail": 1
+      "hospitality": 1
     },
     "byCredentialFormat": {
-      "SD-JWT-VC": 17,
-      "mDL/mDoc": 6,
+      "SD-JWT-VC": 22,
+      "mDL/mDoc": 11,
       "JWT-VC": 1,
       "Idemix": 1
     }
