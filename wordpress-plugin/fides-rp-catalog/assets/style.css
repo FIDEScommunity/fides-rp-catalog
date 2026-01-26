@@ -302,16 +302,40 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    max-width: 320px;
     max-height: 100vh;
-    z-index: 999998;
     border-radius: 0;
-    border: none;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    z-index: 999998;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   
-  .fides-sidebar.open {
-    display: block;
+  .fides-sidebar.mobile-open {
+    display: flex;
+    flex-direction: column;
+    animation: fides-modal-fade-in 0.2s ease;
+  }
+  
+  .fides-sidebar.mobile-open .fides-sidebar-header {
+    background: var(--fides-bg-secondary);
+    border-radius: var(--fides-radius) var(--fides-radius) 0 0;
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid var(--fides-border);
+    border-bottom: none;
+  }
+  
+  .fides-sidebar.mobile-open .fides-sidebar-content {
+    background: var(--fides-bg-secondary);
+    border-radius: 0 0 var(--fides-radius) var(--fides-radius);
+    max-width: 320px;
+    width: 100%;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    border: 1px solid var(--fides-border);
+    border-top: none;
   }
   
   .fides-sidebar-close {

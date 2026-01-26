@@ -1112,7 +1112,7 @@
       mobileFilterToggle.addEventListener('click', () => {
         const sidebar = container.querySelector('.fides-sidebar');
         if (sidebar) {
-          sidebar.classList.add('open');
+          sidebar.classList.add('mobile-open');
           document.body.style.overflow = 'hidden';
         }
       });
@@ -1124,7 +1124,18 @@
       sidebarClose.addEventListener('click', () => {
         const sidebar = container.querySelector('.fides-sidebar');
         if (sidebar) {
-          sidebar.classList.remove('open');
+          sidebar.classList.remove('mobile-open');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+
+    // Close sidebar when clicking overlay (mobile)
+    const sidebar = container.querySelector('.fides-sidebar');
+    if (sidebar) {
+      sidebar.addEventListener('click', (e) => {
+        if (e.target === sidebar && sidebar.classList.contains('mobile-open')) {
+          sidebar.classList.remove('mobile-open');
           document.body.style.overflow = '';
         }
       });
