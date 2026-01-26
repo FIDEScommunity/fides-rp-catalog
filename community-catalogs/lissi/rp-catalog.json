@@ -3,13 +3,14 @@
   "provider": {
     "name": "Lissi GmbH",
     "website": "https://lissi.id",
-    "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+    "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
   },
   "relyingParties": [
     {
       "id": "lissi-bank-account-demo",
       "name": "Bank Account Opening",
       "description": "Open a new bank account using your EUDI-wallet. Demonstrates secure identity verification for financial services using digital credentials.",
+      "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG",
       "website": "https://www.lissi.id/demo-select-use-case",
       "readiness": "use-case-demo",
       "country": "DE",
@@ -33,6 +34,7 @@
       "id": "lissi-tax-authority-demo",
       "name": "Tax ID Issuance",
       "description": "Receive a Tax ID using your EUDI-wallet. Demonstrates government service access and credential issuance using digital identity.",
+      "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG",
       "website": "https://www.lissi.id/demo-select-use-case",
       "readiness": "use-case-demo",
       "country": "DE",
@@ -56,6 +58,7 @@
       "id": "lissi-municipality-demo",
       "name": "Residence Certificate",
       "description": "Receive a residence certificate using your EUDI-wallet. Demonstrates municipal service delivery through digital credentials.",
+      "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG",
       "website": "https://www.lissi.id/demo-select-use-case",
       "readiness": "use-case-demo",
       "country": "DE",
@@ -79,6 +82,7 @@
       "id": "lissi-loan-qes-demo",
       "name": "Loan Process (QES)",
       "description": "Review and approve your loan using Qualified Electronic Signature (QES). Demonstrates advanced e-signing capabilities with EUDI wallet for legally binding transactions.",
+      "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG",
       "website": "https://www.lissi.id/demo-select-use-case",
       "readiness": "use-case-demo",
       "country": "DE",
@@ -86,52 +90,6 @@
       "sectors": ["finance"],
       "useCases": ["document-signing", "financial-services"],
       "acceptedCredentials": ["Person Identification Data (PID)", "Qualified Electronic Signature Certificate"],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
-      "supportedWallets": [
-        {
-          "name": "Lissi ID-Wallet",
-          "walletCatalogId": "lissi-wallet"
-        }
-      ],
-      "documentation": "https://docs.lissi.id",
-      "languages": ["en", "de"]
-    },
-    {
-      "id": "lissi-payment-demo",
-      "name": "Online Payment",
-      "description": "Use your EUDI Wallet to shop online securely. Demonstrates payment credential verification for e-commerce transactions.",
-      "website": "https://www.lissi.id/demo-select-use-case",
-      "readiness": "use-case-demo",
-      "country": "DE",
-      "status": "live",
-      "sectors": ["retail"],
-      "useCases": ["payment", "identity-verification"],
-      "acceptedCredentials": ["Person Identification Data (PID)", "Payment Credential"],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
-      "supportedWallets": [
-        {
-          "name": "Lissi ID-Wallet",
-          "walletCatalogId": "lissi-wallet"
-        }
-      ],
-      "documentation": "https://docs.lissi.id",
-      "languages": ["en", "de"]
-    },
-    {
-      "id": "lissi-bank-transfer-demo",
-      "name": "Bank Transfer",
-      "description": "Use your EUDI Wallet to transfer funds to another account securely. Demonstrates authenticated payment authorization using digital credentials.",
-      "website": "https://www.lissi.id/demo-select-use-case",
-      "readiness": "use-case-demo",
-      "country": "DE",
-      "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["payment", "financial-services"],
-      "acceptedCredentials": ["Person Identification Data (PID)", "Bank Account Credential"],
       "credentialFormats": ["SD-JWT-VC"],
       "presentationProtocols": ["OpenID4VP"],
       "interoperabilityProfiles": ["EWC v3"],
