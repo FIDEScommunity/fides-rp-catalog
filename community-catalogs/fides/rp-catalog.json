@@ -40,8 +40,9 @@
       "interoperabilityProfiles": [
         "DIIP v4"
       ],
-      "supportedWallets": [
-        "All DIIP v4 compliant personal wallets"
+      "supportedWallets":  [
+        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
+        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
       ],
       "languages": [
         "en",
@@ -83,8 +84,9 @@
       "interoperabilityProfiles": [
         "DIIP v4"
       ],
-      "supportedWallets": [
-        "All DIIP v4 compliant personal wallets"
+      "supportedWallets":  [
+        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
+        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
       ],
       "languages": [
         "en",
