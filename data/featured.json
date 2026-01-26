@@ -1,5 +1,17 @@
 {
   "$schema": "../schemas/featured.schema.json",
-  "featured": [],
-  "lastUpdated": "2026-01-22T14:00:00Z"
+  "featured": [
+    {
+      "rpId": "eudiplo-nordic-digital-bank"
+    },
+    {
+      "rpId": "eudi-cinema-age-verification"
+    },
+    {
+      "rpId": "circulacity-sandbox"
+    },
+    {
+      "rpId": "mijnoverheid-sandbox"
+    }
+  ]
 }
