@@ -618,20 +618,22 @@
         <div class="fides-rp-body">
           ${rp.description ? `<p class="fides-rp-description">${escapeHtml(rp.description)}</p>` : ''}
           
-          ${rp.sectors && rp.sectors.length > 0 ? `
-            <div class="fides-tags">
-              ${rp.sectors.slice(0, 3).map(s => `
-                <span class="fides-tag sector">${sectorLabels[s] || s}</span>
-              `).join('')}
-              ${rp.sectors.length > 3 ? `<span class="fides-tag sector">+${rp.sectors.length - 3}</span>` : ''}
-            </div>
-          ` : ''}
-
-          ${rp.interoperabilityProfiles && rp.interoperabilityProfiles.length > 0 ? `
-            <div class="fides-tags">
-              ${rp.interoperabilityProfiles.map(p => `
-                <span class="fides-tag interop">${escapeHtml(p)}</span>
-              `).join('')}
+          ${rp.supportedWallets && rp.supportedWallets.length > 0 ? `
+            <div class="fides-rp-section">
+              <h4 class="fides-rp-section-title">Supported Wallets</h4>
+              <div class="fides-tags">
+                ${rp.supportedWallets.slice(0, 3).map(w => {
+                  // Handle both string and object format
+                  const name = typeof w === 'string' ? w : w.name;
+                  const walletId = typeof w === 'object' ? w.walletCatalogId : null;
+                  
+                  if (walletId && window.fidesRPCatalog && window.fidesRPCatalog.walletCatalogUrl) {
+                    return `<a href="${window.fidesRPCatalog.walletCatalogUrl}/?wallet=${escapeHtml(walletId)}" target="_blank" rel="noopener" class="fides-tag wallet-link" onclick="event.stopPropagation();">${icons.externalLink} ${escapeHtml(name)}</a>`;
+                  }
+                  return `<span class="fides-tag">${escapeHtml(name)}</span>`;
+                }).join('')}
+                ${rp.supportedWallets.length > 3 ? `<span class="fides-tag">+${rp.supportedWallets.length - 3}</span>` : ''}
+              </div>
             </div>
           ` : ''}
           
@@ -648,8 +650,8 @@
         <div class="fides-rp-footer">
           <div class="fides-rp-links">
             ${rp.website ? `
-              <a href="${escapeHtml(rp.website)}" target="_blank" rel="noopener" class="fides-rp-link" onclick="event.stopPropagation();">
-                ${icons.externalLink} Visit
+              <a href="${escapeHtml(rp.website)}" target="_blank" rel="noopener" class="fides-rp-visit-button" onclick="event.stopPropagation();">
+                ${icons.externalLink} Visit Website
               </a>
             ` : ''}
           </div>
@@ -702,15 +704,22 @@
           </div>
           
           <div class="fides-modal-body">
-            <!-- Type & Status badges -->
+            <!-- Type & Status badges with action button -->
             <div class="fides-modal-badges">
-              <span class="fides-modal-badge readiness-${rp.readiness}">
-                ${readinessLabels[rp.readiness]}
-              </span>
-              ${rp.status ? `
-                <span class="fides-modal-badge status-${rp.status}">
-                  ${statusLabels[rp.status] || rp.status}
+              <div class="fides-modal-badges-left">
+                <span class="fides-modal-badge readiness-${rp.readiness}">
+                  ${readinessLabels[rp.readiness]}
                 </span>
+                ${rp.status ? `
+                  <span class="fides-modal-badge status-${rp.status}">
+                    ${statusLabels[rp.status] || rp.status}
+                  </span>
+                ` : ''}
+              </div>
+              ${rp.website ? `
+                <a href="${escapeHtml(rp.website)}" target="_blank" rel="noopener" class="fides-modal-visit-button">
+                  ${icons.externalLink} Visit Website
+                </a>
               ` : ''}
             </div>
 
@@ -823,11 +832,6 @@
 
             <!-- Links -->
             <div class="fides-modal-links">
-              ${rp.website ? `
-                <a href="${escapeHtml(rp.website)}" target="_blank" rel="noopener" class="fides-modal-link primary">
-                  ${icons.externalLink} Visit Relying Party Website
-                </a>
-              ` : ''}
               ${rp.documentation ? `
                 <a href="${escapeHtml(rp.documentation)}" target="_blank" rel="noopener" class="fides-modal-link">
                   ${icons.book} Documentation

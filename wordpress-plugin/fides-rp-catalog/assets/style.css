@@ -99,14 +99,28 @@
 /* FIDES Theme - Wallet link styling for light background */
 .fides-rp-catalog[data-theme="fides"] a.fides-tag.wallet-link,
 .fides-rp-catalog[data-theme="light"] a.fides-tag.wallet-link {
-  background: #16a34a;
-  color: white;
-  border-color: #15803d;
+  background: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+  border-color: rgba(22, 163, 74, 0.2);
 }
 
 .fides-rp-catalog[data-theme="fides"] a.fides-tag.wallet-link:hover,
 .fides-rp-catalog[data-theme="light"] a.fides-tag.wallet-link:hover {
-  background: #15803d;
+  background: #16a34a;
+  color: white;
+  border-color: #16a34a;
+}
+
+/* Light/FIDES theme visit button on tiles */
+.fides-rp-catalog[data-theme="fides"] .fides-rp-visit-button,
+.fides-rp-catalog[data-theme="light"] .fides-rp-visit-button {
+  background: #0A6EF3;
+}
+
+.fides-rp-catalog[data-theme="fides"] .fides-rp-visit-button:hover,
+.fides-rp-catalog[data-theme="light"] .fides-rp-visit-button:hover {
+  background: #0858c4;
+  box-shadow: 0 4px 12px rgba(10, 110, 243, 0.3);
 }
 
 /* FIDES Theme - Card shadow for light background */
@@ -981,25 +995,28 @@
 
 /* Wallet link tag - clickable links to wallet catalog */
 a.fides-tag.wallet-link {
-  background: var(--fides-success-dark, #16a34a);
-  color: white;
-  border-color: var(--fides-success-darker, #15803d);
+  background: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+  border-color: rgba(22, 163, 74, 0.2);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 a.fides-tag.wallet-link:hover {
-  background: var(--fides-success-darker, #15803d);
+  background: #16a34a;
+  color: white;
+  border-color: #16a34a;
   transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.3);
 }
 
 a.fides-tag.wallet-link svg {
-  opacity: 0.8;
+  width: 12px;
+  height: 12px;
 }
 
 /* Section */
@@ -1026,6 +1043,32 @@ a.fides-tag.wallet-link svg {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
+}
+
+.fides-rp-visit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: var(--fides-accent, #3b82f6);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.fides-rp-visit-button:hover {
+  background: var(--fides-accent-hover, #60a5fa);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.fides-rp-visit-button svg {
+  width: 14px;
+  height: 14px;
 }
 
 .fides-rp-links {
@@ -1403,8 +1446,43 @@ a.fides-tag.wallet-link svg {
 .fides-modal-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 1.25rem;
+}
+
+.fides-modal-badges-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.fides-modal-visit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--fides-accent, #3b82f6);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.fides-modal-visit-button:hover {
+  background: var(--fides-accent-hover, #60a5fa);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.fides-modal-visit-button svg {
+  width: 16px;
+  height: 16px;
 }
 
 .fides-modal-badge {
@@ -1777,6 +1855,18 @@ a.fides-tag.wallet-link svg {
   color: #0A6EF3;
 }
 
+/* Light/FIDES theme visit button styling */
+.fides-modal-overlay[data-theme="fides"] .fides-modal-visit-button,
+.fides-modal-overlay[data-theme="light"] .fides-modal-visit-button {
+  background: #0A6EF3;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-modal-visit-button:hover,
+.fides-modal-overlay[data-theme="light"] .fides-modal-visit-button:hover {
+  background: #0858c4;
+  box-shadow: 0 4px 12px rgba(10, 110, 243, 0.3);
+}
+
 /* Mobile responsiveness for badges */
 @media (max-width: 1200px) {
   /* Make badges more compact */
@@ -1830,5 +1920,18 @@ a.fides-tag.wallet-link svg {
   
   .fides-rp-provider {
     font-size: 0.8125rem;
+  }
+  
+  /* Modal badges responsive */
+  .fides-modal-badges {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .fides-modal-visit-button {
+    width: 100%;
+    justify-content: center;
+    order: -1; /* Show button first on mobile */
   }
 }
