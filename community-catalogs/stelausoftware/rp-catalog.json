@@ -8,6 +8,7 @@
         "id": "mdoc-web-verifier",
         "name": "mDoc Web Verifier",
         "description": "Browser-based verifier for ISO/IEC 18013-5 mDoc credentials using proximity flows.",
+        "logo": "https://mdoc-web-verifier.stelau.com/assets/icon-512.png",
         "website": "https://mdoc-web-verifier.stelau.com/",
         "readiness": "technical-demo",
         "country": "FR",
