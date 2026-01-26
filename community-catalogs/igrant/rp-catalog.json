@@ -10,6 +10,7 @@
       "id": "igrant-open-bank-account-demo",
       "name": "Open Bank Account",
       "description": "Experience opening a new bank account using your EUDI wallet.",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXLXRsmvLhdlPNK9XnE40rN_yTkfiC-x6-0Q&s",
       "website": "https://www.igrant.io/demo/open-bank-account.html",
       "readiness": "technical-demo",
       "country": "SE",
