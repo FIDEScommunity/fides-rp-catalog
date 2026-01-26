@@ -77,16 +77,20 @@
     sectors: [],
     country: [],
     credentialFormats: [],
-    interoperabilityProfiles: []
+    presentationProtocols: [],
+    interoperabilityProfiles: [],
+    supportedWallets: []
   };
 
   // Track which filter groups are expanded (true = expanded, false = collapsed)
   const filterGroupState = {
     type: true,
-    sectors: true,
+    sectors: false,
+    supportedWallets: true,
     country: false,
-    interoperabilityProfiles: false,
-    credentialFormats: false
+    credentialFormats: false,
+    presentationProtocols: false,
+    interoperabilityProfiles: false
   };
 
   // Chevron icon for collapsible filters
@@ -197,9 +201,37 @@
         if (!hasMatch) return false;
       }
 
+      // Presentation protocols
+      if (filters.presentationProtocols.length > 0) {
+        const hasMatch = filters.presentationProtocols.some(filterProtocol => {
+          if (filterProtocol === '...other') {
+            // Match any protocol that is NOT OpenID4VP or ISO 18013-5
+            return (rp.presentationProtocols || []).some(p => 
+              p !== 'OpenID4VP' && p !== 'ISO 18013-5'
+            );
+          } else {
+            // Exact match for OpenID4VP or ISO 18013-5
+            return (rp.presentationProtocols || []).includes(filterProtocol);
+          }
+        });
+        if (!hasMatch) return false;
+      }
+
       // Interoperability profiles
       if (filters.interoperabilityProfiles.length > 0) {
         const hasMatch = filters.interoperabilityProfiles.some(p => (rp.interoperabilityProfiles || []).includes(p));
+        if (!hasMatch) return false;
+      }
+
+      // Supported wallets
+      if (filters.supportedWallets.length > 0) {
+        const hasMatch = filters.supportedWallets.some(walletId => {
+          return (rp.supportedWallets || []).some(w => {
+            // Handle both string and object format
+            const wId = typeof w === 'object' ? w.walletCatalogId : null;
+            return wId === walletId;
+          });
+        });
         if (!hasMatch) return false;
       }
 
@@ -232,7 +264,9 @@
     if (!settings.sector) count += filters.sectors.length;
     count += filters.country.length;
     count += filters.credentialFormats.length;
+    count += filters.presentationProtocols.length;
     count += filters.interoperabilityProfiles.length;
+    count += filters.supportedWallets.length;
     return count;
   }
 
@@ -249,6 +283,49 @@
       const nameB = countryNames[b] || b;
       return nameA.localeCompare(nameB);
     });
+  }
+
+  /**
+   * Get unique presentation protocols from loaded RPs
+   * Simplified to: OpenID4VP, ISO 18013-5, and ...other
+   */
+  function getAvailablePresentationProtocols() {
+    const hasOpenID4VP = relyingParties.some(rp => 
+      (rp.presentationProtocols || []).includes('OpenID4VP')
+    );
+    const hasISO18013 = relyingParties.some(rp => 
+      (rp.presentationProtocols || []).includes('ISO 18013-5')
+    );
+    const hasOther = relyingParties.some(rp => {
+      const protocols = rp.presentationProtocols || [];
+      return protocols.some(p => p !== 'OpenID4VP' && p !== 'ISO 18013-5');
+    });
+    
+    const available = [];
+    if (hasOpenID4VP) available.push('OpenID4VP');
+    if (hasISO18013) available.push('ISO 18013-5');
+    if (hasOther) available.push('...other');
+    return available;
+  }
+
+  /**
+   * Get unique supported wallets from loaded RPs (only those with walletCatalogId)
+   */
+  function getAvailableSupportedWallets() {
+    const wallets = new Map(); // Map walletId -> name
+    relyingParties.forEach(rp => {
+      if (rp.supportedWallets) {
+        rp.supportedWallets.forEach(w => {
+          if (typeof w === 'object' && w.walletCatalogId) {
+            wallets.set(w.walletCatalogId, w.name);
+          }
+        });
+      }
+    });
+    // Return array of {id, name} sorted by name
+    return Array.from(wallets.entries())
+      .map(([id, name]) => ({ id, name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
   }
 
   /**
@@ -341,6 +418,23 @@
                 </div>
               </div>
             ` : ''}
+            ${getAvailableSupportedWallets().length > 0 ? `
+              <div class="fides-filter-group collapsible ${!filterGroupState.supportedWallets ? 'collapsed' : ''} ${filters.supportedWallets.length > 0 ? 'has-active' : ''}" data-filter-group="supportedWallets">
+                <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.supportedWallets}">
+                  <span class="fides-filter-label">Supported Wallet</span>
+                  <span class="fides-filter-active-indicator"></span>
+                  ${chevronDown}
+                </button>
+                <div class="fides-filter-options">
+                  ${getAvailableSupportedWallets().map(wallet => `
+                    <label class="fides-filter-checkbox">
+                      <input type="checkbox" data-filter="supportedWallets" data-value="${wallet.id}" ${filters.supportedWallets.includes(wallet.id) ? 'checked' : ''}>
+                      <span>${escapeHtml(wallet.name)}</span>
+                    </label>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
             ${!settings.sector ? `
               <div class="fides-filter-group collapsible ${!filterGroupState.sectors ? 'collapsed' : ''} ${filters.sectors.length > 0 ? 'has-active' : ''}" data-filter-group="sectors">
                 <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.sectors}">
@@ -389,6 +483,60 @@
                 </div>
               </div>
             ` : ''}
+            <div class="fides-filter-group collapsible ${!filterGroupState.credentialFormats ? 'collapsed' : ''} ${filters.credentialFormats.length > 0 ? 'has-active' : ''}" data-filter-group="credentialFormats">
+              <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.credentialFormats}">
+                <span class="fides-filter-label">Credential Format</span>
+                <span class="fides-filter-active-indicator"></span>
+                ${chevronDown}
+              </button>
+              <div class="fides-filter-options">
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="SD-JWT-VC" ${filters.credentialFormats.includes('SD-JWT-VC') ? 'checked' : ''}>
+                  <span>SD-JWT-VC</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="JWT-VC" ${filters.credentialFormats.includes('JWT-VC') ? 'checked' : ''}>
+                  <span>JWT-VC</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="JSON-LD VC" ${filters.credentialFormats.includes('JSON-LD VC') ? 'checked' : ''}>
+                  <span>JSON-LD VC</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="AnonCreds" ${filters.credentialFormats.includes('AnonCreds') ? 'checked' : ''}>
+                  <span>AnonCreds</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="Idemix" ${filters.credentialFormats.includes('Idemix') ? 'checked' : ''}>
+                  <span>Idemix</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="mDL/mDoc" ${filters.credentialFormats.includes('mDL/mDoc') ? 'checked' : ''}>
+                  <span>mDL/mDoc</span>
+                </label>
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter="credentialFormats" data-value="X.509" ${filters.credentialFormats.includes('X.509') ? 'checked' : ''}>
+                  <span>X.509</span>
+                </label>
+              </div>
+            </div>
+            ${getAvailablePresentationProtocols().length > 0 ? `
+              <div class="fides-filter-group collapsible ${!filterGroupState.presentationProtocols ? 'collapsed' : ''} ${filters.presentationProtocols.length > 0 ? 'has-active' : ''}" data-filter-group="presentationProtocols">
+                <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.presentationProtocols}">
+                  <span class="fides-filter-label">Presentation Protocol</span>
+                  <span class="fides-filter-active-indicator"></span>
+                  ${chevronDown}
+                </button>
+                <div class="fides-filter-options">
+                  ${getAvailablePresentationProtocols().map(protocol => `
+                    <label class="fides-filter-checkbox">
+                      <input type="checkbox" data-filter="presentationProtocols" data-value="${protocol}" ${filters.presentationProtocols.includes(protocol) ? 'checked' : ''}>
+                      <span>${protocol === '...other' ? '<em>...other</em>' : escapeHtml(protocol)}</span>
+                    </label>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
             <div class="fides-filter-group collapsible ${!filterGroupState.interoperabilityProfiles ? 'collapsed' : ''} ${filters.interoperabilityProfiles.length > 0 ? 'has-active' : ''}" data-filter-group="interoperabilityProfiles">
               <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.interoperabilityProfiles}">
                 <span class="fides-filter-label">Interop Profile</span>
@@ -404,26 +552,13 @@
                   <input type="checkbox" data-filter="interoperabilityProfiles" data-value="EWC v3" ${filters.interoperabilityProfiles.includes('EWC v3') ? 'checked' : ''}>
                   <span>EWC v3</span>
                 </label>
-              </div>
-            </div>
-            <div class="fides-filter-group collapsible ${!filterGroupState.credentialFormats ? 'collapsed' : ''} ${filters.credentialFormats.length > 0 ? 'has-active' : ''}" data-filter-group="credentialFormats">
-              <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.credentialFormats}">
-                <span class="fides-filter-label">Credential Format</span>
-                <span class="fides-filter-active-indicator"></span>
-                ${chevronDown}
-              </button>
-              <div class="fides-filter-options">
                 <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="SD-JWT-VC" ${filters.credentialFormats.includes('SD-JWT-VC') ? 'checked' : ''}>
-                  <span>SD-JWT-VC</span>
+                  <input type="checkbox" data-filter="interoperabilityProfiles" data-value="HAIP v1" ${filters.interoperabilityProfiles.includes('HAIP v1') ? 'checked' : ''}>
+                  <span>HAIP v1</span>
                 </label>
                 <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="mDL/mDoc" ${filters.credentialFormats.includes('mDL/mDoc') ? 'checked' : ''}>
-                  <span>mDL/mDoc</span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="JWT-VC" ${filters.credentialFormats.includes('JWT-VC') ? 'checked' : ''}>
-                  <span>JWT-VC</span>
+                  <input type="checkbox" data-filter="interoperabilityProfiles" data-value="EUDI Wallet ARF" ${filters.interoperabilityProfiles.includes('EUDI Wallet ARF') ? 'checked' : ''}>
+                  <span>EUDI Wallet ARF</span>
                 </label>
               </div>
             </div>
@@ -1032,7 +1167,9 @@
           sectors: settings.sector ? [settings.sector] : [],
           country: [],
           credentialFormats: [],
-          interoperabilityProfiles: []
+          presentationProtocols: [],
+          interoperabilityProfiles: [],
+          supportedWallets: []
         };
         render();
       });

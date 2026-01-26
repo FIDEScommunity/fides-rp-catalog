@@ -22,13 +22,16 @@
           "MOSIP Verifiable Credential"
         ],
         "credentialFormats": [
-          "JWT-VC"
+          "JSON-LD VC"
         ],
         "presentationProtocols": [
-          "QR-based VC presentation"
+          "OpenID4VP"
         ],
         "supportedWallets": [
-          "Inji Wallet"
+          {
+            "name": "Inji Wallet",
+            "walletCatalogId": "inji-wallet"
+          }
         ],
         "languages": [
           "en"
