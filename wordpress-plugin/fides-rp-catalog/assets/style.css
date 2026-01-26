@@ -123,6 +123,18 @@
   box-shadow: 0 4px 12px rgba(10, 110, 243, 0.3);
 }
 
+/* Light/FIDES theme video button on tiles */
+.fides-rp-catalog[data-theme="fides"] .fides-rp-video-button,
+.fides-rp-catalog[data-theme="light"] .fides-rp-video-button {
+  background: #8b5cf6;
+}
+
+.fides-rp-catalog[data-theme="fides"] .fides-rp-video-button:hover,
+.fides-rp-catalog[data-theme="light"] .fides-rp-video-button:hover {
+  background: #7c3aed;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
 /* FIDES Theme - Card shadow for light background */
 .fides-rp-catalog[data-theme="fides"] .fides-rp-card,
 .fides-rp-catalog[data-theme="light"] .fides-rp-card {
@@ -1071,9 +1083,36 @@ a.fides-tag.wallet-link svg {
   height: 14px;
 }
 
+.fides-rp-video-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: var(--fides-video, #8b5cf6);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.fides-rp-video-button:hover {
+  background: var(--fides-video-hover, #7c3aed);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.fides-rp-video-button svg {
+  width: 14px;
+  height: 14px;
+}
+
 .fides-rp-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .fides-rp-link {

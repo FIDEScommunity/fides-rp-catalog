@@ -42,7 +42,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.886Z",
+      "fetchedAt": "2026-01-26T14:17:41.883Z",
       "source": "local",
       "isFeatured": false
     },
@@ -51,6 +51,7 @@
       "name": "Starfilm Cinema Age Verification",
       "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
       "website": "https://cinema.ageverification.dev/",
+      "video": "https://www.youtube.com/watch?v=ULFTrTznG7Y",
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
@@ -92,7 +93,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.888Z",
+      "fetchedAt": "2026-01-26T14:17:41.884Z",
       "source": "local",
       "isFeatured": true
     },
@@ -150,7 +151,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.888Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -217,7 +218,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.888Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -225,6 +226,7 @@
       "id": "eudiplo-vineyard-select",
       "name": "Vineyard Select",
       "description": "Age verification for online alcohol purchases. Customer proves they're 18+ without revealing exact birthdate using selective disclosure.",
+      "logo": "https://twemoji.maxcdn.com/v/latest/72x72/1f377.png",
       "website": "https://playground.eudi-wallet.org/alcohol-shop/",
       "readiness": "use-case-demo",
       "country": "EU",
@@ -270,7 +272,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.889Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -278,6 +280,7 @@
       "id": "eudiplo-nordic-digital-bank",
       "name": "Nordic Digital Bank",
       "description": "Complete KYC identity verification for account opening. Full PID request with name, address, and national ID for comprehensive customer due diligence.",
+      "logo": "https://twemoji.maxcdn.com/v/latest/72x72/1f3e6.png",
       "website": "https://playground.eudi-wallet.org/bank-onboarding/",
       "readiness": "use-case-demo",
       "country": "EU",
@@ -320,7 +323,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.889Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": true
     },
@@ -369,7 +372,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.889Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -419,7 +422,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.889Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -468,7 +471,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.889Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -513,7 +516,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.890Z",
+      "fetchedAt": "2026-01-26T14:17:41.885Z",
       "source": "local",
       "isFeatured": false
     },
@@ -521,6 +524,7 @@
       "id": "circulacity-sandbox",
       "name": "CirculaCity",
       "description": "Sandbox portal demonstrating how government applications can use wallet-based credentials to enable trusted digital interactions in areas such as procurement, recruitment, and compliance.",
+      "logo": "https://fides.community/app/uploads/sites/2/2025/05/CirculaCity4.png",
       "website": "https://circulacity.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
@@ -566,7 +570,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.891Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": true
     },
@@ -574,6 +578,7 @@
       "id": "rotterdam-sandbox",
       "name": "Municipality of Rotterdam",
       "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
+      "logo": "https://fides.community/app/themes/fides-rotterdam/images/logo-base.svg",
       "website": "https://rotterdam.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
@@ -619,7 +624,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.891Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -627,6 +632,7 @@
       "id": "mijnoverheid-sandbox",
       "name": "MijnOverheid",
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
+      "logo": "https://www.google.com/s2/favicons?domain=mijnoverheid.fides.community&sz=128",
       "website": "https://mijnoverheid.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
@@ -669,7 +675,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.891Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": true
     },
@@ -677,6 +683,7 @@
       "id": "hak-rein-vos-notarissen-sandbox",
       "name": "Hak & Rein Vos Notarissen",
       "description": "Sandbox portal for a Dutch notary, showcasing a digital flow for entrepreneurs to provide the required information and documents to establish a company.",
+      "logo": "https://fides.community/app/themes/fides-hrv/images/Logo%20HRVN.svg",
       "website": "https://hrv.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
@@ -724,7 +731,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.891Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -732,6 +739,7 @@
       "id": "kvk-frontoffice-sandbox",
       "name": "Kamer van Koophandel Frontoffice",
       "description": "Sandbox portal for the Dutch Chamber of Commerce, showcasing a digital flow for entrepreneurs to provide the required information to register a sole proprietorship.",
+      "logo": "https://cdn.prod.website-files.com/671b68c06bfef1ca699347d7/68ac618d260c0106290b21f1_KvK-vierkant.webp",
       "website": "https://kvk.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
@@ -778,7 +786,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.891Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -822,7 +830,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -863,7 +871,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -903,7 +911,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -944,7 +952,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -984,7 +992,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1025,7 +1033,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1065,7 +1073,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1105,7 +1113,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1145,7 +1153,7 @@
         "website": "https://id-wallets.nl/demos/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/id-wallets/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.892Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1191,7 +1199,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.886Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1239,7 +1247,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1287,7 +1295,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1335,7 +1343,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1384,7 +1392,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1433,7 +1441,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1482,7 +1490,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.893Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1522,7 +1530,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.894Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1568,7 +1576,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.895Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1624,7 +1632,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.895Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1668,7 +1676,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-01-26T13:39:38.896Z",
+      "fetchedAt": "2026-01-26T14:17:41.887Z",
       "source": "local",
       "isFeatured": false
     }
@@ -1736,7 +1744,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-01-26T13:39:38.896Z",
+  "lastUpdated": "2026-01-26T14:17:41.888Z",
   "stats": {
     "totalRPs": 35,
     "totalProviders": 13,

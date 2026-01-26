@@ -37,8 +37,9 @@ Quick reference for providers to see which fields accept fixed values (enums) vs
 | `readiness` | ✅ | 🔒 | `technical-demo`, `use-case-demo`, `production-pilot`, `production` |
 | `country` | ✅ | 🆔 | ISO 3166-1 alpha-2 (`NL`, `DE`, `US`) or `EU` |
 | `description` | | 📝 | Any text |
-| `logo` | | 🔗 | URL |
+| `logo` | | 🔗 | URL (displayed on tile instead of country flag) |
 | `website` | | 🔗 | URL |
+| `video` | | 🔗 | URL to video demonstration |
 | `documentation` | | 🔗 | URL |
 | `testCredentials` | | 🔗 | URL |
 | `apiEndpoint` | | 🔗 | URL |
@@ -136,6 +137,7 @@ The `supportedWallets` field accepts two formats:
       "name": "Example Identity Verifier",
       "description": "Verify user identity using wallet credentials",
       "website": "https://verify.example.com",
+      "video": "https://youtube.com/watch?v=example",
       "readiness": "production",
       "country": "NL",
       "status": "live",

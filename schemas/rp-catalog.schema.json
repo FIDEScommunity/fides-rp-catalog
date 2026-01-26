@@ -234,6 +234,11 @@
           "format": "uri",
           "description": "API endpoint for programmatic access"
         },
+        "video": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to a video demonstration or walkthrough of this relying party"
+        },
         "languages": {
           "type": "array",
           "description": "Supported languages",

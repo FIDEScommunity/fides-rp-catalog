@@ -85,6 +85,7 @@ export interface RelyingParty {
   documentation?: string;
   testCredentials?: string;
   apiEndpoint?: string;
+  video?: string;
   
   // Geographic availability
   countries?: string[];

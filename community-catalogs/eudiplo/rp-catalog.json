@@ -10,6 +10,7 @@
       "id": "eudiplo-vineyard-select",
       "name": "Vineyard Select",
       "description": "Age verification for online alcohol purchases. Customer proves they're 18+ without revealing exact birthdate using selective disclosure.",
+      "logo": "https://twemoji.maxcdn.com/v/latest/72x72/1f377.png",
       "website": "https://playground.eudi-wallet.org/alcohol-shop/",
       "readiness": "use-case-demo",
       "country": "EU",
@@ -38,6 +39,7 @@
       "id": "eudiplo-nordic-digital-bank",
       "name": "Nordic Digital Bank",
       "description": "Complete KYC identity verification for account opening. Full PID request with name, address, and national ID for comprehensive customer due diligence.",
+      "logo": "https://twemoji.maxcdn.com/v/latest/72x72/1f3e6.png",
       "website": "https://playground.eudi-wallet.org/bank-onboarding/",
       "readiness": "use-case-demo",
       "country": "EU",
@@ -131,5 +133,5 @@
       "languages": ["en"]
     }
   ],
-  "lastUpdated": "2026-01-26T20:00:00Z"
+  "lastUpdated": "2026-01-26T21:30:00Z"
 }
