@@ -3,13 +3,14 @@
   "provider": {
     "name": "Government of British Columbia",
     "website": "https://www.gov.bc.ca/",
-    "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=128"
+    "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
   },
   "relyingParties": [
     {
       "id": "bc-digital-trust-showcase",
       "name": "BC Wallet Showcase",
       "description": "Provincial showcase demonstrating digital trust and identity solutions for British Columbia residents and businesses. Features various digital credential implementations and verification services.",
+      "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png",
       "website": "https://digital.gov.bc.ca/digital-trust/showcase/",
       "readiness": "use-case-demo",
       "country": "CA",
