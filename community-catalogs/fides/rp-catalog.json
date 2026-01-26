@@ -53,7 +53,7 @@
       "id": "rotterdam-sandbox",
       "name": "Municipality of Rotterdam",
       "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
-      "logo": "https://fides.community/app/themes/fides-rotterdam/images/logo-base.svg",
+      "logo": "https://www.rotterdam.nl/default/apple-touch-icon.png",
       "website": "https://rotterdam.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
