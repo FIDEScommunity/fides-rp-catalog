@@ -141,7 +141,7 @@
       "id": "kvk-frontoffice-sandbox",
       "name": "Kamer van Koophandel Frontoffice",
       "description": "Sandbox portal for the Dutch Chamber of Commerce, showcasing a digital flow for entrepreneurs to provide the required information to register a sole proprietorship.",
-      "logo": "https://cdn.prod.website-files.com/671b68c06bfef1ca699347d7/68ac618d260c0106290b21f1_KvK-vierkant.webp",
+      "logo": "https://www.kvk.nl/apple-touch-icon.png",
       "website": "https://kvk.fides.community/",
       "readiness": "use-case-demo",
       "country": "NL",
