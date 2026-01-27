@@ -29,6 +29,10 @@
         {
           "name": "EUDI Age Verification App (Reference)",
           "walletCatalogId": "eudi-age-verification-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
         }
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
@@ -54,6 +58,10 @@
         {
           "name": "EUDI Wallet Reference Implementation",
           "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
         }
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
@@ -79,6 +87,10 @@
         {
           "name": "EUDI Wallet Reference Implementation",
           "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
         }
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
@@ -104,6 +116,10 @@
         {
           "name": "EUDI Wallet Reference Implementation",
           "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
         }
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
@@ -129,6 +145,10 @@
         {
           "name": "EUDI Wallet Reference Implementation",
           "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
         }
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
