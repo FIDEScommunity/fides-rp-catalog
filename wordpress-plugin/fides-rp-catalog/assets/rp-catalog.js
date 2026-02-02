@@ -162,6 +162,31 @@
     }
 
     render();
+    
+    // Check for deep link after render
+    checkDeepLink();
+  }
+
+  /**
+   * Check URL for RP deep link parameter
+   * Supports: ?rp=rp-id or #rp-id
+   */
+  function checkDeepLink() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const rpId = urlParams.get('rp') || window.location.hash.replace('#', '');
+    
+    if (rpId) {
+      const rp = relyingParties.find(r => r.id === rpId);
+      if (rp) {
+        console.log(`🔗 Deep link found: opening RP "${rp.name}"`);
+        // Small delay to ensure DOM is fully ready
+        setTimeout(() => {
+          openRPDetail(rpId);
+        }, 150);
+      } else {
+        console.warn(`Deep link RP not found: ${rpId}`);
+      }
+    }
   }
 
   /**
