@@ -135,6 +135,12 @@
   box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 }
 
+/* Light/FIDES theme video badge on tiles */
+.fides-rp-catalog[data-theme="fides"] .fides-rp-video-badge,
+.fides-rp-catalog[data-theme="light"] .fides-rp-video-badge {
+  background: #8b5cf6;
+}
+
 /* FIDES Theme - Card shadow for light background */
 .fides-rp-catalog[data-theme="fides"] .fides-rp-card,
 .fides-rp-catalog[data-theme="light"] .fides-rp-card {
@@ -1133,6 +1139,27 @@ a.fides-tag.wallet-link svg {
   height: 14px;
 }
 
+/* Video badge - visual indicator only (not clickable) */
+.fides-rp-video-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: var(--fides-video, #8b5cf6);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: default;
+  opacity: 0.9;
+}
+
+.fides-rp-video-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
 .fides-rp-links {
   display: flex;
   gap: 0.5rem;
@@ -1605,6 +1632,39 @@ a.fides-tag.wallet-link svg {
   margin: 0;
 }
 
+/* Video embed container - responsive 16:9 */
+.fides-video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border-radius: var(--fides-radius, 12px);
+  background: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fides-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Fallback for unsupported video providers */
+.fides-video-fallback {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+/* FIDES/Light theme adjustments */
+.fides-modal-overlay[data-theme="fides"] .fides-video-container,
+.fides-modal-overlay[data-theme="light"] .fides-video-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 /* Info grid */
 .fides-modal-grid {
   display: grid;
@@ -1985,16 +2045,12 @@ a.fides-tag.wallet-link svg {
     font-size: 0.8125rem;
   }
   
-  /* Modal badges responsive */
+  /* Modal badges responsive - keep horizontal layout */
   .fides-modal-badges {
-    flex-direction: column;
-    align-items: stretch;
     gap: 0.75rem;
   }
   
   .fides-modal-visit-button {
-    width: 100%;
-    justify-content: center;
-    order: -1; /* Show button first on mobile */
+    flex-shrink: 0;
   }
 }
