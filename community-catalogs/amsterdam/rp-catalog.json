@@ -1,14 +1,14 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
   "provider": {
-    "name": "Gemeente Amsterdam",
+    "name": "City of Amsterdam",
     "website": "https://amsterdam-demo.staging.yivi.app/",
     "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
   },
   "relyingParties": [
     {
       "id": "leeftijd-aantonen",
-      "name": "Leeftijd aantonen",
+      "name": "Prove age",
       "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
       "description": "Demo to prove your age with Yivi, for example for age verification when using a municipal service.",
       "website": "https://amsterdam-demo.staging.yivi.app/leeftijd-aantonen",
@@ -17,7 +17,7 @@
       "status": "live",
       "sectors": ["government"],
       "useCases": ["Age verification", "Identity verification"],
-      "acceptedCredentials": ["Paspoortgegevens"],
+      "acceptedCredentials": ["Passport data"],
       "credentialFormats": ["Idemix"],
       "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
       "supportedWallets": [
@@ -27,7 +27,7 @@
     },
     {
       "id": "ideeen-voor-uw-buurt",
-      "name": "Ideeën voor uw buurt",
+      "name": "Ideas for your neighbourhood",
       "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
       "description": "Demo to submit ideas for your neighbourhood to the municipality, with login and verification via Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/ideeen-voor-uw-buurt",
@@ -36,7 +36,7 @@
       "status": "live",
       "sectors": ["government"],
       "useCases": ["Login", "Citizen participation", "Attribute sharing"],
-      "acceptedCredentials": ["Woonadres", "Persoonsgegevens"],
+      "acceptedCredentials": ["Address", "Personal data"],
       "credentialFormats": ["Idemix"],
       "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
       "supportedWallets": [
@@ -46,7 +46,7 @@
     },
     {
       "id": "inloggen",
-      "name": "Inloggen",
+      "name": "Login",
       "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
       "description": "Demo to log in to a City of Amsterdam service using your Yivi wallet.",
       "website": "https://amsterdam-demo.staging.yivi.app/inloggen",
@@ -55,7 +55,7 @@
       "status": "live",
       "sectors": ["government"],
       "useCases": ["Login", "Identity verification"],
-      "acceptedCredentials": ["Paspoortgegevens"],
+      "acceptedCredentials": ["Passport data"],
       "credentialFormats": ["Idemix"],
       "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
       "supportedWallets": [
@@ -65,7 +65,7 @@
     },
     {
       "id": "geveltuin-aanvragen",
-      "name": "Geveltuin aanvragen",
+      "name": "Apply for front garden",
       "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
       "description": "Demo to apply for a front garden (geveltuin) with the municipality, with identity verification via Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/geveltuin-aanvragen",
@@ -74,7 +74,7 @@
       "status": "live",
       "sectors": ["government"],
       "useCases": ["Login", "Permit application", "Attribute sharing"],
-      "acceptedCredentials": ["Mobiel telefoonnummer", "Persoonsgegevens", "Woonadres", "Emailadres"],
+      "acceptedCredentials": ["Mobile number", "Personal data", "Address", "Email address"],
       "credentialFormats": ["Idemix"],
       "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
       "supportedWallets": [
@@ -84,7 +84,7 @@
     },
     {
       "id": "overlast-melden",
-      "name": "Overlast melden",
+      "name": "Report nuisance",
       "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
       "description": "Demo to report a nuisance to the City of Amsterdam, after logging in with Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/overlast-melden",
@@ -93,7 +93,7 @@
       "status": "live",
       "sectors": ["government"],
       "useCases": ["Login", "Complaint reporting", "Attribute sharing"],
-      "acceptedCredentials": ["Mobiel telefoonnummer", "Emailadres"],
+      "acceptedCredentials": ["Mobile number", "Email address"],
       "credentialFormats": ["Idemix"],
       "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
       "supportedWallets": [
