@@ -664,6 +664,12 @@
   color: var(--fides-text-primary);
 }
 
+.fides-filter-option-count {
+  margin-left: 0.25em;
+  font-size: 0.875em;
+  color: var(--fides-text-muted);
+}
+
 /* Legacy button styles - keep for backwards compatibility */
 .fides-sidebar .fides-filter-buttons {
   display: flex;

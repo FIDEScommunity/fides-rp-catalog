@@ -73,6 +73,8 @@
 
   // State
   let relyingParties = [];
+  /** Precomputed counts per filter option (set once after data load) */
+  let filterFacets = null;
   // Vocabulary for [i] info popups (loaded from interop-profiles)
   let vocabulary = null;
 
@@ -166,6 +168,7 @@
         if (response.ok) {
           const data = await response.json();
           relyingParties = source.transform(data);
+          filterFacets = computeFilterFacets(relyingParties);
           console.log(`✅ Loaded ${relyingParties.length} relying parties from ${source.name}`);
           break;
         }
@@ -365,7 +368,71 @@
   }
 
   /**
-   * Get unique countries from loaded RPs
+   * Compute filter facets (counts per option) in one pass over RPs.
+   * Called once after data load. Result is used for sidebar options and (n) counters.
+   */
+  function computeFilterFacets(rps) {
+    const typeCount = {};
+    const sectorCount = {};
+    const countryCount = {};
+    const credentialFormatCount = {};
+    const presentationProtocolCount = { OpenID4VP: 0, 'ISO 18013-5': 0, '...other': 0 };
+    const interopProfileCount = {};
+    const walletMap = new Map(); // id -> { name, count }
+
+    rps.forEach(rp => {
+      if (rp.readiness) {
+        typeCount[rp.readiness] = (typeCount[rp.readiness] || 0) + 1;
+      }
+      (rp.sectors || []).forEach(s => {
+        sectorCount[s] = (sectorCount[s] || 0) + 1;
+      });
+      if (rp.country) {
+        countryCount[rp.country] = (countryCount[rp.country] || 0) + 1;
+      }
+      (rp.credentialFormats || []).forEach(f => {
+        credentialFormatCount[f] = (credentialFormatCount[f] || 0) + 1;
+      });
+      const protocols = rp.presentationProtocols || [];
+      if (protocols.includes('OpenID4VP')) presentationProtocolCount['OpenID4VP'] += 1;
+      if (protocols.includes('ISO 18013-5')) presentationProtocolCount['ISO 18013-5'] += 1;
+      if (protocols.some(p => p !== 'OpenID4VP' && p !== 'ISO 18013-5')) presentationProtocolCount['...other'] += 1;
+      (rp.interoperabilityProfiles || []).forEach(p => {
+        interopProfileCount[p] = (interopProfileCount[p] || 0) + 1;
+      });
+      (rp.supportedWallets || []).forEach(w => {
+        if (typeof w === 'object' && w.walletCatalogId) {
+          const id = w.walletCatalogId;
+          if (!walletMap.has(id)) walletMap.set(id, { name: w.name, count: 0 });
+          walletMap.get(id).count += 1;
+        }
+      });
+    });
+
+    const supportedWallets = Array.from(walletMap.entries())
+      .map(([id, o]) => ({ id, name: o.name, count: o.count }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const country = Object.entries(countryCount)
+      .map(([code, count]) => ({ code, count }))
+      .sort((a, b) => (countryNames[a.code] || a.code).localeCompare(countryNames[b.code] || b.code));
+    const presentationProtocols = [];
+    if (presentationProtocolCount['OpenID4VP'] > 0) presentationProtocols.push({ value: 'OpenID4VP', count: presentationProtocolCount['OpenID4VP'] });
+    if (presentationProtocolCount['ISO 18013-5'] > 0) presentationProtocols.push({ value: 'ISO 18013-5', count: presentationProtocolCount['ISO 18013-5'] });
+    if (presentationProtocolCount['...other'] > 0) presentationProtocols.push({ value: '...other', count: presentationProtocolCount['...other'] });
+
+    return {
+      type: typeCount,
+      sectors: sectorCount,
+      credentialFormats: credentialFormatCount,
+      interoperabilityProfiles: interopProfileCount,
+      supportedWallets,
+      country,
+      presentationProtocols
+    };
+  }
+
+  /**
+   * Get unique countries from loaded RPs (uses filterFacets when available)
    */
   function getAvailableCountries() {
     const countries = new Set();
@@ -495,24 +562,24 @@
                 <div class="fides-filter-options">
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="type" data-value="technical-demo" ${filters.type.includes('technical-demo') ? 'checked' : ''}>
-                    <span>Technical Demo</span>
+                    <span>Technical Demo<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.type['technical-demo'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="type" data-value="use-case-demo" ${filters.type.includes('use-case-demo') ? 'checked' : ''}>
-                    <span>Use Case Demo</span>
+                    <span>Use Case Demo<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.type['use-case-demo'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="type" data-value="production-pilot" ${filters.type.includes('production-pilot') ? 'checked' : ''}>
-                    <span>Production Pilot</span>
+                    <span>Production Pilot<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.type['production-pilot'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="type" data-value="production" ${filters.type.includes('production') ? 'checked' : ''}>
-                    <span>Production</span>
+                    <span>Production<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.type['production'] || 0) : ''})</span></span>
                   </label>
                 </div>
               </div>
             ` : ''}
-            ${getAvailableSupportedWallets().length > 0 ? `
+            ${(filterFacets ? filterFacets.supportedWallets : getAvailableSupportedWallets()).length > 0 ? `
               <div class="fides-filter-group collapsible ${!filterGroupState.supportedWallets ? 'collapsed' : ''} ${filters.supportedWallets.length > 0 ? 'has-active' : ''}" data-filter-group="supportedWallets">
                 <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.supportedWallets}">
                   <span class="fides-filter-label">Supported Wallet</span>
@@ -520,10 +587,10 @@
                   ${chevronDown}
                 </button>
                 <div class="fides-filter-options">
-                  ${getAvailableSupportedWallets().map(wallet => `
+                  ${(filterFacets ? filterFacets.supportedWallets : getAvailableSupportedWallets().map(w => ({ id: w.id, name: w.name, count: 0 }))).map(wallet => `
                     <label class="fides-filter-checkbox">
                       <input type="checkbox" data-filter="supportedWallets" data-value="${wallet.id}" ${filters.supportedWallets.includes(wallet.id) ? 'checked' : ''}>
-                      <span>${escapeHtml(wallet.name)}</span>
+                      <span>${escapeHtml(wallet.name)}<span class="fides-filter-option-count">(${wallet.count != null ? wallet.count : ''})</span></span>
                     </label>
                   `).join('')}
                 </div>
@@ -539,28 +606,28 @@
                 <div class="fides-filter-options">
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="sectors" data-value="government" ${filters.sectors.includes('government') ? 'checked' : ''}>
-                    <span>Government</span>
+                    <span>Government<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.sectors['government'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="sectors" data-value="finance" ${filters.sectors.includes('finance') ? 'checked' : ''}>
-                    <span>Finance</span>
+                    <span>Finance<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.sectors['finance'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="sectors" data-value="healthcare" ${filters.sectors.includes('healthcare') ? 'checked' : ''}>
-                    <span>Healthcare</span>
+                    <span>Healthcare<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.sectors['healthcare'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="sectors" data-value="education" ${filters.sectors.includes('education') ? 'checked' : ''}>
-                    <span>Education</span>
+                    <span>Education<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.sectors['education'] || 0) : ''})</span></span>
                   </label>
                   <label class="fides-filter-checkbox">
                     <input type="checkbox" data-filter="sectors" data-value="retail" ${filters.sectors.includes('retail') ? 'checked' : ''}>
-                    <span>Retail</span>
+                    <span>Retail<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.sectors['retail'] || 0) : ''})</span></span>
                   </label>
                 </div>
               </div>
             ` : ''}
-            ${getAvailableCountries().length > 0 ? `
+            ${(filterFacets ? filterFacets.country : getAvailableCountries()).length > 0 ? `
               <div class="fides-filter-group collapsible ${!filterGroupState.country ? 'collapsed' : ''} ${filters.country.length > 0 ? 'has-active' : ''}" data-filter-group="country">
                 <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.country}">
                   <span class="fides-filter-label">Country</span>
@@ -568,10 +635,10 @@
                   ${chevronDown}
                 </button>
                 <div class="fides-filter-options">
-                  ${getAvailableCountries().map(code => `
+                  ${(filterFacets ? filterFacets.country : getAvailableCountries().map(code => ({ code, count: 0 }))).map(({ code, count }) => `
                     <label class="fides-filter-checkbox">
                       <input type="checkbox" data-filter="country" data-value="${code}" ${filters.country.includes(code) ? 'checked' : ''}>
-                      <span><img src="https://flagcdn.com/w20/${code.toLowerCase()}.png" alt="" class="fides-country-flag"> ${countryNames[code] || code}</span>
+                      <span><img src="https://flagcdn.com/w20/${code.toLowerCase()}.png" alt="" class="fides-country-flag"> ${countryNames[code] || code}<span class="fides-filter-option-count">(${count != null ? count : ''})</span></span>
                     </label>
                   `).join('')}
                 </div>
@@ -586,35 +653,35 @@
               <div class="fides-filter-options">
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="SD-JWT-VC" ${filters.credentialFormats.includes('SD-JWT-VC') ? 'checked' : ''}>
-                  <span>SD-JWT-VC</span>
+                  <span>SD-JWT-VC<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['SD-JWT-VC'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="JWT-VC" ${filters.credentialFormats.includes('JWT-VC') ? 'checked' : ''}>
-                  <span>JWT-VC</span>
+                  <span>JWT-VC<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['JWT-VC'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="JSON-LD VC" ${filters.credentialFormats.includes('JSON-LD VC') ? 'checked' : ''}>
-                  <span>JSON-LD VC</span>
+                  <span>JSON-LD VC<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['JSON-LD VC'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="AnonCreds" ${filters.credentialFormats.includes('AnonCreds') ? 'checked' : ''}>
-                  <span>AnonCreds</span>
+                  <span>AnonCreds<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['AnonCreds'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="Idemix" ${filters.credentialFormats.includes('Idemix') ? 'checked' : ''}>
-                  <span>Idemix</span>
+                  <span>Idemix<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['Idemix'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="mDL/mDoc" ${filters.credentialFormats.includes('mDL/mDoc') ? 'checked' : ''}>
-                  <span>mDL/mDoc</span>
+                  <span>mDL/mDoc<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['mDL/mDoc'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="credentialFormats" data-value="X.509" ${filters.credentialFormats.includes('X.509') ? 'checked' : ''}>
-                  <span>X.509</span>
+                  <span>X.509<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['X.509'] || 0) : ''})</span></span>
                 </label>
               </div>
             </div>
-            ${getAvailablePresentationProtocols().length > 0 ? `
+            ${(filterFacets ? filterFacets.presentationProtocols : getAvailablePresentationProtocols()).length > 0 ? `
               <div class="fides-filter-group collapsible ${!filterGroupState.presentationProtocols ? 'collapsed' : ''} ${filters.presentationProtocols.length > 0 ? 'has-active' : ''}" data-filter-group="presentationProtocols">
                 <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.presentationProtocols}">
                   <span class="fides-filter-label">Presentation Protocol</span>
@@ -622,10 +689,10 @@
                   ${chevronDown}
                 </button>
                 <div class="fides-filter-options">
-                  ${getAvailablePresentationProtocols().map(protocol => `
+                  ${(filterFacets ? filterFacets.presentationProtocols : getAvailablePresentationProtocols().map(v => ({ value: v, count: 0 }))).map(({ value: protocol, count }) => `
                     <label class="fides-filter-checkbox">
                       <input type="checkbox" data-filter="presentationProtocols" data-value="${protocol}" ${filters.presentationProtocols.includes(protocol) ? 'checked' : ''}>
-                      <span>${protocol === '...other' ? '<em>...other</em>' : escapeHtml(protocol)}</span>
+                      <span>${protocol === '...other' ? '<em>...other</em>' : escapeHtml(protocol)}<span class="fides-filter-option-count">(${count != null ? count : ''})</span></span>
                     </label>
                   `).join('')}
                 </div>
@@ -640,23 +707,23 @@
               <div class="fides-filter-options">
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="interoperabilityProfiles" data-value="DIIP v4" ${filters.interoperabilityProfiles.includes('DIIP v4') ? 'checked' : ''}>
-                  <span>DIIP v4</span>
+                  <span>DIIP v4<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.interoperabilityProfiles['DIIP v4'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="interoperabilityProfiles" data-value="DIIP v5" ${filters.interoperabilityProfiles.includes('DIIP v5') ? 'checked' : ''}>
-                  <span>DIIP v5</span>
+                  <span>DIIP v5<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.interoperabilityProfiles['DIIP v5'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="interoperabilityProfiles" data-value="EWC v3" ${filters.interoperabilityProfiles.includes('EWC v3') ? 'checked' : ''}>
-                  <span>EWC v3</span>
+                  <span>EWC v3<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.interoperabilityProfiles['EWC v3'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="interoperabilityProfiles" data-value="HAIP v1" ${filters.interoperabilityProfiles.includes('HAIP v1') ? 'checked' : ''}>
-                  <span>HAIP v1</span>
+                  <span>HAIP v1<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.interoperabilityProfiles['HAIP v1'] || 0) : ''})</span></span>
                 </label>
                 <label class="fides-filter-checkbox">
                   <input type="checkbox" data-filter="interoperabilityProfiles" data-value="EUDI Wallet ARF" ${filters.interoperabilityProfiles.includes('EUDI Wallet ARF') ? 'checked' : ''}>
-                  <span>EUDI Wallet ARF</span>
+                  <span>EUDI Wallet ARF<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.interoperabilityProfiles['EUDI Wallet ARF'] || 0) : ''})</span></span>
                 </label>
               </div>
             </div>
