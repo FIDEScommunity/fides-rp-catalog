@@ -254,7 +254,222 @@
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": ["en"]
+    },
+    {
+      "id": "igrant-photo-id-issuance",
+      "name": "Photo ID",
+      "description": "Issue a Photo ID (EU Digital Travel Credential) to your EUDI Wallet. This iGrant.io demo enables issuance of machine-readable Photo ID credentials based on ISO/IEC TS 23220-4 and EWC RFC 013, supporting travel and identity verification use cases.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/photoid.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["travel", "government"],
+      "useCases": ["credential-issuance", "photo-id", "digital-travel-credential"],
+      "acceptedCredentials": ["Photo ID (DTC)"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VCI"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "Photo ID issuance",
+        "ISO/IEC TS 23220-4 compliant",
+        "EWC RFC 013",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": ["en"]
+    },
+    {
+      "id": "igrant-issue-test-pid",
+      "name": "Issue Test PID",
+      "description": "Issue a test Person Identification Data (PID) credential to your EUDI Wallet. This iGrant.io demo enables issuance of PID credentials based on EWC RFC 003, providing the foundational identity credential for EUDI Wallet use cases.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/demo/pid.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": ["credential-issuance", "identity-verification"],
+      "acceptedCredentials": ["Person Identification Data (PID)"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VCI"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "Test PID issuance",
+        "EWC RFC 003 compliant",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": ["en"]
+    },
+    {
+      "id": "igrant-issue-test-qesac",
+      "name": "Issue Test QESAC",
+      "description": "Issue a test Qualified Electronic Signature Access Credential (QESAC) to your EUDI Wallet. This iGrant.io demo showcases secure issuance of QESAC credentials based on EWC RFC 010, enabling qualified electronic signature capabilities under the eIDAS 2.0 framework.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/demo/qesac.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": ["credential-issuance", "electronic-signature"],
+      "acceptedCredentials": ["Qualified Electronic Signature Access Credential (QESAC)"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VCI"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "QESAC issuance",
+        "EWC RFC 010 compliant",
+        "eIDAS 2.0 framework",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": ["en"]
+    },
+    {
+      "id": "igrant-dcql-trusted-authority-demo",
+      "name": "DCQL – Trusted Authority Verification",
+      "description": "Verify credentials using DCQL (Digital Credentials Query Language) with trusted authority validation. This iGrant.io demo showcases smart credential queries that validate issuers against the EU Trust List, supporting selective disclosure and alternative credential acceptance through OpenID4VP.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/demo/openid4vp-dcql-01.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["government", "finance", "education"],
+      "useCases": ["identity-verification", "credential-validation", "trusted-authority-verification"],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Passport",
+        "Photo ID",
+        "University Degree"
+      ],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "DCQL support",
+        "EU Trust List validation",
+        "Trusted authority verification",
+        "Selective disclosure"
+      ],
+      "documentation": "https://docs.igrant.io/concepts/eudi-wallet-dcql-openid4vp-business-wallet-payments/",
+      "languages": ["en"]
+    },
+    {
+      "id": "igrant-esspass-pda1",
+      "name": "ESSPASS – PDA1",
+      "description": "Issue a European Social Security Pass Portable Document A1 (ESSPASS PDA1) credential to your EUDI Wallet. This iGrant.io demo showcases the issuance of PDA1 credentials that certify applicable social security legislation for cross-border employment within the EU.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/demo/ebsi.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["government", "social-security"],
+      "useCases": ["credential-issuance", "social-security", "cross-border-employment"],
+      "acceptedCredentials": ["ESSPASS - PDA1"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VCI"],
+      "interoperabilityProfiles": ["EBSI"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "ESSPASS PDA1 issuance",
+        "Cross-border employment verification",
+        "EBSI integration",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": ["en"]
+    },
+    {
+      "id": "igrant-payment-authenticator",
+      "name": "Payment Authenticator",
+      "description": "Link your EUDI Wallet to a bank or Payment Service Provider (PSP) and receive a Payment Authenticator credential. This iGrant.io demo enables payment card authentication by binding your wallet identity to a Visa card through Strong Customer Authentication (SCA).",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/demo/payment-authenticator.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["finance"],
+      "useCases": ["credential-issuance", "payment-authentication", "wallet-onboarding"],
+      "acceptedCredentials": ["Payment Authenticator"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VCI"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "Payment card linking",
+        "Strong Customer Authentication (SCA)",
+        "Visa card integration",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": ["en"]
+    },
+    {
+      "id": "igrant-payment-bank-led",
+      "name": "Payment – Bank Led",
+      "description": "Complete a bank-led payment transaction using your EUDI Wallet. This iGrant.io demo showcases a payment flow where the bank verifies the consumer's Payment Authenticator and transaction data through 3D Secure and OpenID4VP, enabling secure wallet-based payment confirmation.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://www.igrant.io/demo/payment-transaction-bank-led.html",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": ["finance"],
+      "useCases": ["payment-authentication", "bank-led-payment", "strong-customer-authentication"],
+      "acceptedCredentials": ["Payment Authenticator", "Person Identification Data (PID)"],
+      "credentialFormats": ["SD-JWT-VC"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["EWC v3"],
+      "supportedWallets": [
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "Bank-led payment flow",
+        "3D Secure integration",
+        "Transaction data verification",
+        "Strong Customer Authentication (SCA)"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "testCredentials": "https://www.igrant.io/demo/payment-authenticator.html",
+      "languages": ["en"]
     }
   ],
-  "lastUpdated": "2026-02-11T00:00:00+01:00"
+  "lastUpdated": "2026-02-12T00:00:00+01:00"
 }
