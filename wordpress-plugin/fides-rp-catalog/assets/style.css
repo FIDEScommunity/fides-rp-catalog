@@ -667,7 +667,7 @@
 .fides-filter-option-count {
   margin-left: 0.25em;
   font-size: 0.875em;
-  color: var(--fides-text-muted);
+  color: var(--fides-accent);
 }
 
 /* Legacy button styles - keep for backwards compatibility */
