@@ -37,6 +37,10 @@
   const BLUE_PAGES_URL = (window.fidesRPCatalog && window.fidesRPCatalog.bluePagesUrl)
     || 'https://fides.community/community-tools/blue-pages';
 
+  // Map page URL for "Show on map" link (configurable via WordPress)
+  const MAP_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.mapPageUrl)
+    || 'https://fides.community/community-tools/map/';
+
   // Selected RP for modal
   let selectedRP = null;
 
@@ -735,10 +739,11 @@
     // Content area
     html += `<div class="fides-content">`;
 
-    // Results count
+    // Results count + link to map
     html += `
       <div class="fides-results-bar">
         <span class="fides-results-count">${filtered.length} relying party website${filtered.length !== 1 ? 's' : ''} found</span>
+        <a href="${MAP_PAGE_URL}" class="fides-show-on-map" target="_blank" rel="noopener" aria-label="Show on map (opens in new tab)">${icons.externalLink} Show on map</a>
       </div>
     `;
 

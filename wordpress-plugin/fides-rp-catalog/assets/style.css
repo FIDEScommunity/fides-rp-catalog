@@ -268,6 +268,30 @@
 
 .fides-results-bar {
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.fides-show-on-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: var(--fides-accent, #3b82f6);
+  text-decoration: none;
+}
+
+.fides-show-on-map:hover {
+  color: var(--fides-accent-hover, #60a5fa);
+  text-decoration: underline;
+}
+
+.fides-show-on-map svg {
+  flex-shrink: 0;
+  stroke: currentColor;
 }
 
 /* Mobile filter toggle button */
