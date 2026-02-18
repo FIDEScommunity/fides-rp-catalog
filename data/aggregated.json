@@ -41,7 +41,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.459Z",
+      "fetchedAt": "2026-02-18T22:13:49.215Z",
       "source": "local",
       "isFeatured": false
     },
@@ -88,7 +88,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.459Z",
+      "fetchedAt": "2026-02-18T22:13:49.215Z",
       "source": "local",
       "isFeatured": false
     },
@@ -133,7 +133,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.459Z",
+      "fetchedAt": "2026-02-18T22:13:49.215Z",
       "source": "local",
       "isFeatured": false
     },
@@ -182,7 +182,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.459Z",
+      "fetchedAt": "2026-02-18T22:13:49.215Z",
       "source": "local",
       "isFeatured": false
     },
@@ -229,7 +229,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.459Z",
+      "fetchedAt": "2026-02-18T22:13:49.215Z",
       "source": "local",
       "isFeatured": false
     },
@@ -276,7 +276,7 @@
         "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.464Z",
+      "fetchedAt": "2026-02-18T22:13:49.221Z",
       "source": "local",
       "isFeatured": false
     },
@@ -323,7 +323,52 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.464Z",
+      "fetchedAt": "2026-02-18T22:13:49.221Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "ca-dmv-mdl-login-opencred",
+      "name": "CA DMV Website Login (mDL / mDoc)",
+      "description": "Login to CA DMV online services using a mobile driver’s license (mDL) via ISO/IEC 18013-5 mdoc presentation flow. Supports CA DMV Wallet and compatible platform wallets.",
+      "website": "https://www.dmv.ca.gov/isam/sps/oidc/rp/dmv_rp/kickoff/opencred",
+      "readiness": "production",
+      "country": "US",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Website login / authentication",
+        "Access to MyDMV online services"
+      ],
+      "acceptedCredentials": [
+        "mDL (Mobile Driver’s License)"
+      ],
+      "credentialFormats": [
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "ISO/IEC 18013-5 (mDL/mdoc presentation)"
+      ],
+      "supportedWallets": [
+        "CA DMV Wallet",
+        "Apple Wallet",
+        "Google Wallet"
+      ],
+      "documentation": "https://www.dmv.ca.gov/portal/ca-dmv-wallet/mdl-for-technology-developers/",
+      "languages": [
+        "en"
+      ],
+      "provider": {
+        "name": "California Department of Motor Vehicles (CA DMV)",
+        "website": "https://www.dmv.ca.gov/portal/",
+        "contact": {
+          "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
+        }
+      },
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
+      "fetchedAt": "2026-02-18T22:13:49.221Z",
       "source": "local",
       "isFeatured": false
     },
@@ -374,7 +419,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.465Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": true
     },
@@ -432,7 +477,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.465Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": false
     },
@@ -499,7 +544,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.465Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": false
     },
@@ -557,7 +602,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.465Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": false
     },
@@ -612,7 +657,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.465Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": true
     },
@@ -666,7 +711,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.466Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": false
     },
@@ -721,7 +766,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.466Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": false
     },
@@ -775,7 +820,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.466Z",
+      "fetchedAt": "2026-02-18T22:13:49.222Z",
       "source": "local",
       "isFeatured": false
     },
@@ -820,7 +865,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.466Z",
+      "fetchedAt": "2026-02-18T22:13:49.223Z",
       "source": "local",
       "isFeatured": false
     },
@@ -882,7 +927,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.467Z",
+      "fetchedAt": "2026-02-18T22:13:49.223Z",
       "source": "local",
       "isFeatured": true
     },
@@ -943,7 +988,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.467Z",
+      "fetchedAt": "2026-02-18T22:13:49.223Z",
       "source": "local",
       "isFeatured": false
     },
@@ -995,7 +1040,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.467Z",
+      "fetchedAt": "2026-02-18T22:13:49.223Z",
       "source": "local",
       "isFeatured": true
     },
@@ -1051,7 +1096,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.467Z",
+      "fetchedAt": "2026-02-18T22:13:49.223Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1106,7 +1151,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.467Z",
+      "fetchedAt": "2026-02-18T22:13:49.223Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1151,7 +1196,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.467Z",
+      "fetchedAt": "2026-02-18T22:13:49.224Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1212,7 +1257,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.224Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1271,7 +1316,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1338,7 +1383,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": true
     },
@@ -1397,7 +1442,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1460,7 +1505,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1522,7 +1567,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1583,7 +1628,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1643,7 +1688,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1700,7 +1745,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1758,7 +1803,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1822,7 +1867,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1882,7 +1927,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1941,7 +1986,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2002,7 +2047,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.468Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2051,7 +2096,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.469Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2100,7 +2145,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.469Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2149,7 +2194,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.469Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2199,7 +2244,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.469Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2243,7 +2288,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.469Z",
+      "fetchedAt": "2026-02-18T22:13:49.225Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2290,7 +2335,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2333,7 +2378,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2375,7 +2420,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2418,7 +2463,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2460,7 +2505,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2503,7 +2548,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2545,7 +2590,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2587,7 +2632,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2629,7 +2674,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.470Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2686,7 +2731,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.471Z",
+      "fetchedAt": "2026-02-18T22:13:49.226Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2731,7 +2776,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-02-18T15:50:38.471Z",
+      "fetchedAt": "2026-02-18T22:13:49.227Z",
       "source": "local",
       "isFeatured": false
     }
@@ -2751,6 +2796,13 @@
       "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
       "website": "https://www.gov.br/gestao/",
       "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
+    },
+    {
+      "name": "California Department of Motor Vehicles (CA DMV)",
+      "website": "https://www.dmv.ca.gov/portal/",
+      "contact": {
+        "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
+      }
     },
     {
       "name": "European Commission",
@@ -2809,18 +2861,18 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-02-18T15:50:38.472Z",
+  "lastUpdated": "2026-02-18T22:13:49.227Z",
   "stats": {
-    "totalRPs": 52,
-    "totalProviders": 14,
+    "totalRPs": 53,
+    "totalProviders": 15,
     "byReadiness": {
       "technical-demo": 20,
       "use-case-demo": 29,
       "production-pilot": 2,
-      "production": 1
+      "production": 2
     },
     "bySector": {
-      "government": 35,
+      "government": 36,
       "education": 2,
       "finance": 14,
       "entertainment": 4,
@@ -2836,7 +2888,7 @@
       "Idemix": 6,
       "SD-JWT-VC": 34,
       "JSON-LD VC": 2,
-      "mDL/mDoc": 11
+      "mDL/mDoc": 12
     }
   }
 }
