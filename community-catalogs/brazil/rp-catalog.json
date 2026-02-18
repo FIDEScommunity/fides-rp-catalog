@@ -1,0 +1,49 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
+    "website": "https://www.gov.br/gestao/",
+    "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
+  },
+  "relyingParties": [
+    {
+      "id": "br-car-vc-pilot",
+      "name": "Cadastro Ambiental Rural (CAR) VC Pilot",
+      "description": "Pilot project issuing and verifying verifiable digital credentials for Brazil’s Rural Environmental Registry (CAR), enabling farmers to share authenticated land registration data with financial institutions and public agencies.",
+      "logo": "https://www.google.com/s2/favicons?domain=car.gov.br&sz=128",
+      "website": "https://www.car.gov.br/",
+      "readiness": "production-pilot",
+      "country": "BR",
+      "status": "beta",
+      "sectors": [
+        "government",
+        "finance"
+      ],
+      "useCases": [
+        "Land registration verification",
+        "Rural producer identity verification",
+        "Access to agricultural credit",
+        "Secure sharing of environmental registry data"
+      ],
+      "acceptedCredentials": [
+        "CAR Registration Credential",
+        "Government-issued digital identity"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "JSON-LD VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "features": [
+        "Government-issued verifiable credentials",
+        "Selective disclosure of land registry attributes",
+        "Integration with gov.br digital identity",
+        "DPI-based infrastructure"
+      ],
+      "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais"
+    }
+  ],
+  "lastUpdated": "2026-02-18T00:00:00Z"
+}
