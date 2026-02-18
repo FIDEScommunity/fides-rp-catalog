@@ -1,0 +1,41 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "California Department of Motor Vehicles (CA DMV)",
+    "website": "https://www.dmv.ca.gov/portal/",
+    "contact": {
+      "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
+    }
+  },
+  "relyingParties": [
+    {
+      "id": "ca-dmv-mdl-login-opencred",
+      "name": "CA DMV Website Login (mDL / mDoc)",
+      "description": "Login to CA DMV online services using a mobile driver’s license (mDL) via ISO/IEC 18013-5 mdoc presentation flow. Supports CA DMV Wallet and compatible platform wallets.",
+      "website": "https://www.dmv.ca.gov/isam/sps/oidc/rp/dmv_rp/kickoff/opencred",
+      "readiness": "production",
+      "country": "US",
+      "status": "live",
+      "sectors": ["government"],
+      "useCases": [
+        "Website login / authentication",
+        "Access to MyDMV online services"
+      ],
+      "acceptedCredentials": [
+        "mDL (Mobile Driver’s License)"
+      ],
+      "credentialFormats": ["mDL/mDoc"],
+      "presentationProtocols": [
+        "ISO/IEC 18013-5 (mDL/mdoc presentation)"
+      ],
+      "supportedWallets": [
+        "CA DMV Wallet",
+        "Apple Wallet",
+        "Google Wallet"
+      ],
+      "documentation": "https://www.dmv.ca.gov/portal/ca-dmv-wallet/mdl-for-technology-developers/",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2026-02-18T00:00:00Z"
+}
