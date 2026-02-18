@@ -1369,6 +1369,17 @@
   function openRPDetail(rpId) {
     const rp = relyingParties.find(r => r.id === rpId);
     if (rp) {
+      if (window.FidesCatalogUI && typeof window.FidesCatalogUI.openRpModal === 'function') {
+        window.FidesCatalogUI.openRpModal(rp, {
+          theme: container ? (container.getAttribute('data-theme') || 'dark') : 'dark',
+          walletCatalogUrl: WALLET_CATALOG_URL,
+          bluePagesUrl: BLUE_PAGES_URL,
+          onOpen: function(openedRP) {
+            trackMatomoEvent('RP Catalog', 'Modal Open', openedRP.name);
+          }
+        });
+        return;
+      }
       selectedRP = rp;
       
       // Track modal open in Matomo
