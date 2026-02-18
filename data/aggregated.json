@@ -41,7 +41,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.209Z",
+      "fetchedAt": "2026-02-18T15:50:38.459Z",
       "source": "local",
       "isFeatured": false
     },
@@ -88,7 +88,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.209Z",
+      "fetchedAt": "2026-02-18T15:50:38.459Z",
       "source": "local",
       "isFeatured": false
     },
@@ -133,7 +133,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.209Z",
+      "fetchedAt": "2026-02-18T15:50:38.459Z",
       "source": "local",
       "isFeatured": false
     },
@@ -182,7 +182,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.209Z",
+      "fetchedAt": "2026-02-18T15:50:38.459Z",
       "source": "local",
       "isFeatured": false
     },
@@ -229,7 +229,7 @@
         "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.209Z",
+      "fetchedAt": "2026-02-18T15:50:38.459Z",
       "source": "local",
       "isFeatured": false
     },
@@ -276,7 +276,54 @@
         "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.214Z",
+      "fetchedAt": "2026-02-18T15:50:38.464Z",
+      "source": "local",
+      "isFeatured": false
+    },
+    {
+      "id": "br-car-vc-pilot",
+      "name": "Cadastro Ambiental Rural (CAR) VC Pilot",
+      "description": "Pilot project issuing and verifying verifiable digital credentials for Brazil’s Rural Environmental Registry (CAR), enabling farmers to share authenticated land registration data with financial institutions and public agencies.",
+      "logo": "https://www.google.com/s2/favicons?domain=car.gov.br&sz=128",
+      "website": "https://www.car.gov.br/",
+      "readiness": "production-pilot",
+      "country": "BR",
+      "status": "beta",
+      "sectors": [
+        "government",
+        "finance"
+      ],
+      "useCases": [
+        "Land registration verification",
+        "Rural producer identity verification",
+        "Access to agricultural credit",
+        "Secure sharing of environmental registry data"
+      ],
+      "acceptedCredentials": [
+        "CAR Registration Credential",
+        "Government-issued digital identity"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "JSON-LD VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "features": [
+        "Government-issued verifiable credentials",
+        "Selective disclosure of land registry attributes",
+        "Integration with gov.br digital identity",
+        "DPI-based infrastructure"
+      ],
+      "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais",
+      "provider": {
+        "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
+        "website": "https://www.gov.br/gestao/",
+        "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
+      },
+      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
+      "fetchedAt": "2026-02-18T15:50:38.464Z",
       "source": "local",
       "isFeatured": false
     },
@@ -327,7 +374,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.215Z",
+      "fetchedAt": "2026-02-18T15:50:38.465Z",
       "source": "local",
       "isFeatured": true
     },
@@ -385,7 +432,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.215Z",
+      "fetchedAt": "2026-02-18T15:50:38.465Z",
       "source": "local",
       "isFeatured": false
     },
@@ -452,7 +499,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.215Z",
+      "fetchedAt": "2026-02-18T15:50:38.465Z",
       "source": "local",
       "isFeatured": false
     },
@@ -510,7 +557,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.216Z",
+      "fetchedAt": "2026-02-18T15:50:38.465Z",
       "source": "local",
       "isFeatured": false
     },
@@ -565,7 +612,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.216Z",
+      "fetchedAt": "2026-02-18T15:50:38.465Z",
       "source": "local",
       "isFeatured": true
     },
@@ -619,7 +666,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.216Z",
+      "fetchedAt": "2026-02-18T15:50:38.466Z",
       "source": "local",
       "isFeatured": false
     },
@@ -674,7 +721,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.216Z",
+      "fetchedAt": "2026-02-18T15:50:38.466Z",
       "source": "local",
       "isFeatured": false
     },
@@ -728,7 +775,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.216Z",
+      "fetchedAt": "2026-02-18T15:50:38.466Z",
       "source": "local",
       "isFeatured": false
     },
@@ -773,7 +820,7 @@
         "website": "https://www.eudiwalletconsortium.org/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.216Z",
+      "fetchedAt": "2026-02-18T15:50:38.466Z",
       "source": "local",
       "isFeatured": false
     },
@@ -835,7 +882,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.217Z",
+      "fetchedAt": "2026-02-18T15:50:38.467Z",
       "source": "local",
       "isFeatured": true
     },
@@ -896,7 +943,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.217Z",
+      "fetchedAt": "2026-02-18T15:50:38.467Z",
       "source": "local",
       "isFeatured": false
     },
@@ -948,7 +995,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.217Z",
+      "fetchedAt": "2026-02-18T15:50:38.467Z",
       "source": "local",
       "isFeatured": true
     },
@@ -1004,7 +1051,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.217Z",
+      "fetchedAt": "2026-02-18T15:50:38.467Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1059,7 +1106,7 @@
         "website": "https://fides.community"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.217Z",
+      "fetchedAt": "2026-02-18T15:50:38.467Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1104,7 +1151,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.217Z",
+      "fetchedAt": "2026-02-18T15:50:38.467Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1165,7 +1212,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1224,7 +1271,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1291,7 +1338,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": true
     },
@@ -1350,7 +1397,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1413,7 +1460,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1475,7 +1522,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1536,7 +1583,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1596,7 +1643,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1653,7 +1700,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1711,7 +1758,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1775,7 +1822,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1835,7 +1882,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1894,7 +1941,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -1955,7 +2002,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.218Z",
+      "fetchedAt": "2026-02-18T15:50:38.468Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2004,7 +2051,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.219Z",
+      "fetchedAt": "2026-02-18T15:50:38.469Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2053,7 +2100,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.219Z",
+      "fetchedAt": "2026-02-18T15:50:38.469Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2102,7 +2149,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.219Z",
+      "fetchedAt": "2026-02-18T15:50:38.469Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2152,7 +2199,7 @@
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.219Z",
+      "fetchedAt": "2026-02-18T15:50:38.469Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2196,7 +2243,7 @@
         "website": "https://www.mosip.io"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.219Z",
+      "fetchedAt": "2026-02-18T15:50:38.469Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2243,7 +2290,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2286,7 +2333,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2328,7 +2375,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2371,7 +2418,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2413,7 +2460,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2456,7 +2503,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2498,7 +2545,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2540,7 +2587,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2582,7 +2629,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.470Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2639,7 +2686,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.220Z",
+      "fetchedAt": "2026-02-18T15:50:38.471Z",
       "source": "local",
       "isFeatured": false
     },
@@ -2684,7 +2731,7 @@
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-02-18T06:44:49.221Z",
+      "fetchedAt": "2026-02-18T15:50:38.471Z",
       "source": "local",
       "isFeatured": false
     }
@@ -2699,6 +2746,11 @@
       "name": "Government of British Columbia",
       "website": "https://www.gov.bc.ca/",
       "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
+    },
+    {
+      "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
+      "website": "https://www.gov.br/gestao/",
+      "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
     },
     {
       "name": "European Commission",
@@ -2757,22 +2809,22 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-02-18T06:44:49.221Z",
+  "lastUpdated": "2026-02-18T15:50:38.472Z",
   "stats": {
-    "totalRPs": 51,
-    "totalProviders": 13,
+    "totalRPs": 52,
+    "totalProviders": 14,
     "byReadiness": {
       "technical-demo": 20,
       "use-case-demo": 29,
-      "production-pilot": 1,
+      "production-pilot": 2,
       "production": 1
     },
     "bySector": {
-      "government": 34,
+      "government": 35,
       "education": 2,
+      "finance": 14,
       "entertainment": 4,
       "retail": 3,
-      "finance": 13,
       "telecom": 1,
       "other": 3,
       "travel": 3,
@@ -2782,9 +2834,9 @@
     },
     "byCredentialFormat": {
       "Idemix": 6,
-      "SD-JWT-VC": 33,
-      "mDL/mDoc": 11,
-      "JSON-LD VC": 1
+      "SD-JWT-VC": 34,
+      "JSON-LD VC": 2,
+      "mDL/mDoc": 11
     }
   }
 }
