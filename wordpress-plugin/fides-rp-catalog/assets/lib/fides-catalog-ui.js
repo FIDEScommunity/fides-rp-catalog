@@ -255,7 +255,7 @@
         const walletUrl = walletCatalogUrl.replace(/\/$/, '') + '/?wallet=' + encodeURIComponent(walletId);
         return '<a href="' + escapeHtml(walletUrl) + '" target="_blank" rel="noopener" class="fides-tag wallet-link">' + escapeHtml(name) + ' ' + icons.externalLinkSmall + '</a>';
       }
-      return '<span class="fides-tag">' + escapeHtml(name) + '</span>';
+      return '<span class="fides-tag supported-wallet">' + escapeHtml(name) + '</span>';
     }).join('');
 
     const shareButtonHtml = (options && options.showShare === false)
@@ -279,9 +279,9 @@
       (rp.video ? getVideoEmbedHtml(rp.video) : '') +
       '<div class="fides-modal-grid">' +
       ((rp.sectors && rp.sectors.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.building + ' Sectors</div><div class="fides-modal-grid-value">' + rp.sectors.map(s => '<span class="fides-tag sector">' + escapeHtml(s) + '</span>').join('') + '</div></div>' : '') +
-      ((rp.acceptedCredentials && rp.acceptedCredentials.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Accepted Credentials</div><div class="fides-modal-grid-value">' + rp.acceptedCredentials.map(c => '<span class="fides-tag">' + escapeHtml(c) + '</span>').join('') + '</div></div>' : '') +
-      ((rp.credentialFormats && rp.credentialFormats.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Credential Formats</div><div class="fides-modal-grid-value">' + rp.credentialFormats.map(f => '<span class="fides-tag">' + escapeHtml(f) + '</span>').join('') + '</div></div>' : '') +
-      ((rp.presentationProtocols && rp.presentationProtocols.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Presentation Protocols</div><div class="fides-modal-grid-value">' + rp.presentationProtocols.map(p => '<span class="fides-tag">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
+      ((rp.acceptedCredentials && rp.acceptedCredentials.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Accepted Credentials</div><div class="fides-modal-grid-value">' + rp.acceptedCredentials.map(c => '<span class="fides-tag accepted-credential">' + escapeHtml(c) + '</span>').join('') + '</div></div>' : '') +
+      ((rp.credentialFormats && rp.credentialFormats.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Credential Formats</div><div class="fides-modal-grid-value">' + rp.credentialFormats.map(f => '<span class="fides-tag credential-format">' + escapeHtml(f) + '</span>').join('') + '</div></div>' : '') +
+      ((rp.presentationProtocols && rp.presentationProtocols.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Presentation Protocols</div><div class="fides-modal-grid-value">' + rp.presentationProtocols.map(p => '<span class="fides-tag protocol-presentation">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
       ((rp.interoperabilityProfiles && rp.interoperabilityProfiles.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Interop Profiles</div><div class="fides-modal-grid-value">' + rp.interoperabilityProfiles.map(p => '<span class="fides-tag interop">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
       ((rp.supportedWallets && rp.supportedWallets.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.wallet + ' Supported Wallets</div><div class="fides-modal-grid-value">' + supportedWalletsHtml + '</div></div>' : '') +
       '</div>' +
