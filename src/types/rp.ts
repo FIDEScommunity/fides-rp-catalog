@@ -93,6 +93,10 @@ export interface RelyingParty {
   
   // Featured flag (added by crawler)
   isFeatured?: boolean;
+
+  // Semantic dates (added by crawler; do not set in provider JSON)
+  updatedAt?: string;
+  firstSeenAt?: string;
 }
 
 // RP Catalog structure
@@ -109,6 +113,8 @@ export interface NormalizedRP extends RelyingParty {
   catalogUrl: string;
   fetchedAt: string;
   source: 'did' | 'github' | 'local';
+  updatedAt: string;
+  firstSeenAt: string;
 }
 
 // Aggregated data structure

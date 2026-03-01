@@ -9,6 +9,7 @@
 
 import * as fs from 'fs/promises';
 import * as path from 'path';
+import { execFileSync } from 'child_process';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import type { 
@@ -26,6 +27,7 @@ const CONFIG = {
   wpPluginDataPath: path.join(process.cwd(), 'wordpress-plugin/fides-rp-catalog/data/aggregated.json'),
   didRegistryPath: path.join(process.cwd(), 'data/did-registry.json'),
   schemaPath: path.join(process.cwd(), 'schemas/rp-catalog.schema.json'),
+  rpHistoryStatePath: path.join(process.cwd(), 'data/rp-history-state.json'),
   githubRepo: {
     enabled: process.env.GITHUB_ACTIONS === 'true',
     owner: 'FIDEScommunity',
@@ -33,6 +35,60 @@ const CONFIG = {
     path: 'community-catalogs'
   }
 };
+
+interface RPHistoryEntry {
+  firstSeenAt: string;
+  lastSeenAt?: string;
+}
+type RPHistoryState = Record<string, RPHistoryEntry>;
+const gitLastCommitDateCache = new Map<string, string | null>();
+
+function toIsoString(value?: string): string | null {
+  if (!value || typeof value !== 'string') return null;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toISOString();
+}
+
+/**
+ * Get last commit date for a repo-relative file path
+ */
+function getGitLastCommitDateForPath(repoRelativePath: string): string | null {
+  if (!repoRelativePath) return null;
+  const normalizedPath = repoRelativePath.replace(/\\/g, '/');
+  if (gitLastCommitDateCache.has(normalizedPath)) {
+    return gitLastCommitDateCache.get(normalizedPath) ?? null;
+  }
+  try {
+    const output = execFileSync(
+      'git',
+      ['log', '-1', '--format=%aI', '--', normalizedPath],
+      { cwd: process.cwd(), encoding: 'utf-8' }
+    ).trim();
+    const parsed = toIsoString(output || undefined);
+    gitLastCommitDateCache.set(normalizedPath, parsed);
+    return parsed;
+  } catch {
+    gitLastCommitDateCache.set(normalizedPath, null);
+    return null;
+  }
+}
+
+async function loadRPHistoryState(): Promise<RPHistoryState> {
+  try {
+    const data = await fs.readFile(CONFIG.rpHistoryStatePath, 'utf-8');
+    const parsed = JSON.parse(data) as RPHistoryState;
+    if (!parsed || typeof parsed !== 'object') return {};
+    return parsed;
+  } catch {
+    return {};
+  }
+}
+
+async function saveRPHistoryState(state: RPHistoryState): Promise<void> {
+  await fs.mkdir(path.dirname(CONFIG.rpHistoryStatePath), { recursive: true });
+  await fs.writeFile(CONFIG.rpHistoryStatePath, JSON.stringify(state, null, 2));
+}
 
 // Validator will be initialized asynchronously
 let validateCatalog: ReturnType<typeof Ajv2020.prototype.compile>;
@@ -71,28 +127,62 @@ async function loadFeaturedConfig(): Promise<Set<string>> {
 }
 
 /**
- * Normalize relying parties from a catalog
+ * Normalize relying parties from a catalog (adds updatedAt, firstSeenAt; mutates rpHistoryState).
+ * Like the wallet catalog: uses Git last-commit date of the source file as fallback for updatedAt
+ * when the catalog does not provide it (requires fetch-depth: 0 in CI).
  */
 function normalizeRPs(
-  catalog: RPCatalog, 
+  catalog: RPCatalog,
   catalogUrl: string,
   source: 'did' | 'github' | 'local',
-  featuredSet: Set<string>
+  featuredSet: Set<string>,
+  rpHistoryState: RPHistoryState,
+  gitLastCommitAt: string | null
 ): NormalizedRP[] {
-  return catalog.relyingParties.map(rp => ({
-    ...rp,
-    provider: catalog.provider,
-    catalogUrl,
-    fetchedAt: new Date().toISOString(),
-    source,
-    isFeatured: featuredSet.has(rp.id)
-  }));
+  const fetchedAt = new Date().toISOString();
+  return catalog.relyingParties.map(rp => {
+    const rpAny = rp as unknown as Record<string, unknown>;
+    const updatedAt =
+      toIsoString(rpAny.updatedAt as string) ??
+      toIsoString(rpAny.updated as string) ??
+      toIsoString(catalog.lastUpdated) ??
+      gitLastCommitAt ?? // Git last-commit date of catalog file (like wallet catalog)
+      fetchedAt;
+
+    const existingHistory = rpHistoryState[rp.id];
+    const firstSeenAt =
+      existingHistory?.firstSeenAt ??
+      toIsoString(rpAny.firstSeenAt as string) ??
+      toIsoString(rpAny.createdAt as string) ??
+      toIsoString((rpAny.addedAt as string)) ??
+      updatedAt ??
+      fetchedAt;
+
+    rpHistoryState[rp.id] = {
+      firstSeenAt,
+      lastSeenAt: fetchedAt
+    };
+
+    return {
+      ...rp,
+      provider: catalog.provider,
+      catalogUrl,
+      fetchedAt,
+      source,
+      isFeatured: featuredSet.has(rp.id),
+      updatedAt,
+      firstSeenAt
+    } as NormalizedRP;
+  });
 }
 
 /**
  * Crawl local community catalogs
  */
-async function crawlLocalCommunity(featuredSet: Set<string>): Promise<{ rps: NormalizedRP[], providers: Map<string, RPProvider> }> {
+async function crawlLocalCommunity(
+  featuredSet: Set<string>,
+  rpHistoryState: RPHistoryState
+): Promise<{ rps: NormalizedRP[]; providers: Map<string, RPProvider> }> {
   const rps: NormalizedRP[] = [];
   const providers = new Map<string, RPProvider>();
 
@@ -100,28 +190,35 @@ async function crawlLocalCommunity(featuredSet: Set<string>): Promise<{ rps: Nor
 
   try {
     const dirs = await fs.readdir(CONFIG.localCommunityDir);
-    
+
     for (const dir of dirs) {
       const catalogPath = path.join(CONFIG.localCommunityDir, dir, 'rp-catalog.json');
-      
+
       try {
         const content = await fs.readFile(catalogPath, 'utf-8');
         const catalog: RPCatalog = JSON.parse(content);
-        
-        // Validate
+
         if (!validateCatalog(catalog)) {
           console.error(`   ❌ Invalid catalog in ${dir}:`, validateCatalog.errors);
           continue;
         }
-        
+
+        const repoRelativePath = path.relative(process.cwd(), catalogPath);
+        const gitLastCommitAt = getGitLastCommitDateForPath(repoRelativePath);
+
         console.log(`   📦 Processing: ${dir}`);
-        const normalizedRPs = normalizeRPs(catalog, catalogPath, 'local', featuredSet);
+        const normalizedRPs = normalizeRPs(
+          catalog,
+          catalogPath,
+          'local',
+          featuredSet,
+          rpHistoryState,
+          gitLastCommitAt
+        );
         rps.push(...normalizedRPs);
         providers.set(catalog.provider.did || catalog.provider.name, catalog.provider);
         console.log(`      ✅ Found ${normalizedRPs.length} relying part${normalizedRPs.length === 1 ? 'y' : 'ies'}`);
-        
       } catch (error) {
-        // Skip directories without rp-catalog.json
         if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
           console.error(`   ❌ Error processing ${dir}:`, error);
         }
@@ -202,22 +299,20 @@ function calculateStats(rps: NormalizedRP[], providers: Map<string, RPProvider>)
  */
 async function crawl(): Promise<void> {
   console.log('🔍 Starting FIDES RP Catalog crawl...');
-  
-  // Initialize validator
+
   await initValidator();
-  
-  // Load featured configuration
   const featuredSet = await loadFeaturedConfig();
+  const rpHistoryState = await loadRPHistoryState();
 
   const allRPs: NormalizedRP[] = [];
   const allProviders = new Map<string, RPProvider>();
 
-  // 1. Crawl local community catalogs
-  const community = await crawlLocalCommunity(featuredSet);
+  const community = await crawlLocalCommunity(featuredSet, rpHistoryState);
   allRPs.push(...community.rps);
   community.providers.forEach((v, k) => allProviders.set(k, v));
 
-  // Deduplicate
+  await saveRPHistoryState(rpHistoryState);
+
   const dedupedRPs = deduplicateRPs(allRPs);
 
   // Calculate stats

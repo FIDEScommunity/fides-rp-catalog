@@ -94,6 +94,9 @@
   /** Groups that do not show the [i] info button (empty: all groups can show category description from vocabulary) */
   const RP_VOCAB_NO_INFO = new Set([]);
 
+  const SORT_PREFERENCE_STORAGE_KEY = 'fidesRPCatalogSortBy';
+  let sortBy = 'lastUpdated';
+
   let filters = {
     search: '',
     type: [],
@@ -102,7 +105,10 @@
     credentialFormats: [],
     presentationProtocols: [],
     interoperabilityProfiles: [],
-    supportedWallets: []
+    supportedWallets: [],
+    addedLast30Days: false,
+    includesVideo: false,
+    featuredFirst: true
   };
 
   // Track which filter groups are expanded (true = expanded, false = collapsed)
@@ -151,8 +157,69 @@
       filters.sectors = [settings.sector];
     }
 
+    // Restore sort preference
+    try {
+      const stored = window.localStorage.getItem(SORT_PREFERENCE_STORAGE_KEY);
+      if (stored === 'lastUpdated' || stored === 'name') sortBy = stored;
+    } catch (e) { /* ignore */ }
+
     // Load data
     loadRelyingParties();
+  }
+
+  /**
+   * Get the "visible" set for facet computation (shortcode pre-filter only: type and/or sector)
+   */
+  function getRPsForFacets(rps) {
+    let list = rps;
+    if (settings.type) {
+      list = list.filter(rp => rp.readiness === settings.type);
+    }
+    if (settings.sector) {
+      list = list.filter(rp => (rp.sectors || []).includes(settings.sector));
+    }
+    return list;
+  }
+
+  /**
+   * Parse ISO or date-like string; return ISO string or null
+   */
+  function parseRPDate(rp, keys) {
+    for (let i = 0; i < keys.length; i++) {
+      const v = rp[keys[i]];
+      if (!v || typeof v !== 'string') continue;
+      const d = new Date(v);
+      if (!Number.isNaN(d.getTime())) return d.toISOString();
+    }
+    return null;
+  }
+
+  /**
+   * Best-effort "added" date for display and quick filter.
+   * Uses firstSeenAt, createdAt, addedAt only (not fetchedAt – that is crawl time, same for all).
+   */
+  function getRPAddedDate(rp) {
+    return parseRPDate(rp, ['firstSeenAt', 'createdAt', 'addedAt']) || null;
+  }
+
+  /**
+   * Best-effort "updated" date for sort, quick filter and display.
+   * updatedAt is set by the crawler (Git last-commit date of catalog file as fallback, like wallet catalog); else fetchedAt.
+   */
+  function getRPUpdatedDate(rp) {
+    return parseRPDate(rp, ['updatedAt', 'fetchedAt']) || null;
+  }
+
+  /**
+   * Check if ISO date string is within the last N days
+   */
+  function isWithinLastDays(isoString, days) {
+    if (!isoString) return false;
+    const d = new Date(isoString);
+    if (Number.isNaN(d.getTime())) return false;
+    const now = Date.now();
+    const limit = now - days * 24 * 60 * 60 * 1000;
+    return d.getTime() >= limit;
   }
 
   /**
@@ -166,13 +233,14 @@
 
     for (const source of sources) {
       if (!source.url) continue;
-      
+
       try {
         const response = await fetch(source.url);
         if (response.ok) {
           const data = await response.json();
           relyingParties = source.transform(data);
-          filterFacets = computeFilterFacets(relyingParties);
+          const rpsForFacets = getRPsForFacets(relyingParties);
+          filterFacets = computeFilterFacets(rpsForFacets);
           console.log(`✅ Loaded ${relyingParties.length} relying parties from ${source.name}`);
           break;
         }
@@ -336,24 +404,64 @@
         if (!hasMatch) return false;
       }
 
+      // Quick filters
+      if (filters.addedLast30Days && !isWithinLastDays(getRPAddedDate(rp), 30)) return false;
+      if (filters.includesVideo && !(rp.video && typeof rp.video === 'string' && rp.video.trim())) return false;
+
       return true;
     });
 
-    // Sort: Featured first (alphabetically), then regular (alphabetically)
-    filtered.sort((a, b) => {
-      // Featured items come first
-      if (a.isFeatured && !b.isFeatured) return -1;
-      if (!a.isFeatured && b.isFeatured) return 1;
-      
-      // Within same group (featured or regular), sort by provider name first
+    // Sort: when featuredFirst is on, featured items always first; then by chosen sort within each group
+    const compareSecondary = (a, b) => {
       const providerCompare = a.provider.name.localeCompare(b.provider.name);
       if (providerCompare !== 0) return providerCompare;
-      
-      // Within same provider, sort by RP name
       return a.name.localeCompare(b.name);
-    });
+    };
+    if (sortBy === 'lastUpdated') {
+      filtered.sort((a, b) => {
+        if (filters.featuredFirst) {
+          if (a.isFeatured && !b.isFeatured) return -1;
+          if (!a.isFeatured && b.isFeatured) return 1;
+        }
+        const dateA = getRPUpdatedDate(a);
+        const dateB = getRPUpdatedDate(b);
+        const tA = new Date(dateA || 0).getTime();
+        const tB = new Date(dateB || 0).getTime();
+        if (tB !== tA) return tB - tA;
+        return compareSecondary(a, b);
+      });
+    } else {
+      filtered.sort((a, b) => {
+        if (filters.featuredFirst) {
+          if (a.isFeatured && !b.isFeatured) return -1;
+          if (!a.isFeatured && b.isFeatured) return 1;
+        }
+        return compareSecondary(a, b);
+      });
+    }
 
     return filtered;
+  }
+
+  /**
+   * Get KPI metrics for the current filtered result set
+   */
+  function getCatalogMetrics(rps) {
+    const list = Array.isArray(rps) ? rps : [];
+    let newLast30Days = 0;
+    let updatedLast30Days = 0;
+    const countries = new Set();
+    list.forEach(rp => {
+      if (isWithinLastDays(getRPAddedDate(rp), 30)) newLast30Days += 1;
+      if (isWithinLastDays(getRPUpdatedDate(rp), 30)) updatedLast30Days += 1;
+      if (rp.country) countries.add(rp.country);
+    });
+    return {
+      total: list.length,
+      newLast30Days,
+      updatedLast30Days,
+      countryCount: countries.size
+    };
   }
 
   /**
@@ -368,6 +476,8 @@
     count += filters.presentationProtocols.length;
     count += filters.interoperabilityProfiles.length;
     count += filters.supportedWallets.length;
+    if (filters.addedLast30Days) count += 1;
+    if (filters.includesVideo) count += 1;
     return count;
   }
 
@@ -383,6 +493,10 @@
     const presentationProtocolCount = { OpenID4VP: 0, 'ISO 18013-5': 0, '...other': 0 };
     const interopProfileCount = {};
     const walletMap = new Map(); // id -> { name, count }
+    let addedLast30Days = 0;
+    let updatedLast30Days = 0;
+    let includesVideo = 0;
+    let featured = 0;
 
     rps.forEach(rp => {
       if (rp.readiness) {
@@ -411,6 +525,10 @@
           walletMap.get(id).count += 1;
         }
       });
+      if (isWithinLastDays(getRPAddedDate(rp), 30)) addedLast30Days += 1;
+      if (isWithinLastDays(getRPUpdatedDate(rp), 30)) updatedLast30Days += 1;
+      if (rp.video && typeof rp.video === 'string' && rp.video.trim()) includesVideo += 1;
+      if (rp.isFeatured) featured += 1;
     });
 
     const supportedWallets = Array.from(walletMap.entries())
@@ -431,7 +549,11 @@
       interoperabilityProfiles: interopProfileCount,
       supportedWallets,
       country,
-      presentationProtocols
+      presentationProtocols,
+      addedLast30Days,
+      updatedLast30Days,
+      includesVideo,
+      featured
     };
   }
 
@@ -498,6 +620,7 @@
    */
   function render() {
     const filtered = getFilteredAndSortedRPs();
+    const metrics = getCatalogMetrics(filtered);
     const activeFilterCount = getActiveFilterCount();
     
     // Save focus state
@@ -556,6 +679,21 @@
                 </div>
               </div>
             ` : ''}
+            <div class="fides-quick-filters">
+              <span class="fides-quick-filters-title">Quick filters</span>
+              <label class="fides-filter-checkbox">
+                <input type="checkbox" data-filter="addedLast30Days" data-value="true" ${filters.addedLast30Days ? 'checked' : ''}>
+                <span>Added last 30 days<span class="fides-filter-option-count">(${filterFacets ? filterFacets.addedLast30Days : ''})</span></span>
+              </label>
+              <label class="fides-filter-checkbox">
+                <input type="checkbox" data-filter="includesVideo" data-value="true" ${filters.includesVideo ? 'checked' : ''}>
+                <span>Includes video<span class="fides-filter-option-count">(${filterFacets ? filterFacets.includesVideo : ''})</span></span>
+              </label>
+              <label class="fides-filter-checkbox">
+                <input type="checkbox" data-filter="featuredFirst" data-value="true" ${filters.featuredFirst ? 'checked' : ''}>
+                <span>Featured first<span class="fides-filter-option-count">(${filterFacets ? filterFacets.featured : ''})</span></span>
+              </label>
+            </div>
             ${!settings.type ? `
               <div class="fides-filter-group collapsible ${!filterGroupState.type ? 'collapsed' : ''} ${filters.type.length > 0 ? 'has-active' : ''}" data-filter-group="type">
                 <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.type}">
@@ -739,11 +877,35 @@
     // Content area
     html += `<div class="fides-content">`;
 
-    // Results count + link to map
+    // Results bar: sort, link to map (total count is in KPI row)
     html += `
       <div class="fides-results-bar">
-        <span class="fides-results-count">${filtered.length} relying party website${filtered.length !== 1 ? 's' : ''} found</span>
+        <label class="fides-sort-label">
+          <span class="fides-sort-text">Sort by</span>
+          <select class="fides-sort-select" id="fides-sort-select" aria-label="Sort order">
+            <option value="lastUpdated" ${sortBy === 'lastUpdated' ? 'selected' : ''}>Last updated</option>
+            <option value="name" ${sortBy === 'name' ? 'selected' : ''}>Name</option>
+          </select>
+        </label>
         <a href="${MAP_PAGE_URL}" class="fides-show-on-map" target="_blank" rel="noopener" aria-label="Show on map (opens in new tab)">${icons.externalLink} Show on map</a>
+      </div>
+      <div class="fides-kpi-row">
+        <button class="fides-kpi-card" type="button" data-kpi-action="clear-added-filter">
+          <span class="fides-kpi-value">${metrics.total}</span>
+          <span class="fides-kpi-label">Relying party websites</span>
+        </button>
+        <button class="fides-kpi-card ${filters.addedLast30Days ? 'active' : ''}" type="button" data-kpi-action="toggle-added-filter">
+          <span class="fides-kpi-value">${metrics.newLast30Days}</span>
+          <span class="fides-kpi-label">New<span class="fides-kpi-label-extra"> last 30 days</span></span>
+        </button>
+        <button class="fides-kpi-card" type="button" data-kpi-action="set-last-updated-sort">
+          <span class="fides-kpi-value">${metrics.updatedLast30Days}</span>
+          <span class="fides-kpi-label">Updated<span class="fides-kpi-label-extra"> last 30 days</span></span>
+        </button>
+        <button class="fides-kpi-card ${filters.country.length > 0 ? 'active' : ''}" type="button" data-kpi-action="clear-country-filter">
+          <span class="fides-kpi-value">${metrics.countryCount}</span>
+          <span class="fides-kpi-label">Countries</span>
+        </button>
       </div>
     `;
 
@@ -786,42 +948,47 @@
    */
   function renderRPGridOnly() {
     const filtered = getFilteredAndSortedRPs();
-    
-    // Update results count
-    const resultsCount = container.querySelector('.fides-results-count');
-    if (resultsCount) {
-      resultsCount.textContent = `${filtered.length} relying party website${filtered.length !== 1 ? 's' : ''} found`;
-    }
-    
-    // Update search clear button visibility
+    const metrics = getCatalogMetrics(filtered);
+
+    const kpiTotal = container.querySelector('.fides-kpi-card[data-kpi-action="clear-added-filter"] .fides-kpi-value');
+    const kpiNew = container.querySelector('.fides-kpi-card[data-kpi-action="toggle-added-filter"] .fides-kpi-value');
+    const kpiUpdated = container.querySelector('.fides-kpi-card[data-kpi-action="set-last-updated-sort"] .fides-kpi-value');
+    const kpiCountries = container.querySelector('.fides-kpi-card[data-kpi-action="clear-country-filter"] .fides-kpi-value');
+    const kpiAddedCard = container.querySelector('.fides-kpi-card[data-kpi-action="toggle-added-filter"]');
+    const kpiCountryCard = container.querySelector('.fides-kpi-card[data-kpi-action="clear-country-filter"]');
+    if (kpiTotal) kpiTotal.textContent = String(metrics.total);
+    if (kpiNew) kpiNew.textContent = String(metrics.newLast30Days);
+    if (kpiUpdated) kpiUpdated.textContent = String(metrics.updatedLast30Days);
+    if (kpiCountries) kpiCountries.textContent = String(metrics.countryCount);
+    if (kpiAddedCard) kpiAddedCard.classList.toggle('active', filters.addedLast30Days);
+    if (kpiCountryCard) kpiCountryCard.classList.toggle('active', filters.country.length > 0);
+
     const searchClear = document.getElementById('fides-search-clear');
     if (searchClear) {
       searchClear.classList.toggle('hidden', !filters.search);
     }
-    
-    // Update RP grid
+
     const gridContainer = container.querySelector('.fides-rp-grid');
     const emptyContainer = container.querySelector('.fides-empty');
     const contentArea = container.querySelector('.fides-content');
-    
+
     if (filtered.length > 0) {
-      // Remove empty state if present
       if (emptyContainer) {
         emptyContainer.remove();
       }
-      
-      // Create or update grid
+
       let grid = gridContainer;
       if (!grid) {
         grid = document.createElement('div');
         grid.className = 'fides-rp-grid';
         grid.setAttribute('data-columns', settings.columns);
-        // Insert after results bar
-        const resultsBar = contentArea.querySelector('.fides-results-bar');
-        if (resultsBar) {
-          resultsBar.after(grid);
+        const kpiRow = contentArea.querySelector('.fides-kpi-row');
+        if (kpiRow) {
+          kpiRow.after(grid);
         } else {
-          contentArea.appendChild(grid);
+          const resultsBar = contentArea.querySelector('.fides-results-bar');
+          if (resultsBar) resultsBar.after(grid);
+          else contentArea.appendChild(grid);
         }
       }
       
@@ -906,6 +1073,18 @@
     const logoUrl = rp.logo || (rp.country ? `https://flagcdn.com/w80/${rp.country.toLowerCase()}.png` : null);
     const featuredClass = rp.isFeatured ? 'fides-rp-card-featured' : '';
 
+    const addedDate = getRPAddedDate(rp);
+    const updatedDate = getRPUpdatedDate(rp);
+    const isNewRP = addedDate && isWithinLastDays(addedDate, 30);
+    let activityLabel = '';
+    if (isNewRP && addedDate) {
+      activityLabel = `Added ${new Date(addedDate).toLocaleDateString('en-US')}`;
+    } else if (updatedDate) {
+      activityLabel = `Updated ${new Date(updatedDate).toLocaleDateString('en-US')}`;
+    } else if (addedDate) {
+      activityLabel = `Added ${new Date(addedDate).toLocaleDateString('en-US')}`;
+    }
+
     return `
       <div class="fides-rp-card ${featuredClass}" data-rp-id="${rp.id}" role="button" tabindex="0">
         <div class="fides-rp-header readiness-${rp.readiness}">
@@ -923,6 +1102,7 @@
           }
         </div>
         <div class="fides-rp-body">
+          ${activityLabel ? `<p class="fides-rp-updated">${escapeHtml(activityLabel)}</p>` : ''}
           ${rp.description ? `<p class="fides-rp-description">${escapeHtml(rp.description)}</p>` : ''}
           
           ${rp.supportedWallets && rp.supportedWallets.length > 0 ? `
@@ -1468,20 +1648,69 @@
     initVocabularyInfo(container);
 
     // Filter checkboxes
+    const quickFilterKeys = ['addedLast30Days', 'includesVideo', 'featuredFirst'];
     container.querySelectorAll('.fides-filter-checkbox input[type="checkbox"]').forEach(checkbox => {
       checkbox.addEventListener('change', () => {
         const filterType = checkbox.dataset.filter;
         const value = checkbox.dataset.value;
-        
-        if (checkbox.checked) {
-          if (!filters[filterType].includes(value)) {
-            filters[filterType].push(value);
-          }
+        if (quickFilterKeys.includes(filterType)) {
+          filters[filterType] = checkbox.checked;
         } else {
-          filters[filterType] = filters[filterType].filter(v => v !== value);
+          if (checkbox.checked) {
+            if (!filters[filterType].includes(value)) {
+              filters[filterType].push(value);
+            }
+          } else {
+            filters[filterType] = filters[filterType].filter(v => v !== value);
+          }
         }
-        
         render();
+      });
+    });
+
+    // Sort select
+    const sortSelect = document.getElementById('fides-sort-select');
+    if (sortSelect) {
+      sortSelect.addEventListener('change', (e) => {
+        sortBy = e.target.value;
+        try {
+          window.localStorage.setItem(SORT_PREFERENCE_STORAGE_KEY, sortBy);
+        } catch (err) { /* ignore */ }
+        render();
+      });
+    }
+
+    // KPI card clicks
+    container.querySelectorAll('.fides-kpi-card').forEach(kpiCard => {
+      kpiCard.addEventListener('click', () => {
+        const action = kpiCard.dataset.kpiAction;
+        if (action === 'toggle-added-filter') {
+          filters.addedLast30Days = !filters.addedLast30Days;
+          render();
+          return;
+        }
+        if (action === 'set-last-updated-sort') {
+          sortBy = 'lastUpdated';
+          try {
+            window.localStorage.setItem(SORT_PREFERENCE_STORAGE_KEY, sortBy);
+          } catch (err) { /* ignore */ }
+          render();
+          return;
+        }
+        if (action === 'clear-country-filter') {
+          if (filters.country.length > 0) {
+            filters.country = [];
+            render();
+          }
+          return;
+        }
+        if (action === 'clear-added-filter') {
+          if (filters.addedLast30Days) {
+            filters.addedLast30Days = false;
+            render();
+          }
+          return;
+        }
       });
     });
 
@@ -1497,7 +1726,9 @@
           credentialFormats: [],
           presentationProtocols: [],
           interoperabilityProfiles: [],
-          supportedWallets: []
+          supportedWallets: [],
+          addedLast30Days: false,
+          includesVideo: false
         };
         render();
       });
