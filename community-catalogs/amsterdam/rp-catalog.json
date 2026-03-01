@@ -3,13 +3,13 @@
   "provider": {
     "name": "City of Amsterdam",
     "website": "https://amsterdam-demo.staging.yivi.app/",
-    "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
   },
   "relyingParties": [
     {
       "id": "leeftijd-aantonen",
       "name": "Prove age",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to prove your age with Yivi, for example for age verification when using a municipal service.",
       "website": "https://amsterdam-demo.staging.yivi.app/leeftijd-aantonen",
       "readiness": "use-case-demo",
@@ -28,7 +28,7 @@
     {
       "id": "ideeen-voor-uw-buurt",
       "name": "Ideas for your neighbourhood",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to submit ideas for your neighbourhood to the municipality, with login and verification via Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/ideeen-voor-uw-buurt",
       "readiness": "use-case-demo",
@@ -47,7 +47,7 @@
     {
       "id": "inloggen",
       "name": "Login",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to log in to a City of Amsterdam service using your Yivi wallet.",
       "website": "https://amsterdam-demo.staging.yivi.app/inloggen",
       "readiness": "use-case-demo",
@@ -66,7 +66,7 @@
     {
       "id": "geveltuin-aanvragen",
       "name": "Apply for front garden",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to apply for a front garden (geveltuin) with the municipality, with identity verification via Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/geveltuin-aanvragen",
       "readiness": "use-case-demo",
@@ -85,7 +85,7 @@
     {
       "id": "overlast-melden",
       "name": "Report nuisance",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to report a nuisance to the City of Amsterdam, after logging in with Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/overlast-melden",
       "readiness": "use-case-demo",

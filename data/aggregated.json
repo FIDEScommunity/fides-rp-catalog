@@ -3,7 +3,7 @@
     {
       "id": "leeftijd-aantonen",
       "name": "Prove age",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to prove your age with Yivi, for example for age verification when using a municipal service.",
       "website": "https://amsterdam-demo.staging.yivi.app/leeftijd-aantonen",
       "readiness": "use-case-demo",
@@ -38,17 +38,19 @@
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
-        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.379Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.084Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-04T00:00:00.000Z",
+      "firstSeenAt": "2026-02-04T00:00:00.000Z"
     },
     {
       "id": "ideeen-voor-uw-buurt",
       "name": "Ideas for your neighbourhood",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to submit ideas for your neighbourhood to the municipality, with login and verification via Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/ideeen-voor-uw-buurt",
       "readiness": "use-case-demo",
@@ -85,17 +87,19 @@
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
-        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.380Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.084Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-04T00:00:00.000Z",
+      "firstSeenAt": "2026-02-04T00:00:00.000Z"
     },
     {
       "id": "inloggen",
       "name": "Login",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to log in to a City of Amsterdam service using your Yivi wallet.",
       "website": "https://amsterdam-demo.staging.yivi.app/inloggen",
       "readiness": "use-case-demo",
@@ -130,17 +134,19 @@
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
-        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.380Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.084Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-04T00:00:00.000Z",
+      "firstSeenAt": "2026-02-04T00:00:00.000Z"
     },
     {
       "id": "geveltuin-aanvragen",
       "name": "Apply for front garden",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to apply for a front garden (geveltuin) with the municipality, with identity verification via Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/geveltuin-aanvragen",
       "readiness": "use-case-demo",
@@ -179,17 +185,19 @@
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
-        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.380Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.084Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-04T00:00:00.000Z",
+      "firstSeenAt": "2026-02-04T00:00:00.000Z"
     },
     {
       "id": "overlast-melden",
       "name": "Report nuisance",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
       "description": "Demo to report a nuisance to the City of Amsterdam, after logging in with Yivi.",
       "website": "https://amsterdam-demo.staging.yivi.app/overlast-melden",
       "readiness": "use-case-demo",
@@ -226,12 +234,14 @@
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
-        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.380Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.084Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-04T00:00:00.000Z",
+      "firstSeenAt": "2026-02-04T00:00:00.000Z"
     },
     {
       "id": "bc-digital-trust-showcase",
@@ -275,10 +285,12 @@
         "website": "https://www.gov.bc.ca/",
         "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.385Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.121Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2025-01-15T23:00:00.000Z",
+      "firstSeenAt": "2025-01-15T23:00:00.000Z"
     },
     {
       "id": "br-car-vc-pilot",
@@ -322,10 +334,12 @@
         "website": "https://www.gov.br/gestao/",
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.385Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/brazil/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.142Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-18T00:00:00.000Z",
+      "firstSeenAt": "2026-02-18T00:00:00.000Z"
     },
     {
       "id": "ca-dmv-mdl-login-opencred",
@@ -367,10 +381,12 @@
           "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.386Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.159Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-18T00:00:00.000Z",
+      "firstSeenAt": "2026-02-18T00:00:00.000Z"
     },
     {
       "id": "eudi-cinema-age-verification",
@@ -418,10 +434,12 @@
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.386Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.195Z",
       "source": "local",
-      "isFeatured": true
+      "isFeatured": true,
+      "updatedAt": "2026-01-26T22:15:00.000Z",
+      "firstSeenAt": "2026-01-26T22:15:00.000Z"
     },
     {
       "id": "eudi-reference-verifier",
@@ -476,10 +494,12 @@
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.386Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.195Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T22:15:00.000Z",
+      "firstSeenAt": "2026-01-26T22:15:00.000Z"
     },
     {
       "id": "eudi-test-relying-party",
@@ -543,10 +563,12 @@
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.386Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.195Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T22:15:00.000Z",
+      "firstSeenAt": "2026-01-26T22:15:00.000Z"
     },
     {
       "id": "eudiplo-vineyard-select",
@@ -601,10 +623,12 @@
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.387Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.267Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T21:30:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z"
     },
     {
       "id": "eudiplo-nordic-digital-bank",
@@ -656,10 +680,12 @@
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.387Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.267Z",
       "source": "local",
-      "isFeatured": true
+      "isFeatured": true,
+      "updatedAt": "2026-01-26T21:30:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z"
     },
     {
       "id": "eudiplo-techmarkt-sim-activation",
@@ -710,10 +736,12 @@
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.387Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.267Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T21:30:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z"
     },
     {
       "id": "eudiplo-berlin-history-museum",
@@ -765,10 +793,12 @@
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.387Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.267Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T21:30:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z"
     },
     {
       "id": "eudiplo-swiftbox-parcel-locker",
@@ -819,10 +849,12 @@
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.387Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.267Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T21:30:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z"
     },
     {
       "id": "ewc-rpcentric-signer",
@@ -864,10 +896,12 @@
         "name": "European Wallet Consortium",
         "website": "https://www.eudiwalletconsortium.org/"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.387Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.326Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-07T23:00:00.000Z",
+      "firstSeenAt": "2026-01-07T23:00:00.000Z"
     },
     {
       "id": "circulacity-sandbox",
@@ -926,10 +960,12 @@
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.388Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.348Z",
       "source": "local",
-      "isFeatured": true
+      "isFeatured": true,
+      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z"
     },
     {
       "id": "rotterdam-sandbox",
@@ -987,10 +1023,12 @@
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.388Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.348Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z"
     },
     {
       "id": "mijnoverheid-sandbox",
@@ -1039,10 +1077,12 @@
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.388Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.348Z",
       "source": "local",
-      "isFeatured": true
+      "isFeatured": true,
+      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z"
     },
     {
       "id": "hak-rein-vos-notarissen-sandbox",
@@ -1095,10 +1135,12 @@
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.388Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.348Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z"
     },
     {
       "id": "kvk-frontoffice-sandbox",
@@ -1150,10 +1192,12 @@
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.388Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.348Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z"
     },
     {
       "id": "google-digital-credentials-demo",
@@ -1195,10 +1239,12 @@
         "website": "https://www.google.com",
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.388Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.375Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2025-01-15T23:00:00.000Z",
+      "firstSeenAt": "2025-01-15T23:00:00.000Z"
     },
     {
       "id": "igrant-open-bank-account-demo",
@@ -1256,10 +1302,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2025-01-15T23:00:00.000Z"
     },
     {
       "id": "igrant-bank-login-demo",
@@ -1315,10 +1363,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-fast-ferries-merchant-payments",
@@ -1382,10 +1432,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": true
+      "isFeatured": true,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-insurance-policy-demo",
@@ -1441,10 +1493,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-dcql-credential-query-demo",
@@ -1504,10 +1558,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-kyc-photoid-demo",
@@ -1566,10 +1622,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-w3c-digital-credentials-demo",
@@ -1627,10 +1685,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-photo-id-issuance",
@@ -1687,10 +1747,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-issue-test-pid",
@@ -1744,10 +1806,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-issue-test-qesac",
@@ -1802,10 +1866,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-dcql-trusted-authority-demo",
@@ -1866,10 +1932,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-esspass-pda1",
@@ -1926,10 +1994,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-payment-authenticator",
@@ -1985,10 +2055,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "igrant-payment-bank-led",
@@ -2046,10 +2118,12 @@
           "support": "https://docs.igrant.io/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.396Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
       "id": "lissi-bank-account-demo",
@@ -2095,10 +2169,12 @@
         "website": "https://lissi.id",
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.424Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "lissi-tax-authority-demo",
@@ -2144,10 +2220,12 @@
         "website": "https://lissi.id",
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.424Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "lissi-municipality-demo",
@@ -2193,10 +2271,12 @@
         "website": "https://lissi.id",
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.424Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "lissi-loan-qes-demo",
@@ -2243,10 +2323,12 @@
         "website": "https://lissi.id",
         "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.389Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.424Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "inji-web-verifier",
@@ -2287,10 +2369,12 @@
         "name": "MOSIP",
         "website": "https://www.mosip.io"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.453Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T16:50:59.000Z",
+      "firstSeenAt": "2026-01-26T16:50:59.000Z"
     },
     {
       "id": "nijmegen-mijn-nijmegen-login",
@@ -2334,10 +2418,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "nijmegen-iit",
@@ -2377,10 +2463,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "nijmegen-vergoedingenpas",
@@ -2419,10 +2507,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "nijmegen-busvoordeel",
@@ -2462,10 +2552,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "nijmegen-meedoenregeling",
@@ -2504,10 +2596,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "nijmegen-cultureel-erfgoed-pas",
@@ -2547,10 +2641,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "nijmegen-vergoedingencheck",
@@ -2589,10 +2685,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "machtigen-bewindvoerder-jansen-bewind",
@@ -2631,10 +2729,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "machtigen-centraal-machtigingsregister",
@@ -2673,10 +2773,12 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.390Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.483Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-21T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z"
     },
     {
       "id": "multipaz-verifier",
@@ -2730,10 +2832,12 @@
         "website": "https://openwallet.foundation/",
         "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.391Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.514Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2025-01-15T23:00:00.000Z",
+      "firstSeenAt": "2025-01-15T23:00:00.000Z"
     },
     {
       "id": "mdoc-web-verifier",
@@ -2775,17 +2879,19 @@
         "name": "Stelau Software",
         "website": "https://www.stelau.com"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-03-01T06:30:24.391Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
+      "fetchedAt": "2026-03-01T07:03:35.541Z",
       "source": "local",
-      "isFeatured": false
+      "isFeatured": false,
+      "updatedAt": "2026-01-26T16:46:54.000Z",
+      "firstSeenAt": "2026-01-26T16:46:54.000Z"
     }
   ],
   "providers": [
     {
       "name": "City of Amsterdam",
       "website": "https://amsterdam-demo.staging.yivi.app/",
-      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQEoOQKIyUK3TA/company-logo_200_200/B4EZhx6_HXGYAI-/0/1754257945516/gemeente_amsterdam_logo?e=1772064000&v=beta&t=JJHBCenXNivJ6Ujc_uTYIsVC4WHqDlKIlJmCE2tCe5s"
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
     },
     {
       "name": "Government of British Columbia",
@@ -2861,7 +2967,7 @@
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-03-01T06:30:24.392Z",
+  "lastUpdated": "2026-03-01T07:03:35.542Z",
   "stats": {
     "totalRPs": 53,
     "totalProviders": 15,

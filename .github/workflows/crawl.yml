@@ -19,6 +19,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history so crawler can use git log for accurate updatedAt per catalog file (like wallet catalog)
+          fetch-depth: 0
       
       - name: Setup Node.js
         uses: actions/setup-node@v4

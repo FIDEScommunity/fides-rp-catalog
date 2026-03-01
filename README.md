@@ -87,6 +87,15 @@ npm run crawl
 npm run validate
 ```
 
+## Data & catalog UI
+
+- **Semantic dates**: The crawler sets `updatedAt` (fallback: item/catalog/git last-commit/fetchedAt) and `firstSeenAt` (persisted in `data/rp-history-state.json`) so "New last 30 days" and "Updated last 30 days" reflect real changes, not crawl time.
+- **KPIs**: The plugin shows four key figures—Relying party websites, New last 30 days, Updated last 30 days, Countries—with click actions (e.g. toggle "New" filter, sort by last updated).
+- **Quick filters**: Sidebar quick filters "Added last 30 days", "Updated last 30 days", and "Includes video" with (n) counts; facets are computed over the visible set (respecting shortcode pre-filters like `type` or `sector`).
+- **Sort**: Sort by "Last updated" or "Name"; preference is stored in localStorage.
+
+See [docs/DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md) for more detail.
+
 ## WordPress Plugin
 
 The WordPress plugin can be found in `wordpress-plugin/fides-rp-catalog/`.
@@ -104,6 +113,13 @@ The WordPress plugin can be found in `wordpress-plugin/fides-rp-catalog/`.
 [fides_rp_catalog type="demo" theme="fides"]
 [fides_rp_catalog sector="government" columns="2"]
 ```
+
+### Plugin features (v1.10+)
+
+- KPI cards: Relying party websites, New last 30 days, Updated last 30 days, Countries (with click actions).
+- Quick filters: Added last 30 days, Updated last 30 days, Includes video (with counts).
+- Sort by Last updated or Name (persisted).
+- Filter option counts (n) over the visible set when using shortcode pre-filters.
 
 ## License
 
