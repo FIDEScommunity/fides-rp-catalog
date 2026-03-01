@@ -369,12 +369,60 @@
   color: var(--fides-text-secondary);
 }
 
+.fides-kpi-label-short {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  .fides-kpi-label-long {
+    display: none;
+  }
+  .fides-kpi-label-short {
+    display: block;
+  }
   .fides-kpi-card .fides-kpi-label-extra {
     display: none;
   }
   .fides-kpi-row {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  /* KPI card: value and label on one line to save height */
+  .fides-kpi-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 0.65rem;
+  }
+  .fides-kpi-value {
+    flex-shrink: 0;
+    font-size: 1.05rem;
+  }
+  .fides-kpi-label {
+    font-size: 0.72rem;
+    line-height: 1.2;
+    min-width: 0;
+  }
+  /* Results bar: one row, Sort by and Show on map aligned */
+  .fides-results-bar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .fides-sort-label {
+    min-width: 0;
+    flex: 1;
+  }
+  .fides-sort-select {
+    min-width: 0;
+  }
+  .fides-show-on-map {
+    margin-left: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 }
 
@@ -1217,6 +1265,24 @@
   font-weight: 600;
   margin: 0 0 0.25rem 0;
   color: var(--fides-text-primary);
+  /* Reserve 2 lines for consistent card height; ellipsis if longer */
+  min-height: 2.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 1 column (mobile): let title use only the space it needs, no fixed height */
+@media (max-width: 640px) {
+  .fides-rp-name {
+    min-height: 0;
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+    text-overflow: unset;
+  }
 }
 
 .fides-rp-provider {

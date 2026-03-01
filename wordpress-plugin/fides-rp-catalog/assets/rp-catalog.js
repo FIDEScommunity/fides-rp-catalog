@@ -892,7 +892,7 @@
       <div class="fides-kpi-row">
         <button class="fides-kpi-card" type="button" data-kpi-action="clear-added-filter">
           <span class="fides-kpi-value">${metrics.total}</span>
-          <span class="fides-kpi-label">Relying party websites</span>
+          <span class="fides-kpi-label fides-kpi-label-long">Relying party websites</span><span class="fides-kpi-label fides-kpi-label-short" aria-hidden="true">Relying parties</span>
         </button>
         <button class="fides-kpi-card ${filters.addedLast30Days ? 'active' : ''}" type="button" data-kpi-action="toggle-added-filter">
           <span class="fides-kpi-value">${metrics.newLast30Days}</span>
