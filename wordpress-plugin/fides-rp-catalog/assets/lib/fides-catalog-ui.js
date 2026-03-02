@@ -87,7 +87,65 @@
     if (embedUrl) {
       return '<div class="fides-video-container"><iframe src="' + escapeHtml(embedUrl) + '" frameborder="0" class="fides-video-iframe" title="Video player"></iframe></div>';
     }
-    return '<div class="fides-video-fallback"><a href="' + escapeHtml(videoUrl) + '" target="_blank" rel="noopener" class="fides-modal-link primary">' + icons.play + ' Watch Video (External)</a></div>';
+    return '<div class="fides-video-fallback"><a href="' + escapeHtml(videoUrl) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Video">' + icons.play + ' Watch Video (External)</a></div>';
+  }
+
+  /**
+   * Matomo: track event (if _paq loaded, respects DoNotTrack).
+   */
+  function trackMatomoEvent(category, action, name, value) {
+    if (typeof window._paq === 'undefined') return;
+    if (navigator.doNotTrack === '1' || navigator.doNotTrack === 'yes') return;
+    try {
+      window._paq.push(['trackEvent', category, action, name, value]);
+    } catch (e) {
+      console.debug('Matomo tracking failed:', e);
+    }
+  }
+
+  /** Default class-to-name map for link tracking (used by initMatomoLinkTracking). */
+  var DEFAULT_LINK_CLASS_TO_NAME = [
+    { classes: 'fides-show-on-map', name: 'Show on map' },
+    { classes: 'fides-rp-visit-button', name: 'Visit website' },
+    { classes: 'fides-modal-visit-button', name: 'Visit website' },
+    { classes: 'fides-modal-provider-link', name: 'Blue Pages' },
+    { classes: 'fides-modal-provider-value', name: 'Provider website' },
+    { classes: 'wallet-link', name: 'Wallet catalog' },
+    { classes: 'fides-wallet-link', name: 'Repository' },
+    { classes: 'fides-tag platform clickable', name: 'Platform' }
+  ];
+
+  /**
+   * Initialize document-level link click tracking for Matomo.
+   * Call once per app with { category, containerSelector, modalOverlayId }.
+   * Links with data-matomo-name or matching known classes are tracked as "Link Click".
+   */
+  function initMatomoLinkTracking(config) {
+    if (!config || !config.category) return;
+    var containerSelector = config.containerSelector || null;
+    var modalOverlayId = config.modalOverlayId || 'fides-modal-overlay';
+    var classToName = config.classToName || DEFAULT_LINK_CLASS_TO_NAME;
+
+    document.addEventListener('click', function matomoLinkClick(e) {
+      var a = e.target.closest('a');
+      if (!a || !a.href) return;
+      var inCatalog = containerSelector && document.querySelector(containerSelector) && document.querySelector(containerSelector).contains(a);
+      var overlay = document.getElementById(modalOverlayId);
+      var inModal = overlay && overlay.contains(a);
+      if (!inCatalog && !inModal) return;
+      var name = a.dataset.matomoName;
+      if (!name && classToName.length) {
+        for (var i = 0; i < classToName.length; i++) {
+          var entry = classToName[i];
+          var classes = entry.classes.split(/\s+/);
+          if (classes.every(function(c) { return c && a.classList.contains(c); })) {
+            name = entry.name;
+            break;
+          }
+        }
+      }
+      if (name) trackMatomoEvent(config.category, 'Link Click', name);
+    });
   }
 
   function showToast(message, type, theme) {
@@ -216,9 +274,9 @@
       '</div>' +
       ((wallet.features && wallet.features.length) ? '<div class="fides-modal-features"><h4 class="fides-modal-section-title">Features</h4><ul class="fides-features-list">' + wallet.features.map(f => '<li>' + icons.check + ' ' + escapeHtml(f) + '</li>').join('') + '</ul></div>' : '') +
       '<div class="fides-modal-links">' +
-      (wallet.website ? '<a href="' + escapeHtml(wallet.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary">' + icons.externalLink + ' Visit Website</a>' : '') +
-      (wallet.openSource && wallet.repository ? '<a href="' + escapeHtml(wallet.repository) + '" target="_blank" rel="noopener" class="fides-modal-link">' + icons.github + ' View Repository</a>' : '') +
-      (wallet.documentation ? '<a href="' + escapeHtml(wallet.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link">' + icons.book + ' Documentation</a>' : '') +
+      (wallet.website ? '<a href="' + escapeHtml(wallet.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Visit website">' + icons.externalLink + ' Visit Website</a>' : '') +
+      (wallet.openSource && wallet.repository ? '<a href="' + escapeHtml(wallet.repository) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Repository">' + icons.github + ' View Repository</a>' : '') +
+      (wallet.documentation ? '<a href="' + escapeHtml(wallet.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Documentation">' + icons.book + ' Documentation</a>' : '') +
       '</div>' +
       '<div class="fides-modal-provider-section"><h4 class="fides-modal-section-title">Provider Information</h4><div class="fides-modal-provider-info">' +
       '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">Organization:</span><span class="fides-modal-provider-value">' + escapeHtml(wallet.provider && wallet.provider.name) + '</span></div>' +
@@ -287,8 +345,8 @@
       '</div>' +
       ((rp.useCases && rp.useCases.length) ? '<div class="fides-modal-features"><h4 class="fides-modal-section-title">Use Cases</h4><ul class="fides-features-list">' + rp.useCases.map(u => '<li>' + icons.check + ' ' + escapeHtml(u) + '</li>').join('') + '</ul></div>' : '') +
       '<div class="fides-modal-links">' +
-      (rp.documentation ? '<a href="' + escapeHtml(rp.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link">' + icons.book + ' Documentation</a>' : '') +
-      (rp.testCredentials ? '<a href="' + escapeHtml(rp.testCredentials) + '" target="_blank" rel="noopener" class="fides-modal-link">' + icons.fileCheck + ' Test Credentials</a>' : '') +
+      (rp.documentation ? '<a href="' + escapeHtml(rp.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Documentation">' + icons.book + ' Documentation</a>' : '') +
+      (rp.testCredentials ? '<a href="' + escapeHtml(rp.testCredentials) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Test credentials">' + icons.fileCheck + ' Test Credentials</a>' : '') +
       '</div>' +
       '<div class="fides-modal-provider-section"><h4 class="fides-modal-section-title">Provider Information</h4><div class="fides-modal-provider-info">' +
       '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">Organization:</span><span class="fides-modal-provider-value">' + escapeHtml(rp.provider && rp.provider.name) + '</span></div>' +
@@ -302,6 +360,8 @@
   window.FidesCatalogUI = {
     openWalletModal,
     openRpModal,
-    closeModal
+    closeModal,
+    trackMatomoEvent,
+    initMatomoLinkTracking
   };
 })();
