@@ -1093,7 +1093,7 @@
             : `<div class="fides-rp-logo-placeholder">${icons.globe}</div>`
           }
           <div class="fides-rp-info">
-            <h3 class="fides-rp-name">${escapeHtml(rp.name)}</h3>
+            <h3 class="fides-rp-name" title="${escapeHtml(rp.name)}">${escapeHtml(rp.name)}</h3>
             <p class="fides-rp-provider">${escapeHtml(rp.provider.name)}</p>
           </div>
           ${rp.isFeatured 
