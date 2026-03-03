@@ -9,7 +9,8 @@
     "dev": "tsx watch src/crawler/index.ts",
     "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/rp-catalog.schema.json -d 'community-catalogs/**/rp-catalog.json'",
     "validate:featured": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/featured.schema.json -d 'data/featured.json'",
-    "validate:all": "npm run validate && npm run validate:featured"
+    "validate:all": "npm run validate && npm run validate:featured",
+    "check-links": "tsx scripts/check-links.ts"
   },
   "repository": {
     "type": "git",
