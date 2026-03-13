@@ -5,25 +5,35 @@
     },
     "relyingParties": [
       {
-        "id": "inji-web-verifier",
-        "name": "Inji Web Verifier",
-        "description": "Web-based verifier for MOSIP/Inji credentials, allowing users to upload or scan credentials for verification.",
-        "logo": "https://api.collab.mosip.net/inji/mosip-logo.png",
+        "id": "inji-verify",
+        "name": "Inji Verify",
+        "description": "Inji Verify is used for validating Verifiable Credentials. It enables service providers to verify credentials by scanning QR codes, uploading credential files, or requesting wallet-based presentations using OpenID4VP.The verifier SDK can also be integrated into existing relying party systems such as employee portals, healthcare systems, agricultural platforms, and digital service portals, enabling seamless credential verification without modifying existing infrastructure.",
+        "logo": "https://raw.githubusercontent.com/mosip/documentation/1.2.0/docs/_images/inji-verify.png",
         "website": "https://injiverify.collab.mosip.net/",
         "readiness": "technical-demo",
         "country": "IN",
         "status": "beta",
-        "sectors": ["government"],
+        "sectors": ["Government, Financial Services, Healthcare, Education, Agriculture, Employment Services etc"],
         "useCases": [
           "Identity verification",
-          "Credential validation"
+          "Credential authenticity validation",
+          "Digital service access verification",
+          "KYC verification for financial services",
+          "Education certificate verification",
+          "Employment credential verification",
+          "Healthcare credential verification",
+          "Government program eligibility verification",
+          "And Many More....." 
         ],
         "acceptedCredentials": [
-          "National ID",
-          "MOSIP Verifiable Credential"
+          "National ID: Republic of Veridonia National ID",
+          "Health Insurance: StayProtected Insurance",
+          "Tax ID: Republic of Veridonia Tax Department",
+          "Land Registry: AgroVertias Property & Land Registry"
         ],
         "credentialFormats": [
-          "JSON-LD VC"
+          "W3C Data Model 1.1 & 2.0 JSON-LD VC",
+          "IETF SD-JWT"
         ],
         "presentationProtocols": [
           "OpenID4VP"
