@@ -1,0 +1,44 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "Neovo",
+    "website": "https://neovo.ch/",
+    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHAun1QNaT8xA/company-logo_200_200/B4DZctJbACGwAI-/0/1748809134447/neovo_ag_logo?e=1776902400&v=beta&t=e3aSznBO61WFgC_SoFjnEh8FcZfxy6CMKKzx5Qqdkn8",
+    "contact": {
+      "email": "info@neovo.ch"
+    }
+  },
+  "relyingParties": [
+    {
+      "id": "neovo-shop-playground",
+      "name": "Neovo Brewing webshop demo",
+      "description": "Demo webshop by Neovo that uses digital age verification before allowing an age-restricted product to be added to the cart. It serves as a relying party demonstration for e-ID based verification in an online retail flow.",
+      "website": "https://shop.playground.neovo.ch/products/silent-tide",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "status": "beta",
+      "sectors": [
+        "retail"
+      ],
+      "useCases": [
+        "Age verification",
+        "Online purchase of age-restricted products",
+        "e-ID based verification in e-commerce"
+      ],
+      "acceptedCredentials": [
+        "e-ID age verification credential"
+      ],
+      "supportedWallets": [
+        "swiyu App"
+      ],
+      "features": [
+        "Age-gated add-to-cart flow",
+        "e-ID verification prompt during checkout journey",
+        "Retail demo for digital identity verification"
+      ],
+      "languages": [
+        "de"
+      ]
+    }
+  ]
+}
