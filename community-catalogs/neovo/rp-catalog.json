@@ -28,8 +28,22 @@
       "acceptedCredentials": [
         "Beta-ID"
       ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
       "supportedWallets": [
-        "swiyu App"
+        {
+          "name": "SWIYU Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        }
       ],
       "features": [
         "Age-gated add-to-cart flow",
