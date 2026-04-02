@@ -12,7 +12,7 @@
     {
       "id": "neovo-shop-playground",
       "name": "Neovo Brewing webshop demo",
-      "description": "Demo webshop by Neovo that uses digital age verification before allowing an age-restricted product to be added to the cart. It serves as a relying party demonstration for e-ID based verification in an online retail flow.",
+      "description": "Demo webshop by Neovo that uses Beta-ID for digital age verification before allowing an age-restricted product to be added to the cart. It serves as a relying party demonstration for age verification in an online retail flow.",
       "website": "https://shop.playground.neovo.ch/products/silent-tide",
       "readiness": "use-case-demo",
       "country": "CH",
@@ -23,17 +23,17 @@
       "useCases": [
         "Age verification",
         "Online purchase of age-restricted products",
-        "e-ID based verification in e-commerce"
+        "Beta-ID based verification in e-commerce"
       ],
       "acceptedCredentials": [
-        "e-ID age verification credential"
+        "Beta-ID"
       ],
       "supportedWallets": [
         "swiyu App"
       ],
       "features": [
         "Age-gated add-to-cart flow",
-        "e-ID verification prompt during checkout journey",
+        "Beta-ID verification prompt during checkout journey",
         "Retail demo for digital identity verification"
       ],
       "languages": [
