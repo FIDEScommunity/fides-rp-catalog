@@ -1,14 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "iGrant.io",
-    "website": "https://www.igrant.io/",
-    "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-    "contact": {
-      "email": "support@igrant.io",
-      "support": "https://docs.igrant.io/"
-    }
-  },
+  "orgId": "org:igrant",
   "relyingParties": [
     {
       "id": "igrant-open-bank-account-demo",
@@ -20,15 +12,31 @@
       "readiness": "technical-demo",
       "country": "SE",
       "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["account-opening", "identity-verification", "kyc"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "account-opening",
+        "identity-verification",
+        "kyc"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -43,7 +51,9 @@
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "testCredentials": "https://www.igrant.io/demo/pid.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-bank-login-demo",
@@ -54,19 +64,31 @@
       "readiness": "technical-demo",
       "country": "SE",
       "status": "live",
-      "sectors": ["finance"],
+      "sectors": [
+        "finance"
+      ],
       "useCases": [
         "login",
         "identity-verification",
         "passwordless-authentication"
       ],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -80,7 +102,9 @@
       ],
       "documentation": "https://docs.igrant.io/docs/eudi-passwordless-login-flow/",
       "testCredentials": "https://www.igrant.io/demo/pid.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-fast-ferries-merchant-payments",
@@ -92,7 +116,11 @@
       "readiness": "production-pilot",
       "country": "EU",
       "status": "live",
-      "sectors": ["travel", "finance", "retail"],
+      "sectors": [
+        "travel",
+        "finance",
+        "retail"
+      ],
       "useCases": [
         "payment-authentication",
         "identity-verification",
@@ -104,12 +132,22 @@
         "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc" }
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+        }
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -126,7 +164,9 @@
       ],
       "documentation": "https://www.igrant.io/articles/business-wallets-enabling-trust-and-scale-in-the-european-digital-identity-eudi-wallet-ecosystem",
       "testCredentials": "https://www.igrant.io/demo/payment-authenticator.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-insurance-policy-demo",
@@ -137,15 +177,31 @@
       "readiness": "technical-demo",
       "country": "SE",
       "status": "live",
-      "sectors": ["insurance"],
-      "useCases": ["identity-verification", "kyc", "policy-issuance"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "insurance"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "identity-verification",
+        "kyc",
+        "policy-issuance"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -159,7 +215,9 @@
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "testCredentials": "https://www.igrant.io/demo/pid.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-dcql-credential-query-demo",
@@ -170,7 +228,10 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["government", "finance"],
+      "sectors": [
+        "government",
+        "finance"
+      ],
       "useCases": [
         "identity-verification",
         "credential-validation",
@@ -182,15 +243,31 @@
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc" }
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+        }
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -205,7 +282,9 @@
       ],
       "documentation": "https://docs.igrant.io/concepts/eudi-wallet-dcql-openid4vp-business-wallet-payments/",
       "testCredentials": "https://www.igrant.io/demo/pid.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-kyc-photoid-demo",
@@ -216,18 +295,42 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["finance", "government"],
-      "useCases": ["kyc", "identity-verification", "address-verification"],
-      "acceptedCredentials": ["Photo ID", "Address Proof"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc" },
-        { "credentialCatalogId": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance",
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "kyc",
+        "identity-verification",
+        "address-verification"
+      ],
+      "acceptedCredentials": [
+        "Photo ID",
+        "Address Proof"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -242,7 +345,9 @@
       ],
       "documentation": "https://docs.igrant.io/concepts/eudi-wallet-dcql-openid4vp-business-wallet-payments/",
       "testCredentials": "https://www.igrant.io/photoid.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-w3c-digital-credentials-demo",
@@ -253,7 +358,10 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["government", "finance"],
+      "sectors": [
+        "government",
+        "finance"
+      ],
       "useCases": [
         "identity-verification",
         "payment-authentication",
@@ -265,13 +373,25 @@
         "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc" }
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+        }
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -284,7 +404,9 @@
         "Cross-platform support"
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-photo-id-issuance",
@@ -295,17 +417,38 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["travel", "government"],
-      "useCases": ["credential-issuance", "photo-id", "digital-travel-credential"],
-      "acceptedCredentials": ["Photo ID (DTC)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "travel",
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VCI"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "credential-issuance",
+        "photo-id",
+        "digital-travel-credential"
+      ],
+      "acceptedCredentials": [
+        "Photo ID (DTC)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VCI"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -319,7 +462,9 @@
         "EUDI Wallet compatible"
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-issue-test-pid",
@@ -330,15 +475,30 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["credential-issuance", "identity-verification"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VCI"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "credential-issuance",
+        "identity-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VCI"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -351,7 +511,9 @@
         "EUDI Wallet compatible"
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-issue-test-qesac",
@@ -362,12 +524,25 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["credential-issuance", "electronic-signature"],
-      "acceptedCredentials": ["Qualified Electronic Signature Access Credential (QESAC)"],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VCI"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "credential-issuance",
+        "electronic-signature"
+      ],
+      "acceptedCredentials": [
+        "Qualified Electronic Signature Access Credential (QESAC)"
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VCI"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -381,7 +556,9 @@
         "EUDI Wallet compatible"
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-dcql-trusted-authority-demo",
@@ -392,8 +569,16 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["government", "finance", "education"],
-      "useCases": ["identity-verification", "credential-validation", "trusted-authority-verification"],
+      "sectors": [
+        "government",
+        "finance",
+        "education"
+      ],
+      "useCases": [
+        "identity-verification",
+        "credential-validation",
+        "trusted-authority-verification"
+      ],
       "acceptedCredentials": [
         "Person Identification Data (PID)",
         "Passport",
@@ -401,15 +586,31 @@
         "University Degree"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc" }
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+        }
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -423,7 +624,9 @@
         "Selective disclosure"
       ],
       "documentation": "https://docs.igrant.io/concepts/eudi-wallet-dcql-openid4vp-business-wallet-payments/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-esspass-pda1",
@@ -434,17 +637,38 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["government", "employment"],
-      "useCases": ["credential-issuance", "social-security", "cross-border-employment"],
-      "acceptedCredentials": ["ESSPASS - PDA1"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pda1-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc" }
+      "sectors": [
+        "government",
+        "employment"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VCI"],
-      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "useCases": [
+        "credential-issuance",
+        "social-security",
+        "cross-border-employment"
+      ],
+      "acceptedCredentials": [
+        "ESSPASS - PDA1"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pda1-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VCI"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -458,7 +682,9 @@
         "EUDI Wallet compatible"
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-payment-authenticator",
@@ -469,15 +695,31 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["credential-issuance", "payment-authentication", "wallet-onboarding"],
-      "acceptedCredentials": ["Payment Authenticator"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VCI"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "credential-issuance",
+        "payment-authentication",
+        "wallet-onboarding"
+      ],
+      "acceptedCredentials": [
+        "Payment Authenticator"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VCI"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -491,7 +733,9 @@
         "EUDI Wallet compatible"
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "igrant-payment-bank-led",
@@ -502,16 +746,35 @@
       "readiness": "technical-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["payment-authentication", "bank-led-payment", "strong-customer-authentication"],
-      "acceptedCredentials": ["Payment Authenticator", "Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "payment-authentication",
+        "bank-led-payment",
+        "strong-customer-authentication"
+      ],
+      "acceptedCredentials": [
+        "Payment Authenticator",
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Data Wallet by iGrant.io",
@@ -526,7 +789,9 @@
       ],
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "testCredentials": "https://www.igrant.io/demo/payment-authenticator.html",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2026-02-12T00:00:00+01:00"

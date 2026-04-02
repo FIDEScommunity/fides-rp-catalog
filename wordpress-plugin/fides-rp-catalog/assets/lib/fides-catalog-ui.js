@@ -110,6 +110,7 @@
     { classes: 'fides-modal-visit-button', name: 'Visit website' },
     { classes: 'fides-modal-provider-link', name: 'Blue Pages' },
     { classes: 'fides-modal-provider-value', name: 'Provider website' },
+    { classes: 'fides-modal-link-inline', name: 'Organization catalog' },
     { classes: 'wallet-link', name: 'Wallet catalog' },
     { classes: 'credential-catalog-link', name: 'Credential catalog' },
     { classes: 'fides-wallet-link', name: 'Repository' },
@@ -396,6 +397,19 @@
     }
   }
 
+  function getOrganizationCatalogDeepLink(orgId, catalogBase) {
+    if (!orgId || typeof orgId !== 'string' || orgId.indexOf('org:') !== 0) return null;
+    const base = (catalogBase || '').trim();
+    if (!base) return null;
+    try {
+      const u = new URL(base);
+      u.searchParams.set('org', orgId);
+      return u.toString();
+    } catch (e) {
+      return null;
+    }
+  }
+
   function renderAcceptedCredentialTagsHtmlForRpModal(rp, catalogBase) {
     const rows = getAcceptedCredentialRows(rp);
     return rows.map(function(row) {
@@ -418,6 +432,13 @@
     const statusLabels = { development: 'In Development', beta: 'Beta', live: 'Live', deprecated: 'Deprecated' };
     const walletCatalogUrl = (options && options.walletCatalogUrl) || '';
     const credentialCatalogUrl = (options && options.credentialCatalogUrl) || 'https://fides.community/ecosystem-explorer/credential-catalog/';
+    const organizationCatalogUrl = (options && options.organizationCatalogUrl) || 'https://fides.community/ecosystem-explorer/organization-catalog/';
+    const providerOrgId = String(rp.orgId || '').trim();
+    const orgCatalogHref = getOrganizationCatalogDeepLink(providerOrgId, organizationCatalogUrl);
+    const providerDisplayName = rp.provider && rp.provider.name ? String(rp.provider.name) : '';
+    const providerNameInHeader = orgCatalogHref && providerDisplayName
+      ? '<a href="' + escapeHtml(orgCatalogHref) + '" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>' + escapeHtml(providerDisplayName) + '</span></a>'
+      : escapeHtml(providerDisplayName);
     const bluePagesUrl = getBluePagesUrl(rp.provider && rp.provider.did, options);
     const modalLogoUrl = rp.logo || (rp.country ? 'https://flagcdn.com/w80/' + String(rp.country).toLowerCase() + '.png' : null);
     const acceptedCredentialRows = getAcceptedCredentialRows(rp);
@@ -440,7 +461,7 @@
       '<div class="fides-modal" role="dialog" aria-modal="true">' +
       '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
       (modalLogoUrl ? '<img src="' + escapeHtml(modalLogoUrl) + '" alt="' + escapeHtml(rp.name) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.globe + '</div>') +
-      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(rp.name) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + escapeHtml(rp.provider && rp.provider.name) + (bluePagesUrl ? ' <a href="' + escapeHtml(bluePagesUrl) + '" target="_blank" rel="noopener" class="fides-modal-provider-link">' + icons.externalLink + ' View in Blue Pages</a>' : '') + '</p></div>' +
+      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(rp.name) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + providerNameInHeader + (bluePagesUrl ? ' <a href="' + escapeHtml(bluePagesUrl) + '" target="_blank" rel="noopener" class="fides-modal-provider-link">' + icons.externalLink + ' View in Blue Pages</a>' : '') + '</p></div>' +
       '</div><div class="fides-modal-header-actions">' + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
       '<div class="fides-modal-body">' +
       '<div class="fides-modal-badges fides-modal-badges-with-action"><div class="fides-modal-badges-left">' +
@@ -464,10 +485,6 @@
       (rp.documentation ? '<a href="' + escapeHtml(rp.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Documentation">' + icons.book + ' Documentation</a>' : '') +
       (rp.testCredentials ? '<a href="' + escapeHtml(rp.testCredentials) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Test credentials">' + icons.fileCheck + ' Test Credentials</a>' : '') +
       '</div>' +
-      '<div class="fides-modal-provider-section"><h4 class="fides-modal-section-title">Provider Information</h4><div class="fides-modal-provider-info">' +
-      '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">Organization:</span><span class="fides-modal-provider-value">' + escapeHtml(rp.provider && rp.provider.name) + '</span></div>' +
-      ((rp.provider && rp.provider.website) ? '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">Website:</span><a href="' + escapeHtml(rp.provider.website) + '" target="_blank" rel="noopener" class="fides-modal-provider-value">' + escapeHtml(rp.provider.website) + '</a></div>' : '') +
-      '</div></div>' +
       '</div></div></div>';
 
     mountModal(modalHtml);

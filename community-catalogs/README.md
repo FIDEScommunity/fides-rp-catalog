@@ -5,9 +5,10 @@ This directory contains relying party catalog entries contributed by the communi
 ## How to Contribute
 
 1. **Fork** this repository
-2. **Create a folder** with your organization name (lowercase, hyphens for spaces)
-3. **Add an `rp-catalog.json` file** following the schema
-4. **Submit a Pull Request**
+2. **Ensure your organization exists** in the [FIDES Organization Catalog](https://github.com/FIDEScommunity/fides-organization-catalog) and note its **`id`** (e.g. `org:ewc`)
+3. **Create a folder** with your organization name (lowercase, hyphens for spaces), matching the organization-catalog folder slug when possible
+4. **Add an `rp-catalog.json` file** with **`$schema`**, **`orgId`**, and **`relyingParties`**
+5. **Submit a Pull Request**
 
 ## Folder Structure
 
@@ -22,28 +23,34 @@ community-catalogs/
 
 ## Schema
 
-Your `rp-catalog.json` must conform to the schema at `schemas/rp-catalog.schema.json`.
+Your `rp-catalog.json` must conform to **`schemas/rp-catalog.schema.json`**.
 
-### Required Fields
+This mirrors the **issuer** and **credential** catalogs: you reference the organization with **`orgId`** only. Do **not** embed a `provider` object—name, website, logo, and DID come from the organization catalog and are filled in when **`npm run crawl`** runs.
 
-- `provider.name` - Your organization name
-- `relyingParties[].id` - Unique identifier (lowercase, hyphens)
-- `relyingParties[].name` - Display name
-- `relyingParties[].readiness` - One of: `technical-demo`, `use-case-demo`, `production-pilot`, `production`
-- `relyingParties[].country` - ISO 3166-1 alpha-2 country code (e.g., `NL`, `DE`) or `EU`
+### Required top-level fields
 
-### Recommended Fields
+- **`$schema`** — must be `https://fides.community/schemas/rp-catalog/v1`
+- **`orgId`** — organization catalog id (`org:…`), must exist in the organization catalog
+- **`relyingParties`** — non-empty array of relying parties
 
-- `provider.website` - Your organization website
-- `provider.logo` - URL to your logo (use Google Favicon API: `https://www.google.com/s2/favicons?domain=yourdomain.com&sz=128`)
-- `relyingParties[].website` - URL to the verifier service
-- `relyingParties[].description` - Brief description
-- `relyingParties[].sectors` - Industry sectors served
-- `relyingParties[].acceptedCredentials` - Types of credentials accepted
-- `relyingParties[].credentialFormats` - Supported formats (SD-JWT-VC, mDL/mDoc, etc.)
-- `relyingParties[].presentationProtocols` - Supported protocols (OpenID4VP, etc.)
-- `relyingParties[].interoperabilityProfiles` - DIIP v4, EWC v3, etc.
-- `relyingParties[].supportedWallets` - Wallets that work with this RP (see below)
+### Required per relying party
+
+- **`id`** — Unique identifier (lowercase, hyphens)
+- **`name`** — Display name
+- **`readiness`** — One of: `technical-demo`, `use-case-demo`, `production-pilot`, `production`
+- **`country`** — ISO 3166-1 alpha-2 country code (e.g. `NL`, `DE`) or `EU`
+
+### Recommended fields
+
+- **`relyingParties[].website`** — URL to the verifier service
+- **`relyingParties[].description`** — Brief description
+- **`relyingParties[].sectors`** — Industry sectors served
+- **`relyingParties[].acceptedCredentials`** — Human-readable labels
+- **`relyingParties[].acceptedCredentialRefs`** — `{ "credentialCatalogId": "cred:…" }` for cross-catalog tooling
+- **`relyingParties[].credentialFormats`** — Supported formats (SD-JWT-VC, mDL/mDoc, etc.)
+- **`relyingParties[].presentationProtocols`** — Supported protocols (OpenID4VP, etc.)
+- **`relyingParties[].interoperabilityProfiles`** — DIIP v4, EWC v3, etc.
+- **`relyingParties[].supportedWallets`** — Wallets that work with this RP (see below)
 
 ## Wallet Deep Links
 
@@ -76,6 +83,3 @@ Your PR will be automatically validated against the schema. Make sure your JSON 
 ## Questions?
 
 Open an issue or contact the FIDES Community at https://fides.community
-
-
-

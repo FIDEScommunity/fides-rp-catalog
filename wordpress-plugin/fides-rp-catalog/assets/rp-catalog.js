@@ -45,6 +45,9 @@
   const CREDENTIAL_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.credentialCatalogUrl)
     || 'https://fides.community/ecosystem-explorer/credential-catalog/';
 
+  const ORGANIZATION_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.organizationCatalogUrl)
+    || 'https://fides.community/ecosystem-explorer/organization-catalog/';
+
   // Selected RP for modal
   let selectedRP = null;
 
@@ -1397,6 +1400,15 @@
     // Use country flag as fallback logo
     const modalLogoUrl = rp.logo || (rp.country ? `https://flagcdn.com/w80/${rp.country.toLowerCase()}.png` : null);
 
+    const orgCatalogHref = getOrganizationCatalogDeepLinkHref(
+      rp.orgId,
+      ORGANIZATION_CATALOG_PAGE_URL
+    );
+    const providerName = rp.provider && rp.provider.name ? String(rp.provider.name) : '';
+    const providerNameHtml = orgCatalogHref && providerName
+      ? `<a href="${escapeHtml(orgCatalogHref)}" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>${escapeHtml(providerName)}</span></a>`
+      : escapeHtml(providerName);
+
     const modalHtml = `
       <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${currentTheme}">
         <div class="fides-modal" role="dialog" aria-modal="true" aria-labelledby="fides-modal-title">
@@ -1408,7 +1420,7 @@
               }
               <div class="fides-modal-title-wrap">
                 <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(rp.name)}</h2>
-                <p class="fides-modal-provider">${icons.building} ${escapeHtml(rp.provider.name)}${rp.provider.did ? ` <a href="${getBluePagesUrl(rp.provider.did)}" target="_blank" rel="noopener" class="fides-modal-provider-link" aria-label="View in Blue Pages">${icons.externalLink} View in Blue Pages</a>` : ''}</p>
+                <p class="fides-modal-provider">${icons.building} ${providerNameHtml}${rp.provider.did ? ` <a href="${getBluePagesUrl(rp.provider.did)}" target="_blank" rel="noopener" class="fides-modal-provider-link" aria-label="View in Blue Pages">${icons.externalLink} View in Blue Pages</a>` : ''}</p>
               </div>
             </div>
             <div class="fides-modal-header-actions">
@@ -1570,23 +1582,6 @@
                   ${icons.fileCheck} Test Credentials
                 </a>
               ` : ''}
-            </div>
-
-            <!-- Provider info -->
-            <div class="fides-modal-provider-section">
-              <h4 class="fides-modal-section-title">Provider Information</h4>
-              <div class="fides-modal-provider-info">
-                <div class="fides-modal-provider-detail">
-                  <span class="fides-modal-provider-label">Organization:</span>
-                  <span class="fides-modal-provider-value">${escapeHtml(rp.provider.name)}</span>
-                </div>
-                ${rp.provider.website ? `
-                  <div class="fides-modal-provider-detail">
-                    <span class="fides-modal-provider-label">Website:</span>
-                    <a href="${escapeHtml(rp.provider.website)}" target="_blank" rel="noopener" class="fides-modal-provider-value">${escapeHtml(rp.provider.website)}</a>
-                  </div>
-                ` : ''}
-              </div>
             </div>
           </div>
         </div>
@@ -1783,6 +1778,7 @@
           walletCatalogUrl: WALLET_CATALOG_URL,
           bluePagesUrl: BLUE_PAGES_URL,
           credentialCatalogUrl: CREDENTIAL_CATALOG_PAGE_URL,
+          organizationCatalogUrl: ORGANIZATION_CATALOG_PAGE_URL,
           onOpen: function(openedRP) {
             (window.FidesCatalogUI && window.FidesCatalogUI.trackMatomoEvent) && window.FidesCatalogUI.trackMatomoEvent('RP Catalog', 'Modal Open', openedRP.name);
           }
@@ -2338,6 +2334,20 @@
     if (!did) return null;
     const encodedDid = encodeURIComponent(did);
     return `${BLUE_PAGES_URL}/${encodedDid}/`;
+  }
+
+  function getOrganizationCatalogDeepLinkHref(orgId, catalogBase) {
+    const id = String(orgId || '').trim();
+    if (!id || id.indexOf('org:') !== 0) return null;
+    const base = (catalogBase || '').trim();
+    if (!base) return null;
+    try {
+      const u = new URL(base);
+      u.searchParams.set('org', id);
+      return u.toString();
+    } catch (e) {
+      return null;
+    }
   }
 
   /**

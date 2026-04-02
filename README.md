@@ -33,16 +33,12 @@ npm run validate
 
 ### Example `rp-catalog.json` (excerpt)
 
-The schema is the source of truth. A minimal pattern (see **`community-catalogs/`** for full examples):
+The schema is the source of truth. Organization name, DID, website, and logo are **not** duplicated here: set **`orgId`** to your entry in the [FIDES Organization Catalog](https://github.com/FIDEScommunity/fides-organization-catalog) (same pattern as **`issuer-catalog.json`** and **`credential-catalog.json`**). The crawler resolves org fields when building **`data/aggregated.json`**.
 
 ```json
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "Your Organization",
-    "website": "https://your-website.com",
-    "logo": "https://your-website.com/logo.png"
-  },
+  "orgId": "org:your-org-slug",
   "relyingParties": [
     {
       "id": "your-verifier-demo",
@@ -68,6 +64,8 @@ The schema is the source of truth. A minimal pattern (see **`community-catalogs/
   ]
 }
 ```
+
+Add your organization to the organization catalog first if it is not listed yet. Then use its **`id`** (e.g. `org:ewc`) as **`orgId`**.
 
 **`acceptedCredentialRefs`** (objects with `credentialCatalogId` like `cred:…`) are the preferred link to the [FIDES Credential Catalog](https://github.com/FIDEScommunity/fides-credential-catalog). They power cross-catalog tooling and, in the WordPress plugin, **Ecosystem** and **Theme** filters (resolved via credential catalog `aggregated.json`). **`acceptedCredentials`** remains useful as human-readable labels.
 
@@ -109,6 +107,8 @@ npm install
 npm run crawl
 ```
 
+The crawler loads the [organization catalog `aggregated.json`](https://github.com/FIDEScommunity/fides-organization-catalog/blob/main/data/aggregated.json) (or a local clone at `../organization-catalog/data/aggregated.json` when developing on a `.local` / `localhost` machine) to validate **`orgId`** and attach denormalized **`provider`** data to each RP in the output.
+
 ### Validate catalogs
 
 ```bash
@@ -120,6 +120,7 @@ npm run validate:all      # both
 ## Data and catalog UI behavior
 
 - **Semantic dates**: The crawler sets `updatedAt` (with fallbacks such as git history / `fetchedAt`) and `firstSeenAt` (persisted in `data/rp-history-state.json`) so “new” and “updated” reflect real catalog changes, not only crawl time.
+- **Organization link**: Community **`rp-catalog.json`** files declare **`orgId`** only; the crawler resolves **`provider`** (name, website, logo, DID) from the organization catalog and adds **`orgId`** on each RP in **`aggregated.json`** (for UI and deep links).
 - **Default data URL**: The plugin loads RP data from **`data/aggregated.json`** (GitHub raw on public sites, with a **local plugin copy** preferred on typical `.local` dev hosts).
 - **KPI row**: Total RPs in the current result, **New last 30 days**, **Updated last 30 days**, **Countries** (with interactions such as toggling the “new” filter or clearing country filter where implemented).
 - **Sidebar filters**: Readiness, supported wallets, sector, **ecosystem** and **theme** (derived from linked credentials), country, credential format, presentation protocol, interop profile, plus quick options such as **Added last 30 days**, **Includes video**, **Featured first**, and **Linked RPs** when `?rps=` is present.
@@ -146,6 +147,7 @@ Under **Settings → FIDES RP Catalog** you can set:
 - **Wallet Catalog URL** — base URL for wallet deep links  
 - **Blue Pages URL** — DID lookup base URL  
 - **Credential Catalog URL** — page with the credential catalog shortcode (for `?credential=cred:…` links)  
+- **Organization Catalog URL** — page with the organization catalog shortcode (for `?org=org:…` links from RP modals; source data uses **`orgId`** like issuer/credential catalogs)  
 - **Credential catalog data (JSON)** — URL of credential **`aggregated.json`** (ecosystem/theme filters and labels)
 
 `mapPageUrl` and default GitHub raw URLs for RP and vocabulary data are passed from PHP; adjust in code or options where your fork differs.
@@ -186,5 +188,6 @@ Apache 2.0 — see [LICENSE](LICENSE).
 
 - [FIDES Wallet Catalog](https://github.com/FIDEScommunity/fides-wallet-catalog) — digital identity wallets  
 - [FIDES Credential Catalog](https://github.com/FIDEScommunity/fides-credential-catalog) — credential types  
+- [FIDES Organization Catalog](https://github.com/FIDEScommunity/fides-organization-catalog) — organizations (referenced via **`orgId`** in RP source JSON)  
 - [FIDES RP Catalog](https://github.com/FIDEScommunity/fides-rp-catalog) — this repository  
 - [FIDES Community](https://fides.community)

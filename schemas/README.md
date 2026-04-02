@@ -1,6 +1,8 @@
 # FIDES RP Catalog Schema Reference
 
-Quick reference for providers to see which fields accept fixed values (enums) vs free text.
+Quick reference for contributors: which fields accept fixed values (enums) vs free text.
+
+Organization **name, DID, website, logo, and contact** are **not** in this file—they live in the [FIDES Organization Catalog](https://github.com/FIDEScommunity/fides-organization-catalog). Reference them with **`orgId`** (same idea as issuer and credential `credential-catalog.json` files).
 
 ## Legend
 
@@ -15,16 +17,14 @@ Quick reference for providers to see which fields accept fixed values (enums) vs
 
 ---
 
-## Provider Fields
+## Catalog root (source `rp-catalog.json`)
 
 | Field | Required | Type | Valid Values |
 |-------|----------|------|--------------|
-| `provider.name` | ✅ | 📝 | Any text |
-| `provider.did` | | 🆔 | `did:method:...` |
-| `provider.website` | | 🔗 | URL |
-| `provider.logo` | | 🔗 | URL |
-| `provider.contact.email` | | 📧 | Email |
-| `provider.contact.support` | | 🔗 | URL |
+| `$schema` | ✅ | 🔒 | Must be `https://fides.community/schemas/rp-catalog/v1` |
+| `orgId` | ✅ | 🆔 | `org:` + slug, e.g. `org:ewc` — must exist in organization catalog |
+| `relyingParties` | ✅ | array | At least one RP (see below) |
+| `lastUpdated` | | ISO 8601 | Optional |
 
 ---
 
@@ -106,9 +106,8 @@ The `supportedWallets` field accepts two formats:
 
 ```json
 {
-  "provider": {
-    "name": "My Organization"
-  },
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:example-org",
   "relyingParties": [
     {
       "id": "my-verifier",
@@ -126,11 +125,8 @@ The `supportedWallets` field accepts two formats:
 
 ```json
 {
-  "provider": {
-    "name": "Example Corp",
-    "website": "https://example.com",
-    "logo": "https://www.google.com/s2/favicons?domain=example.com&sz=128"
-  },
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:example-org",
   "relyingParties": [
     {
       "id": "example-verifier",

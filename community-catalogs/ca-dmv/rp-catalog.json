@@ -1,12 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "California Department of Motor Vehicles (CA DMV)",
-    "website": "https://www.dmv.ca.gov/portal/",
-    "contact": {
-      "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
-    }
-  },
+  "orgId": "org:ca-dmv",
   "relyingParties": [
     {
       "id": "ca-dmv-mdl-login-opencred",
@@ -16,7 +10,9 @@
       "readiness": "production",
       "country": "US",
       "status": "live",
-      "sectors": ["government"],
+      "sectors": [
+        "government"
+      ],
       "useCases": [
         "Website login / authentication",
         "Access to MyDMV online services"
@@ -25,9 +21,13 @@
         "mDL (Mobile Driver’s License)"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc" }
+        {
+          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+        }
       ],
-      "credentialFormats": ["mDL/mDoc"],
+      "credentialFormats": [
+        "mDL/mDoc"
+      ],
       "presentationProtocols": [
         "ISO/IEC 18013-5 (mDL/mdoc presentation)"
       ],
@@ -37,7 +37,9 @@
         "Google Wallet"
       ],
       "documentation": "https://www.dmv.ca.gov/portal/ca-dmv-wallet/mdl-for-technology-developers/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2026-02-18T00:00:00Z"

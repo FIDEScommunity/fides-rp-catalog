@@ -1,42 +1,42 @@
 {
-    "provider": {
-      "name": "MOSIP",
-      "website": "https://www.mosip.io"
-    },
-    "relyingParties": [
-      {
-        "id": "inji-web-verifier",
-        "name": "Inji Web Verifier",
-        "description": "Web-based verifier for MOSIP/Inji credentials, allowing users to upload or scan credentials for verification.",
-        "logo": "https://api.collab.mosip.net/inji/mosip-logo.png",
-        "website": "https://injiverify.collab.mosip.net/",
-        "readiness": "technical-demo",
-        "country": "IN",
-        "status": "beta",
-        "sectors": ["government"],
-        "useCases": [
-          "Identity verification",
-          "Credential validation"
-        ],
-        "acceptedCredentials": [
-          "National ID",
-          "MOSIP Verifiable Credential"
-        ],
-        "credentialFormats": [
-          "JSON-LD VC"
-        ],
-        "presentationProtocols": [
-          "OpenID4VP"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Inji Wallet",
-            "walletCatalogId": "inji-wallet"
-          }
-        ],
-        "languages": [
-          "en"
-        ]
-      }
-    ]
-  }
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:mosip",
+  "relyingParties": [
+    {
+      "id": "inji-web-verifier",
+      "name": "Inji Web Verifier",
+      "description": "Web-based verifier for MOSIP/Inji credentials, allowing users to upload or scan credentials for verification.",
+      "logo": "https://api.collab.mosip.net/inji/mosip-logo.png",
+      "website": "https://injiverify.collab.mosip.net/",
+      "readiness": "technical-demo",
+      "country": "IN",
+      "status": "beta",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Identity verification",
+        "Credential validation"
+      ],
+      "acceptedCredentials": [
+        "National ID",
+        "MOSIP Verifiable Credential"
+      ],
+      "credentialFormats": [
+        "JSON-LD VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        }
+      ],
+      "languages": [
+        "en"
+      ]
+    }
+  ]
+}

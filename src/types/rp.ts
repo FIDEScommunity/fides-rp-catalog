@@ -47,7 +47,7 @@ export type SupportedWallet = string | {
   walletCatalogId?: string;
 };
 
-// Provider/Organization information
+/** Denormalized from FIDES Organization Catalog at crawl time (not present in source rp-catalog.json). */
 export interface RPProvider {
   name: string;
   did?: string;
@@ -104,16 +104,17 @@ export interface RelyingParty {
   firstSeenAt?: string;
 }
 
-// RP Catalog structure
+// RP Catalog structure (source JSON — aligns with issuer / credential catalogs)
 export interface RPCatalog {
-  $schema?: string;
-  provider: RPProvider;
+  $schema: string;
+  orgId: string;
   relyingParties: RelyingParty[];
   lastUpdated?: string;
 }
 
 // Normalized RP with metadata (after crawling)
 export interface NormalizedRP extends RelyingParty {
+  orgId: string;
   provider: RPProvider;
   catalogUrl: string;
   fetchedAt: string;

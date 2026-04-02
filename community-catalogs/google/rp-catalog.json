@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "Google",
-    "website": "https://www.google.com",
-    "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
-  },
+  "orgId": "org:google",
   "relyingParties": [
     {
       "id": "google-digital-credentials-demo",
@@ -15,16 +11,33 @@
       "readiness": "technical-demo",
       "country": "US",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["identity-verification"],
-      "acceptedCredentials": ["mDL", "National ID cards"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:pid-mdoc:mdoc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["mDL/mDoc"],
-      "presentationProtocols": ["OpenID4VP"],
+      "useCases": [
+        "identity-verification"
+      ],
+      "acceptedCredentials": [
+        "mDL",
+        "National ID cards"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        }
+      ],
+      "credentialFormats": [
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
       "supportedWallets": [
         {
           "name": "Google Wallet",
@@ -32,7 +45,9 @@
         }
       ],
       "documentation": "https://digital-credentials.dev/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2025-01-16T00:00:00+01:00"

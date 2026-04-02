@@ -1,9 +1,6 @@
 {
-  "provider": {
-    "name": "FIDES Labs",
-    "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-    "website": "https://fides.community"
-  },
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:fides",
   "relyingParties": [
     {
       "id": "circulacity-sandbox",
@@ -15,7 +12,9 @@
       "video": "https://youtu.be/lK8ymw7Gei0",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
+      "sectors": [
+        "government"
+      ],
       "useCases": [
         "Login",
         "KYC/E",
@@ -33,13 +32,27 @@
         "Verified Employee"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc" }
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc"
+        }
       ],
       "credentialFormats": [
         "SD-JWT-VC"
@@ -50,9 +63,15 @@
       "interoperabilityProfiles": [
         "DIIP v4"
       ],
-      "supportedWallets":  [
-        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
-        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
+      "supportedWallets": [
+        {
+          "name": "Heidi",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "iGrant Data Wallet",
+          "walletCatalogId": "igrant-data-wallet"
+        }
       ],
       "languages": [
         "en",
@@ -68,7 +87,9 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
+      "sectors": [
+        "government"
+      ],
       "useCases": [
         "Login",
         "KYC/E",
@@ -86,13 +107,27 @@
         "Verified Employee"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc" }
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc"
+        }
       ],
       "credentialFormats": [
         "SD-JWT-VC"
@@ -103,9 +138,15 @@
       "interoperabilityProfiles": [
         "DIIP v4"
       ],
-      "supportedWallets":  [
-        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
-        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
+      "supportedWallets": [
+        {
+          "name": "Heidi",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "iGrant Data Wallet",
+          "walletCatalogId": "igrant-data-wallet"
+        }
       ],
       "languages": [
         "en",
@@ -122,21 +163,43 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Login"],
-      "acceptedCredentials": ["PID"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["DIIP v4"],
+      "useCases": [
+        "Login"
+      ],
+      "acceptedCredentials": [
+        "PID"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
       "supportedWallets": [
-        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
-        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
+        {
+          "name": "Heidi",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "iGrant Data Wallet",
+          "walletCatalogId": "igrant-data-wallet"
+        }
       ],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "languages": ["nl"]
+      "languages": [
+        "nl"
+      ]
     },
     {
       "id": "hak-rein-vos-notarissen-sandbox",
@@ -147,25 +210,60 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["other"],
-      "useCases": ["Login", "KYC"],
-      "acceptedCredentials": ["PID", "BRI", "BRP", "Company Roles", "Contact Details"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:bri:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:brp:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:company-roles:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc" }
+      "sectors": [
+        "other"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["DIIP v4"],
+      "useCases": [
+        "Login",
+        "KYC"
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "BRI",
+        "BRP",
+        "Company Roles",
+        "Contact Details"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:bri:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:brp:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:company-roles:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
       "supportedWallets": [
-        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
-        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
+        {
+          "name": "Heidi",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "iGrant Data Wallet",
+          "walletCatalogId": "igrant-data-wallet"
+        }
       ],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "languages": ["nl"]
+      "languages": [
+        "nl"
+      ]
     },
     {
       "id": "kvk-frontoffice-sandbox",
@@ -176,24 +274,56 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Login", "KYC"],
-      "acceptedCredentials": ["PID", "BRI", "BRP", "Contact Details"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:bri:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:brp:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["DIIP v4"],
+      "useCases": [
+        "Login",
+        "KYC"
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "BRI",
+        "BRP",
+        "Contact Details"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:bri:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:brp:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
       "supportedWallets": [
-        { "name": "Heidi", "walletCatalogId": "heidi-wallet" },
-        { "name": "iGrant Data Wallet", "walletCatalogId": "igrant-data-wallet" }
+        {
+          "name": "Heidi",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "iGrant Data Wallet",
+          "walletCatalogId": "igrant-data-wallet"
+        }
       ],
       "testCredentials": "https://fides.community/community-tools/reference-issuers/pid-issuer/",
-      "languages": ["nl"]
+      "languages": [
+        "nl"
+      ]
     }
   ],
   "lastUpdated": "2026-02-03T10:00:00Z"

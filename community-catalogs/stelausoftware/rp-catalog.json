@@ -1,47 +1,51 @@
 {
-    "provider": {
-      "name": "Stelau Software",
-      "website": "https://www.stelau.com"
-    },
-    "relyingParties": [
-      {
-        "id": "mdoc-web-verifier",
-        "name": "mDoc Web Verifier",
-        "description": "Browser-based verifier for ISO/IEC 18013-5 mDoc credentials using proximity flows.",
-        "logo": "https://mdoc-web-verifier.stelau.com/assets/icon-512.png",
-        "website": "https://mdoc-web-verifier.stelau.com/",
-        "readiness": "technical-demo",
-        "country": "FR",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": [
-          "Mobile Driving License verification",
-          "Age verification",
-          "Identity proofing"
-        ],
-        "acceptedCredentials": [
-          "mDL",
-          "PID (mdoc profile)"
-        ],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:pid-mdoc:mdoc" }
-        ],
-        "credentialFormats": [
-          "mDL/mDoc"
-        ],
-        "presentationProtocols": [
-          "ISO 18013-5 proximity",
-          "QR device engagement"
-        ],
-        "supportedWallets": [
-          "Google Wallet (mDL)",
-          "Apple Wallet (mDL)",
-          "EUDI-compatible mDoc wallets"
-        ],
-        "languages": [
-          "en"
-        ]
-      }
-    ]
-  }
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:stelausoftware",
+  "relyingParties": [
+    {
+      "id": "mdoc-web-verifier",
+      "name": "mDoc Web Verifier",
+      "description": "Browser-based verifier for ISO/IEC 18013-5 mDoc credentials using proximity flows.",
+      "logo": "https://mdoc-web-verifier.stelau.com/assets/icon-512.png",
+      "website": "https://mdoc-web-verifier.stelau.com/",
+      "readiness": "technical-demo",
+      "country": "FR",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Mobile Driving License verification",
+        "Age verification",
+        "Identity proofing"
+      ],
+      "acceptedCredentials": [
+        "mDL",
+        "PID (mdoc profile)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        }
+      ],
+      "credentialFormats": [
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "ISO 18013-5 proximity",
+        "QR device engagement"
+      ],
+      "supportedWallets": [
+        "Google Wallet (mDL)",
+        "Apple Wallet (mDL)",
+        "EUDI-compatible mDoc wallets"
+      ],
+      "languages": [
+        "en"
+      ]
+    }
+  ]
+}

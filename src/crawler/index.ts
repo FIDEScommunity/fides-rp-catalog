@@ -8,16 +8,18 @@
  */
 
 import * as fs from 'fs/promises';
+import { existsSync } from 'fs';
 import * as path from 'path';
 import { execFileSync } from 'child_process';
+import { hostname } from 'os';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
-import type { 
-  RPCatalog, 
-  NormalizedRP, 
-  AggregatedRPData, 
+import type {
+  RPCatalog,
+  NormalizedRP,
+  AggregatedRPData,
   RPProvider,
-  Readiness 
+  Readiness
 } from '../types/rp.js';
 import { loadCredentialSectorMap, resolveCanonicalSectors } from '../credentialSectors.js';
 
@@ -36,6 +38,90 @@ const CONFIG = {
     path: 'community-catalogs'
   }
 };
+
+const ORGANIZATION_CATALOG_URL =
+  'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json';
+const ORGANIZATION_CATALOG_LOCAL_PATHS = [
+  process.env.ORGANIZATION_CATALOG_AGGREGATED_PATH,
+  path.join(process.cwd(), '..', 'organization-catalog', 'data', 'aggregated.json')
+].filter(Boolean) as string[];
+
+interface OrgCatalogEntry {
+  id: string;
+  name: string;
+  identifiers?: { did?: string };
+  website?: string;
+  logoUri?: string;
+  contact?: { email?: string; support?: string };
+  legalName?: string;
+}
+
+function isLocalDevHost(): boolean {
+  const host = hostname();
+  return host !== '' && (host.endsWith('.local') || host === 'localhost');
+}
+
+function orgEntryToRPProvider(entry: OrgCatalogEntry): RPProvider {
+  const p: RPProvider = { name: entry.name };
+  if (entry.identifiers?.did) p.did = entry.identifiers.did;
+  if (entry.website) p.website = entry.website;
+  if (entry.logoUri) p.logo = entry.logoUri;
+  if (entry.contact) p.contact = entry.contact;
+  return p;
+}
+
+async function loadOrganizationCatalogMap(): Promise<Map<string, OrgCatalogEntry>> {
+  const tryParse = (raw: string): Map<string, OrgCatalogEntry> => {
+    const data = JSON.parse(raw) as { organizations?: OrgCatalogEntry[] };
+    const map = new Map<string, OrgCatalogEntry>();
+    for (const o of data.organizations || []) {
+      if (o?.id) map.set(o.id, o);
+    }
+    return map;
+  };
+
+  if (isLocalDevHost()) {
+    for (const localPath of ORGANIZATION_CATALOG_LOCAL_PATHS) {
+      if (localPath && existsSync(localPath)) {
+        try {
+          const raw = await fs.readFile(localPath, 'utf-8');
+          const map = tryParse(raw);
+          console.log(`Using local organization catalog (${localPath}), ${map.size} org(s)`);
+          return map;
+        } catch (e) {
+          console.warn('Could not parse local organization catalog:', (e as Error).message);
+        }
+      }
+    }
+  }
+
+  try {
+    const res = await fetch(ORGANIZATION_CATALOG_URL);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = (await res.json()) as { organizations?: OrgCatalogEntry[] };
+    const map = new Map<string, OrgCatalogEntry>();
+    for (const o of data.organizations || []) {
+      if (o?.id) map.set(o.id, o);
+    }
+    console.log(`Using organization catalog from GitHub, ${map.size} org(s)`);
+    return map;
+  } catch (err) {
+    console.warn('Could not fetch organization catalog:', (err as Error).message);
+    for (const localPath of ORGANIZATION_CATALOG_LOCAL_PATHS) {
+      if (localPath && existsSync(localPath)) {
+        try {
+          const raw = await fs.readFile(localPath, 'utf-8');
+          const map = tryParse(raw);
+          console.log(`Fallback local organization catalog (${localPath})`);
+          return map;
+        } catch (e) {
+          console.warn('Could not parse local organization catalog:', (e as Error).message);
+        }
+      }
+    }
+    return new Map();
+  }
+}
 
 interface RPHistoryEntry {
   firstSeenAt: string;
@@ -134,6 +220,7 @@ async function loadFeaturedConfig(): Promise<Set<string>> {
  */
 function normalizeRPs(
   catalog: RPCatalog,
+  provider: RPProvider,
   catalogUrl: string,
   source: 'did' | 'github' | 'local',
   featuredSet: Set<string>,
@@ -166,7 +253,8 @@ function normalizeRPs(
 
     return {
       ...rp,
-      provider: catalog.provider,
+      orgId: catalog.orgId,
+      provider,
       catalogUrl,
       fetchedAt,
       source,
@@ -182,7 +270,8 @@ function normalizeRPs(
  */
 async function crawlLocalCommunity(
   featuredSet: Set<string>,
-  rpHistoryState: RPHistoryState
+  rpHistoryState: RPHistoryState,
+  organizationById: Map<string, OrgCatalogEntry>
 ): Promise<{ rps: NormalizedRP[]; providers: Map<string, RPProvider> }> {
   const rps: NormalizedRP[] = [];
   const providers = new Map<string, RPProvider>();
@@ -212,12 +301,22 @@ async function crawlLocalCommunity(
           continue;
         }
 
+        const orgEntry = organizationById.get(catalog.orgId);
+        if (!orgEntry) {
+          console.error(
+            `   ❌ Unknown orgId ${catalog.orgId} in ${dir} — add this organization to fides-organization-catalog first.`
+          );
+          continue;
+        }
+        const provider = orgEntryToRPProvider(orgEntry);
+
         const repoRelativePath = path.relative(process.cwd(), catalogPath);
         const gitLastCommitAt = getGitLastCommitDateForPath(repoRelativePath);
 
         console.log(`   📦 Processing: ${dir}`);
         const normalizedRPs = normalizeRPs(
           catalog,
+          provider,
           catalogPath,
           'local',
           featuredSet,
@@ -225,7 +324,7 @@ async function crawlLocalCommunity(
           gitLastCommitAt
         );
         rps.push(...normalizedRPs);
-        providers.set(catalog.provider.did || catalog.provider.name, catalog.provider);
+        providers.set(catalog.orgId, provider);
         console.log(`      ✅ Found ${normalizedRPs.length} relying part${normalizedRPs.length === 1 ? 'y' : 'ies'}`);
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
@@ -313,10 +412,12 @@ async function crawl(): Promise<void> {
   const featuredSet = await loadFeaturedConfig();
   const rpHistoryState = await loadRPHistoryState();
 
+  const organizationById = await loadOrganizationCatalogMap();
+
   const allRPs: NormalizedRP[] = [];
   const allProviders = new Map<string, RPProvider>();
 
-  const community = await crawlLocalCommunity(featuredSet, rpHistoryState);
+  const community = await crawlLocalCommunity(featuredSet, rpHistoryState, organizationById);
   allRPs.push(...community.rps);
   community.providers.forEach((v, k) => allProviders.set(k, v));
 

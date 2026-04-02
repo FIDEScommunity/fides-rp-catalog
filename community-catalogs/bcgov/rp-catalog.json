@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "Government of British Columbia",
-    "website": "https://www.gov.bc.ca/",
-    "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
-  },
+  "orgId": "org:bcgov",
   "relyingParties": [
     {
       "id": "bc-digital-trust-showcase",
@@ -15,14 +11,29 @@
       "readiness": "use-case-demo",
       "country": "CA",
       "status": "live",
-      "sectors": ["government", "education"],
-      "useCases": ["identity-verification", "business-licensing", "service-access"],
-      "acceptedCredentials": ["Student Card"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:student-id-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "government",
+        "education"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
+      "useCases": [
+        "identity-verification",
+        "business-licensing",
+        "service-access"
+      ],
+      "acceptedCredentials": [
+        "Student Card"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:student-id-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
       "supportedWallets": [
         {
           "name": "BC Wallet",
@@ -30,7 +41,9 @@
         }
       ],
       "documentation": "https://digital.gov.bc.ca/digital-trust/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2025-01-16T00:00:00+01:00"

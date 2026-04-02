@@ -35,13 +35,14 @@
         "nl",
         "en"
       ],
+      "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.045Z",
+      "fetchedAt": "2026-04-02T20:31:20.637Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -84,13 +85,14 @@
         "nl",
         "en"
       ],
+      "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.045Z",
+      "fetchedAt": "2026-04-02T20:31:20.637Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -131,13 +133,14 @@
         "nl",
         "en"
       ],
+      "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.045Z",
+      "fetchedAt": "2026-04-02T20:31:20.637Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -182,13 +185,14 @@
         "nl",
         "en"
       ],
+      "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.045Z",
+      "fetchedAt": "2026-04-02T20:31:20.637Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -231,13 +235,14 @@
         "nl",
         "en"
       ],
+      "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.045Z",
+      "fetchedAt": "2026-04-02T20:31:20.637Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -284,13 +289,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:bcgov",
       "provider": {
         "name": "Government of British Columbia",
-        "website": "https://www.gov.bc.ca/",
-        "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
+        "website": "https://www2.gov.bc.ca/",
+        "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.144Z",
+      "fetchedAt": "2026-04-02T20:31:20.664Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -333,13 +339,14 @@
         "DPI-based infrastructure"
       ],
       "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais",
+      "orgId": "org:brazil",
       "provider": {
         "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
         "website": "https://www.gov.br/gestao/",
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.172Z",
+      "fetchedAt": "2026-04-02T20:31:20.705Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -385,6 +392,7 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:ca-dmv",
       "provider": {
         "name": "California Department of Motor Vehicles (CA DMV)",
         "website": "https://www.dmv.ca.gov/portal/",
@@ -393,7 +401,7 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.200Z",
+      "fetchedAt": "2026-04-02T20:31:20.732Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -450,13 +458,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
+        "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.225Z",
+      "fetchedAt": "2026-04-02T20:31:20.763Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -555,13 +564,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
+        "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.225Z",
+      "fetchedAt": "2026-04-02T20:31:20.763Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -711,13 +721,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eu",
       "provider": {
-        "name": "European Commission",
+        "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.225Z",
+      "fetchedAt": "2026-04-02T20:31:20.763Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -784,13 +795,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.259Z",
+      "fetchedAt": "2026-04-02T20:31:20.788Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -847,13 +859,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.259Z",
+      "fetchedAt": "2026-04-02T20:31:20.788Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -909,13 +922,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.259Z",
+      "fetchedAt": "2026-04-02T20:31:20.788Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -982,13 +996,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.259Z",
+      "fetchedAt": "2026-04-02T20:31:20.788Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1044,13 +1059,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.259Z",
+      "fetchedAt": "2026-04-02T20:31:20.788Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1096,12 +1112,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:ewc",
       "provider": {
-        "name": "European Wallet Consortium",
-        "website": "https://www.eudiwalletconsortium.org/"
+        "name": "EWC - European Wallet Consortium",
+        "website": "https://dss.aegean.gr",
+        "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.420Z",
+      "fetchedAt": "2026-04-02T20:31:20.824Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
@@ -1186,13 +1204,15 @@
         "en",
         "nl"
       ],
+      "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community"
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.465Z",
+      "fetchedAt": "2026-04-02T20:31:20.852Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1276,13 +1296,15 @@
         "en",
         "nl"
       ],
+      "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community"
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.465Z",
+      "fetchedAt": "2026-04-02T20:31:20.852Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1336,13 +1358,15 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community"
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.465Z",
+      "fetchedAt": "2026-04-02T20:31:20.852Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1412,13 +1436,15 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community"
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.465Z",
+      "fetchedAt": "2026-04-02T20:31:20.852Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1484,13 +1510,15 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community"
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.465Z",
+      "fetchedAt": "2026-04-02T20:31:20.852Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1555,13 +1583,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:google",
       "provider": {
         "name": "Google",
         "website": "https://www.google.com",
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.511Z",
+      "fetchedAt": "2026-04-02T20:31:20.878Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -1620,17 +1649,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -1687,17 +1716,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -1765,17 +1794,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -1832,17 +1861,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -1926,17 +1955,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2016,17 +2045,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2092,17 +2121,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2177,17 +2206,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2242,17 +2271,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2302,17 +2331,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2396,17 +2425,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2473,17 +2502,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2541,17 +2570,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2615,17 +2644,17 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://www.igrant.io/",
+        "website": "https://igrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
         "contact": {
-          "email": "support@igrant.io",
-          "support": "https://docs.igrant.io/"
+          "email": "support@igrant.io"
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.550Z",
+      "fetchedAt": "2026-04-02T20:31:20.908Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2676,13 +2705,17 @@
         "en",
         "de"
       ],
+      "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
         "website": "https://lissi.id",
-        "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.613Z",
+      "fetchedAt": "2026-04-02T20:31:20.934Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -2733,13 +2766,17 @@
         "en",
         "de"
       ],
+      "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
         "website": "https://lissi.id",
-        "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.613Z",
+      "fetchedAt": "2026-04-02T20:31:20.934Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -2790,13 +2827,17 @@
         "en",
         "de"
       ],
+      "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
         "website": "https://lissi.id",
-        "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.613Z",
+      "fetchedAt": "2026-04-02T20:31:20.934Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -2848,13 +2889,17 @@
         "en",
         "de"
       ],
+      "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
         "website": "https://lissi.id",
-        "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.613Z",
+      "fetchedAt": "2026-04-02T20:31:20.934Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -2895,16 +2940,78 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:mosip",
       "provider": {
         "name": "MOSIP",
-        "website": "https://www.mosip.io"
+        "website": "https://www.mosip.io",
+        "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.656Z",
+      "fetchedAt": "2026-04-02T20:31:21.024Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T16:50:59.000Z",
       "firstSeenAt": "2026-01-26T16:50:59.000Z"
+    },
+    {
+      "id": "neovo-shop-playground",
+      "name": "Neovo Brewing webshop demo",
+      "description": "Demo webshop by Neovo that uses Beta-ID for digital age verification before allowing an age-restricted product to be added to the cart. It serves as a relying party demonstration for age verification in an online retail flow.",
+      "website": "https://shop.playground.neovo.ch/products/silent-tide",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "status": "beta",
+      "sectors": [
+        "retail"
+      ],
+      "useCases": [
+        "Age verification",
+        "Online purchase of age-restricted products",
+        "Beta-ID based verification in e-commerce"
+      ],
+      "acceptedCredentials": [
+        "Beta-ID"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "SWIYU Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        }
+      ],
+      "features": [
+        "Age-gated add-to-cart flow",
+        "Beta-ID verification prompt during checkout journey",
+        "Retail demo for digital identity verification"
+      ],
+      "languages": [
+        "de"
+      ],
+      "orgId": "org:neovo",
+      "provider": {
+        "name": "Neovo",
+        "website": "https://neovo.ch/",
+        "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHAun1QNaT8xA/company-logo_200_200/B4DZctJbACGwAI-/0/1748809134447/neovo_ag_logo?e=1776902400&v=beta&t=e3aSznBO61WFgC_SoFjnEh8FcZfxy6CMKKzx5Qqdkn8",
+        "contact": {
+          "email": "info@neovo.ch"
+        }
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/neovo/rp-catalog.json",
+      "fetchedAt": "2026-04-02T20:31:21.048Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-04-02T19:50:32.000Z",
+      "firstSeenAt": "2026-04-02T19:50:32.000Z"
     },
     {
       "id": "nijmegen-mijn-nijmegen-login",
@@ -2956,13 +3063,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3001,13 +3109,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3045,13 +3154,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3090,13 +3200,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3134,13 +3245,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3178,13 +3290,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3222,13 +3335,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3275,13 +3389,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3328,13 +3443,14 @@
       "languages": [
         "nl"
       ],
+      "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.698Z",
+      "fetchedAt": "2026-04-02T20:31:21.074Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3434,13 +3550,14 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:owf",
       "provider": {
         "name": "OpenWallet Foundation",
         "website": "https://openwallet.foundation/",
-        "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
+        "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.731Z",
+      "fetchedAt": "2026-04-02T20:31:21.099Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -3503,15 +3620,16 @@
       "languages": [
         "en"
       ],
+      "orgId": "org:stelausoftware",
       "provider": {
         "name": "Stelau Software",
         "website": "https://www.stelau.com"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-04-02T06:48:41.761Z",
+      "fetchedAt": "2026-04-02T20:31:21.132Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-26T16:46:54.000Z",
+      "updatedAt": "2026-04-02T19:43:00.000Z",
       "firstSeenAt": "2026-01-26T16:46:54.000Z"
     }
   ],
@@ -3523,8 +3641,8 @@
     },
     {
       "name": "Government of British Columbia",
-      "website": "https://www.gov.bc.ca/",
-      "logo": "https://hondacelebrationoflight.com/wp-content/uploads/BC-Gov-Logo.png"
+      "website": "https://www2.gov.bc.ca/",
+      "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
     },
     {
       "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
@@ -3539,7 +3657,7 @@
       }
     },
     {
-      "name": "European Commission",
+      "name": "European Commission - Government",
       "website": "https://github.com/eu-digital-identity-wallet",
       "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
     },
@@ -3549,13 +3667,15 @@
       "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
     },
     {
-      "name": "European Wallet Consortium",
-      "website": "https://www.eudiwalletconsortium.org/"
+      "name": "EWC - European Wallet Consortium",
+      "website": "https://dss.aegean.gr",
+      "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
     },
     {
       "name": "FIDES Labs",
       "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-      "website": "https://fides.community"
+      "website": "https://fides.community",
+      "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
     },
     {
       "name": "Google",
@@ -3564,21 +3684,32 @@
     },
     {
       "name": "iGrant.io",
-      "website": "https://www.igrant.io/",
+      "website": "https://igrant.io",
       "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
       "contact": {
-        "email": "support@igrant.io",
-        "support": "https://docs.igrant.io/"
+        "email": "support@igrant.io"
       }
     },
     {
       "name": "Lissi GmbH",
       "website": "https://lissi.id",
-      "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
+      "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+      "contact": {
+        "email": "info@lissi.id"
+      }
     },
     {
       "name": "MOSIP",
-      "website": "https://www.mosip.io"
+      "website": "https://www.mosip.io",
+      "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
+    },
+    {
+      "name": "Neovo",
+      "website": "https://neovo.ch/",
+      "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHAun1QNaT8xA/company-logo_200_200/B4DZctJbACGwAI-/0/1748809134447/neovo_ag_logo?e=1776902400&v=beta&t=e3aSznBO61WFgC_SoFjnEh8FcZfxy6CMKKzx5Qqdkn8",
+      "contact": {
+        "email": "info@neovo.ch"
+      }
     },
     {
       "name": "City of Nijmegen",
@@ -3588,20 +3719,20 @@
     {
       "name": "OpenWallet Foundation",
       "website": "https://openwallet.foundation/",
-      "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
+      "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
     },
     {
       "name": "Stelau Software",
       "website": "https://www.stelau.com"
     }
   ],
-  "lastUpdated": "2026-04-02T06:48:41.766Z",
+  "lastUpdated": "2026-04-02T20:31:21.137Z",
   "stats": {
-    "totalRPs": 53,
-    "totalProviders": 15,
+    "totalRPs": 54,
+    "totalProviders": 16,
     "byReadiness": {
       "technical-demo": 20,
-      "use-case-demo": 29,
+      "use-case-demo": 30,
       "production-pilot": 2,
       "production": 2
     },
@@ -3610,7 +3741,7 @@
       "education": 15,
       "finance": 15,
       "mobility": 14,
-      "retail": 19,
+      "retail": 20,
       "digital": 36,
       "healthcare": 15,
       "agriculture": 10,
@@ -3623,7 +3754,7 @@
     },
     "byCredentialFormat": {
       "Idemix": 6,
-      "SD-JWT-VC": 34,
+      "SD-JWT-VC": 35,
       "JSON-LD VC": 2,
       "mDL/mDoc": 12
     }

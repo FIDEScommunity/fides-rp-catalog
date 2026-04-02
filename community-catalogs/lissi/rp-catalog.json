@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "Lissi GmbH",
-    "website": "https://lissi.id",
-    "logo": "https://media.trustradius.com/product-logos/7D/qE/XEIQ9671XI1W.JPEG"
-  },
+  "orgId": "org:lissi",
   "relyingParties": [
     {
       "id": "lissi-bank-account-demo",
@@ -15,15 +11,30 @@
       "readiness": "use-case-demo",
       "country": "DE",
       "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["account-opening", "identity-verification"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "account-opening",
+        "identity-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Lissi ID-Wallet",
@@ -31,7 +42,10 @@
         }
       ],
       "documentation": "https://docs.lissi.id",
-      "languages": ["en", "de"]
+      "languages": [
+        "en",
+        "de"
+      ]
     },
     {
       "id": "lissi-tax-authority-demo",
@@ -42,15 +56,30 @@
       "readiness": "use-case-demo",
       "country": "DE",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["document-issuance", "identity-verification"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "document-issuance",
+        "identity-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Lissi ID-Wallet",
@@ -58,7 +87,10 @@
         }
       ],
       "documentation": "https://docs.lissi.id",
-      "languages": ["en", "de"]
+      "languages": [
+        "en",
+        "de"
+      ]
     },
     {
       "id": "lissi-municipality-demo",
@@ -69,15 +101,30 @@
       "readiness": "use-case-demo",
       "country": "DE",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["document-issuance", "identity-verification"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "document-issuance",
+        "identity-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Lissi ID-Wallet",
@@ -85,7 +132,10 @@
         }
       ],
       "documentation": "https://docs.lissi.id",
-      "languages": ["en", "de"]
+      "languages": [
+        "en",
+        "de"
+      ]
     },
     {
       "id": "lissi-loan-qes-demo",
@@ -96,15 +146,31 @@
       "readiness": "use-case-demo",
       "country": "DE",
       "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["document-signing", "financial-services"],
-      "acceptedCredentials": ["Person Identification Data (PID)", "Qualified Electronic Signature Certificate"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance"
       ],
-      "credentialFormats": ["SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EWC v3"],
+      "useCases": [
+        "document-signing",
+        "financial-services"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Qualified Electronic Signature Certificate"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
       "supportedWallets": [
         {
           "name": "Lissi ID-Wallet",
@@ -112,7 +178,10 @@
         }
       ],
       "documentation": "https://docs.lissi.id",
-      "languages": ["en", "de"]
+      "languages": [
+        "en",
+        "de"
+      ]
     }
   ],
   "lastUpdated": "2026-01-22T00:00:00+01:00"

@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "EUDIPLO",
-    "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-    "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
-  },
+  "orgId": "org:eudiplo",
   "relyingParties": [
     {
       "id": "eudiplo-vineyard-select",
@@ -15,16 +11,34 @@
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["retail"],
-      "useCases": ["age-verification"],
-      "acceptedCredentials": ["Age Over 18", "Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "retail"
       ],
-      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "useCases": [
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Age Over 18",
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
       "supportedWallets": [
         {
           "name": "EUDI Wallet Reference Implementation",
@@ -41,7 +55,9 @@
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "eudiplo-nordic-digital-bank",
@@ -52,15 +68,32 @@
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["finance"],
-      "useCases": ["account-opening", "identity-verification", "kyc"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "finance"
       ],
-      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "useCases": [
+        "account-opening",
+        "identity-verification",
+        "kyc"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
       "supportedWallets": [
         {
           "name": "EUDI Wallet Reference Implementation",
@@ -73,7 +106,9 @@
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "eudiplo-techmarkt-sim-activation",
@@ -84,15 +119,31 @@
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["telecom"],
-      "useCases": ["identity-verification", "sim-activation"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "telecom"
       ],
-      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "useCases": [
+        "identity-verification",
+        "sim-activation"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
       "supportedWallets": [
         {
           "name": "EUDI Wallet Reference Implementation",
@@ -105,7 +156,9 @@
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "eudiplo-berlin-history-museum",
@@ -116,16 +169,35 @@
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["entertainment"],
-      "useCases": ["residency-verification", "discount-eligibility"],
-      "acceptedCredentials": ["Person Identification Data (PID)", "Certificate of Residence"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:cor-mdoc:mdoc" }
+      "sectors": [
+        "entertainment"
       ],
-      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "useCases": [
+        "residency-verification",
+        "discount-eligibility"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Certificate of Residence"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
       "supportedWallets": [
         {
           "name": "EUDI Wallet Reference Implementation",
@@ -138,7 +210,9 @@
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     },
     {
       "id": "eudiplo-swiftbox-parcel-locker",
@@ -149,15 +223,31 @@
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
-      "sectors": ["retail"],
-      "useCases": ["identity-verification", "parcel-pickup"],
-      "acceptedCredentials": ["Person Identification Data (PID)"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "retail"
       ],
-      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["EUDI Wallet ARF"],
+      "useCases": [
+        "identity-verification",
+        "parcel-pickup"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC",
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
       "supportedWallets": [
         {
           "name": "EUDI Wallet Reference Implementation",
@@ -170,7 +260,9 @@
       ],
       "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2026-01-26T21:30:00Z"

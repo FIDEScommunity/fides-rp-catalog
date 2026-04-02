@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
-    "website": "https://www.gov.br/gestao/",
-    "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
-  },
+  "orgId": "org:brazil",
   "relyingParties": [
     {
       "id": "br-car-vc-pilot",

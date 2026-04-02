@@ -2,20 +2,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fides.community/schemas/rp-catalog/v1",
   "title": "FIDES RP Catalog Schema",
-  "description": "Schema for relying party (verifier) catalog entries in the FIDES ecosystem",
+  "description": "Schema for relying party (verifier) catalog entries in the FIDES ecosystem. Organization profile is defined in the FIDES organization catalog; this file references it via orgId (same pattern as issuer and credential catalogs).",
   "type": "object",
-  "required": ["provider", "relyingParties"],
+  "additionalProperties": false,
+  "required": ["$schema", "orgId", "relyingParties"],
   "properties": {
     "$schema": {
       "type": "string",
-      "description": "Reference to the schema"
+      "const": "https://fides.community/schemas/rp-catalog/v1"
     },
-    "provider": {
-      "$ref": "#/$defs/Provider"
+    "orgId": {
+      "type": "string",
+      "pattern": "^org:[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Organization catalog id (e.g. org:ewc). Must exist in https://github.com/FIDEScommunity/fides-organization-catalog — canonical name, DID, website, and logo are resolved at crawl time from there."
     },
     "relyingParties": {
       "type": "array",
-      "description": "List of relying parties offered by this provider",
+      "description": "List of relying parties offered by this organization",
       "items": {
         "$ref": "#/$defs/RelyingParty"
       },
@@ -28,45 +31,6 @@
     }
   },
   "$defs": {
-    "Provider": {
-      "type": "object",
-      "description": "Organization providing the relying party service",
-      "required": ["name"],
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Name of the provider organization"
-        },
-        "did": {
-          "type": "string",
-          "pattern": "^did:",
-          "description": "Decentralized Identifier of the provider"
-        },
-        "website": {
-          "type": "string",
-          "format": "uri",
-          "description": "Provider's website URL"
-        },
-        "logo": {
-          "type": "string",
-          "format": "uri",
-          "description": "URL to provider's logo"
-        },
-        "contact": {
-          "type": "object",
-          "properties": {
-            "email": {
-              "type": "string",
-              "format": "email"
-            },
-            "support": {
-              "type": "string",
-              "format": "uri"
-            }
-          }
-        }
-      }
-    },
     "RelyingParty": {
       "type": "object",
       "description": "A relying party (verifier) service or website",

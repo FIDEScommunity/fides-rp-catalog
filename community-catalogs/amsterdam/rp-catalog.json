@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "City of Amsterdam",
-    "website": "https://amsterdam-demo.staging.yivi.app/",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
-  },
+  "orgId": "org:amsterdam",
   "relyingParties": [
     {
       "id": "leeftijd-aantonen",
@@ -15,15 +11,32 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Age verification", "Identity verification"],
-      "acceptedCredentials": ["Passport data"],
-      "credentialFormats": ["Idemix"],
-      "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
-      "supportedWallets": [
-        { "name": "Yivi", "walletCatalogId": "yivi" }
+      "sectors": [
+        "government"
       ],
-      "languages": ["nl", "en"]
+      "useCases": [
+        "Age verification",
+        "Identity verification"
+      ],
+      "acceptedCredentials": [
+        "Passport data"
+      ],
+      "credentialFormats": [
+        "Idemix"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ]
     },
     {
       "id": "ideeen-voor-uw-buurt",
@@ -34,15 +47,34 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Login", "Citizen participation", "Attribute sharing"],
-      "acceptedCredentials": ["Address", "Personal data"],
-      "credentialFormats": ["Idemix"],
-      "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
-      "supportedWallets": [
-        { "name": "Yivi", "walletCatalogId": "yivi" }
+      "sectors": [
+        "government"
       ],
-      "languages": ["nl", "en"]
+      "useCases": [
+        "Login",
+        "Citizen participation",
+        "Attribute sharing"
+      ],
+      "acceptedCredentials": [
+        "Address",
+        "Personal data"
+      ],
+      "credentialFormats": [
+        "Idemix"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ]
     },
     {
       "id": "inloggen",
@@ -53,15 +85,32 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Login", "Identity verification"],
-      "acceptedCredentials": ["Passport data"],
-      "credentialFormats": ["Idemix"],
-      "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
-      "supportedWallets": [
-        { "name": "Yivi", "walletCatalogId": "yivi" }
+      "sectors": [
+        "government"
       ],
-      "languages": ["nl", "en"]
+      "useCases": [
+        "Login",
+        "Identity verification"
+      ],
+      "acceptedCredentials": [
+        "Passport data"
+      ],
+      "credentialFormats": [
+        "Idemix"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ]
     },
     {
       "id": "geveltuin-aanvragen",
@@ -72,15 +121,36 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Login", "Permit application", "Attribute sharing"],
-      "acceptedCredentials": ["Mobile number", "Personal data", "Address", "Email address"],
-      "credentialFormats": ["Idemix"],
-      "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
-      "supportedWallets": [
-        { "name": "Yivi", "walletCatalogId": "yivi" }
+      "sectors": [
+        "government"
       ],
-      "languages": ["nl", "en"]
+      "useCases": [
+        "Login",
+        "Permit application",
+        "Attribute sharing"
+      ],
+      "acceptedCredentials": [
+        "Mobile number",
+        "Personal data",
+        "Address",
+        "Email address"
+      ],
+      "credentialFormats": [
+        "Idemix"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ]
     },
     {
       "id": "overlast-melden",
@@ -91,15 +161,34 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["Login", "Complaint reporting", "Attribute sharing"],
-      "acceptedCredentials": ["Mobile number", "Email address"],
-      "credentialFormats": ["Idemix"],
-      "presentationProtocols": ["Yivi / IRMA disclosure via QR"],
-      "supportedWallets": [
-        { "name": "Yivi", "walletCatalogId": "yivi" }
+      "sectors": [
+        "government"
       ],
-      "languages": ["nl", "en"]
+      "useCases": [
+        "Login",
+        "Complaint reporting",
+        "Attribute sharing"
+      ],
+      "acceptedCredentials": [
+        "Mobile number",
+        "Email address"
+      ],
+      "credentialFormats": [
+        "Idemix"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl",
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2026-02-04T00:00:00Z"

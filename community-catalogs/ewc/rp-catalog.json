@@ -1,45 +1,49 @@
 {
-    "provider": {
-      "name": "European Wallet Consortium",
-      "website": "https://www.eudiwalletconsortium.org/"
-    },
-    "relyingParties": [
-      {
-        "id": "ewc-rpcentric-signer",
-        "name": "QES Signing",
-        "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
-        "website": "https://rpcentric.signer.eudiw.dev/tester",
-        "readiness": "technical-demo",
-        "country": "EU",
-        "status": "live",
-        "sectors": ["government", "finance", "other"],
-        "useCases": [
-          "Authentication",
-          "Remote signing initiation",
-          "Identity verification"
-        ],
-        "acceptedCredentials": [
-          "PID"
-        ],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc" }
-        ],
-        "credentialFormats": [
-          "SD-JWT-VC"
-        ],
-        "presentationProtocols": [
-          "OpenID4VP"
-        ],
-        "interoperabilityProfiles": [
-          "EWC v3"
-        ],
-        "supportedWallets": [
-          "EUDI Reference Wallet"
-        ],
-        "languages": [
-          "en"
-        ]
-      }
-    ],
-    "lastUpdated": "2026-01-08T00:00:00+01:00"
-  }
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:ewc",
+  "relyingParties": [
+    {
+      "id": "ewc-rpcentric-signer",
+      "name": "QES Signing",
+      "description": "Reference relying party demonstrating a RP-centric remote signing flow, where a web application requests and verifies a PID credential from a wallet to authenticate the user and initiate a signing process.",
+      "website": "https://rpcentric.signer.eudiw.dev/tester",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government",
+        "finance",
+        "other"
+      ],
+      "useCases": [
+        "Authentication",
+        "Remote signing initiation",
+        "Identity verification"
+      ],
+      "acceptedCredentials": [
+        "PID"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EWC v3"
+      ],
+      "supportedWallets": [
+        "EUDI Reference Wallet"
+      ],
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-01-08T00:00:00+01:00"
+}

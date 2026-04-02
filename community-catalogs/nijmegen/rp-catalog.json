@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "City of Nijmegen",
-    "website": "https://www.nijmegen.nl/",
-    "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
-  },
+  "orgId": "org:nijmegen",
   "relyingParties": [
     {
       "id": "nijmegen-mijn-nijmegen-login",
@@ -15,16 +11,35 @@
       "readiness": "production",
       "country": "NL",
       "status": "live",
-      "sectors": ["government"],
-      "useCases": ["login", "identity-verification"],
-      "acceptedCredentials": ["Persoonsgegevens (Personal Data)", "Email Address", "Mobile Number"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc" }
+      "sectors": [
+        "government"
       ],
-      "credentialFormats": ["Idemix"],
-      "presentationProtocols": ["IRMA Protocol"],
+      "useCases": [
+        "login",
+        "identity-verification"
+      ],
+      "acceptedCredentials": [
+        "Persoonsgegevens (Personal Data)",
+        "Email Address",
+        "Mobile Number"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "Idemix"
+      ],
+      "presentationProtocols": [
+        "IRMA Protocol"
+      ],
       "supportedWallets": [
         {
           "name": "Yivi",
@@ -32,258 +47,293 @@
         }
       ],
       "documentation": "https://privacybydesign.foundation/issuance/",
-      "languages": ["nl"]
+      "languages": [
+        "nl"
+      ]
     },
-      {
-        "id": "nijmegen-iit",
-        "name": "Individual Income Supplement (IIT)",
-        "description": "Demo application flow for the Individual Income Supplement, including scenarios with and without a partner. Requires demo data in the Yivi wallet.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://iit-nijmegen-v2.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": [
-          "Benefit application",
-          "Attribute sharing",
-          "Partner scenario"
-        ],
-        "acceptedCredentials": [
-          "Demo Personal Data",
-          "Partner personal and relationship data (demo)"
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "nijmegen-vergoedingenpas",
-        "name": "Compensation Card",
-        "description": "Demo for applying for and using a municipal compensation card. Requires demo data in the Yivi wallet.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://vergoedingenpas.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": [
-          "Municipal benefit card",
-          "Eligibility and discount entitlement"
-        ],
-        "acceptedCredentials": [
-          "Demo Personal Data",
-          "Income and eligibility data (demo)"
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "nijmegen-busvoordeel",
-        "name": "Discounted Bus Subscription",
-        "description": "Demo application flow for a discounted public transport subscription for residents with a low income.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://busvoordeel.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": ["government", "travel"],
-        "useCases": [
-          "Discounted public transport subscription",
-          "Eligibility verification"
-        ],
-        "acceptedCredentials": [
-          "Personal data (demo)",
-          "Income and eligibility data (demo)"
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "nijmegen-meedoenregeling",
-        "name": "Participation Scheme",
-        "description": "Demo application flow for a municipal participation scheme supporting access to sports, cultural, and social activities. Requires demo data in the Yivi wallet.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://meedoenregeling.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": [
-          "Municipal participation scheme",
-          "Eligibility and application flow"
-        ],
-        "acceptedCredentials": [
-          "Demo Personal Data",
-          "Income and eligibility data (demo)"
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "nijmegen-cultureel-erfgoed-pas",
-        "name": "Cultural Heritage Pass",
-        "description": "Fictional demo inspired by IntoNijmegen, showcasing a cultural pass with wallet-based issuance and usage for heritage venues.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://cultureel-erfgoed.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": [
-          "entertainment",
-          "hospitality"
-        ],
-        "useCases": [
-          "Cultural pass",
-          "Discount and entitlement proof"
-        ],
-        "acceptedCredentials": [
-          "Pass or entitlement credential (demo)",
-          "Personal data (demo)"
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "nijmegen-vergoedingencheck",
-        "name": "Compensation Eligibility Check",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "description": "Demo in which citizens share data once via their wallet to see which municipal schemes they are eligible for and activate them directly.",
-        "website": "https://vergoedingencheck.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": [
-          "Eligibility screening",
-          "Pre-check for municipal schemes"
-        ],
-        "acceptedCredentials": [
-          "Demo Personal Data",
-          "Income and eligibility data (demo)"
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "machtigen-bewindvoerder-jansen-bewind",
-        "name": "Mandate – Court-Appointed Administrator",
-        "description": "Demo for legal representation by a court-appointed administrator, enabling login with Yivi and acting on behalf of a client in a municipal application.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://jansen-bewind.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": [
-          "government"
-        ],
-        "useCases": [
-          "Representation and mandate",
-          "Applying on behalf of another person"
-        ],
-        "acceptedCredentials": [
-          "Mandate or authorization (demo)",
-          "Demo Personal Data"
-        ],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" }
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      },
-      {
-        "id": "machtigen-centraal-machtigingsregister",
-        "name": "Mandate – Voluntary Authorization ",
-        "description": "Demo of voluntary authorization using a fictional Central Mandates Register, integrated into a municipal application flow.",
-        "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
-        "website": "https://nijmegen-iit-cmr-demo.framer.website",
-        "readiness": "use-case-demo",
-        "country": "NL",
-        "status": "live",
-        "sectors": [
-          "government"
-        ],
-        "useCases": [
-          "Voluntary mandate",
-          "Delegation and authorization"
-        ],
-        "acceptedCredentials": [
-          "Mandate or authorization (demo)",
-          "Demo Personal Data"
-        ],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" }
-        ],
-        "presentationProtocols": [
-          "Yivi / IRMA disclosure via QR"
-        ],
-        "supportedWallets": [
-          {
-            "name": "Yivi",
-            "walletCatalogId": "yivi"
-          }
-        ],
-        "languages": ["nl"]
-      }
-
-    
+    {
+      "id": "nijmegen-iit",
+      "name": "Individual Income Supplement (IIT)",
+      "description": "Demo application flow for the Individual Income Supplement, including scenarios with and without a partner. Requires demo data in the Yivi wallet.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://iit-nijmegen-v2.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Benefit application",
+        "Attribute sharing",
+        "Partner scenario"
+      ],
+      "acceptedCredentials": [
+        "Demo Personal Data",
+        "Partner personal and relationship data (demo)"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "nijmegen-vergoedingenpas",
+      "name": "Compensation Card",
+      "description": "Demo for applying for and using a municipal compensation card. Requires demo data in the Yivi wallet.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://vergoedingenpas.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Municipal benefit card",
+        "Eligibility and discount entitlement"
+      ],
+      "acceptedCredentials": [
+        "Demo Personal Data",
+        "Income and eligibility data (demo)"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "nijmegen-busvoordeel",
+      "name": "Discounted Bus Subscription",
+      "description": "Demo application flow for a discounted public transport subscription for residents with a low income.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://busvoordeel.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government",
+        "travel"
+      ],
+      "useCases": [
+        "Discounted public transport subscription",
+        "Eligibility verification"
+      ],
+      "acceptedCredentials": [
+        "Personal data (demo)",
+        "Income and eligibility data (demo)"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "nijmegen-meedoenregeling",
+      "name": "Participation Scheme",
+      "description": "Demo application flow for a municipal participation scheme supporting access to sports, cultural, and social activities. Requires demo data in the Yivi wallet.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://meedoenregeling.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Municipal participation scheme",
+        "Eligibility and application flow"
+      ],
+      "acceptedCredentials": [
+        "Demo Personal Data",
+        "Income and eligibility data (demo)"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "nijmegen-cultureel-erfgoed-pas",
+      "name": "Cultural Heritage Pass",
+      "description": "Fictional demo inspired by IntoNijmegen, showcasing a cultural pass with wallet-based issuance and usage for heritage venues.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://cultureel-erfgoed.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "entertainment",
+        "hospitality"
+      ],
+      "useCases": [
+        "Cultural pass",
+        "Discount and entitlement proof"
+      ],
+      "acceptedCredentials": [
+        "Pass or entitlement credential (demo)",
+        "Personal data (demo)"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "nijmegen-vergoedingencheck",
+      "name": "Compensation Eligibility Check",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "description": "Demo in which citizens share data once via their wallet to see which municipal schemes they are eligible for and activate them directly.",
+      "website": "https://vergoedingencheck.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Eligibility screening",
+        "Pre-check for municipal schemes"
+      ],
+      "acceptedCredentials": [
+        "Demo Personal Data",
+        "Income and eligibility data (demo)"
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "machtigen-bewindvoerder-jansen-bewind",
+      "name": "Mandate – Court-Appointed Administrator",
+      "description": "Demo for legal representation by a court-appointed administrator, enabling login with Yivi and acting on behalf of a client in a municipal application.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://jansen-bewind.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Representation and mandate",
+        "Applying on behalf of another person"
+      ],
+      "acceptedCredentials": [
+        "Mandate or authorization (demo)",
+        "Demo Personal Data"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        }
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    },
+    {
+      "id": "machtigen-centraal-machtigingsregister",
+      "name": "Mandate – Voluntary Authorization ",
+      "description": "Demo of voluntary authorization using a fictional Central Mandates Register, integrated into a municipal application flow.",
+      "logo": "https://overrood.nl/wp-content/uploads/2021/04/Logo-Gemeente-Nijmegen.png",
+      "website": "https://nijmegen-iit-cmr-demo.framer.website",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Voluntary mandate",
+        "Delegation and authorization"
+      ],
+      "acceptedCredentials": [
+        "Mandate or authorization (demo)",
+        "Demo Personal Data"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        }
+      ],
+      "presentationProtocols": [
+        "Yivi / IRMA disclosure via QR"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "languages": [
+        "nl"
+      ]
+    }
   ],
   "lastUpdated": "2026-01-22T00:00:00+01:00"
 }

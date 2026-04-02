@@ -1,10 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "OpenWallet Foundation",
-    "website": "https://openwallet.foundation/",
-    "logo": "https://www.google.com/s2/favicons?domain=openwallet.foundation&sz=128"
-  },
+  "orgId": "org:owf",
   "relyingParties": [
     {
       "id": "multipaz-verifier",
@@ -15,29 +11,79 @@
       "readiness": "technical-demo",
       "country": "US",
       "status": "live",
-      "sectors": ["other", "entertainment"],
-      "useCases": ["identity-verification", "transportation", "age-verification", "entertainment", "loyalty-programs"],
-      "acceptedCredentials": ["Driving License", "EU Personal ID", "German Personal ID", "Photo ID", "EU Certificate of Residency", "Utopia Naturalization Certificate", "Movie Ticket", "Google Wallet ID pass", "Age Verification Credential", "Loyalty"],
-      "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:pid-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:fides:pid:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc" },
-        { "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eu:cor-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:eu:loyalty-mdoc:mdoc" },
-        { "credentialCatalogId": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc" }
+      "sectors": [
+        "other",
+        "entertainment"
       ],
-      "credentialFormats": ["mDL/mDoc", "SD-JWT-VC"],
-      "presentationProtocols": ["OpenID4VP", "ISO 18013-5"],
+      "useCases": [
+        "identity-verification",
+        "transportation",
+        "age-verification",
+        "entertainment",
+        "loyalty-programs"
+      ],
+      "acceptedCredentials": [
+        "Driving License",
+        "EU Personal ID",
+        "German Personal ID",
+        "Photo ID",
+        "EU Certificate of Residency",
+        "Utopia Naturalization Certificate",
+        "Movie Ticket",
+        "Google Wallet ID pass",
+        "Age Verification Credential",
+        "Loyalty"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:loyalty-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "mDL/mDoc",
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
       "supportedWallets": [
         "Multipaz Test App"
       ],
       "documentation": "https://github.com/openwallet-foundation-labs/multipaz",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
     }
   ],
   "lastUpdated": "2025-01-16T00:00:00+01:00"

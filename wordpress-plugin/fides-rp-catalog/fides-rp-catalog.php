@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials
- * Version: 2.0.2
+ * Version: 2.0.3
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '2.0.2');
+define('FIDES_RP_CATALOG_VERSION', '2.0.3');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -61,6 +61,10 @@ function fides_rp_catalog_enqueue_assets() {
         'credentialCatalogUrl' => get_option(
             'fides_rp_catalog_credential_catalog_url',
             'https://fides.community/ecosystem-explorer/credential-catalog/'
+        ),
+        'organizationCatalogUrl' => get_option(
+            'fides_rp_catalog_organization_catalog_url',
+            'https://fides.community/ecosystem-explorer/organization-catalog/'
         ),
         'credentialAggregatedDataUrl' => get_option(
             'fides_rp_catalog_credential_aggregated_url',
@@ -152,6 +156,12 @@ function fides_rp_catalog_register_settings() {
         'sanitize_callback' => 'esc_url_raw'
     ));
 
+    register_setting('fides_rp_catalog_settings', 'fides_rp_catalog_organization_catalog_url', array(
+        'type' => 'string',
+        'default' => 'https://fides.community/ecosystem-explorer/organization-catalog/',
+        'sanitize_callback' => 'esc_url_raw'
+    ));
+
     register_setting('fides_rp_catalog_settings', 'fides_rp_catalog_credential_aggregated_url', array(
         'type' => 'string',
         'default' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json',
@@ -197,6 +207,15 @@ function fides_rp_catalog_settings_page() {
                                value="<?php echo esc_attr(get_option('fides_rp_catalog_credential_catalog_url', 'https://fides.community/ecosystem-explorer/credential-catalog/')); ?>"
                                class="regular-text">
                         <p class="description">Page URL of the FIDES Credential Catalog (shortcode). Used for ?credential=cred:… deep links from accepted credentials.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="fides_rp_catalog_organization_catalog_url">Organization Catalog URL</label></th>
+                    <td>
+                        <input type="url" id="fides_rp_catalog_organization_catalog_url" name="fides_rp_catalog_organization_catalog_url"
+                               value="<?php echo esc_attr(get_option('fides_rp_catalog_organization_catalog_url', 'https://fides.community/ecosystem-explorer/organization-catalog/')); ?>"
+                               class="regular-text">
+                        <p class="description">Page URL of the FIDES Organization Catalog. Used for ?org=org:… deep links from RP modals (source <code>rp-catalog.json</code> uses <code>orgId</code>, same as issuer/credential catalogs).</p>
                     </td>
                 </tr>
                 <tr>

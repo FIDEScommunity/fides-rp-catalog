@@ -1,148 +1,267 @@
 {
-    "$schema": "https://fides.community/schemas/rp-catalog/v1",
-    "provider": {
-      "name": "European Commission",
-      "website": "https://github.com/eu-digital-identity-wallet",
-      "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:eu",
+  "relyingParties": [
+    {
+      "id": "eudi-cinema-age-verification",
+      "name": "Starfilm Cinema Age Verification",
+      "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
+      "website": "https://cinema.ageverification.dev/",
+      "video": "https://www.youtube.com/watch?v=ULFTrTznG7Y",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "entertainment"
+      ],
+      "useCases": [
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Proof of Age"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+        }
+      ],
+      "credentialFormats": [
+        "mDL/mDoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        },
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        }
+      ],
+      "documentation": "https://github.com/eu-digital-identity-wallet/av-verifier-frontend-cinema",
+      "languages": [
+        "en"
+      ]
     },
-    "relyingParties": [
-      {
-        "id": "eudi-cinema-age-verification",
-        "name": "Starfilm Cinema Age Verification",
-        "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
-        "website": "https://cinema.ageverification.dev/",
-        "video": "https://www.youtube.com/watch?v=ULFTrTznG7Y",
-        "readiness": "use-case-demo",
-        "country": "EU",
-        "status": "live",
-        "sectors": ["entertainment"],
-        "useCases": ["age-verification"],
-        "acceptedCredentials": ["Proof of Age"],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc" }
-        ],
-        "credentialFormats": ["mDL/mDoc"],
-        "presentationProtocols": ["OpenID4VP"],
-        "interoperabilityProfiles": ["EUDI Wallet ARF"],
-        "supportedWallets": [
-          {
-            "name": "EUDI Age Verification App (Reference)",
-            "walletCatalogId": "eudi-age-verification-wallet"
-          },
-          {
-            "name": "EUDI Wallet Reference Implementation",
-            "walletCatalogId": "eudi-reference-personal-wallet"
-          }
-        ],
-        "documentation": "https://github.com/eu-digital-identity-wallet/av-verifier-frontend-cinema",
-        "languages": ["en"]
-      },
-      {
-        "id": "eudi-reference-verifier",
-        "name": "EUDI Reference Verifier",
-        "description": "Reference verifier/relying party backend implementing OpenID4VP (1.0). Acts as a trusted verifier endpoint and provides APIs for initializing transactions and receiving wallet responses. Intended as a development/reference tool, not a production-ready verifier service.",
-        "website": "https://verifier.eudiw.dev/home",
-        "readiness": "technical-demo",
-        "country": "EU",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": ["identity-verification", "credential-validation"],
-        "acceptedCredentials": ["Person Identification Data (PID)", "Mobile Driving Licence (MDL)", "Photo ID", "European Health Insurance Card (EHIC)", "European Health Insurance Card", "Portable Document A1 (PDA1)", "Learning Credential"],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:pid-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc" },
-          { "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc" }
-        ],
-        "credentialFormats": ["mDL/mDoc", "SD-JWT-VC"],
-        "presentationProtocols": ["OpenID4VP"],
-        "interoperabilityProfiles": ["EUDI Wallet ARF"],
-        "supportedWallets": [
-          {
-            "name": "EUDI Wallet Reference Implementation",
-            "walletCatalogId": "eudi-reference-personal-wallet"
-          },
-          {
-            "name": "EUDI Age Verification App (Reference)",
-            "walletCatalogId": "eudi-age-verification-wallet"
-          }
-        ],
-        "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
-        "languages": ["en"]
-      },
-      {
-        "id": "eudi-test-relying-party",
-        "name": "EUDI Test Relying Party",
-        "description": "Comprehensive test relying party for EUDI wallet ecosystem. Supports a wide range of credential types in both mDoc and SD-JWT-VC formats for testing various use cases including identity, health, finance, and mobility.",
-        "website": "https://tester.relyingparty.eudiw.dev/",
-        "readiness": "technical-demo",
-        "country": "EU",
-        "status": "live",
-        "sectors": ["government"],
-        "useCases": ["identity-verification", "health-services", "financial-services", "mobility", "education"],
-        "acceptedCredentials": [
-          "Certificate of Residence",
-          "European Health Insurance Card (EHIC)",
-          "Health ID",
-          "IBAN",
-          "Mobile Driving Licence (mDL)",
-          "MSISDN",
-          "Portable Document A1 (PDA1)",
-          "Photo ID",
-          "Person Identification Data (PID)",
-          "Power Of Representation",
-          "Age Over 18 Pseudonym",
-          "Tax Number",
-          "Reservation"
-        ],
-        "acceptedCredentialRefs": [
-          { "credentialCatalogId": "cred:eu:cor-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:pid-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc" },
-          { "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:hiid-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:iban-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:msisdn-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:por-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:reservation-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc" },
-          { "credentialCatalogId": "cred:eu:tax-mdoc:mdoc" },
-          { "credentialCatalogId": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc" }
-        ],
-        "credentialFormats": ["mDL/mDoc", "SD-JWT-VC"],
-        "presentationProtocols": ["OpenID4VP"],
-        "interoperabilityProfiles": ["EUDI Wallet ARF"],
-        "supportedWallets": [
-          {
-            "name": "EUDI Wallet Reference Implementation",
-            "walletCatalogId": "eudi-reference-personal-wallet"
-          },
-          {
-            "name": "EUDI Age Verification App (Reference)",
-            "walletCatalogId": "eudi-age-verification-wallet"
-          }
-        ],
-        "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
-        "languages": ["en"]
-      }
-    ],
-    "lastUpdated": "2026-01-26T22:15:00Z"
-  }
+    {
+      "id": "eudi-reference-verifier",
+      "name": "EUDI Reference Verifier",
+      "description": "Reference verifier/relying party backend implementing OpenID4VP (1.0). Acts as a trusted verifier endpoint and provides APIs for initializing transactions and receiving wallet responses. Intended as a development/reference tool, not a production-ready verifier service.",
+      "website": "https://verifier.eudiw.dev/home",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "credential-validation"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Mobile Driving Licence (MDL)",
+        "Photo ID",
+        "European Health Insurance Card (EHIC)",
+        "European Health Insurance Card",
+        "Portable Document A1 (PDA1)",
+        "Learning Credential"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "mDL/mDoc",
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        }
+      ],
+      "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "eudi-test-relying-party",
+      "name": "EUDI Test Relying Party",
+      "description": "Comprehensive test relying party for EUDI wallet ecosystem. Supports a wide range of credential types in both mDoc and SD-JWT-VC formats for testing various use cases including identity, health, finance, and mobility.",
+      "website": "https://tester.relyingparty.eudiw.dev/",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "health-services",
+        "financial-services",
+        "mobility",
+        "education"
+      ],
+      "acceptedCredentials": [
+        "Certificate of Residence",
+        "European Health Insurance Card (EHIC)",
+        "Health ID",
+        "IBAN",
+        "Mobile Driving Licence (mDL)",
+        "MSISDN",
+        "Portable Document A1 (PDA1)",
+        "Photo ID",
+        "Person Identification Data (PID)",
+        "Power Of Representation",
+        "Age Over 18 Pseudonym",
+        "Tax Number",
+        "Reservation"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:hiid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:iban-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:msisdn-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:por-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:reservation-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:tax-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "mDL/mDoc",
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "EUDI Wallet ARF"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        }
+      ],
+      "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-01-26T22:15:00Z"
+}

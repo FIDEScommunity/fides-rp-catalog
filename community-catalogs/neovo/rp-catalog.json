@@ -1,13 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
-  "provider": {
-    "name": "Neovo",
-    "website": "https://neovo.ch/",
-    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHAun1QNaT8xA/company-logo_200_200/B4DZctJbACGwAI-/0/1748809134447/neovo_ag_logo?e=1776902400&v=beta&t=e3aSznBO61WFgC_SoFjnEh8FcZfxy6CMKKzx5Qqdkn8",
-    "contact": {
-      "email": "info@neovo.ch"
-    }
-  },
+  "orgId": "org:neovo",
   "relyingParties": [
     {
       "id": "neovo-shop-playground",
