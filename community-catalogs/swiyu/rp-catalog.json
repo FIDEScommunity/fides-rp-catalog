@@ -1,0 +1,43 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:swiyu",
+  "relyingParties": [
+    {
+      "id": "swiyu-alphaoffice-demo",
+      "name": "Alphaoffice Swiyu Demo",
+      "description": "Fictional authority demo used to test login with Beta-ID via AGOV within the Swiss swiyu ecosystem. This non-production environment allows authorities to experiment with wallet-based authentication flows.",
+      "website": "https://www.alphaoffice.ch/?l=en",
+      "readiness": "technical-demo",
+      "country": "CH",
+      "status": "beta",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Wallet-based login via AGOV",
+        "Beta-ID based authentication",
+        "E-government authentication demo"
+      ],
+      "acceptedCredentials": [
+        "Beta-ID"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+        }
+      ],
+      "features": [
+        "AGOV login integration",
+        "Government authentication flow",
+        "Non-production test environment"
+      ],
+      "languages": [
+        "de",
+        "fr",
+        "it",
+        "rm",
+        "en"
+      ]
+    }
+  ]
+}
