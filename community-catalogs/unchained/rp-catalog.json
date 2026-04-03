@@ -1,0 +1,52 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:unchained-commerce",
+  "relyingParties": [
+    {
+      "id": "unchained-swiyu-demo-store",
+      "name": "UNC-Hydration demo store",
+      "description": "Demo webshop by Unchained Commerce that demonstrates wallet-based verification in an e-commerce flow. The site is presented as a demo store for UNC-Hydration AG and does not process real orders.",
+      "website": "https://swiyu.unchained.wtf/",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "status": "beta",
+      "sectors": [
+        "retail"
+      ],
+      "useCases": [
+        "Wallet-based verification in e-commerce",
+        "Online purchase flow demo",
+        "Digital identity verification in retail"
+      ],
+      "acceptedCredentials": [
+        "Beta-ID"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "SWIYU Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        }
+      ],
+      "features": [
+        "Wallet-based verification prompt",
+        "Demo retail checkout flow",
+        "No real order processing"
+      ],
+      "languages": [
+        "en",
+        "de"
+      ]
+    }
+  ]
+}
