@@ -1,0 +1,52 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:sbb",
+  "relyingParties": [
+    {
+      "id": "sbb-swiyu-verifier-showcase",
+      "name": "SBB Beta-ID Showcase",
+      "description": "Demo verifier by Swiss Federal Railways (SBB) that uses Beta-ID for wallet-based employee identity verification within the Swiss swiyu ecosystem.",
+      "website": "https://swiyu-verifier.app.sbb.ch/",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "status": "beta",
+      "sectors": [
+        "mobility",
+        "public_sector"
+      ],
+      "useCases": [
+        "Wallet-based identity verification",
+        "Beta-ID based verification",
+        "Verifier showcase in the swiyu ecosystem"
+      ],
+      "acceptedCredentials": [
+        "Beta-ID"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+        }
+      ],
+      "credentialFormats": [
+        "SD-JWT-VC"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "SWIYU Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        }
+      ],
+      "features": [
+        "Verifier showcase",
+        "Wallet-based presentation flow",
+        "Integration with Swiss swiyu ecosystem"
+      ],
+      "languages": [
+        "de"
+      ]
+    }
+  ]
+}
