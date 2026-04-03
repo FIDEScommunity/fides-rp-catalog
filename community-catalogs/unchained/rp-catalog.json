@@ -4,8 +4,8 @@
   "relyingParties": [
     {
       "id": "unchained-swiyu-demo-store",
-      "name": "UNC-Hydration demo store",
-      "description": "Demo webshop by Unchained Commerce that demonstrates wallet-based verification in an e-commerce flow. The site is presented as a demo store for UNC-Hydration AG and does not process real orders.",
+      "name": "Unchained Commerce - Age Verification Demo",
+      "description": "Demo webshop by Unchained Commerce that demonstrates the age verification process for purchasing age‑restricted products in a fictional online shop by using the Swiss Beta-ID.",
       "website": "https://swiyu.unchained.wtf/",
       "readiness": "use-case-demo",
       "country": "CH",
