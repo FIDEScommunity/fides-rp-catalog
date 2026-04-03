@@ -11,8 +11,8 @@
       "country": "CH",
       "status": "beta",
       "sectors": [
-        "mobility",
-        "public_sector"
+        "travel",
+        "government"
       ],
       "useCases": [
         "Wallet-based identity verification",
