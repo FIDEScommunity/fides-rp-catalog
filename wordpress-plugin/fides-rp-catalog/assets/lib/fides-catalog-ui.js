@@ -30,6 +30,7 @@
     key: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>',
     fileCheck: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>',
     book: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>',
+    calendar: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>',
     building: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>',
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
     download: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>',
@@ -242,7 +243,15 @@
     const typeLabels = { personal: 'Personal', organizational: 'Organizational' };
     const statusLabels = { development: 'In Development', beta: 'Beta', production: 'Production', deprecated: 'Deprecated' };
     const statusClasses = { development: 'status-dev', beta: 'status-beta', production: 'status-prod', deprecated: 'status-deprecated' };
-    const protocolsObj = wallet.protocols || {};
+    const organizationCatalogUrl = (options && options.organizationCatalogUrl) || 'https://fides.community/ecosystem-explorer/organization-catalog/';
+    const effectiveWalletOrgId = (wallet.orgId && String(wallet.orgId).trim()) ||
+      (wallet.provider && wallet.provider.orgId && String(wallet.provider.orgId).trim()) || '';
+    const orgCatalogHref = getOrganizationCatalogDeepLink(effectiveWalletOrgId, organizationCatalogUrl);
+    const providerDisplayName = (wallet.provider && wallet.provider.name) ? String(wallet.provider.name) : 'Unknown';
+    const providerNameInHeader = orgCatalogHref && providerDisplayName
+      ? '<a href="' + escapeHtml(orgCatalogHref) + '" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>' + escapeHtml(providerDisplayName) + '</span></a>'
+      : escapeHtml(providerDisplayName);
+    const bluePagesUrl = getBluePagesUrl(wallet.provider && wallet.provider.did, options);
 
     const shareButtonHtml = (options && options.showShare === false)
       ? ''
@@ -252,7 +261,7 @@
       '<div class="fides-modal" role="dialog" aria-modal="true">' +
       '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
       (wallet.logo ? '<img src="' + escapeHtml(wallet.logo) + '" alt="' + escapeHtml(wallet.name) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.wallet + '</div>') +
-      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(wallet.name) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + escapeHtml(wallet.provider && wallet.provider.name) + '</p></div>' +
+      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(wallet.name) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + providerNameInHeader + (bluePagesUrl ? ' <a href="' + escapeHtml(bluePagesUrl) + '" target="_blank" rel="noopener" class="fides-modal-provider-link">' + icons.externalLink + ' View in Blue Pages</a>' : '') + '</p></div>' +
       '</div><div class="fides-modal-header-actions">' + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
       '<div class="fides-modal-body">' +
       '<div class="fides-modal-badges">' +
@@ -273,6 +282,7 @@
       ((wallet.signingAlgorithms && wallet.signingAlgorithms.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.penLine + ' Signing Algorithms</div><div class="fides-modal-grid-value">' + wallet.signingAlgorithms.map(a => '<span class="fides-tag">' + escapeHtml(a) + '</span>').join('') + '</div></div>' : '') +
       ((wallet.credentialStatusMethods && wallet.credentialStatusMethods.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Credential Status</div><div class="fides-modal-grid-value">' + wallet.credentialStatusMethods.map(m => '<span class="fides-tag">' + escapeHtml(m) + '</span>').join('') + '</div></div>' : '') +
       ((wallet.interoperabilityProfiles && wallet.interoperabilityProfiles.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Interop Profiles</div><div class="fides-modal-grid-value">' + wallet.interoperabilityProfiles.map(p => '<span class="fides-tag interop">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
+      (wallet.releaseDate ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.calendar + ' Release date</div><div class="fides-modal-grid-value">' + escapeHtml(new Date(wallet.releaseDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })) + '</div></div>' : '') +
       '</div>' +
       ((wallet.features && wallet.features.length) ? '<div class="fides-modal-features"><h4 class="fides-modal-section-title">Features</h4><ul class="fides-features-list">' + wallet.features.map(f => '<li>' + icons.check + ' ' + escapeHtml(f) + '</li>').join('') + '</ul></div>' : '') +
       '<div class="fides-modal-links">' +
@@ -280,11 +290,6 @@
       (wallet.openSource && wallet.repository ? '<a href="' + escapeHtml(wallet.repository) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Repository">' + icons.github + ' View Repository</a>' : '') +
       (wallet.documentation ? '<a href="' + escapeHtml(wallet.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Documentation">' + icons.book + ' Documentation</a>' : '') +
       '</div>' +
-      '<div class="fides-modal-provider-section"><h4 class="fides-modal-section-title">Provider Information</h4><div class="fides-modal-provider-info">' +
-      '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">Organization:</span><span class="fides-modal-provider-value">' + escapeHtml(wallet.provider && wallet.provider.name) + '</span></div>' +
-      ((wallet.provider && wallet.provider.did) ? '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">DID:</span><code class="fides-modal-provider-did">' + escapeHtml(wallet.provider.did) + '</code></div>' : '') +
-      (wallet.releaseDate ? '<div class="fides-modal-provider-detail"><span class="fides-modal-provider-label">Release Date:</span><span class="fides-modal-provider-value">' + escapeHtml(new Date(wallet.releaseDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })) + '</span></div>' : '') +
-      '</div></div>' +
       '</div></div></div>';
 
     mountModal(modalHtml);
