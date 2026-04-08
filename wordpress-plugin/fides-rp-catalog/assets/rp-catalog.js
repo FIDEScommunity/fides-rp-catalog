@@ -165,6 +165,13 @@
     return '';
   }
 
+  /** ISO 3166-1 alpha-2 for ?country= deep links (aligned with country explorer). */
+  function normalizeCountryFilterCode(raw) {
+    if (raw == null || typeof raw !== 'string') return '';
+    const s = String(raw).trim().replace(/[^a-z]/gi, '').toUpperCase();
+    return s.length === 2 ? s : '';
+  }
+
   // State
   let relyingParties = [];
   /** cred:… id → theme / ecosystem codes from credential catalog aggregated.json */
@@ -503,6 +510,12 @@
       originalIds = rpsParam.split(',').map(s => s.trim()).filter(Boolean);
       filters.ids = [...originalIds];
     }
+
+    const countryCode = normalizeCountryFilterCode(urlParams.get('country') || '');
+    if (countryCode) {
+      filters.country = [countryCode];
+      document.body.classList.add('filters-visible');
+    }
   }
 
   /**
@@ -580,9 +593,10 @@
         if (!hasTheme) return false;
       }
 
-      // Country
+      // Country (normalize RP field so URL ?country=nl matches JSON "NL" or "nl")
       if (filters.country.length > 0) {
-        if (!filters.country.includes(rp.country)) return false;
+        const rpCc = normalizeCountryFilterCode(rp.country || '');
+        if (!rpCc || !filters.country.includes(rpCc)) return false;
       }
 
       // Credential formats
@@ -1945,6 +1959,9 @@
         if (action === 'clear-country-filter') {
           if (filters.country.length > 0) {
             filters.country = [];
+            const url = new URL(window.location.href);
+            url.searchParams.delete('country');
+            history.replaceState(null, '', url.toString());
             render();
           }
           return;
@@ -1983,6 +2000,7 @@
         const url = new URL(window.location.href);
         url.searchParams.delete('rps');
         url.searchParams.delete('sector');
+        url.searchParams.delete('country');
         history.replaceState(null, '', url.toString());
         render();
       });
