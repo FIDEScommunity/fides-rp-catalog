@@ -122,6 +122,44 @@
     THEME_LABELS[a].localeCompare(THEME_LABELS[b], 'en', { sensitivity: 'base' })
   );
 
+  const CREDENTIAL_FORMAT_ORDER = [
+    'sd_jwt_vc',
+    'mdoc',
+    'jwt_vc',
+    'vcdm_1_1',
+    'vcdm_2_0',
+    'anoncreds',
+    'idemix',
+    'apple_wallet_pass',
+    'google_wallet_pass',
+    'acdc',
+  ];
+  const CREDENTIAL_FORMAT_DISPLAY = {
+    sd_jwt_vc: 'SD-JWT VC',
+    mdoc: 'ISO mDoc',
+    jwt_vc: 'JWT VC',
+    vcdm_1_1: 'VCDM1.1',
+    vcdm_2_0: 'VCDM2.0',
+    anoncreds: 'AnonCreds',
+    idemix: 'Idemix',
+    apple_wallet_pass: 'Apple Wallet Pass',
+    google_wallet_pass: 'Google Wallet Pass',
+    acdc: 'ACDC',
+  };
+  function credentialFormatDisplayLabel(code) {
+    return CREDENTIAL_FORMAT_DISPLAY[code] || code;
+  }
+  function sortCredentialFormats(formats) {
+    if (!formats || !Array.isArray(formats)) return [];
+    return formats.slice().sort((a, b) => {
+      const indexA = CREDENTIAL_FORMAT_ORDER.indexOf(a);
+      const indexB = CREDENTIAL_FORMAT_ORDER.indexOf(b);
+      const orderA = indexA === -1 ? 999 : indexA;
+      const orderB = indexB === -1 ? 999 : indexB;
+      return orderA - orderB;
+    });
+  }
+
   /** Same codes as credential catalog (English labels). */
   const ECOSYSTEM_LABELS = {
     eudi_wallet: 'EUDI Wallet',
@@ -196,7 +234,7 @@
     credentialEcosystems: 'ecosystem',
     credentialThemes: 'credentialTheme',
     country: 'country',
-    credentialFormats: 'credentialFormat',
+    vcFormat: 'vcFormat',
     presentationProtocols: 'presentationProtocol',
     interoperabilityProfiles: 'interopProfile'
   };
@@ -213,7 +251,7 @@
     credentialEcosystems: [],
     credentialThemes: [],
     country: [],
-    credentialFormats: [],
+    vcFormat: [],
     presentationProtocols: [],
     interoperabilityProfiles: [],
     supportedWallets: [],
@@ -234,7 +272,7 @@
     credentialThemes: false,
     supportedWallets: true,
     country: false,
-    credentialFormats: false,
+    vcFormat: false,
     presentationProtocols: false,
     interoperabilityProfiles: false
   };
@@ -615,8 +653,8 @@
       }
 
       // Credential formats
-      if (filters.credentialFormats.length > 0) {
-        const hasMatch = filters.credentialFormats.some(f => (rp.credentialFormats || []).includes(f));
+      if (filters.vcFormat.length > 0) {
+        const hasMatch = filters.vcFormat.some(f => (rp.vcFormat || []).includes(f));
         if (!hasMatch) return false;
       }
 
@@ -724,7 +762,7 @@
     count += filters.country.length;
     count += filters.credentialEcosystems.length;
     count += filters.credentialThemes.length;
-    count += filters.credentialFormats.length;
+    count += filters.vcFormat.length;
     count += filters.presentationProtocols.length;
     count += filters.interoperabilityProfiles.length;
     count += filters.supportedWallets.length;
@@ -775,7 +813,7 @@
       if (rp.country) {
         countryCount[rp.country] = (countryCount[rp.country] || 0) + 1;
       }
-      (rp.credentialFormats || []).forEach(f => {
+      (rp.vcFormat || []).forEach(f => {
         credentialFormatCount[f] = (credentialFormatCount[f] || 0) + 1;
       });
       const protocols = rp.presentationProtocols || [];
@@ -814,7 +852,7 @@
       sectors: sectorCount,
       credentialEcosystems: credentialEcosystemCount,
       credentialThemes: credentialThemeCount,
-      credentialFormats: credentialFormatCount,
+      vcFormat: credentialFormatCount,
       interoperabilityProfiles: interopProfileCount,
       supportedWallets,
       country,
@@ -1050,41 +1088,18 @@
                 </div>
               </div>
             ` : ''}
-            <div class="fides-filter-group collapsible ${!filterGroupState.credentialFormats ? 'collapsed' : ''} ${filters.credentialFormats.length > 0 ? 'has-active' : ''}" data-filter-group="credentialFormats">
-              <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.credentialFormats}">
-                <span class="fides-filter-label">Credential Format</span>
+            <div class="fides-filter-group collapsible ${!filterGroupState.vcFormat ? 'collapsed' : ''} ${filters.vcFormat.length > 0 ? 'has-active' : ''}" data-filter-group="vcFormat">
+              <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.vcFormat}">
+                <span class="fides-filter-label">VC format</span>
                 <span class="fides-filter-active-indicator"></span>
                 ${chevronDown}
               </button>
               <div class="fides-filter-options">
+                ${CREDENTIAL_FORMAT_ORDER.map((code) => `
                 <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="SD-JWT-VC" ${filters.credentialFormats.includes('SD-JWT-VC') ? 'checked' : ''}>
-                  <span>SD-JWT-VC<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['SD-JWT-VC'] || 0) : ''})</span></span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="JWT-VC" ${filters.credentialFormats.includes('JWT-VC') ? 'checked' : ''}>
-                  <span>JWT-VC<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['JWT-VC'] || 0) : ''})</span></span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="JSON-LD VC" ${filters.credentialFormats.includes('JSON-LD VC') ? 'checked' : ''}>
-                  <span>JSON-LD VC<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['JSON-LD VC'] || 0) : ''})</span></span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="AnonCreds" ${filters.credentialFormats.includes('AnonCreds') ? 'checked' : ''}>
-                  <span>AnonCreds<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['AnonCreds'] || 0) : ''})</span></span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="Idemix" ${filters.credentialFormats.includes('Idemix') ? 'checked' : ''}>
-                  <span>Idemix<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['Idemix'] || 0) : ''})</span></span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="mDL/mDoc" ${filters.credentialFormats.includes('mDL/mDoc') ? 'checked' : ''}>
-                  <span>mDL/mDoc<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['mDL/mDoc'] || 0) : ''})</span></span>
-                </label>
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter="credentialFormats" data-value="X.509" ${filters.credentialFormats.includes('X.509') ? 'checked' : ''}>
-                  <span>X.509<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.credentialFormats['X.509'] || 0) : ''})</span></span>
-                </label>
+                  <input type="checkbox" data-filter="vcFormat" data-value="${escapeHtml(code)}" ${filters.vcFormat.includes(code) ? 'checked' : ''}>
+                  <span>${escapeHtml(credentialFormatDisplayLabel(code))}<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.vcFormat[code] || 0) : ''})</span></span>
+                </label>`).join('')}
               </div>
             </div>
             ${(filterFacets ? filterFacets.presentationProtocols : getAvailablePresentationProtocols()).length > 0 ? `
@@ -1542,14 +1557,14 @@
                 </div>
               ` : ''}
 
-              <!-- Credential Formats -->
-              ${rp.credentialFormats && rp.credentialFormats.length > 0 ? `
+              <!-- VC formats -->
+              ${rp.vcFormat && rp.vcFormat.length > 0 ? `
                 <div class="fides-modal-grid-item">
                   <div class="fides-modal-grid-label">
-                    ${icons.fileCheck} Credential Formats
+                    ${icons.fileCheck} VC formats
                   </div>
                   <div class="fides-modal-grid-value">
-                    ${rp.credentialFormats.map(f => `<span class="fides-tag">${escapeHtml(f)}</span>`).join('')}
+                    ${sortCredentialFormats(rp.vcFormat).map(f => `<span class="fides-tag">${escapeHtml(credentialFormatDisplayLabel(f))}</span>`).join('')}
                   </div>
                 </div>
               ` : ''}
@@ -2002,7 +2017,7 @@
           credentialEcosystems: [],
           credentialThemes: [],
           country: [],
-          credentialFormats: [],
+          vcFormat: [],
           presentationProtocols: [],
           interoperabilityProfiles: [],
           supportedWallets: [],

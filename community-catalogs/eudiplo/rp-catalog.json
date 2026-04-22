@@ -29,9 +29,9 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC",
-        "mDL/mDoc"
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -84,9 +84,9 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC",
-        "mDL/mDoc"
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -134,9 +134,9 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC",
-        "mDL/mDoc"
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -188,9 +188,9 @@
           "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC",
-        "mDL/mDoc"
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -238,9 +238,9 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC",
-        "mDL/mDoc"
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"

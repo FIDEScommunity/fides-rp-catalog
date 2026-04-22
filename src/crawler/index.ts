@@ -376,7 +376,7 @@ function calculateStats(rps: NormalizedRP[], providers: Map<string, RPProvider>)
   };
   
   const bySector: Record<string, number> = {};
-  const byCredentialFormat: Record<string, number> = {};
+  const byVcFormat: Record<string, number> = {};
 
   for (const rp of rps) {
     // Count by readiness
@@ -391,10 +391,10 @@ function calculateStats(rps: NormalizedRP[], providers: Map<string, RPProvider>)
       }
     }
 
-    // Count by credential format
-    if (rp.credentialFormats) {
-      for (const format of rp.credentialFormats) {
-        byCredentialFormat[format] = (byCredentialFormat[format] || 0) + 1;
+    // Count by VC format
+    if (rp.vcFormat) {
+      for (const format of rp.vcFormat) {
+        byVcFormat[format] = (byVcFormat[format] || 0) + 1;
       }
     }
   }
@@ -404,7 +404,7 @@ function calculateStats(rps: NormalizedRP[], providers: Map<string, RPProvider>)
     totalProviders: providers.size,
     byReadiness,
     bySector,
-    byCredentialFormat
+    byVcFormat
   };
 }
 

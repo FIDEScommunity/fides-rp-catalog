@@ -128,19 +128,22 @@
             "type": "string"
           }
         },
-        "credentialFormats": {
+        "vcFormat": {
           "type": "array",
-          "description": "Supported credential formats",
+          "description": "Supported VC formats (canonical codes; same as wallet and credential catalogs)",
           "items": {
             "type": "string",
             "enum": [
-              "SD-JWT-VC",
-              "JWT-VC",
-              "JSON-LD VC",
-              "AnonCreds",
-              "Idemix",
-              "mDL/mDoc",
-              "X.509"
+              "sd_jwt_vc",
+              "mdoc",
+              "jwt_vc",
+              "vcdm_1_1",
+              "vcdm_2_0",
+              "anoncreds",
+              "idemix",
+              "apple_wallet_pass",
+              "google_wallet_pass",
+              "acdc"
             ]
           }
         },

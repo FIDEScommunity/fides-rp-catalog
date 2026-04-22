@@ -32,8 +32,8 @@
           "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
         }
       ],
-      "credentialFormats": [
-        "mDL/mDoc"
+      "vcFormat": [
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"

@@ -54,7 +54,7 @@ The schema is the source of truth. Organization name, DID, website, and logo are
       "acceptedCredentialRefs": [
         { "credentialCatalogId": "cred:example:pid:sd-jwt-vc" }
       ],
-      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc"],
+      "vcFormat": ["sd_jwt_vc", "mdoc"],
       "presentationProtocols": ["OpenID4VP"],
       "interoperabilityProfiles": ["DIIP v4"],
       "supportedWallets": [

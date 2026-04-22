@@ -47,7 +47,7 @@ This mirrors the **issuer** and **credential** catalogs: you reference the organ
 - **`relyingParties[].sectors`** — Industry sectors served
 - **`relyingParties[].acceptedCredentials`** — Human-readable labels
 - **`relyingParties[].acceptedCredentialRefs`** — `{ "credentialCatalogId": "cred:…" }` for cross-catalog tooling
-- **`relyingParties[].credentialFormats`** — Supported formats (SD-JWT-VC, mDL/mDoc, etc.)
+- **`relyingParties[].vcFormat`** — Supported VC formats (canonical codes: `sd_jwt_vc`, `mdoc`, etc.)
 - **`relyingParties[].presentationProtocols`** — Supported protocols (OpenID4VP, etc.)
 - **`relyingParties[].interoperabilityProfiles`** — DIIP v4, EWC v3, etc.
 - **`relyingParties[].supportedWallets`** — Wallets that work with this RP (see below)

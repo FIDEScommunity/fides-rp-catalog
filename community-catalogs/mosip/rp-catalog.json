@@ -22,8 +22,8 @@
         "National ID",
         "MOSIP Verifiable Credential"
       ],
-      "credentialFormats": [
-        "JSON-LD VC"
+      "vcFormat": [
+        "vcdm_2_0"
       ],
       "presentationProtocols": [
         "OpenID4VP"

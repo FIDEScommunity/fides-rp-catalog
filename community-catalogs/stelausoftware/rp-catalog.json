@@ -31,8 +31,8 @@
           "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
         }
       ],
-      "credentialFormats": [
-        "mDL/mDoc"
+      "vcFormat": [
+        "mdoc"
       ],
       "presentationProtocols": [
         "ISO 18013-5 proximity",

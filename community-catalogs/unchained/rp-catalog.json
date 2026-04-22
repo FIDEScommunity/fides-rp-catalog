@@ -26,8 +26,8 @@
           "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"

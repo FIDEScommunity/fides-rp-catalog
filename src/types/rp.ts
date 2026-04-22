@@ -28,15 +28,18 @@ export type CanonicalSectorCode =
   | 'mobility'
   | 'digital';
 
-// Credential format types
-export type CredentialFormat = 
-  | 'SD-JWT-VC'
-  | 'JWT-VC'
-  | 'JSON-LD VC'
-  | 'AnonCreds'
-  | 'Idemix'
-  | 'mDL/mDoc'
-  | 'X.509';
+/** Canonical codes — aligned with wallet-catalog and credential-catalog vcFormat. */
+export type CredentialFormat =
+  | 'sd_jwt_vc'
+  | 'mdoc'
+  | 'jwt_vc'
+  | 'vcdm_1_1'
+  | 'vcdm_2_0'
+  | 'anoncreds'
+  | 'idemix'
+  | 'apple_wallet_pass'
+  | 'google_wallet_pass'
+  | 'acdc';
 
 // Interoperability profiles
 export type InteropProfile = 'DIIP v4' | 'DIIP v5' | 'EWC v3' | 'HAIP v1' | 'EUDI Wallet ARF';
@@ -78,7 +81,7 @@ export interface RelyingParty {
   acceptedCredentials?: string[];
   /** FIDES Credential Catalog ids (cred:…); used for ecosystem/theme and credential deep links. */
   acceptedCredentialRefs?: Array<{ credentialCatalogId: string }>;
-  credentialFormats?: CredentialFormat[];
+  vcFormat?: CredentialFormat[];
   presentationProtocols?: string[];
   interoperabilityProfiles?: InteropProfile[];
   
@@ -133,7 +136,7 @@ export interface AggregatedRPData {
     totalProviders: number;
     byReadiness: Record<Readiness, number>;
     bySector: Record<string, number>;
-    byCredentialFormat: Record<string, number>;
+    byVcFormat: Record<string, number>;
   };
 }
 

@@ -34,8 +34,8 @@
           "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "Idemix"
+      "vcFormat": [
+        "idemix"
       ],
       "presentationProtocols": [
         "IRMA Protocol"

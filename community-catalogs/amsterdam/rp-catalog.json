@@ -21,8 +21,8 @@
       "acceptedCredentials": [
         "Passport data"
       ],
-      "credentialFormats": [
-        "Idemix"
+      "vcFormat": [
+        "idemix"
       ],
       "presentationProtocols": [
         "Yivi / IRMA disclosure via QR"
@@ -59,8 +59,8 @@
         "Address",
         "Personal data"
       ],
-      "credentialFormats": [
-        "Idemix"
+      "vcFormat": [
+        "idemix"
       ],
       "presentationProtocols": [
         "Yivi / IRMA disclosure via QR"
@@ -95,8 +95,8 @@
       "acceptedCredentials": [
         "Passport data"
       ],
-      "credentialFormats": [
-        "Idemix"
+      "vcFormat": [
+        "idemix"
       ],
       "presentationProtocols": [
         "Yivi / IRMA disclosure via QR"
@@ -135,8 +135,8 @@
         "Address",
         "Email address"
       ],
-      "credentialFormats": [
-        "Idemix"
+      "vcFormat": [
+        "idemix"
       ],
       "presentationProtocols": [
         "Yivi / IRMA disclosure via QR"
@@ -173,8 +173,8 @@
         "Mobile number",
         "Email address"
       ],
-      "credentialFormats": [
-        "Idemix"
+      "vcFormat": [
+        "idemix"
       ],
       "presentationProtocols": [
         "Yivi / IRMA disclosure via QR"

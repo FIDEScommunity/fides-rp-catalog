@@ -25,8 +25,8 @@
           "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
         }
       ],
-      "credentialFormats": [
-        "mDL/mDoc"
+      "vcFormat": [
+        "mdoc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -105,9 +105,9 @@
           "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "mDL/mDoc",
-        "SD-JWT-VC"
+      "vcFormat": [
+        "mdoc",
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -237,9 +237,9 @@
           "credentialCatalogId": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "mDL/mDoc",
-        "SD-JWT-VC"
+      "vcFormat": [
+        "mdoc",
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"

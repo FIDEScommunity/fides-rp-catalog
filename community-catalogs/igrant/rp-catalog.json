@@ -28,8 +28,8 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -80,8 +80,8 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -139,8 +139,8 @@
           "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -193,8 +193,8 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -259,8 +259,8 @@
           "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -322,8 +322,8 @@
           "credentialCatalogId": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -383,8 +383,8 @@
           "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -440,8 +440,8 @@
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VCI"
@@ -490,8 +490,8 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VCI"
@@ -534,8 +534,8 @@
       "acceptedCredentials": [
         "Qualified Electronic Signature Access Credential (QESAC)"
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VCI"
@@ -602,8 +602,8 @@
           "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
@@ -660,8 +660,8 @@
           "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VCI"
@@ -711,8 +711,8 @@
           "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VCI"
@@ -766,8 +766,8 @@
           "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
         }
       ],
-      "credentialFormats": [
-        "SD-JWT-VC"
+      "vcFormat": [
+        "sd_jwt_vc"
       ],
       "presentationProtocols": [
         "OpenID4VP"
