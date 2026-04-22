@@ -1,0 +1,42 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:british-airways",
+  "relyingParties": [
+    {
+      "id": "british-airways",
+      "name": "British Airways",
+      "description": "British Airways acts as a relying party in digital travel scenarios, verifying ISO-based digital identity credentials (Photo ID) alongside IATA travel credentials such as boarding passes and booking orders during check-in and boarding.",
+      "readiness": "use-case-demo",
+      "country": "GB",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+        }
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Neoke",
+          "walletCatalogId": "neoke-wallet"
+        },
+        {
+          "name": "Apple Wallet",
+          "walletCatalogId": "apple-wallet"
+        },
+        {
+          "name": "Google Wallet",
+          "walletCatalogId": "google-wallet"
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-04-22T12:25:00Z"
+}
