@@ -82,7 +82,7 @@
           "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
@@ -176,7 +176,7 @@
           "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
