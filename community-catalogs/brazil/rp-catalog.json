@@ -38,7 +38,8 @@
         "Integration with gov.br digital identity",
         "DPI-based infrastructure"
       ],
-      "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais"
+      "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais",
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-02-18T00:00:00Z"

@@ -37,7 +37,8 @@
         "it",
         "rm",
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ]
 }

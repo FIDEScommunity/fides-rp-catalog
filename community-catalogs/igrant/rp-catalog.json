@@ -53,7 +53,8 @@
       "testCredentials": "https://www.igrant.io/demo/pid.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-bank-login-demo",
@@ -104,7 +105,8 @@
       "testCredentials": "https://www.igrant.io/demo/pid.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-fast-ferries-merchant-payments",
@@ -166,7 +168,8 @@
       "testCredentials": "https://www.igrant.io/demo/payment-authenticator.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-insurance-policy-demo",
@@ -217,7 +220,8 @@
       "testCredentials": "https://www.igrant.io/demo/pid.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-dcql-credential-query-demo",
@@ -284,7 +288,8 @@
       "testCredentials": "https://www.igrant.io/demo/pid.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-kyc-photoid-demo",
@@ -347,7 +352,8 @@
       "testCredentials": "https://www.igrant.io/photoid.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-w3c-digital-credentials-demo",
@@ -406,7 +412,8 @@
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-photo-id-issuance",
@@ -464,7 +471,8 @@
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-issue-test-pid",
@@ -513,7 +521,8 @@
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-issue-test-qesac",
@@ -558,7 +567,8 @@
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-dcql-trusted-authority-demo",
@@ -626,7 +636,8 @@
       "documentation": "https://docs.igrant.io/concepts/eudi-wallet-dcql-openid4vp-business-wallet-payments/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-esspass-pda1",
@@ -684,7 +695,8 @@
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-payment-authenticator",
@@ -735,7 +747,8 @@
       "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "igrant-payment-bank-led",
@@ -791,7 +804,8 @@
       "testCredentials": "https://www.igrant.io/demo/payment-authenticator.html",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-02-12T00:00:00+01:00"

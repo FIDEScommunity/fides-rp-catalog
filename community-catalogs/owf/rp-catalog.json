@@ -83,7 +83,8 @@
       "documentation": "https://github.com/openwallet-foundation-labs/multipaz",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2025-01-16T00:00:00+01:00"

@@ -105,6 +105,20 @@
     SECTOR_LABELS[a].localeCompare(SECTOR_LABELS[b], 'en', { sensitivity: 'base' })
   );
 
+  /** Display labels for `interactionMode` on relying parties (schema: proximity | remote | both). */
+  const INTERACTION_MODE_LABELS = {
+    proximity: 'Proximity',
+    remote: 'Remote',
+    both: 'Both'
+  };
+  const INTERACTION_MODE_ORDER = ['proximity', 'remote', 'both'];
+
+  function getRpInteractionMode(rp) {
+    const m = rp && rp.interactionMode;
+    if (m === 'proximity' || m === 'remote' || m === 'both') return m;
+    return 'remote';
+  }
+
   /** Same codes as credential catalog (English labels). */
   const THEME_LABELS = {
     person_identity: 'Person identity',
@@ -229,6 +243,7 @@
 
   const RP_FILTER_TO_VOCAB = {
     type: 'readiness',
+    interactionMode: 'interactionMode',
     supportedWallets: 'supportedWallet',
     sectors: 'sector',
     credentialEcosystems: 'ecosystem',
@@ -254,6 +269,7 @@
     vcFormat: [],
     presentationProtocols: [],
     interoperabilityProfiles: [],
+    interactionMode: [],
     supportedWallets: [],
     addedLast30Days: false,
     includesVideo: false,
@@ -267,6 +283,7 @@
   // Track which filter groups are expanded (true = expanded, false = collapsed)
   const filterGroupState = {
     type: true,
+    interactionMode: true,
     sectors: false,
     credentialEcosystems: false,
     credentialThemes: false,
@@ -614,10 +631,12 @@
           const lab = ECOSYSTEM_LABELS[e];
           return lab && lab.toLowerCase().includes(search);
         });
+        const imLabel = INTERACTION_MODE_LABELS[getRpInteractionMode(rp)] || '';
         const matches =
           rp.name.toLowerCase().includes(search) ||
           (rp.description || '').toLowerCase().includes(search) ||
           rp.provider.name.toLowerCase().includes(search) ||
+          (imLabel && imLabel.toLowerCase().includes(search)) ||
           themeLabelMatch ||
           ecosystemLabelMatch;
         if (!matches) return false;
@@ -626,6 +645,12 @@
       // Readiness
       if (filters.type.length > 0) {
         if (!filters.type.includes(rp.readiness)) return false;
+      }
+
+      // Interaction mode (proximity / remote / both)
+      if (filters.interactionMode.length > 0) {
+        const im = getRpInteractionMode(rp);
+        if (!filters.interactionMode.includes(im)) return false;
       }
 
       // Sectors
@@ -765,6 +790,7 @@
     count += filters.vcFormat.length;
     count += filters.presentationProtocols.length;
     count += filters.interoperabilityProfiles.length;
+    count += filters.interactionMode.length;
     count += filters.supportedWallets.length;
     if (filters.addedLast30Days) count += 1;
     if (filters.includesVideo) count += 1;
@@ -785,6 +811,7 @@
     const credentialFormatCount = {};
     const presentationProtocolCount = { OpenID4VP: 0, 'ISO 18013-5': 0, '...other': 0 };
     const interopProfileCount = {};
+    const interactionModeCount = {};
     const walletMap = new Map(); // id -> { name, count }
     let addedLast30Days = 0;
     let updatedLast30Days = 0;
@@ -823,6 +850,8 @@
       (rp.interoperabilityProfiles || []).forEach(p => {
         interopProfileCount[p] = (interopProfileCount[p] || 0) + 1;
       });
+      const im = getRpInteractionMode(rp);
+      interactionModeCount[im] = (interactionModeCount[im] || 0) + 1;
       (rp.supportedWallets || []).forEach(w => {
         if (typeof w === 'object' && w.walletCatalogId) {
           const id = w.walletCatalogId;
@@ -854,6 +883,7 @@
       credentialThemes: credentialThemeCount,
       vcFormat: credentialFormatCount,
       interoperabilityProfiles: interopProfileCount,
+      interactionMode: interactionModeCount,
       supportedWallets,
       country,
       presentationProtocols,
@@ -1007,6 +1037,21 @@
                 </div>
               </div>
             ` : ''}
+            <div class="fides-filter-group collapsible ${!filterGroupState.interactionMode ? 'collapsed' : ''} ${filters.interactionMode.length > 0 ? 'has-active' : ''}" data-filter-group="interactionMode">
+                <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.interactionMode}">
+                  <span class="fides-filter-label">Interaction mode</span>
+                  <span class="fides-filter-active-indicator"></span>
+                  ${chevronDown}
+                </button>
+                <div class="fides-filter-options">
+                  ${INTERACTION_MODE_ORDER.map(code => `
+                  <label class="fides-filter-checkbox">
+                    <input type="checkbox" data-filter="interactionMode" data-value="${code}" ${filters.interactionMode.includes(code) ? 'checked' : ''}>
+                    <span>${escapeHtml(INTERACTION_MODE_LABELS[code])}<span class="fides-filter-option-count">(${filterFacets ? (filterFacets.interactionMode[code] || 0) : ''})</span></span>
+                  </label>
+                  `).join('')}
+                </div>
+              </div>
             ${(filterFacets ? filterFacets.supportedWallets : getAvailableSupportedWallets()).length > 0 ? `
               <div class="fides-filter-group collapsible ${!filterGroupState.supportedWallets ? 'collapsed' : ''} ${filters.supportedWallets.length > 0 ? 'has-active' : ''}" data-filter-group="supportedWallets">
                 <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.supportedWallets}">
@@ -1449,6 +1494,8 @@
       'production': 'Production'
     };
 
+    const interactionMode = getRpInteractionMode(rp);
+
     const statusLabels = {
       development: 'In Development',
       beta: 'Beta',
@@ -1501,6 +1548,9 @@
                 <span class="fides-modal-badge readiness-${rp.readiness}">
                   ${readinessLabels[rp.readiness]}
                 </span>
+                <span class="fides-modal-badge interaction-mode interaction-${interactionMode}">
+                  ${escapeHtml(INTERACTION_MODE_LABELS[interactionMode])}
+                </span>
                 ${rp.status ? `
                   <span class="fides-modal-badge status-${rp.status}">
                     ${statusLabels[rp.status] || rp.status}
@@ -1526,6 +1576,14 @@
 
             <!-- Quick info grid -->
             <div class="fides-modal-grid">
+              <div class="fides-modal-grid-item">
+                <div class="fides-modal-grid-label">
+                  ${icons.laptop} Interaction mode
+                </div>
+                <div class="fides-modal-grid-value">
+                  <span class="fides-tag interaction-mode-tag interaction-${interactionMode}">${escapeHtml(INTERACTION_MODE_LABELS[interactionMode])}</span>
+                </div>
+              </div>
               <!-- Sectors (canonical codes → English labels like credential catalog) -->
               ${(() => {
                 const sc = (rp.sectors || []).filter(s => typeof s === 'string' && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, s));
@@ -2020,6 +2078,7 @@
           vcFormat: [],
           presentationProtocols: [],
           interoperabilityProfiles: [],
+          interactionMode: [],
           supportedWallets: [],
           addedLast30Days: false,
           includesVideo: false,

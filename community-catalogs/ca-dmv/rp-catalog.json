@@ -39,7 +39,8 @@
       "documentation": "https://www.dmv.ca.gov/portal/ca-dmv-wallet/mdl-for-technology-developers/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-02-18T00:00:00Z"

@@ -34,7 +34,7 @@
     "RelyingParty": {
       "type": "object",
       "description": "A relying party (verifier) service or website",
-      "required": ["id", "name", "readiness", "country"],
+      "required": ["id", "name", "readiness", "country", "interactionMode"],
       "properties": {
         "id": {
           "type": "string",
@@ -68,6 +68,11 @@
           "type": "string",
           "pattern": "^[A-Z]{2}$|^EU$",
           "description": "ISO 3166-1 alpha-2 country code where the relying party is based, or 'EU' for pan-European services"
+        },
+        "interactionMode": {
+          "type": "string",
+          "enum": ["proximity", "remote", "both"],
+          "description": "Which interaction pattern applies. 'proximity': Proximity flow — the user and their device are physically near the Relying Party. 'remote': Remote flow — the user and the Relying Party are in different locations, and the interaction happens over the internet. 'both': the Relying Party supports both proximity and remote flows."
         },
         "status": {
           "type": "string",

@@ -46,7 +46,8 @@
       ],
       "languages": [
         "de"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ]
 }

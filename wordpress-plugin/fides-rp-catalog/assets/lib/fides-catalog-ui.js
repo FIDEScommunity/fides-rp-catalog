@@ -50,7 +50,8 @@
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
     download: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>',
     penLine: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>',
-    play: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>'
+    play: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
+    laptop: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>'
   };
 
   let selectedContext = null;
@@ -366,6 +367,18 @@
     return code.replace(/[-_]+/g, ' ').replace(/\b\w/g, function(ch) { return ch.toUpperCase(); });
   }
 
+  const INTERACTION_MODE_LABELS = {
+    proximity: 'Proximity',
+    remote: 'Remote',
+    both: 'Both'
+  };
+
+  function getRpInteractionMode(rp) {
+    const m = rp && rp.interactionMode;
+    if (m === 'proximity' || m === 'remote' || m === 'both') return m;
+    return 'remote';
+  }
+
   function buildRpSectorsModalGridHtml(rp) {
     const raw = Array.isArray(rp.sectors) ? rp.sectors : [];
     const sectorCodes = raw.filter(function(s) { return typeof s === 'string' && s.length > 0; }).slice().sort(function(a, b) {
@@ -462,6 +475,8 @@
     const bluePagesUrl = getBluePagesUrl(rp.provider && rp.provider.did, options);
     const modalLogoUrl = rp.logo || (rp.country ? 'https://flagcdn.com/w80/' + String(rp.country).toLowerCase() + '.png' : null);
     const acceptedCredentialRows = getAcceptedCredentialRows(rp);
+    const interactionMode = getRpInteractionMode(rp);
+    const interactionModeLabel = INTERACTION_MODE_LABELS[interactionMode] || interactionMode;
 
     const supportedWalletsHtml = (rp.supportedWallets || []).map(w => {
       const name = typeof w === 'string' ? w : w.name;
@@ -486,6 +501,7 @@
       '<div class="fides-modal-body">' +
       '<div class="fides-modal-badges fides-modal-badges-with-action"><div class="fides-modal-badges-left">' +
       (rp.readiness ? '<span class="fides-modal-badge readiness-' + escapeHtml(rp.readiness) + '">' + escapeHtml(readinessLabels[rp.readiness] || rp.readiness) + '</span>' : '') +
+      '<span class="fides-modal-badge interaction-mode interaction-' + escapeHtml(interactionMode) + '">' + escapeHtml(interactionModeLabel) + '</span>' +
       (rp.status ? '<span class="fides-modal-badge status-' + escapeHtml(rp.status) + '">' + escapeHtml(statusLabels[rp.status] || rp.status) + '</span>' : '') +
       '</div>' +
       (rp.website ? '<a href="' + escapeHtml(rp.website) + '" target="_blank" rel="noopener" class="fides-modal-visit-button">' + icons.externalLink + ' Visit Website</a>' : '') +
@@ -493,6 +509,7 @@
       (rp.description ? '<div class="fides-modal-section"><p class="fides-modal-description">' + escapeHtml(rp.description) + '</p></div>' : '') +
       (rp.video ? getVideoEmbedHtml(rp.video) : '') +
       '<div class="fides-modal-grid">' +
+      '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.laptop + ' Interaction mode</div><div class="fides-modal-grid-value"><span class="fides-tag interaction-mode-tag interaction-' + escapeHtml(interactionMode) + '">' + escapeHtml(interactionModeLabel) + '</span></div></div>' +
       buildRpSectorsModalGridHtml(rp) +
       ((acceptedCredentialRows.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Accepted Credentials</div><div class="fides-modal-grid-value">' + renderAcceptedCredentialTagsHtmlForRpModal(rp, credentialCatalogUrl) + '</div></div>' : '') +
       ((rp.vcFormat && rp.vcFormat.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' VC formats</div><div class="fides-modal-grid-value">' + sortCredentialFormats(rp.vcFormat).map(f => '<span class="fides-tag credential-format">' + escapeHtml(credentialFormatDisplayLabel(f)) + '</span>').join('') + '</div></div>' : '') +

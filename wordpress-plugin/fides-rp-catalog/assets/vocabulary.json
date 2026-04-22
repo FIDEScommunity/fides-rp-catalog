@@ -1,6 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/vocabulary/v1",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "terms": {
     "type": {
       "description": "Wallet type: designed for individual users (personal) or for organizations to manage credentials (organizational)."
@@ -55,6 +55,18 @@
     },
     "readiness": {
       "description": "Maturity or deployment stage of the relying party (e.g. production, pilot)."
+    },
+    "interactionMode": {
+      "description": "Determines how the holder interacts with the verifier."
+    },
+    "proximity": {
+      "description": "The Proximity Flow is used when the user and their device are physically near the Relying Party."
+    },
+    "remote": {
+      "description": "The Remote Flow is used when the user and the Relying Party are in different locations, and the interaction happens over the internet."
+    },
+    "both": {
+      "description": "The Relying Party supports both the Proximity Flow and the Remote Flow (user and device physically near the RP in some scenarios, and interaction over the internet from different locations in others)."
     },
     "supportedWallet": {
       "description": "Wallets that the relying party has been tested with or supports."

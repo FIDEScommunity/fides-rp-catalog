@@ -34,14 +34,15 @@
           "walletCatalogId": "google-wallet"
         }
       ],
+      "interactionMode": "remote",
       "orgId": "org:air-new-zealand",
       "provider": {
         "name": "Air New Zealand",
         "website": "https://www.airnewzealand.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/air-nz/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.018Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/air-nz/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.219Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -85,14 +86,15 @@
         "nl",
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.030Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.267Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -135,14 +137,15 @@
         "nl",
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.030Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.267Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -183,14 +186,15 @@
         "nl",
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.030Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.267Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -235,14 +239,15 @@
         "nl",
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.030Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.267Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -285,14 +290,15 @@
         "nl",
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
         "website": "https://amsterdam-demo.staging.yivi.app/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.030Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.267Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -339,14 +345,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:bcgov",
       "provider": {
         "name": "Government of British Columbia",
         "website": "https://www2.gov.bc.ca/",
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.034Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.301Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -388,14 +395,15 @@
         "DPI-based infrastructure"
       ],
       "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais",
+      "interactionMode": "remote",
       "orgId": "org:brazil",
       "provider": {
         "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
         "website": "https://www.gov.br/gestao/",
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.039Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/brazil/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.332Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -435,14 +443,15 @@
           "walletCatalogId": "google-wallet"
         }
       ],
+      "interactionMode": "remote",
       "orgId": "org:british-airways",
       "provider": {
         "name": "British Airways",
         "website": "https://www.britishairways.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/british-airways/british-airways-logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/british-airways/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.044Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/british-airways/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.357Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -489,6 +498,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:ca-dmv",
       "provider": {
         "name": "California Department of Motor Vehicles (CA DMV)",
@@ -497,8 +507,8 @@
           "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.049Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.411Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -540,14 +550,15 @@
         "de",
         "fr"
       ],
+      "interactionMode": "remote",
       "orgId": "org:educa",
       "provider": {
         "name": "Educa",
         "website": "https://www.educa.ch",
         "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/educa/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.054Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/educa/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.602Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-03T07:04:14.000Z",
@@ -599,14 +610,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.059Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.634Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -692,14 +704,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.059Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.634Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -836,14 +849,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eu",
       "provider": {
         "name": "European Commission - Government",
         "website": "https://github.com/eu-digital-identity-wallet",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.059Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.634Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -905,14 +919,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.065Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.702Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -968,14 +983,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.065Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.702Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1030,14 +1046,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.065Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.702Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1096,14 +1113,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.065Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.702Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1158,14 +1176,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
         "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
         "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.065Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.702Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1210,14 +1229,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
         "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.070Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.729Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
@@ -1298,6 +1318,7 @@
         "en",
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -1305,8 +1326,8 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.075Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.757Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1386,6 +1407,7 @@
         "en",
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -1393,8 +1415,8 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.075Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.757Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1447,6 +1469,7 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -1454,8 +1477,8 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.075Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.757Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1524,6 +1547,7 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -1531,8 +1555,8 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.075Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.757Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1597,6 +1621,7 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:fides",
       "provider": {
         "name": "FIDES Labs",
@@ -1604,8 +1629,8 @@
         "website": "https://fides.community",
         "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.075Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.757Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1657,14 +1682,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:google",
       "provider": {
         "name": "Google",
         "website": "https://www.google.com",
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.080Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.783Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -1704,14 +1730,15 @@
           "walletCatalogId": "google-wallet"
         }
       ],
+      "interactionMode": "remote",
       "orgId": "org:hong-kong-international-airport",
       "provider": {
         "name": "Hong Kong International Airport",
         "website": "https://www.hongkongairport.com",
         "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hkia/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.084Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/hkia/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.804Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -1758,14 +1785,15 @@
           "walletCatalogId": "google-wallet"
         }
       ],
+      "interactionMode": "remote",
       "orgId": "org:bengaluru-international-airport",
       "provider": {
         "name": "Bengaluru International Airport",
         "website": "https://www.bengaluruairport.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.088Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.824Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -1826,6 +1854,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -1835,8 +1864,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -1892,6 +1921,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -1901,8 +1931,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -1967,6 +1997,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -1976,8 +2007,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": true,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2033,6 +2064,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2042,8 +2074,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2114,6 +2146,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2123,8 +2156,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2191,6 +2224,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2200,8 +2234,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2264,6 +2298,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2273,8 +2308,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2336,6 +2371,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2345,8 +2381,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2400,6 +2436,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2409,8 +2446,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2460,6 +2497,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2469,8 +2507,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2541,6 +2579,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2550,8 +2589,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2613,6 +2652,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2622,8 +2662,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2679,6 +2719,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2688,8 +2729,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2750,6 +2791,7 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
@@ -2759,8 +2801,8 @@
           "email": "support@igrant.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.092Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.856Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-11T23:00:00.000Z",
@@ -2800,14 +2842,15 @@
           "walletCatalogId": "google-wallet"
         }
       ],
+      "interactionMode": "remote",
       "orgId": "org:indigo",
       "provider": {
         "name": "IndiGo",
         "website": "https://www.goindigo.in",
         "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/indigo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.096Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/indigo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.879Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2850,14 +2893,15 @@
           "walletCatalogId": "google-wallet"
         }
       ],
+      "interactionMode": "remote",
       "orgId": "org:japan-airlines",
       "provider": {
         "name": "Japan Airlines",
         "website": "https://www.jal.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/jal/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.100Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/jal/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.902Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2910,6 +2954,7 @@
         "en",
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
@@ -2919,8 +2964,8 @@
           "email": "info@lissi.id"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.105Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.931Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -2970,6 +3015,7 @@
         "en",
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
@@ -2979,8 +3025,8 @@
           "email": "info@lissi.id"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.105Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.931Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3030,6 +3076,7 @@
         "en",
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
@@ -3039,8 +3086,8 @@
           "email": "info@lissi.id"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.105Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.931Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3091,6 +3138,7 @@
         "en",
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
@@ -3100,8 +3148,8 @@
           "email": "info@lissi.id"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.105Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.931Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3142,14 +3190,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:mosip",
       "provider": {
         "name": "MOSIP",
         "website": "https://www.mosip.io",
         "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.109Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.958Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T05:25:32.000Z",
@@ -3199,6 +3248,7 @@
       "languages": [
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:neovo",
       "provider": {
         "name": "Neovo",
@@ -3208,8 +3258,8 @@
           "email": "info@neovo.ch"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/neovo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.114Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/neovo/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:03.991Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T05:25:32.000Z",
@@ -3263,14 +3313,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3309,14 +3360,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3354,14 +3406,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3399,14 +3452,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3444,14 +3498,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3489,14 +3544,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3534,14 +3590,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3587,14 +3644,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3640,14 +3698,15 @@
       "languages": [
         "nl"
       ],
+      "interactionMode": "remote",
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.118Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.019Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3734,14 +3793,15 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:owf",
       "provider": {
         "name": "OpenWallet Foundation",
         "website": "https://openwallet.foundation/",
         "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.122Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.044Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -3792,14 +3852,15 @@
       "languages": [
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:sbb",
       "provider": {
         "name": "SBB",
         "website": "https://www.sbb.ch",
         "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/sbb/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.126Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/sbb/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.070Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T05:25:32.000Z",
@@ -3849,13 +3910,14 @@
       "languages": [
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:stelausoftware",
       "provider": {
         "name": "Stelau Software",
         "website": "https://www.stelau.com"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.130Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.096Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T05:25:32.000Z",
@@ -3897,14 +3959,15 @@
         "rm",
         "en"
       ],
+      "interactionMode": "remote",
       "orgId": "org:swiyu",
       "provider": {
         "name": "Swiss Confederation",
         "website": "https://www.eid.admin.ch/en",
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/swiyu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.136Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/swiyu/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.125Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-03T07:08:55.000Z",
@@ -3956,14 +4019,15 @@
         "en",
         "de"
       ],
+      "interactionMode": "remote",
       "orgId": "org:unchained-commerce",
       "provider": {
         "name": "Unchained Commerce",
         "website": "https://unchained.shop",
         "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/unchained/rp-catalog.json",
-      "fetchedAt": "2026-04-22T13:30:44.141Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/unchained/rp-catalog.json",
+      "fetchedAt": "2026-04-22T15:48:04.151Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T05:25:32.000Z",
@@ -4113,7 +4177,7 @@
       "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
     }
   ],
-  "lastUpdated": "2026-04-22T13:30:44.295Z",
+  "lastUpdated": "2026-04-22T15:48:04.158Z",
   "stats": {
     "totalRPs": 64,
     "totalProviders": 26,

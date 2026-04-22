@@ -45,7 +45,8 @@
       "languages": [
         "en",
         "de"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "lissi-tax-authority-demo",
@@ -90,7 +91,8 @@
       "languages": [
         "en",
         "de"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "lissi-municipality-demo",
@@ -135,7 +137,8 @@
       "languages": [
         "en",
         "de"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "lissi-loan-qes-demo",
@@ -181,7 +184,8 @@
       "languages": [
         "en",
         "de"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-01-22T00:00:00+01:00"

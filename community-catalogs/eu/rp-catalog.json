@@ -47,7 +47,8 @@
       "documentation": "https://github.com/eu-digital-identity-wallet/av-verifier-frontend-cinema",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "eudi-reference-verifier",
@@ -128,7 +129,8 @@
       "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "eudi-test-relying-party",
@@ -260,7 +262,8 @@
       "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-01-26T22:15:00Z"

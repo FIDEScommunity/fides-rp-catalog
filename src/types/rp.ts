@@ -8,6 +8,9 @@ export type Readiness = 'technical-demo' | 'use-case-demo' | 'production-pilot' 
 // Operational status
 export type RPStatus = 'development' | 'beta' | 'live' | 'deprecated';
 
+/** How verification is experienced: in-person at a checkpoint, online (e.g. portal), or both. */
+export type InteractionMode = 'proximity' | 'remote' | 'both';
+
 /**
  * Aggregated JSON uses canonical sector codes (credential / organization catalog).
  * Community rp-catalog.json files may still list legacy values until schema step 2.
@@ -70,6 +73,8 @@ export interface RelyingParty {
   logo?: string;
   website?: string;
   readiness: Readiness;
+  /** Proximity vs remote vs both flows; see rp-catalog schema `interactionMode` description. */
+  interactionMode: InteractionMode;
   status?: RPStatus;
   
   // Classification (canonical codes in aggregated output come from org catalog via orgId; legacy allowed in source JSON)

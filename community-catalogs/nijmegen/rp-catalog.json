@@ -49,7 +49,8 @@
       "documentation": "https://privacybydesign.foundation/issuance/",
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "nijmegen-iit",
@@ -83,7 +84,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "nijmegen-vergoedingenpas",
@@ -116,7 +118,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "nijmegen-busvoordeel",
@@ -150,7 +153,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "nijmegen-meedoenregeling",
@@ -183,7 +187,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "nijmegen-cultureel-erfgoed-pas",
@@ -217,7 +222,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "nijmegen-vergoedingencheck",
@@ -250,7 +256,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "machtigen-bewindvoerder-jansen-bewind",
@@ -291,7 +298,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     },
     {
       "id": "machtigen-centraal-machtigingsregister",
@@ -332,7 +340,8 @@
       ],
       "languages": [
         "nl"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-01-22T00:00:00+01:00"

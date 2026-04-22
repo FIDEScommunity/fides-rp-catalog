@@ -43,7 +43,8 @@
       "documentation": "https://digital.gov.bc.ca/digital-trust/",
       "languages": [
         "en"
-      ]
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2025-01-16T00:00:00+01:00"
