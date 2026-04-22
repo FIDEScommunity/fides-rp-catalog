@@ -5,7 +5,7 @@
     {
       "id": "bengaluru-international-airport",
       "name": "Bengaluru International Airport",
-      "description": "Bengaluru International Airport acts as a relying party in digital travel scenarios, verifying ISO-based digital identity credentials (Photo ID) alongside IATA travel credentials such as boarding passes and booking orders during security checks, bag drop, and boarding processes.",
+      "description": "Bengaluru International Airport acts as a relying party in digital travel scenarios, verifying ISO-based digital identity credentials (Photo ID) alongside travel credentials such as boarding passes and booking orders during security checks, bag drop, and boarding processes.",
       "readiness": "use-case-demo",
       "country": "IN",
       "acceptedCredentialRefs": [
@@ -23,6 +23,10 @@
         "mdoc"
       ],
       "supportedWallets": [
+        {
+          "name": "DigiYatra",
+          "walletCatalogId": "digiyatra"
+        },
         {
           "name": "Neoke",
           "walletCatalogId": "neoke-wallet"
