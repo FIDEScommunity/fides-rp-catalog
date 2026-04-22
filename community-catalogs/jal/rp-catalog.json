@@ -26,9 +26,17 @@
         {
           "name": "Neoke",
           "walletCatalogId": "neoke-wallet"
+        },
+        {
+          "name": "Apple Wallet",
+          "walletCatalogId": "apple-wallet"
+        },
+        {
+          "name": "Google Wallet",
+          "walletCatalogId": "google-wallet"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-04-22T12:15:00Z"
+  "lastUpdated": "2026-04-22T12:25:00Z"
 }
