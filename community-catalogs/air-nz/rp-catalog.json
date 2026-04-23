@@ -36,7 +36,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote"
+      "interactionMode": "proximity"
     }
   ],
   "lastUpdated": "2026-04-22T12:25:00Z"
