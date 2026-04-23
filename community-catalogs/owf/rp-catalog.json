@@ -48,10 +48,10 @@
           "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"

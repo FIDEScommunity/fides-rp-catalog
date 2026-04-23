@@ -85,10 +85,10 @@
           "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
@@ -179,10 +179,10 @@
           "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
@@ -224,7 +224,7 @@
           "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:reservation-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:reservation-mdoc:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
