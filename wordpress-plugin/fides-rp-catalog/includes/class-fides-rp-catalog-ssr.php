@@ -22,7 +22,7 @@ if (! class_exists('Fides_RP_Catalog_SSR')) {
 
         class Fides_RP_Catalog_SSR {
             const TYPE                 = 'rp';
-            const DEFAULT_CATALOG_PATH = '/ecosystem-explorer/rp-catalog/';
+            const DEFAULT_CATALOG_PATH = '/ecosystem-explorer/relying-party-catalog/';
             const OPTION_CATALOG_URL   = 'fides_rp_catalog_page_url';
             const MAX_LISTING_ITEMS    = 30;
             public static function bootstrap() { /* no-op without base */ }
@@ -34,7 +34,7 @@ if (! class_exists('Fides_RP_Catalog_SSR')) {
         class Fides_RP_Catalog_SSR extends Fides_Catalog_SSR_Renderer {
 
             const TYPE                 = 'rp';
-            const DEFAULT_CATALOG_PATH = '/ecosystem-explorer/rp-catalog/';
+            const DEFAULT_CATALOG_PATH = '/ecosystem-explorer/relying-party-catalog/';
             const OPTION_CATALOG_URL   = 'fides_rp_catalog_page_url';
             const MAX_LISTING_ITEMS    = 30;
 
@@ -193,7 +193,16 @@ if (! class_exists('Fides_RP_Catalog_SSR')) {
 
             private static function catalog_path(): string {
                 $opt = (string) get_option(self::OPTION_CATALOG_URL, '');
-                return $opt !== '' ? $opt : self::DEFAULT_CATALOG_PATH;
+                if ($opt === '') {
+                    return self::DEFAULT_CATALOG_PATH;
+                }
+
+                // Backward compatibility: migrate legacy rp-catalog slug to the live URL slug.
+                if (untrailingslashit($opt) === '/ecosystem-explorer/rp-catalog') {
+                    return self::DEFAULT_CATALOG_PATH;
+                }
+
+                return $opt;
             }
         }
     }
