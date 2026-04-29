@@ -26,7 +26,9 @@
     video: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>',
     play: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
     link: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
-    share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>'
+    share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
+    viewGrid: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>',
+    viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>'
   };
   
   // Wallet catalog base URL for deep links (configurable via WordPress settings)
@@ -257,7 +259,10 @@
   const RP_VOCAB_NO_INFO = new Set([]);
 
   const SORT_PREFERENCE_STORAGE_KEY = 'fidesRPCatalogSortBy';
+  const VIEW_PREFERENCE_STORAGE_KEY = 'fidesRPCatalogViewMode';
+  const LIST_BREAKPOINT = 1024;
   let sortBy = 'lastUpdated';
+  let viewMode = 'grid';
 
   let filters = {
     search: '',
@@ -301,6 +306,18 @@
   let container;
   let settings;
 
+  function effectiveView() {
+    return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
+  }
+  let _lastEffective = effectiveView();
+  window.addEventListener('resize', debounce(() => {
+    const cur = effectiveView();
+    if (cur !== _lastEffective) {
+      _lastEffective = cur;
+      if (container) renderRPGridOnly();
+    }
+  }, 120));
+
   /**
    * Initialize the catalog
    */
@@ -330,11 +347,14 @@
       filters.sectors = settings.sector ? [settings.sector] : [];
     }
 
-    // Restore sort preference
+    // Restore persisted sort and view preference
     try {
       const stored = window.localStorage.getItem(SORT_PREFERENCE_STORAGE_KEY);
       if (stored === 'lastUpdated' || stored === 'name') sortBy = stored;
+      const storedView = window.localStorage.getItem(VIEW_PREFERENCE_STORAGE_KEY);
+      if (storedView === 'grid' || storedView === 'list') viewMode = storedView;
     } catch (e) { /* ignore */ }
+    _lastEffective = effectiveView();
 
     if (window.FidesCatalogUI && window.FidesCatalogUI.initMatomoLinkTracking) {
       window.FidesCatalogUI.initMatomoLinkTracking({ category: 'RP Catalog', containerSelector: '#fides-rp-catalog-root', modalOverlayId: 'fides-modal-overlay' });
@@ -952,6 +972,93 @@
       .sort((a, b) => a.name.localeCompare(b.name));
   }
 
+  function getRPDisplayData(rp) {
+    const displayName = (rp && rp.name ? String(rp.name) : String(rp && rp.id ? rp.id : 'Unknown RP')).trim();
+    const providerName = (rp && rp.provider && rp.provider.name ? String(rp.provider.name) : '—').trim();
+    const addedDate = getRPAddedDate(rp);
+    const updatedDate = getRPUpdatedDate(rp);
+    let activityLabel = '—';
+    let activityDateLabel = '—';
+    if (addedDate && isWithinLastDays(new Date(addedDate), 30)) {
+      activityLabel = `Added ${new Date(addedDate).toLocaleDateString('en-US')}`;
+      activityDateLabel = new Date(addedDate).toLocaleDateString('en-US');
+    } else if (updatedDate) {
+      activityLabel = `Updated ${new Date(updatedDate).toLocaleDateString('en-US')}`;
+      activityDateLabel = new Date(updatedDate).toLocaleDateString('en-US');
+    } else if (addedDate) {
+      activityLabel = `Added ${new Date(addedDate).toLocaleDateString('en-US')}`;
+      activityDateLabel = new Date(addedDate).toLocaleDateString('en-US');
+    }
+    return {
+      displayName,
+      providerName: providerName || '—',
+      activityLabel,
+      activityDateLabel,
+      isFeatured: !!(rp && rp.isFeatured),
+      logoUrl: rp && (rp.logo || (rp.country ? `https://flagcdn.com/w80/${String(rp.country).toLowerCase()}.png` : null))
+    };
+  }
+
+  function renderRPListHeader() {
+    return `
+      <div class="fides-rp-list-header" aria-hidden="true">
+        <div></div>
+        <div>Name</div>
+        <div>Provider</div>
+        <div class="fides-list-col-links">Links</div>
+        <div class="fides-list-col-updated">Updated</div>
+      </div>
+    `;
+  }
+
+  function renderRPRowLinks(rp) {
+    const websiteUrl = (rp && typeof rp.website === 'string' ? rp.website.trim() : '');
+    const videoUrl = (rp && typeof rp.video === 'string' ? rp.video.trim() : '');
+    const websiteNode = websiteUrl
+      ? `<a href="${escapeHtml(websiteUrl)}" target="_blank" rel="noopener" class="fides-rp-row-link" title="Visit website" aria-label="Visit website" onclick="event.stopPropagation();">${icons.externalLinkSmall}</a>`
+      : `<span class="fides-rp-row-link fides-rp-row-link-muted" title="No website" aria-label="No website">${icons.externalLinkSmall}</span>`;
+    const videoNode = videoUrl
+      ? `<a href="${escapeHtml(videoUrl)}" target="_blank" rel="noopener" class="fides-rp-row-link" title="Watch video" aria-label="Watch video" onclick="event.stopPropagation();">${icons.play}</a>`
+      : `<span class="fides-rp-row-link fides-rp-row-link-muted" title="No video" aria-label="No video">${icons.play}</span>`;
+    return `${websiteNode}${videoNode}`;
+  }
+
+  function renderRPRow(rp) {
+    const d = getRPDisplayData(rp);
+    return `
+      <div class="fides-rp-card${d.isFeatured ? ' fides-rp-row-featured' : ''}" data-rp-id="${escapeHtml(rp.id)}" role="button" tabindex="0" aria-label="${escapeHtml(d.providerName)} – ${escapeHtml(d.displayName)}">
+        <div class="fides-rp-row-icon" aria-hidden="true">
+          ${d.logoUrl
+            ? `<img src="${escapeHtml(d.logoUrl)}" alt="${escapeHtml(d.displayName)}" style="width:22px;height:22px;object-fit:contain;border-radius:3px;">`
+            : icons.globe
+          }
+        </div>
+        <div class="fides-rp-row-name">
+          <span class="fides-rp-row-name-text" title="${escapeHtml(d.displayName)}">${escapeHtml(d.displayName)}</span>
+          ${d.isFeatured ? '<span class="fides-rp-row-featured-icon" title="Featured" aria-label="Featured">★</span>' : ''}
+        </div>
+        <div class="fides-rp-row-provider" title="${escapeHtml(d.providerName)}">${escapeHtml(d.providerName)}</div>
+        <div class="fides-rp-row-links">${renderRPRowLinks(rp)}</div>
+        <div class="fides-rp-row-updated">${escapeHtml(d.activityDateLabel)}</div>
+      </div>
+    `;
+  }
+
+  function renderViewToggle() {
+    return `
+      <div class="fides-view-toggle" role="group" aria-label="View mode">
+        <button class="fides-view-btn${viewMode === 'grid' ? ' active' : ''}" data-view="grid"
+                aria-label="Grid view" aria-pressed="${viewMode === 'grid'}" title="Grid view">
+          ${icons.viewGrid}
+        </button>
+        <button class="fides-view-btn${viewMode === 'list' ? ' active' : ''}" data-view="list"
+                aria-label="List view" aria-pressed="${viewMode === 'list'}" title="List view">
+          ${icons.viewList}
+        </button>
+      </div>
+    `;
+  }
+
   /**
    * Render the catalog
    */
@@ -1226,10 +1333,11 @@
           <span class="fides-sort-text">Sort by</span>
           <select class="fides-sort-select" id="fides-sort-select" aria-label="Sort order">
             <option value="lastUpdated" ${sortBy === 'lastUpdated' ? 'selected' : ''}>Last updated</option>
-            <option value="name" ${sortBy === 'name' ? 'selected' : ''}>Name</option>
+            <option value="name" ${sortBy === 'name' ? 'selected' : ''}>Provider</option>
           </select>
         </label>
         <a href="${MAP_PAGE_URL}" class="fides-show-on-map" target="_blank" rel="noopener" aria-label="Show on map (opens in new tab)">${icons.externalLink}<span class="fides-show-on-map-label fides-show-on-map-label--full">Show on map</span><span class="fides-show-on-map-label fides-show-on-map-label--short" aria-hidden="true">Map</span></a>
+        ${renderViewToggle()}
         ${settings.showFilters ? `
           <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
             ${icons.filter}
@@ -1258,11 +1366,15 @@
       </div>
     `;
 
-    // RP grid
+    // RP grid/list
     if (filtered.length > 0) {
-      html += `<div class="fides-rp-grid" data-columns="${settings.columns}">`;
+      const ev = effectiveView();
+      html += `<div class="fides-rp-grid" data-view="${ev}" data-columns="${settings.columns}">`;
+      if (ev === 'list') {
+        html += renderRPListHeader();
+      }
       filtered.forEach(rp => {
-        html += renderRPCard(rp);
+        html += ev === 'list' ? renderRPRow(rp) : renderRPCard(rp);
       });
       html += '</div>';
     } else {
@@ -1331,6 +1443,7 @@
         grid = document.createElement('div');
         grid.className = 'fides-rp-grid';
         grid.setAttribute('data-columns', settings.columns);
+        grid.setAttribute('data-view', effectiveView());
         const kpiRow = contentArea.querySelector('.fides-kpi-row');
         if (kpiRow) {
           kpiRow.after(grid);
@@ -1341,10 +1454,15 @@
         }
       }
       
-      // Render RP cards
+      // Render RP cards/list rows
+      const ev = effectiveView();
+      grid.setAttribute('data-view', ev);
       let html = '';
+      if (ev === 'list') {
+        html += renderRPListHeader();
+      }
       filtered.forEach(rp => {
-        html += renderRPCard(rp);
+        html += ev === 'list' ? renderRPRow(rp) : renderRPCard(rp);
       });
       grid.innerHTML = html;
       
@@ -1939,6 +2057,24 @@
         renderRPGridOnly();
       });
     }
+
+    container.querySelectorAll('.fides-view-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const newView = btn.getAttribute('data-view') || 'grid';
+        if (newView !== 'grid' && newView !== 'list') return;
+        viewMode = newView;
+        _lastEffective = effectiveView();
+        try {
+          window.localStorage.setItem(VIEW_PREFERENCE_STORAGE_KEY, viewMode);
+        } catch (err) { /* ignore */ }
+        container.querySelectorAll('.fides-view-btn').forEach((b) => {
+          const active = b.getAttribute('data-view') === viewMode;
+          b.classList.toggle('active', active);
+          b.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        renderRPGridOnly();
+      });
+    });
 
     // Mobile filter toggle
     const mobileFilterToggle = document.getElementById('fides-mobile-filter-toggle');
