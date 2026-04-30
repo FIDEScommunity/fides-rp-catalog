@@ -196,6 +196,8 @@
     const url = new URL(window.location.href);
     if (contextType === 'wallet') url.searchParams.set('wallet', item.id);
     if (contextType === 'rp') url.searchParams.set('rp', item.id);
+    if (contextType === 'issuer') url.searchParams.set('issuer', item.id);
+    if (contextType === 'organization') url.searchParams.set('org', item.id);
     return url.toString();
   }
 
@@ -273,7 +275,7 @@
       ? ''
       : '<button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link">' + icons.share + '</button>';
 
-    const modalHtml = '<div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="' + escapeHtml(theme) + '">' +
+    const modalHtml = '<div class="fides-modal-overlay fides-modal-overlay--rp" id="fides-modal-overlay" data-theme="' + escapeHtml(theme) + '">' +
       '<div class="fides-modal" role="dialog" aria-modal="true">' +
       '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
       (wallet.logo ? '<img src="' + escapeHtml(wallet.logo) + '" alt="' + escapeHtml(wallet.name) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.wallet + '</div>') +
@@ -527,9 +529,148 @@
     mountModal(modalHtml);
   }
 
+  function arrayValues(input) {
+    return Array.isArray(input) ? input : [];
+  }
+
+  function renderTagList(values, className) {
+    return arrayValues(values).filter(function(v) { return typeof v === 'string' && v.trim() !== ''; }).map(function(v) {
+      return '<span class="fides-tag ' + escapeHtml(className || '') + '">' + escapeHtml(v) + '</span>';
+    }).join('');
+  }
+
+  function openIssuerModal(issuer, options) {
+    if (!issuer) return;
+    const theme = (options && options.theme) || 'dark';
+    selectedContext = { type: 'issuer', item: issuer, options: options || {}, theme: theme };
+    if (options && typeof options.onOpen === 'function') options.onOpen(issuer);
+
+    const provider = issuer.organization || {};
+    const providerName = provider.name ? String(provider.name) : 'Unknown organization';
+    const orgCatalogHref = getOrganizationCatalogDeepLink((issuer.orgId || '').trim(), (options && options.organizationCatalogUrl) || 'https://fides.community/ecosystem-explorer/organization-catalog/');
+    const providerInHeader = orgCatalogHref
+      ? '<a href="' + escapeHtml(orgCatalogHref) + '" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>' + escapeHtml(providerName) + '</span></a>'
+      : escapeHtml(providerName);
+    const logo = issuer.logoUri || provider.logoUri || '';
+    const vcFormatTags = arrayValues(issuer.credentialConfigurations).map(function(conf) {
+      return conf && conf.vcFormat ? credentialFormatDisplayLabel(conf.vcFormat) : '';
+    }).filter(Boolean);
+    const credentialTypeTags = arrayValues(issuer.credentialConfigurations).map(function(conf) {
+      return conf && conf.displayName ? conf.displayName : '';
+    }).filter(Boolean);
+
+    const shareButtonHtml = (options && options.showShare === false)
+      ? ''
+      : '<button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link">' + icons.share + '</button>';
+
+    const modalHtml = '<div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="' + escapeHtml(theme) + '">' +
+      '<div class="fides-modal" role="dialog" aria-modal="true">' +
+      '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
+      (logo ? '<img src="' + escapeHtml(logo) + '" alt="' + escapeHtml(issuer.displayName || issuer.id) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.building + '</div>') +
+      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(issuer.displayName || issuer.id) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + providerInHeader + '</p></div>' +
+      '</div><div class="fides-modal-header-actions">' + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
+      '<div class="fides-modal-body">' +
+      '<div class="fides-modal-badges">' +
+      (issuer.environment ? '<span class="fides-modal-badge">' + escapeHtml(issuer.environment) + '</span>' : '') +
+      (issuer.issuanceProtocol ? '<span class="fides-modal-badge">' + escapeHtml(String(issuer.issuanceProtocol).toUpperCase()) + '</span>' : '') +
+      '</div>' +
+      (issuer.description ? '<div class="fides-modal-section"><p class="fides-modal-description">' + escapeHtml(issuer.description) + '</p></div>' : '') +
+      '<div class="fides-modal-grid">' +
+      (vcFormatTags.length ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' VC formats</div><div class="fides-modal-grid-value">' + renderTagList(vcFormatTags, 'credential-format') + '</div></div>' : '') +
+      (credentialTypeTags.length ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Credential types</div><div class="fides-modal-grid-value">' + renderTagList(credentialTypeTags, '') + '</div></div>' : '') +
+      '</div>' +
+      '<div class="fides-modal-links">' +
+      (issuer.issuerWebsiteUrl ? '<a href="' + escapeHtml(issuer.issuerWebsiteUrl) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Issuer website">' + icons.externalLink + ' Issuer Website</a>' : '') +
+      (issuer.oid4vciMetadataUrl ? '<a href="' + escapeHtml(issuer.oid4vciMetadataUrl) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Issuer metadata">' + icons.book + ' OID4VCI metadata</a>' : '') +
+      '</div>' +
+      '</div></div></div>';
+
+    mountModal(modalHtml);
+  }
+
+  function openOrganizationModal(org, options) {
+    if (!org) return;
+    const theme = (options && options.theme) || 'dark';
+    selectedContext = { type: 'organization', item: org, options: options || {}, theme: theme };
+    if (options && typeof options.onOpen === 'function') options.onOpen(org);
+
+    const logo = org.logo || '';
+    const country = org.country || '';
+    const issuerCatalogBase = (options && options.issuerCatalogUrl) || 'https://fides.community/ecosystem-explorer/issuer-catalog/';
+    const rpCatalogBase = (options && options.rpCatalogUrl) || 'https://fides.community/ecosystem-explorer/relying-party-catalog/';
+    const walletCatalogBase = (options && options.walletCatalogUrl) || 'https://fides.community/community-tools/personal-wallets/';
+    const credentialCatalogBase = (options && options.credentialCatalogUrl) || 'https://fides.community/ecosystem-explorer/credential-catalog/';
+
+    const issuerLinks = arrayValues(org.issuers).map(function(i) {
+      const issuerId = i && i.id ? i.id : '';
+      if (!issuerId) return '';
+      const href = issuerCatalogBase ? issuerCatalogBase.replace(/\/$/, '') + '?issuer=' + encodeURIComponent(issuerId) : null;
+      const label = i.displayName || issuerId;
+      if (href) return '<a href="' + escapeHtml(href) + '" class="fides-tag" target="_blank" rel="noopener">' + escapeHtml(label) + ' ' + icons.externalLinkSmall + '</a>';
+      return '<span class="fides-tag">' + escapeHtml(label) + '</span>';
+    }).filter(Boolean).join('');
+
+    const walletLinks = arrayValues(org.wallets).map(function(w) {
+      const walletId = w && w.id ? w.id : '';
+      const href = walletCatalogBase && walletId ? walletCatalogBase.replace(/\/$/, '') + '?wallet=' + encodeURIComponent(walletId) : null;
+      const label = (w && w.name) ? w.name : walletId;
+      if (!label) return '';
+      if (href) return '<a href="' + escapeHtml(href) + '" class="fides-tag wallet-link" target="_blank" rel="noopener">' + escapeHtml(label) + ' ' + icons.externalLinkSmall + '</a>';
+      return '<span class="fides-tag wallet-link">' + escapeHtml(label) + '</span>';
+    }).filter(Boolean).join('');
+
+    const rpLinks = arrayValues(org.relyingParties).map(function(rp) {
+      const rpId = rp && rp.id ? rp.id : '';
+      const href = rpCatalogBase && rpId ? rpCatalogBase.replace(/\/$/, '') + '?rp=' + encodeURIComponent(rpId) : null;
+      const label = (rp && rp.name) ? rp.name : rpId;
+      if (!label) return '';
+      if (href) return '<a href="' + escapeHtml(href) + '" class="fides-tag" target="_blank" rel="noopener">' + escapeHtml(label) + ' ' + icons.externalLinkSmall + '</a>';
+      return '<span class="fides-tag">' + escapeHtml(label) + '</span>';
+    }).filter(Boolean).join('');
+
+    const credentialLinks = arrayValues(org.credentials).map(function(c) {
+      const credentialId = c && c.id ? c.id : '';
+      const href = credentialCatalogBase && credentialId ? credentialCatalogBase.replace(/\/$/, '') + '?credential=' + encodeURIComponent(credentialId) : null;
+      const label = (c && c.displayName) ? c.displayName : credentialId;
+      if (!label) return '';
+      if (href) return '<a href="' + escapeHtml(href) + '" class="fides-tag credential-catalog-link" target="_blank" rel="noopener">' + escapeHtml(label) + ' ' + icons.externalLinkSmall + '</a>';
+      return '<span class="fides-tag credential-catalog-link">' + escapeHtml(label) + '</span>';
+    }).filter(Boolean).join('');
+
+    const shareButtonHtml = (options && options.showShare === false)
+      ? ''
+      : '<button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link">' + icons.share + '</button>';
+
+    const modalHtml = '<div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="' + escapeHtml(theme) + '">' +
+      '<div class="fides-modal" role="dialog" aria-modal="true">' +
+      '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
+      (logo ? '<img src="' + escapeHtml(logo) + '" alt="' + escapeHtml(org.name || org.id) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.building + '</div>') +
+      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(org.name || org.id) + '</h2><p class="fides-modal-provider">' + icons.globe + ' ' + escapeHtml(country || 'Country unknown') + '</p></div>' +
+      '</div><div class="fides-modal-header-actions">' + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
+      '<div class="fides-modal-body">' +
+      '<div class="fides-modal-badges">' +
+      (org.sectors && org.sectors.length ? org.sectors.slice(0, 3).map(function(s) { return '<span class="fides-modal-badge">' + escapeHtml(s) + '</span>'; }).join('') : '') +
+      '</div>' +
+      (org.description ? '<div class="fides-modal-section"><p class="fides-modal-description">' + escapeHtml(org.description) + '</p></div>' : '') +
+      '<div class="fides-modal-grid">' +
+      (issuerLinks ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.building + ' Issuers</div><div class="fides-modal-grid-value">' + issuerLinks + '</div></div>' : '') +
+      (walletLinks ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.wallet + ' Wallets</div><div class="fides-modal-grid-value">' + walletLinks + '</div></div>' : '') +
+      (rpLinks ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.laptop + ' Relying Parties</div><div class="fides-modal-grid-value">' + rpLinks + '</div></div>' : '') +
+      (credentialLinks ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Credentials</div><div class="fides-modal-grid-value">' + credentialLinks + '</div></div>' : '') +
+      '</div>' +
+      '<div class="fides-modal-links">' +
+      (org.website ? '<a href="' + escapeHtml(org.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Organization website">' + icons.externalLink + ' Visit Website</a>' : '') +
+      '</div>' +
+      '</div></div></div>';
+
+    mountModal(modalHtml);
+  }
+
   window.FidesCatalogUI = {
     openWalletModal,
     openRpModal,
+    openIssuerModal,
+    openOrganizationModal,
     closeModal,
     trackMatomoEvent,
     initMatomoLinkTracking

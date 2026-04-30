@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a WebApplication JSON-LD payload so RP detail URLs become indexable by search engines.
- * Version: 2.3.0
+ * Version: 2.3.2
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '2.3.0');
+define('FIDES_RP_CATALOG_VERSION', '2.3.2');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -27,6 +27,12 @@ Fides_RP_Catalog_SSR::bootstrap();
  * Enqueue plugin assets
  */
 function fides_rp_catalog_enqueue_assets() {
+    if (!fides_rp_catalog_should_enqueue_assets()) {
+        return;
+    }
+
+    $ui_lib_css_path = FIDES_RP_CATALOG_PLUGIN_DIR . 'assets/lib/fides-catalog-ui.css';
+    $ui_lib_css_version = file_exists($ui_lib_css_path) ? filemtime($ui_lib_css_path) : FIDES_RP_CATALOG_VERSION;
     $ui_lib_js_path = FIDES_RP_CATALOG_PLUGIN_DIR . 'assets/lib/fides-catalog-ui.js';
     $ui_lib_js_version = file_exists($ui_lib_js_path) ? filemtime($ui_lib_js_path) : FIDES_RP_CATALOG_VERSION;
 
@@ -35,6 +41,12 @@ function fides_rp_catalog_enqueue_assets() {
         FIDES_RP_CATALOG_PLUGIN_URL . 'assets/style.css',
         array(),
         FIDES_RP_CATALOG_VERSION
+    );
+    wp_enqueue_style(
+        'fides-rp-catalog-ui-lib',
+        FIDES_RP_CATALOG_PLUGIN_URL . 'assets/lib/fides-catalog-ui.css',
+        array('fides-rp-catalog-style'),
+        $ui_lib_css_version
     );
     wp_enqueue_script(
         'fides-rp-catalog-ui-lib',
@@ -76,6 +88,25 @@ function fides_rp_catalog_enqueue_assets() {
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_rp_catalog_enqueue_assets');
+
+/**
+ * Enqueue frontend assets only when the RP shortcode is present.
+ * A filter hook is provided for template-driven pages.
+ */
+function fides_rp_catalog_should_enqueue_assets() {
+    if (is_admin()) {
+        return false;
+    }
+
+    if (is_singular()) {
+        $post = get_post();
+        if ($post instanceof WP_Post && has_shortcode($post->post_content, 'fides_rp_catalog')) {
+            return true;
+        }
+    }
+
+    return (bool) apply_filters('fides_rp_catalog_force_enqueue_assets', false);
+}
 
 /**
  * Register catalog deep-link query vars (helps SEO plugins and canonical URL handling).
