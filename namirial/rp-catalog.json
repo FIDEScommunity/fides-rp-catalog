@@ -1,0 +1,38 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "provider": {
+    "name": "Namirial",
+    "website": "https://www.namirial.com/en/wallet/wallet-gateway/",
+    "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
+    "country": "IT",
+    "contact": {
+      "email": "support-wallet@namirial.com",
+      "support": "https://www.namirial.com/support"
+    }
+  },
+  "relyingParties": [
+    {
+      "id": "namirial-wallet-gateway",
+      "name": "Namirial Wallet Gateway",
+      "description": "Namirial Wallet Gateway enables Relying Parties and Intermediaries to request and verify credentials from wallet users.",
+      "website": "https://wallet-demo.namirial.com/",
+      "readiness": "production",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Namirial_logo.svg",
+      "country": "IT",
+      "status": "live",
+      "sectors": ["government", "finance", "healthcare", "enterprise", "education", "mobility"],
+      "useCases": ["identity verification", "credential-validation", "age verification", "payment attestation"],
+      "acceptedCredentials": ["Person Identification Data (PID)", "Mobile Driving Licence (mDL)", "Professional credentials"],
+      "credentialFormats": ["SD-JWT-VC", "mDL/mDoc", "JSON-LD VC"],
+      "issuanceProtocols": ["OID4VCI"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["HAIP v1", "EWC v3"],
+      "supportedWallets": [
+        { "name": "Namirial Wallet", "walletCatalogId": "namirial-wallet" }
+      ],
+      "documentation": "https://docs.namirial.app/products/wallet/homepage",
+      "languages": ["en", "it", "fr", "es", "de"]
+    }
+  ],
+  "lastUpdated": "2026-03-04T00:00:00Z"
+} 
