@@ -259,7 +259,6 @@
           "walletCatalogId": "eudi-age-verification-wallet"
         }
       ],
-      "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
       "languages": [
         "en"
       ],
