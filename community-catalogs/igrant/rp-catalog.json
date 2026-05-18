@@ -806,7 +806,135 @@
         "en"
       ],
       "interactionMode": "remote"
+    },
+    {
+      "id": "igrant-issuer-playground",
+      "name": "Issuer Playground",
+      "description": "Issue PID and Age Verification credentials using the iGrant.io Issuer Playground. This playground enables testing of credential issuance flows for PID and Age Verification with support for France Identité Wallet and Data Wallet by iGrant.io, supporting both SD-JWT VC and ISO mdoc formats via OpenID4VCI with HAIP compliance.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://issuer-playground.igrant.io/admin/",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "pid-issuance",
+        "age-issuance"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Age Verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VCI"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité Wallet",
+          "walletCatalogId": "france-identite-wallet"
+        },
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "PID issuance",
+        "Age Verification credential issuance",
+        "SD-JWT VC and ISO mdoc formats",
+        "Pre-Authorized Code and Authorization Code flows",
+        "DPoP (RFC 9449)",
+        "Wallet Attestation",
+        "Batch Credential Issuance",
+        "Token Status List (revocation & suspension)",
+        "Deferred Credential Issuance",
+        "France Identité Wallet compatible",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": [
+        "en"
+      ],
+      "interactionMode": "remote"
+    },
+    {
+      "id": "igrant-verifier-playground",
+      "name": "Verifier Playground",
+      "description": "Verify PID and Age Verification credentials using the iGrant.io Verifier Playground. This playground enables testing of credential verification flows with support for France Identité Wallet and Data Wallet by iGrant.io, supporting both SD-JWT VC and ISO mdoc formats via OpenID4VP, Digital Credentials API, and DCQL with HAIP compliance.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://verifier-playground.igrant.io/admin/",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "pid-verification",
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Age Verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "Digital Credentials API",
+        "DCQL"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité Wallet",
+          "walletCatalogId": "france-identite-wallet"
+        },
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "PID verification",
+        "Age Verification",
+        "SD-JWT VC and ISO mdoc formats",
+        "Digital Credentials API (W3C browser-based flow)",
+        "DCQL (Digital Credentials Query Language)",
+        "JAR (RFC 9101) signed request objects",
+        "JARM with JWE encryption",
+        "France Identité Wallet compatible",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "languages": [
+        "en"
+      ],
+      "interactionMode": "remote"
     }
   ],
-  "lastUpdated": "2026-02-12T00:00:00+01:00"
+  "lastUpdated": "2026-05-15T00:00:00+02:00"
 }
