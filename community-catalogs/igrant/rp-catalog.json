@@ -806,6 +806,82 @@
         "en"
       ],
       "interactionMode": "remote"
+    },
+    {
+      "id": "igrant-verifier-playground",
+      "name": "Verifier Playground",
+      "description": "Verify PID and Age Verification credentials using the iGrant.io Verifier Playground. This playground enables testing of credential verification flows with support for France Identite Wallet and Data Wallet by iGrant.io, supporting both SD-JWT VC and ISO mdoc formats via OpenID4VP, Digital Credentials API, and DCQL with HAIP compliance.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://verifier-playground.igrant.io/admin/",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "pid-verification",
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Age Verification",
+        "Mobile Driving Licence (mDL)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+        }
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "Digital Credentials API",
+        "DCQL"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identite Wallet",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "PID verification",
+        "Age Verification",
+        "mDL verification",
+        "SD-JWT VC and ISO mdoc formats",
+        "Digital Credentials API (W3C browser-based flow)",
+        "DCQL (Digital Credentials Query Language)",
+        "JAR (RFC 9101) signed request objects",
+        "JARM with JWE encryption",
+        "France Identite Wallet compatible",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "testCredentials": "https://issuer-playground.igrant.io/admin/offers/",
+      "languages": [
+        "en"
+      ],
+      "interactionMode": "remote"
     }
   ],
   "lastUpdated": "2026-02-12T00:00:00+01:00"
