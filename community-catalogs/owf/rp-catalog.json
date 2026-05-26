@@ -32,7 +32,8 @@
         "Movie Ticket",
         "Google Wallet ID pass",
         "Age Verification Credential",
-        "Loyalty"
+        "Loyalty",
+        "Aadhaar"
       ],
       "acceptedCredentialRefs": [
         {
@@ -67,6 +68,9 @@
         },
         {
           "credentialCatalogId": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:uidai:aadhaar-mdoc:mdoc"
         }
       ],
       "vcFormat": [
