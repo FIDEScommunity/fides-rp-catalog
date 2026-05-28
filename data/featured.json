@@ -1,20 +1,5 @@
 {
   "$schema": "../schemas/featured.schema.json",
   "featured": [
-    {
-      "rpId": "eudiplo-nordic-digital-bank"
-    },
-    {
-      "rpId": "eudi-cinema-age-verification"
-    },
-    {
-      "rpId": "igrant-fast-ferries-merchant-payments"
-    },  
-    {
-      "rpId": "circulacity-sandbox"
-    },
-    {
-      "rpId": "mijnoverheid-sandbox"
-    }
   ]
 }
