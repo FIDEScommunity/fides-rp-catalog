@@ -49,6 +49,17 @@
 
   const ORGANIZATION_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.organizationCatalogUrl)
     || 'https://fides.community/ecosystem-explorer/organization-catalog/';
+  const RATINGS_API_BASE = (window.fidesRPCatalog && window.fidesRPCatalog.ratingsApiBase)
+    ? String(window.fidesRPCatalog.ratingsApiBase).trim().replace(/\/$/, '')
+    : '';
+  const RATINGS_NONCE = (window.fidesRPCatalog && window.fidesRPCatalog.ratingsNonce)
+    ? String(window.fidesRPCatalog.ratingsNonce)
+    : '';
+  const RATINGS_IS_LOGGED_IN = !!(window.fidesRPCatalog && window.fidesRPCatalog.ratingsIsLoggedIn);
+  const RATINGS_LOGIN_URL = (window.fidesRPCatalog && window.fidesRPCatalog.ratingsLoginUrl)
+    ? String(window.fidesRPCatalog.ratingsLoginUrl)
+    : '';
+  const RATINGS_BATCH_LIMIT = 100;
 
   // Selected RP for modal
   let selectedRP = null;
@@ -235,6 +246,7 @@
 
   // State
   let relyingParties = [];
+  let ratingSummariesByRpId = Object.create(null);
   /** cred:… id → theme / ecosystem codes from credential catalog aggregated.json */
   let credentialThemesById = Object.create(null);
   let credentialEcosystemsById = Object.create(null);
@@ -261,7 +273,7 @@
   const SORT_PREFERENCE_STORAGE_KEY = 'fidesRPCatalogSortBy';
   const VIEW_PREFERENCE_STORAGE_KEY = 'fidesRPCatalogViewMode';
   const LIST_BREAKPOINT = 1024;
-  let sortBy = 'lastUpdated';
+  let sortBy = 'rating';
   let viewMode = 'grid';
 
   let filters = {
@@ -350,7 +362,7 @@
     // Restore persisted sort and view preference
     try {
       const stored = window.localStorage.getItem(SORT_PREFERENCE_STORAGE_KEY);
-      if (stored === 'lastUpdated' || stored === 'name') sortBy = stored;
+      if (stored === 'lastUpdated' || stored === 'name' || stored === 'rating') sortBy = stored;
       const storedView = window.localStorage.getItem(VIEW_PREFERENCE_STORAGE_KEY);
       if (storedView === 'grid' || storedView === 'list') viewMode = storedView;
     } catch (e) { /* ignore */ }
@@ -498,6 +510,11 @@
           relyingParties = source.transform(data);
           await loadCredentialTaxonomyIndex();
           enrichRelyingPartiesCredentialTaxonomy(relyingParties);
+          try {
+            await loadRPRatingSummaries(relyingParties);
+          } catch (ratingsError) {
+            console.warn('Failed to load RP likes:', ratingsError.message);
+          }
           const rpsForFacets = getRPsForFacets(relyingParties);
           filterFacets = computeFilterFacets(rpsForFacets);
           console.log(`✅ Loaded ${relyingParties.length} relying parties from ${source.name}`);
@@ -512,10 +529,6 @@
       console.error('Failed to load relying parties from any source');
     }
 
-    if (config.vocabularyUrl || config.vocabularyFallbackUrl) {
-      vocabulary = await loadVocabulary(config.vocabularyUrl, config.vocabularyFallbackUrl);
-    }
-
     // Read query parameters for filtering
     readQueryParams();
     
@@ -523,6 +536,18 @@
     
     // Check for deep link after render
     checkDeepLink();
+
+    // Load vocabulary after first render so the catalog appears faster.
+    if (config.vocabularyUrl || config.vocabularyFallbackUrl) {
+      loadVocabulary(config.vocabularyUrl, config.vocabularyFallbackUrl)
+        .then((terms) => {
+          vocabulary = terms;
+          if (vocabulary) initVocabularyInfo(container);
+        })
+        .catch((vocabError) => {
+          console.warn('RP vocabulary load failed:', vocabError.message);
+        });
+    }
   }
 
   /**
@@ -761,6 +786,17 @@
         const tA = new Date(dateA || 0).getTime();
         const tB = new Date(dateB || 0).getTime();
         if (tB !== tA) return tB - tA;
+        return compareSecondary(a, b);
+      });
+    } else if (sortBy === 'rating') {
+      filtered.sort((a, b) => {
+        if (filters.featuredFirst) {
+          if (a.isFeatured && !b.isFeatured) return -1;
+          if (!a.isFeatured && b.isFeatured) return 1;
+        }
+        const aRating = rpRatingSortValue(a);
+        const bRating = rpRatingSortValue(b);
+        if (bRating.stars !== aRating.stars) return bRating.stars - aRating.stars;
         return compareSecondary(a, b);
       });
     } else {
@@ -1004,6 +1040,7 @@
       <div class="fides-rp-list-header" aria-hidden="true">
         <div></div>
         <div>Name</div>
+        <div class="fides-list-col-likes"></div>
         <div>Provider</div>
         <div class="fides-list-col-links">Links</div>
         <div class="fides-list-col-updated">Updated</div>
@@ -1037,6 +1074,7 @@
           <span class="fides-rp-row-name-text" title="${escapeHtml(d.displayName)}">${escapeHtml(d.displayName)}</span>
           ${d.isFeatured ? '<span class="fides-rp-row-featured-icon" title="Featured" aria-label="Featured">★</span>' : ''}
         </div>
+        <div class="fides-rp-row-likes">${renderRPListLikeSummary(rp.id)}</div>
         <div class="fides-rp-row-provider" title="${escapeHtml(d.providerName)}">${escapeHtml(d.providerName)}</div>
         <div class="fides-rp-row-links">${renderRPRowLinks(rp)}</div>
         <div class="fides-rp-row-updated">${escapeHtml(d.activityDateLabel)}</div>
@@ -1333,6 +1371,7 @@
           <span class="fides-sort-text">Sort by</span>
           <select class="fides-sort-select" id="fides-sort-select" aria-label="Sort order">
             <option value="lastUpdated" ${sortBy === 'lastUpdated' ? 'selected' : ''}>Last updated</option>
+            <option value="rating" ${sortBy === 'rating' ? 'selected' : ''}>Likes</option>
             <option value="name" ${sortBy === 'name' ? 'selected' : ''}>Provider</option>
           </select>
         </label>
@@ -1522,18 +1561,6 @@
     const logoUrl = rp.logo || (rp.country ? `https://flagcdn.com/w80/${rp.country.toLowerCase()}.png` : null);
     const featuredClass = rp.isFeatured ? 'fides-rp-card-featured' : '';
 
-    const addedDate = getRPAddedDate(rp);
-    const updatedDate = getRPUpdatedDate(rp);
-    const isNewRP = addedDate && isWithinLastDays(addedDate, 30);
-    let activityLabel = '';
-    if (isNewRP && addedDate) {
-      activityLabel = `Added ${new Date(addedDate).toLocaleDateString('en-US')}`;
-    } else if (updatedDate) {
-      activityLabel = `Updated ${new Date(updatedDate).toLocaleDateString('en-US')}`;
-    } else if (addedDate) {
-      activityLabel = `Added ${new Date(addedDate).toLocaleDateString('en-US')}`;
-    }
-
     return `
       <div class="fides-rp-card ${featuredClass}" data-rp-id="${rp.id}" role="button" tabindex="0">
         <div class="fides-rp-header readiness-${rp.readiness}">
@@ -1551,7 +1578,7 @@
           }
         </div>
         <div class="fides-rp-body">
-          ${activityLabel ? `<p class="fides-rp-updated">${escapeHtml(activityLabel)}</p>` : ''}
+          <p class="fides-rp-rating-summary">${renderRPRatingSummary(rp.id)}</p>
           ${rp.description ? `<p class="fides-rp-description">${escapeHtml(rp.description)}</p>` : ''}
           
           ${rp.supportedWallets && rp.supportedWallets.length > 0 ? `
@@ -1599,6 +1626,114 @@
         </div>
       </div>
     `;
+  }
+
+  function setRPRatingSummary(rpId, rawSummary) {
+    if (!rpId || !rawSummary) return;
+    const likeCount = Number(rawSummary.likes);
+    ratingSummariesByRpId[rpId] = {
+      avg: Number(rawSummary.avg) || 0,
+      count: isFinite(likeCount) ? likeCount : (Number(rawSummary.count) || 0),
+      myRating: Number(rawSummary.my_like) > 0 || Number(rawSummary.my_rating) > 0 ? 1 : null
+    };
+  }
+
+  function renderRPRatingSummary(rpId) {
+    const summary = ratingSummariesByRpId[rpId];
+    if (!summary || summary.count < 1) {
+      return '<span class="fides-item-rating fides-item-rating-empty"><span class="fides-item-rating-text">No likes yet</span></span>';
+    }
+    const label = summary.count + ' like' + (summary.count === 1 ? '' : 's');
+    const likedClass = summary.myRating === 1 ? ' is-liked' : '';
+    return '<span class="fides-item-rating' + likedClass + '" title="Community likes">' +
+      '<span class="fides-item-rating-star">★</span><span class="fides-item-rating-text">' + escapeHtml(label) + '</span>' +
+      '</span>';
+  }
+
+  function renderRPListLikeSummary(rpId) {
+    const summary = ratingSummariesByRpId[rpId];
+    const count = summary ? (Number(summary.count) || 0) : 0;
+    if (count < 1) return '';
+    const likedClass = summary && summary.myRating === 1 ? ' is-liked' : '';
+    return '<span class="fides-list-like' + likedClass + '" title="Community likes">' +
+      '<span class="fides-list-like-star">★</span><span class="fides-list-like-count">' + escapeHtml(count) + '</span>' +
+      '</span>';
+  }
+
+  function updateRPLikeInPlace(rpId) {
+    if (!rpId || !container) return;
+    const cards = container.querySelectorAll('.fides-rp-card[data-rp-id]');
+    if (!cards.length) return;
+    cards.forEach((card) => {
+      if ((card.getAttribute('data-rp-id') || '') !== rpId) return;
+      const cardSummary = card.querySelector('.fides-rp-rating-summary');
+      if (cardSummary) cardSummary.innerHTML = renderRPRatingSummary(rpId);
+      const rowSummary = card.querySelector('.fides-rp-row-likes');
+      if (rowSummary) rowSummary.innerHTML = renderRPListLikeSummary(rpId);
+    });
+  }
+
+  function rpRatingSortValue(rp) {
+    const summary = rp && rp.id ? ratingSummariesByRpId[rp.id] : null;
+    return {
+      stars: summary ? (Number(summary.count) || 0) : 0
+    };
+  }
+
+  function buildRatingsEndpoint(baseUrl, path, queryParams) {
+    const rawBase = String(baseUrl || '').trim();
+    const safePath = String(path || '').replace(/^\/+/, '');
+    if (!rawBase) return '';
+    try {
+      const url = new URL(rawBase, window.location.origin);
+      if (url.origin !== window.location.origin) {
+        url.protocol = window.location.protocol;
+        url.host = window.location.host;
+      }
+      if (url.searchParams.has('rest_route')) {
+        const currentRoute = String(url.searchParams.get('rest_route') || '').replace(/\/+$/, '');
+        url.searchParams.set('rest_route', currentRoute + '/' + safePath);
+      } else {
+        const basePath = url.pathname.replace(/\/+$/, '');
+        url.pathname = basePath + '/' + safePath;
+      }
+      if (queryParams && typeof queryParams === 'object') {
+        Object.keys(queryParams).forEach((key) => {
+          const value = queryParams[key];
+          if (value === null || value === undefined || value === '') return;
+          url.searchParams.set(key, String(value));
+        });
+      }
+      return url.toString();
+    } catch (e) {
+      return '';
+    }
+  }
+
+  async function loadRPRatingSummaries(items) {
+    ratingSummariesByRpId = Object.create(null);
+    if (!RATINGS_API_BASE || !Array.isArray(items) || items.length === 0) return;
+    const ids = Array.from(new Set(items.map((rp) => rp && rp.id).filter(Boolean)));
+    for (let i = 0; i < ids.length; i += RATINGS_BATCH_LIMIT) {
+      const chunk = ids.slice(i, i + RATINGS_BATCH_LIMIT);
+      const url = buildRatingsEndpoint(RATINGS_API_BASE, 'ratings/batch', {
+        type: 'rp',
+        ids: chunk.join(','),
+        _wpnonce: RATINGS_NONCE || ''
+      });
+      if (!url) continue;
+      const response = await fetch(url, {
+        method: 'GET',
+        credentials: 'same-origin',
+        headers: {
+          'X-WP-Nonce': RATINGS_NONCE || ''
+        }
+      });
+      if (!response.ok) continue;
+      const data = await response.json();
+      const results = data && data.results ? data.results : {};
+      Object.keys(results).forEach((rpId) => setRPRatingSummary(rpId, results[rpId]));
+    }
   }
 
   /**
@@ -2016,8 +2151,22 @@
           bluePagesUrl: BLUE_PAGES_URL,
           credentialCatalogUrl: CREDENTIAL_CATALOG_PAGE_URL,
           organizationCatalogUrl: ORGANIZATION_CATALOG_PAGE_URL,
+          ratingsApiBase: RATINGS_API_BASE,
+          ratingsNonce: RATINGS_NONCE,
+          ratingsIsLoggedIn: RATINGS_IS_LOGGED_IN,
+          ratingsLoginUrl: RATINGS_LOGIN_URL,
           onOpen: function(openedRP) {
             (window.FidesCatalogUI && window.FidesCatalogUI.trackMatomoEvent) && window.FidesCatalogUI.trackMatomoEvent('RP Catalog', 'Modal Open', openedRP.name);
+          },
+          onRatingUpdate: function(updated) {
+            if (!updated || updated.itemId !== rp.id) return;
+            setRPRatingSummary(rp.id, {
+              avg: updated.avg,
+              count: updated.count,
+              my_rating: updated.myRating
+            });
+            if (sortBy === 'rating') renderRPGridOnly();
+            else updateRPLikeInPlace(rp.id);
           }
         });
         return;

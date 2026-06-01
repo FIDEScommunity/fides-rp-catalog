@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a WebApplication JSON-LD payload so RP detail URLs become indexable by search engines.
- * Version: 2.3.2
+ * Version: 2.3.5
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '2.3.2');
+define('FIDES_RP_CATALOG_VERSION', '2.3.5');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -64,6 +64,18 @@ function fides_rp_catalog_enqueue_assets() {
         true
     );
 
+    $current_request_uri = isset($_SERVER['REQUEST_URI']) ? wp_unslash($_SERVER['REQUEST_URI']) : '';
+    $current_host = isset($_SERVER['HTTP_HOST']) ? sanitize_text_field(wp_unslash($_SERVER['HTTP_HOST'])) : '';
+    $current_url = $current_host !== ''
+        ? ((is_ssl() ? 'https://' : 'http://') . $current_host . $current_request_uri)
+        : home_url('/');
+    $oid4vp_options = get_option('universal_openid4vp_options', array());
+    $oid4vp_login_url = '';
+    if (is_array($oid4vp_options) && ! empty($oid4vp_options['loginUrl'])) {
+        $oid4vp_login_url = esc_url_raw((string) $oid4vp_options['loginUrl']);
+    }
+    $ratings_login_url = $oid4vp_login_url !== '' ? $oid4vp_login_url : wp_login_url($current_url);
+
     // Pass configuration to JavaScript
     wp_localize_script('fides-rp-catalog-script', 'fidesRPCatalog', array(
         'pluginUrl' => FIDES_RP_CATALOG_PLUGIN_URL,
@@ -84,7 +96,11 @@ function fides_rp_catalog_enqueue_assets() {
         'credentialAggregatedDataUrl' => get_option(
             'fides_rp_catalog_credential_aggregated_url',
             'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json'
-        )
+        ),
+        'ratingsApiBase' => rest_url('fides-catalog/v1'),
+        'ratingsNonce' => wp_create_nonce('wp_rest'),
+        'ratingsIsLoggedIn' => is_user_logged_in(),
+        'ratingsLoginUrl' => $ratings_login_url,
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_rp_catalog_enqueue_assets');
