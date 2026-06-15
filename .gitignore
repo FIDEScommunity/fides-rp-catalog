@@ -4,6 +4,9 @@ node_modules/
 # Build output
 dist/
 
+# Vercel
+.vercel/
+
 # Environment
 .env
 .env.local
@@ -26,3 +29,4 @@ coverage/
 # WordPress plugin local data and zips (plugin fetches from GitHub)
 wordpress-plugin/*/data/
 wordpress-plugin/*.zip
+.vercel
