@@ -67,6 +67,7 @@ if (! class_exists('Fides_RP_Catalog_SSR')) {
                 Fides_Catalog_Registry::register(self::TYPE, array(
                     'label'             => __('Relying parties', 'fides-rp-catalog'),
                     'json_url'          => 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json',
+                    'local_json_path'   => dirname(__DIR__) . '/data/aggregated.json',
                     'collection_key'    => 'relyingParties',
                     'id_field'          => 'id',
                     'name_field'        => 'name',

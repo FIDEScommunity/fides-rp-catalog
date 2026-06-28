@@ -1113,7 +1113,7 @@
     let html = '';
 
     // Main layout with sidebar
-    html += `<div class="fides-main-layout">`;
+    html += `<div class="fides-main-layout fides-main ${settings.showFilters ? '' : 'no-filters'}">`;
 
     // Sidebar with search and filters
     if (settings.showFilters) {
@@ -1367,23 +1367,25 @@
             </div>
           </div>
         ` : ''}
-        <label class="fides-sort-label" for="fides-sort-select">
-          <span class="fides-sort-text">Sort by</span>
-          <select class="fides-sort-select" id="fides-sort-select" aria-label="Sort order">
-            <option value="lastUpdated" ${sortBy === 'lastUpdated' ? 'selected' : ''}>Last updated</option>
-            <option value="rating" ${sortBy === 'rating' ? 'selected' : ''}>Likes</option>
-            <option value="name" ${sortBy === 'name' ? 'selected' : ''}>Provider</option>
-          </select>
-        </label>
+        <div class="fides-results-bar-actions">
+          ${settings.showFilters ? `
+            <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
+              ${icons.filter}
+              <span>Filters</span>
+              <span class="fides-filter-count ${activeFilterCount > 0 ? '' : 'hidden'}">${activeFilterCount || 0}</span>
+            </button>
+          ` : ''}
+          <label class="fides-sort-label" for="fides-sort-select">
+            <span class="fides-sort-text">Sort by</span>
+            <select class="fides-sort-select" id="fides-sort-select" aria-label="Sort order">
+              <option value="lastUpdated" ${sortBy === 'lastUpdated' ? 'selected' : ''}>Last updated</option>
+              <option value="rating" ${sortBy === 'rating' ? 'selected' : ''}>Likes</option>
+              <option value="name" ${sortBy === 'name' ? 'selected' : ''}>Provider</option>
+            </select>
+          </label>
+        </div>
         <a href="${MAP_PAGE_URL}" class="fides-show-on-map" target="_blank" rel="noopener" aria-label="Show on map (opens in new tab)">${icons.externalLink}<span class="fides-show-on-map-label fides-show-on-map-label--full">Show on map</span><span class="fides-show-on-map-label fides-show-on-map-label--short" aria-hidden="true">Map</span></a>
         ${renderViewToggle()}
-        ${settings.showFilters ? `
-          <button class="fides-mobile-filter-toggle" id="fides-mobile-filter-toggle">
-            ${icons.filter}
-            <span>Filters</span>
-            <span class="fides-filter-count ${activeFilterCount > 0 ? '' : 'hidden'}">${activeFilterCount || 0}</span>
-          </button>
-        ` : ''}
       </div>
       <div class="fides-kpi-row">
         <div class="fides-kpi-card" data-kpi-action="clear-added-filter">
