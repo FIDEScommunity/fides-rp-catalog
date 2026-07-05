@@ -2,13 +2,18 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.6.0
+Stable tag: 2.7.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.0 =
+* Ship RP submission stack: adapter, forms PHP, `rp-form.js` / `rp-form.css`, media normalizer (fixes fatal error from 2.6.0 require paths without class files).
+* GitHub Actions `wp-submissions-sync` workflow and `import-wp-submissions` tooling (`repository_dispatch` push sync per CATALOG-SUBMISSION-GOVERNANCE §14).
+* Initial `data/wp-submission-state.json` for WordPress-managed RP tracking.
 
 = 2.6.0 =
 * RP detail modal: FIDES Ecosystem Model, accordion tables (issuers, credentials, supported wallets, reverse-linked use cases), Explain link, ecosystem stat boxes scroll to accordions (requires fides-community-tools-tiles ≥ 1.8.9 bundled modal library).
