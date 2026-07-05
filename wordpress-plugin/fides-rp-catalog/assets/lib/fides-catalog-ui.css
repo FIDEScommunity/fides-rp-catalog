@@ -2211,6 +2211,59 @@
   margin-bottom: 0;
 }
 
+/* RP modal Links: outline style (less dominant than filled wallet app-store buttons) */
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn {
+  background: transparent !important;
+  color: var(--fides-text-primary, #f1f5f9);
+  border: 1px solid var(--fides-border, rgba(255, 255, 255, 0.18));
+  box-shadow: none;
+  min-width: 0;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn small {
+  color: var(--fides-text-muted, #64748b);
+  opacity: 1;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn strong {
+  color: var(--fides-text-primary, #f1f5f9);
+  font-weight: 600;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn svg {
+  color: var(--fides-text-secondary, #94a3b8);
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--fides-accent, #3b82f6);
+  background: rgba(59, 130, 246, 0.08) !important;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="fides"] .fides-rp-action-bar .fides-app-store-btn,
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="light"] .fides-rp-action-bar .fides-app-store-btn {
+  background: #ffffff !important;
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="fides"] .fides-rp-action-bar .fides-app-store-btn small,
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="light"] .fides-rp-action-bar .fides-app-store-btn small {
+  color: #64748b;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="fides"] .fides-rp-action-bar .fides-app-store-btn strong,
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="light"] .fides-rp-action-bar .fides-app-store-btn strong {
+  color: #0f172a;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="fides"] .fides-rp-action-bar .fides-app-store-btn:hover,
+.fides-modal-overlay.fides-modal-overlay--rp[data-theme="light"] .fides-rp-action-bar .fides-app-store-btn:hover {
+  border-color: #0A6EF3;
+  background: rgba(10, 110, 243, 0.06) !important;
+}
+
 
 .fides-app-store-btn {
   display: inline-flex;

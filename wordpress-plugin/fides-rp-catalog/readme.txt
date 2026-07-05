@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.3
+Stable tag: 2.7.4
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.4 =
+* RP modal Links: outline buttons without solid fill (bundled modal library from tiles 1.8.13).
 
 = 2.7.3 =
 * Restore RP modal Links app-store buttons; mobile CSS only scales them down (reverts 2.7.2 pill change). Ecosystem vertical stack on mobile unchanged.
