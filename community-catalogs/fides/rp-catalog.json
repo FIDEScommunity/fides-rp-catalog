@@ -9,7 +9,6 @@
       "logo": "https://fides.community/app/uploads/sites/2/2025/05/cropped-favicon-32x32.png",
       "website": "https://circulacity.fides.community/",
       "readiness": "use-case-demo",
-      "video": "https://youtu.be/lK8ymw7Gei0",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -77,7 +76,12 @@
         "en",
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "media": {
+        "videos": [
+          "https://youtu.be/lK8ymw7Gei0"
+        ]
+      }
     },
     {
       "id": "rotterdam-sandbox",
@@ -161,7 +165,6 @@
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
       "logo": "https://static.mijn.overheid.nl/v1765281105902/images/apple-touch-icon.png",
       "website": "https://mijnoverheid.fides.community/",
-      "video": "https://youtu.be/ywjnjoBEGK0",
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
@@ -202,7 +205,12 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "media": {
+        "videos": [
+          "https://youtu.be/ywjnjoBEGK0"
+        ]
+      }
     },
     {
       "id": "hak-rein-vos-notarissen-sandbox",

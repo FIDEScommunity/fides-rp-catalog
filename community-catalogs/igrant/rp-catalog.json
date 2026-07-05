@@ -8,7 +8,6 @@
       "description": "Open a new bank account using your EUDI Wallet. This iGrant.io demo showcases privacy-preserving KYC identity verification for financial onboarding, leveraging the EU Digital Identity Wallet and SD-JWT verifiable credentials via OpenID4VP.",
       "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
       "website": "https://www.igrant.io/demo/open-bank-account.html",
-      "video": "https://youtu.be/3VktTStWHs8",
       "readiness": "technical-demo",
       "country": "SE",
       "status": "live",
@@ -54,7 +53,12 @@
       "languages": [
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "media": {
+        "videos": [
+          "https://youtu.be/3VktTStWHs8"
+        ]
+      }
     },
     {
       "id": "igrant-bank-login-demo",
@@ -114,7 +118,6 @@
       "description": "Purchase ferry tickets from Cyclades Fast Ferries using your EUDI Wallet in a merchant-led payment flow. Powered by iGrant.io, this is the first live EUDI Wallet payment in production — combining Strong Customer Authentication (SCA) with verifiable credentials via 3D Secure and OpenID4VC, using the Visa/Worldline network with Banca Transilvania.",
       "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
       "website": "https://www.igrant.io/demo/merchant-led-payments.html",
-      "video": "https://www.youtube.com/watch?v=6GwCxyofSVE",
       "readiness": "production-pilot",
       "country": "EU",
       "status": "live",
@@ -169,7 +172,12 @@
       "languages": [
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "media": {
+        "videos": [
+          "https://www.youtube.com/watch?v=6GwCxyofSVE"
+        ]
+      }
     },
     {
       "id": "igrant-insurance-policy-demo",

@@ -7,7 +7,6 @@
       "name": "Starfilm Cinema Age Verification",
       "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
       "website": "https://cinema.ageverification.dev/",
-      "video": "https://www.youtube.com/watch?v=ULFTrTznG7Y",
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
@@ -48,7 +47,12 @@
       "languages": [
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "media": {
+        "videos": [
+          "https://www.youtube.com/watch?v=ULFTrTznG7Y"
+        ]
+      }
     },
     {
       "id": "eudi-reference-verifier",
