@@ -759,8 +759,9 @@
     });
   }
 
-  function renderWalletAppStoreButton(kind, iconHtml, smallText, strongText, url, isClickable, matomoName, ariaLabel) {
-    const className = 'fides-app-store-btn ' + kind + (isClickable ? '' : ' is-disabled');
+  function renderWalletAppStoreButton(kind, iconHtml, smallText, strongText, url, isClickable, matomoName, ariaLabel, extraClass) {
+    const extra = extraClass ? ' ' + String(extraClass).trim() : '';
+    const className = 'fides-app-store-btn ' + kind + extra + (isClickable ? '' : ' is-disabled');
     const labelHtml = '<span><small>' + escapeHtml(smallText) + '</small><strong>' + escapeHtml(strongText) + '</strong></span>';
     const content = iconHtml + labelHtml;
     if (isClickable && url) {
@@ -1195,7 +1196,8 @@
         documentationUrl,
         true,
         'Documentation',
-        'Read documentation'
+        'Read documentation',
+        'fides-rp-link-secondary'
       ));
     }
     if (apiEndpointUrl) {
@@ -1207,7 +1209,8 @@
         apiEndpointUrl,
         true,
         'API endpoint',
-        'Open API endpoint'
+        'Open API endpoint',
+        'fides-rp-link-secondary'
       ));
     }
     if (!buttons.length) return '';
