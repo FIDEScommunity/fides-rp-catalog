@@ -1159,6 +1159,8 @@
     if (!rp) return '';
     const websiteUrl = rp.website ? String(rp.website).trim() : '';
     const testCredentialsUrl = rp.testCredentials ? String(rp.testCredentials).trim() : '';
+    const documentationUrl = rp.documentation ? String(rp.documentation).trim() : '';
+    const apiEndpointUrl = rp.apiEndpoint ? String(rp.apiEndpoint).trim() : '';
     const buttons = [];
     if (websiteUrl) {
       buttons.push(renderWalletAppStoreButton(
@@ -1184,9 +1186,33 @@
         'Get test credentials'
       ));
     }
+    if (documentationUrl) {
+      buttons.push(renderWalletAppStoreButton(
+        'web',
+        icons.book,
+        'Read the',
+        'Documentation',
+        documentationUrl,
+        true,
+        'Documentation',
+        'Read documentation'
+      ));
+    }
+    if (apiEndpointUrl) {
+      buttons.push(renderWalletAppStoreButton(
+        'web',
+        icons.externalLink,
+        'Open',
+        'API endpoint',
+        apiEndpointUrl,
+        true,
+        'API endpoint',
+        'Open API endpoint'
+      ));
+    }
     if (!buttons.length) return '';
     return '<div class="fides-wallet-capabilities fides-wallet-app-stores fides-rp-action-bar">' +
-      '<span class="fides-wallet-capabilities-label">Try it</span>' +
+      '<span class="fides-wallet-capabilities-label">Links</span>' +
       '<div class="fides-wallet-capabilities-list fides-modal-app-stores">' + buttons.join('') + '</div></div>';
   }
 
@@ -1558,29 +1584,8 @@
   }
 
   function buildRpModalLinksHtml(rp) {
-    if (!rp) return '';
-    const resourceEntries = [];
-    if (rp.documentation) {
-      resourceEntries.push({
-        type: 'http',
-        href: String(rp.documentation).trim(),
-        label: 'Documentation',
-        icon: icons.book,
-        matomoName: 'Documentation'
-      });
-    }
-    if (rp.apiEndpoint) {
-      resourceEntries.push({
-        type: 'http',
-        href: String(rp.apiEndpoint).trim(),
-        label: 'API endpoint',
-        icon: icons.externalLink,
-        matomoName: 'API endpoint'
-      });
-    }
-    const resourcesHtml = buildWalletModalLinksGroupHtml('Resources', resourceEntries, { noPrimary: true });
-    if (!resourcesHtml) return '';
-    return '<div class="fides-modal-links-sections">' + resourcesHtml + '</div>';
+    // RP external links live in buildRpActionBarHtml (Links row); keep stub for API stability.
+    return '';
   }
 
   function buildRpModalFooterHtml(rp, options) {

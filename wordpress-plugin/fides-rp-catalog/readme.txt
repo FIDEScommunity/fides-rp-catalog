@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.0
+Stable tag: 2.7.1
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.1 =
+* RP modal: documentation and API endpoint links moved into the Links row; removed the empty Resources section (bundled modal library synced from fides-community-tools-tiles 1.8.10).
 
 = 2.7.0 =
 * Ship RP submission stack: adapter, forms PHP, `rp-form.js` / `rp-form.css`, media normalizer (fixes fatal error from 2.6.0 require paths without class files).
