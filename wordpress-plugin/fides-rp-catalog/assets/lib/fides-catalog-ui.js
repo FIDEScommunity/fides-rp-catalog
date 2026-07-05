@@ -1157,22 +1157,63 @@
 
   function buildRpActionBarHtml(rp) {
     if (!rp) return '';
-    const links = [];
-    function pushLink(url, label, iconHtml, primary, matomoName) {
-      const href = url ? String(url).trim() : '';
-      if (!href) return;
-      links.push(
-        '<a href="' + escapeHtml(href) + '" target="_blank" rel="noopener" class="fides-modal-link' +
-        (primary ? ' primary' : '') + '" data-matomo-name="' + escapeHtml(matomoName) + '">' +
-        iconHtml + ' ' + escapeHtml(label) + '</a>'
-      );
+    const websiteUrl = rp.website ? String(rp.website).trim() : '';
+    const testCredentialsUrl = rp.testCredentials ? String(rp.testCredentials).trim() : '';
+    const documentationUrl = rp.documentation ? String(rp.documentation).trim() : '';
+    const apiEndpointUrl = rp.apiEndpoint ? String(rp.apiEndpoint).trim() : '';
+    const buttons = [];
+    if (websiteUrl) {
+      buttons.push(renderWalletAppStoreButton(
+        'web',
+        icons.globeApp,
+        'Visit the',
+        'Website',
+        websiteUrl,
+        true,
+        'Website',
+        'Visit website'
+      ));
     }
-    pushLink(rp.website, 'Website', icons.globeApp, true, 'Website');
-    pushLink(rp.testCredentials, 'Test credentials', icons.fileCheck, false, 'Test credentials');
-    pushLink(rp.documentation, 'Documentation', icons.book, false, 'Documentation');
-    pushLink(rp.apiEndpoint, 'API endpoint', icons.externalLink, false, 'API endpoint');
-    if (!links.length) return '';
-    return '<div class="fides-rp-modal-links"><div class="fides-modal-links">' + links.join('') + '</div></div>';
+    if (testCredentialsUrl) {
+      buttons.push(renderWalletAppStoreButton(
+        'issuer',
+        icons.fileCheck,
+        'Get',
+        'Test credentials',
+        testCredentialsUrl,
+        true,
+        'Test credentials',
+        'Get test credentials'
+      ));
+    }
+    if (documentationUrl) {
+      buttons.push(renderWalletAppStoreButton(
+        'web',
+        icons.book,
+        'Read the',
+        'Documentation',
+        documentationUrl,
+        true,
+        'Documentation',
+        'Read documentation'
+      ));
+    }
+    if (apiEndpointUrl) {
+      buttons.push(renderWalletAppStoreButton(
+        'web',
+        icons.externalLink,
+        'Open',
+        'API endpoint',
+        apiEndpointUrl,
+        true,
+        'API endpoint',
+        'Open API endpoint'
+      ));
+    }
+    if (!buttons.length) return '';
+    return '<div class="fides-wallet-capabilities fides-wallet-app-stores fides-rp-action-bar">' +
+      '<span class="fides-wallet-capabilities-label">Links</span>' +
+      '<div class="fides-wallet-capabilities-list fides-modal-app-stores">' + buttons.join('') + '</div></div>';
   }
 
   function buildRpSectorLabelsText(rp) {
