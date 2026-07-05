@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a WebApplication JSON-LD payload so RP detail URLs become indexable by search engines.
- * Version: 2.3.6
+ * Version: 2.6.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,12 +16,36 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '2.3.6');
+define('FIDES_RP_CATALOG_VERSION', '2.6.0');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('FIDES_RP_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/relying-parties-update/');
 
 require_once FIDES_RP_CATALOG_PLUGIN_DIR . 'includes/class-fides-rp-catalog-ssr.php';
+require_once FIDES_RP_CATALOG_PLUGIN_DIR . 'includes/class-fides-rp-catalog-media-normalizer.php';
+require_once FIDES_RP_CATALOG_PLUGIN_DIR . 'includes/class-fides-rp-catalog-submission-adapter.php';
+require_once FIDES_RP_CATALOG_PLUGIN_DIR . 'includes/class-fides-rp-catalog-submission-forms.php';
 Fides_RP_Catalog_SSR::bootstrap();
+Fides_RP_Catalog_Submission_Adapter::bootstrap();
+Fides_RP_Catalog_Submission_Forms::bootstrap();
+
+/**
+ * Resolve the public RP update form URL (option or default path).
+ *
+ * @param string $override Non-empty override URL.
+ * @return string
+ */
+function fides_rp_catalog_resolve_update_form_url($override = '') {
+    $override = trim((string) $override);
+    if ($override !== '') {
+        return esc_url_raw($override);
+    }
+    $option = trim((string) get_option('fides_rp_catalog_update_form_url', ''));
+    if ($option !== '') {
+        return esc_url_raw($option);
+    }
+    return home_url(FIDES_RP_CATALOG_DEFAULT_UPDATE_FORM_PATH);
+}
 
 /**
  * Enqueue plugin assets
@@ -97,10 +121,40 @@ function fides_rp_catalog_enqueue_assets() {
             'fides_rp_catalog_credential_aggregated_url',
             'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json'
         ),
+        'issuerAggregatedDataUrl' => get_option(
+            'fides_rp_catalog_issuer_aggregated_url',
+            'https://raw.githubusercontent.com/FIDEScommunity/fides-issuer-catalog/main/data/aggregated.json'
+        ),
+        'walletAggregatedDataUrl' => get_option(
+            'fides_rp_catalog_wallet_aggregated_url',
+            'https://raw.githubusercontent.com/FIDEScommunity/fides-wallet-catalog/main/data/aggregated.json'
+        ),
+        'useCaseCatalogUrl' => get_option(
+            'fides_rp_catalog_use_case_catalog_url',
+            'https://fides.community/use-cases/'
+        ),
+        'useCaseAggregatedDataUrl' => get_option(
+            'fides_rp_catalog_use_case_aggregated_url',
+            'https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json'
+        ),
+        'ecosystemExplorerUrl' => get_option(
+            'fides_rp_catalog_ecosystem_explorer_url',
+            'https://fides.community/topics/ecosystem-explorer/'
+        ),
         'ratingsApiBase' => rest_url('fides-catalog/v1'),
         'ratingsNonce' => wp_create_nonce('wp_rest'),
         'ratingsIsLoggedIn' => is_user_logged_in(),
         'ratingsLoginUrl' => $ratings_login_url,
+        'updateFormUrl' => fides_rp_catalog_resolve_update_form_url(''),
+        'editAccess' => class_exists('Fides_Catalog_Org_Tier')
+            ? Fides_Catalog_Org_Tier::edit_access_for_user(get_current_user_id())
+            : array(
+                'isLoggedIn'  => is_user_logged_in(),
+                'isAdmin'     => current_user_can('manage_options'),
+                'ownedOrgIds' => array(),
+                'proOrgIds'   => array(),
+            ),
+        'tierUiEnabled' => function_exists('fides_catalog_tier_ui_enabled') && fides_catalog_tier_ui_enabled(),
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_rp_catalog_enqueue_assets');
@@ -264,6 +318,12 @@ function fides_rp_catalog_register_settings() {
         'default' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json',
         'sanitize_callback' => 'esc_url_raw'
     ));
+
+    register_setting('fides_rp_catalog_settings', 'fides_rp_catalog_update_form_url', array(
+        'type'              => 'string',
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
 }
 add_action('admin_init', 'fides_rp_catalog_register_settings');
 
@@ -322,6 +382,16 @@ function fides_rp_catalog_settings_page() {
                                value="<?php echo esc_attr(get_option('fides_rp_catalog_credential_aggregated_url', 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json')); ?>"
                                class="regular-text">
                         <p class="description">URL of credential catalog <code>aggregated.json</code>. Used to resolve <strong>ecosystems</strong> and <strong>themes</strong> for RP filters from <code>acceptedCredentialRefs</code> (cred:… IDs).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="fides_rp_catalog_update_form_url">RP update form page URL</label></th>
+                    <td>
+                        <input type="url" id="fides_rp_catalog_update_form_url" name="fides_rp_catalog_update_form_url"
+                               value="<?php echo esc_attr(get_option('fides_rp_catalog_update_form_url', '')); ?>"
+                               class="regular-text"
+                               placeholder="<?php echo esc_attr(home_url(FIDES_RP_CATALOG_DEFAULT_UPDATE_FORM_PATH)); ?>">
+                        <p class="description">Page with <code>[fides_rp_update_form]</code>. Used for the &quot;Suggest an update&quot; pencil in the RP modal (logged-in users only).</p>
                     </td>
                 </tr>
             </table>
@@ -394,6 +464,12 @@ function fides_rp_catalog_settings_page() {
         
         <p><strong>Compact 2-column layout without filters:</strong></p>
         <code>[fides_rp_catalog columns="2" show_filters="false"]</code>
+
+        <hr>
+        <h2>Submission forms</h2>
+        <p>Requires <code>fides-community-tools-tiles</code> with the shared submission core enabled.</p>
+        <p><code>[fides_rp_submit_form]</code> — submit a new relying party (organization lookup first).</p>
+        <p><code>[fides_rp_update_form]</code> — suggest changes to an existing entry (<code>?rp=</code> pre-selects the relying party).</p>
     </div>
     <?php
 }

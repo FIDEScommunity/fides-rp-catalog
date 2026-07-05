@@ -269,7 +269,13 @@ const spec = {
           documentation: { type: 'string', format: 'uri' },
           testCredentials: { type: 'string' },
           apiEndpoint: { type: 'string', format: 'uri' },
-          video: { type: 'string', format: 'uri' },
+          media: {
+            type: 'object',
+            properties: {
+              videos: { type: 'array', items: { type: 'string', format: 'uri' }, maxItems: 3 },
+              images: { type: 'array', items: { type: 'string', format: 'uri' }, maxItems: 10 },
+            },
+          },
           country: { type: 'string' },
           countries: { type: 'array', items: { type: 'string' } },
           languages: { type: 'array', items: { type: 'string' } },

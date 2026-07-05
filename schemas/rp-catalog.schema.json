@@ -31,6 +31,49 @@
     }
   },
   "$defs": {
+    "RpMedia": {
+      "type": "object",
+      "description": "Promotional media",
+      "additionalProperties": false,
+      "properties": {
+        "videos": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Demo or promotional video URLs"
+        },
+        "images": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Screenshot or product image URLs"
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["videos"],
+          "properties": {
+            "videos": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "required": ["images"],
+          "properties": {
+            "images": {
+              "minItems": 1
+            }
+          }
+        }
+      ]
+    },
     "RelyingParty": {
       "type": "object",
       "description": "A relying party (verifier) service or website",
@@ -223,10 +266,8 @@
           "format": "uri",
           "description": "API endpoint for programmatic access"
         },
-        "video": {
-          "type": "string",
-          "format": "uri",
-          "description": "URL to a video demonstration or walkthrough of this relying party"
+        "media": {
+          "$ref": "#/$defs/RpMedia"
         },
         "languages": {
           "type": "array",

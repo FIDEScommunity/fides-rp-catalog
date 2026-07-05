@@ -42,6 +42,8 @@ interface RPItem {
   documentation?: string;
   testCredentials?: string;
   apiEndpoint?: string;
+  media?: { videos?: string[]; images?: string[] };
+  /** @deprecated Read from source JSON only; stripped in aggregated output. */
   video?: string;
 }
 
@@ -63,10 +65,17 @@ function collectRPUrls(
     if (rp.documentation) addUrl(urlToContexts, rp.documentation, ctx('documentation'));
     if (rp.testCredentials) addUrl(urlToContexts, rp.testCredentials, ctx('testCredentials'));
     if (rp.apiEndpoint) addUrl(urlToContexts, rp.apiEndpoint, ctx('apiEndpoint'));
+    for (const url of rp.media?.videos ?? []) {
+      if (url) addUrl(urlToContexts, url, ctx('media.videos'));
+    }
+    for (const url of rp.media?.images ?? []) {
+      if (url) addUrl(urlToContexts, url, ctx('media.images'));
+    }
     if (rp.video) addUrl(urlToContexts, rp.video, ctx('video'));
     if (rp.provider?.website) addUrl(urlToContexts, rp.provider.website, ctx('provider.website'));
     if (rp.provider?.logo) addUrl(urlToContexts, rp.provider.logo, ctx('provider.logo'));
-    if (rp.provider?.contact?.support) addUrl(urlToContexts, rp.provider.contact.support, ctx('provider.contact.support'));
+    if (rp.provider?.contact?.contactUrl) addUrl(urlToContexts, rp.provider.contact.contactUrl, ctx('provider.contact.contactUrl'));
+    if (rp.provider?.contact?.bookMeetingUrl) addUrl(urlToContexts, rp.provider.contact.bookMeetingUrl, ctx('provider.contact.bookMeetingUrl'));
   }
 }
 

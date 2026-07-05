@@ -1695,6 +1695,53 @@
   background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
 }
 
+/* Grid card: header is name + provider only (logo lives in body) */
+.fides-rp-card .fides-rp-header.fides-rp-card-header--text-only {
+  min-height: 0;
+  align-items: center;
+  gap: 0;
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid var(--fides-border);
+}
+
+.fides-rp-card .fides-rp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.fides-rp-card .fides-rp-name {
+  margin: 0 0 0.2rem;
+  line-height: 1.25;
+  min-height: 0;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-rp-card .fides-rp-provider {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  line-height: 1.3;
+}
+
+.fides-rp-provider-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-rp-country-flag {
+  display: block;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 .fides-rp-logo {
   width: 48px;
   height: 48px;
@@ -1785,6 +1832,230 @@
 
 .fides-rp-body {
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#fides-rp-catalog-root .fides-rp-grid[data-view="grid"] .fides-rp-card > .fides-rp-body {
+  min-height: 0;
+  align-items: stretch;
+  padding: 0.65rem 1.25rem 0.75rem;
+}
+
+#fides-rp-catalog-root .fides-rp-grid[data-view="grid"] .fides-rp-card-logo-panel {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 4.25rem;
+  padding: 0.15rem 0 1rem;
+}
+
+#fides-rp-catalog-root .fides-rp-grid[data-view="grid"] .fides-rp-card .fides-rp-footer {
+  border-radius: 0 0 var(--fides-radius-lg) var(--fides-radius-lg);
+  width: 100%;
+}
+
+#fides-rp-catalog-root .fides-rp-grid[data-view="grid"] .fides-rp-rating-summary {
+  margin: 0 0 0.15rem;
+  text-align: left;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.fides-rp-card-logo-main {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  color: var(--fides-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.fides-rp-card-logo-main img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.fides-rp-card-logo-main svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+#fides-rp-catalog-root[data-theme="fides"] .fides-rp-card-logo-main,
+#fides-rp-catalog-root[data-theme="light"] .fides-rp-card-logo-main {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.fides-rp-card-logo-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5.5rem;
+  padding: 0.15rem 0 0.35rem;
+  width: 100%;
+}
+
+/* Grid card: Country / Readiness / Sector summary strip (aligned with use case catalog cards) */
+.fides-rp-meta-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  flex-shrink: 0;
+  width: 100%;
+  border-top: 1px solid var(--fides-border);
+  background: var(--fides-bg-card);
+}
+
+.fides-rp-meta-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.2rem;
+  min-width: 0;
+  padding: 1rem;
+  border-right: 1px solid var(--fides-border);
+}
+
+.fides-rp-meta-item:last-child {
+  border-right: none;
+}
+
+.fides-rp-meta-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 1rem;
+}
+
+.fides-rp-meta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  line-height: 0;
+  color: var(--fides-accent);
+}
+
+.fides-rp-meta-icon svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.fides-rp-meta-icon .fides-country-flag {
+  display: block;
+  width: 16px;
+  height: 12px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.fides-rp-meta-label {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--fides-text-muted);
+}
+
+.fides-rp-meta-value {
+  margin: 0;
+  padding-left: calc(1rem + 0.35rem);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fides-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#fides-rp-catalog-root[data-theme="fides"] .fides-rp-meta-strip,
+#fides-rp-catalog-root[data-theme="light"] .fides-rp-meta-strip {
+  background: #ffffff;
+}
+
+#fides-rp-catalog-root[data-theme="fides"] .fides-rp-footer,
+#fides-rp-catalog-root[data-theme="light"] .fides-rp-footer {
+  background: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .fides-rp-meta-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .fides-rp-meta-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.625rem 1rem;
+    border-right: none;
+    border-bottom: 1px solid var(--fides-border);
+  }
+
+  .fides-rp-meta-item:last-child {
+    border-bottom: none;
+  }
+
+  .fides-rp-meta-heading {
+    flex-shrink: 0;
+  }
+
+  .fides-rp-meta-value {
+    padding-left: 0;
+    text-align: right;
+    white-space: normal;
+  }
+}
+
+.fides-rp-card-footer-start {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: 0;
+}
+
+.fides-rp-card-footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: 0;
+}
+
+.fides-rp-card-footer-listing .fides-modal-header-listing-badge {
+  font-size: 0.6875rem;
+}
+
+.fides-rp-card-footer-listing .fides-modal-header-listing-badge--community {
+  opacity: 0.95;
+}
+
+.fides-rp-card-footer-listing .fides-modal-header-listing-badge svg {
+  width: 12px;
+  height: 12px;
 }
 
 .fides-rp-updated {
@@ -1916,11 +2187,14 @@ a.fides-tag.accepted-credential.credential-catalog-link svg {
 
 /* Footer */
 .fides-rp-footer {
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border-top: 1px solid var(--fides-border);
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
   margin-top: auto;
 }
 
@@ -2060,6 +2334,7 @@ a.fides-tag.accepted-credential.credential-catalog-link svg {
 /* View details hint - always visible */
 .fides-view-details,
 .fides-rp-card .fides-view-details,
+.fides-wallet-card .fides-view-details,
 .fides-rp-footer .fides-view-details,
 .fides-rp-catalog .fides-view-details {
   font-size: 0.8125rem;

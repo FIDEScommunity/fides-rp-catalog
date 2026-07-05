@@ -34,7 +34,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
       "orgId": "org:air-new-zealand",
       "provider": {
         "name": "Air New Zealand",
@@ -42,7 +42,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/air-nz/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.413Z",
+      "fetchedAt": "2026-07-05T11:44:30.619Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -94,7 +94,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.451Z",
+      "fetchedAt": "2026-07-05T11:44:30.676Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -145,7 +145,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.451Z",
+      "fetchedAt": "2026-07-05T11:44:30.676Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -194,7 +194,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.451Z",
+      "fetchedAt": "2026-07-05T11:44:30.676Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -247,7 +247,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.451Z",
+      "fetchedAt": "2026-07-05T11:44:30.676Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -298,7 +298,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.451Z",
+      "fetchedAt": "2026-07-05T11:44:30.676Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -353,7 +353,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.480Z",
+      "fetchedAt": "2026-07-05T11:44:30.714Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -403,7 +403,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.512Z",
+      "fetchedAt": "2026-07-05T11:44:30.752Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -443,7 +443,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
       "orgId": "org:british-airways",
       "provider": {
         "name": "British Airways",
@@ -451,7 +451,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/british-airways/british-airways-logo.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/british-airways/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.543Z",
+      "fetchedAt": "2026-07-05T11:44:30.789Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -503,12 +503,10 @@
       "provider": {
         "name": "California Department of Motor Vehicles (CA DMV)",
         "website": "https://www.dmv.ca.gov/portal/",
-        "contact": {
-          "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
-        }
+        "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.576Z",
+      "fetchedAt": "2026-07-05T11:44:30.826Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -558,7 +556,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/educa/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.611Z",
+      "fetchedAt": "2026-07-05T11:44:30.865Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
@@ -569,7 +567,6 @@
       "name": "Starfilm Cinema Age Verification",
       "description": "Demonstration application showcasing age verification capabilities for EU citizens and residents. This verifier service demonstrates privacy-preserving age verification flows using the EUDI Wallet ecosystem.",
       "website": "https://cinema.ageverification.dev/",
-      "video": "https://www.youtube.com/watch?v=ULFTrTznG7Y",
       "readiness": "use-case-demo",
       "country": "EU",
       "status": "live",
@@ -618,11 +615,16 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.640Z",
+      "fetchedAt": "2026-07-05T11:44:30.886Z",
       "source": "local",
-      "isFeatured": true,
+      "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
-      "firstSeenAt": "2026-01-26T22:15:00.000Z"
+      "firstSeenAt": "2026-01-26T22:15:00.000Z",
+      "media": {
+        "videos": [
+          "https://www.youtube.com/watch?v=ULFTrTznG7Y"
+        ]
+      }
     },
     {
       "id": "eudi-reference-verifier",
@@ -659,10 +661,10 @@
           "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
@@ -712,7 +714,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.640Z",
+      "fetchedAt": "2026-07-05T11:44:30.886Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -765,10 +767,10 @@
           "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
@@ -810,7 +812,7 @@
           "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:reservation-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:reservation-mdoc:mdoc"
         },
         {
           "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
@@ -845,7 +847,6 @@
           "walletCatalogId": "eudi-age-verification-wallet"
         }
       ],
-      "documentation": "https://github.com/eu-digital-identity-wallet/eudi-srv-web-verifier-eudiw",
       "languages": [
         "en"
       ],
@@ -857,7 +858,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.640Z",
+      "fetchedAt": "2026-07-05T11:44:30.886Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -923,11 +924,10 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.672Z",
+      "fetchedAt": "2026-07-05T11:44:30.923Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -987,13 +987,12 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.672Z",
+      "fetchedAt": "2026-07-05T11:44:30.923Z",
       "source": "local",
-      "isFeatured": true,
+      "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
       "firstSeenAt": "2026-01-26T21:30:00.000Z"
     },
@@ -1050,11 +1049,10 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.672Z",
+      "fetchedAt": "2026-07-05T11:44:30.923Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1117,11 +1115,10 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.672Z",
+      "fetchedAt": "2026-07-05T11:44:30.923Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1180,11 +1177,10 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-        "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.672Z",
+      "fetchedAt": "2026-07-05T11:44:30.923Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T21:30:00.000Z",
@@ -1237,7 +1233,7 @@
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.705Z",
+      "fetchedAt": "2026-07-05T11:44:30.962Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
@@ -1250,7 +1246,6 @@
       "logo": "https://fides.community/app/uploads/sites/2/2025/05/cropped-favicon-32x32.png",
       "website": "https://circulacity.fides.community/",
       "readiness": "use-case-demo",
-      "video": "https://youtu.be/lK8ymw7Gei0",
       "country": "NL",
       "status": "live",
       "sectors": [
@@ -1324,14 +1319,22 @@
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+        "contact": {
+          "email": "info@fides-labs.io"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.733Z",
+      "fetchedAt": "2026-07-05T11:44:30.987Z",
       "source": "local",
-      "isFeatured": true,
+      "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z"
+      "firstSeenAt": "2026-02-03T10:00:00.000Z",
+      "media": {
+        "videos": [
+          "https://youtu.be/lK8ymw7Gei0"
+        ]
+      }
     },
     {
       "id": "rotterdam-sandbox",
@@ -1413,10 +1416,13 @@
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+        "contact": {
+          "email": "info@fides-labs.io"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.733Z",
+      "fetchedAt": "2026-07-05T11:44:30.987Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1428,7 +1434,6 @@
       "description": "Sandbox portal for MijnOverheid, where Dutch citizens can access and review information registered by Dutch public authorities.",
       "logo": "https://static.mijn.overheid.nl/v1765281105902/images/apple-touch-icon.png",
       "website": "https://mijnoverheid.fides.community/",
-      "video": "https://youtu.be/ywjnjoBEGK0",
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "live",
@@ -1475,14 +1480,22 @@
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+        "contact": {
+          "email": "info@fides-labs.io"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.733Z",
+      "fetchedAt": "2026-07-05T11:44:30.987Z",
       "source": "local",
-      "isFeatured": true,
+      "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z"
+      "firstSeenAt": "2026-02-03T10:00:00.000Z",
+      "media": {
+        "videos": [
+          "https://youtu.be/ywjnjoBEGK0"
+        ]
+      }
     },
     {
       "id": "hak-rein-vos-notarissen-sandbox",
@@ -1553,10 +1566,13 @@
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+        "contact": {
+          "email": "info@fides-labs.io"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.733Z",
+      "fetchedAt": "2026-07-05T11:44:30.987Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
@@ -1627,14 +1643,71 @@
         "name": "FIDES Labs",
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+        "contact": {
+          "email": "info@fides-labs.io"
+        }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.733Z",
+      "fetchedAt": "2026-07-05T11:44:30.987Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-03T10:00:00.000Z",
       "firstSeenAt": "2026-02-03T10:00:00.000Z"
+    },
+    {
+      "id": "pension-demo-waltid-verifier",
+      "name": "Pension demo - Walt.id verifier",
+      "description": "OID4VP verifier for the Findynet pension demo",
+      "website": "https://verifier.waltid.pensiondemo.findy.fi/",
+      "readiness": "use-case-demo",
+      "country": "FI",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "Pension eligibility verification",
+        "Discount entitlement verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:findynet:pension-credential:sd-jwt-vc"
+        }
+      ],
+      "acceptedCredentials": [
+        "PensionCredential"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "oid4vp"
+      ],
+      "apiEndpoint": "https://verifier.waltid.staging.findy.fi/openid4vc/verify",
+      "features": [
+        "OID4VP remote flow",
+        "Presentation Definition based verification",
+        "Selective disclosure (required)",
+        "Encrypted VP responses (ECDH-ES + A256GCM)"
+      ],
+      "languages": [
+        "en",
+        "fi"
+      ],
+      "orgId": "org:findynet",
+      "provider": {
+        "name": "Findynet",
+        "website": "https://findynet.fi/en/",
+        "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/findynet/rp-catalog.json",
+      "fetchedAt": "2026-07-05T11:44:31.024Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-04-28T19:08:05.000Z",
+      "firstSeenAt": "2026-04-28T19:08:05.000Z"
     },
     {
       "id": "google-digital-credentials-demo",
@@ -1690,7 +1763,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.762Z",
+      "fetchedAt": "2026-07-05T11:44:31.061Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -1730,7 +1803,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
       "orgId": "org:hong-kong-international-airport",
       "provider": {
         "name": "Hong Kong International Airport",
@@ -1738,7 +1811,7 @@
         "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/hkia/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.788Z",
+      "fetchedAt": "2026-07-05T11:44:31.099Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -1785,7 +1858,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
       "orgId": "org:bengaluru-international-airport",
       "provider": {
         "name": "Bengaluru International Airport",
@@ -1793,7 +1866,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.816Z",
+      "fetchedAt": "2026-07-05T11:44:31.137Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -1808,7 +1881,6 @@
       "description": "Open a new bank account using your EUDI Wallet. This iGrant.io demo showcases privacy-preserving KYC identity verification for financial onboarding, leveraging the EU Digital Identity Wallet and SD-JWT verifiable credentials via OpenID4VP.",
       "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
       "website": "https://www.igrant.io/demo/open-bank-account.html",
-      "video": "https://youtu.be/3VktTStWHs8",
       "readiness": "technical-demo",
       "country": "SE",
       "status": "live",
@@ -1865,11 +1937,16 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "updatedAt": "2026-05-17T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "media": {
+        "videos": [
+          "https://youtu.be/3VktTStWHs8"
+        ]
+      }
     },
     {
       "id": "igrant-bank-login-demo",
@@ -1932,10 +2009,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -1944,7 +2021,6 @@
       "description": "Purchase ferry tickets from Cyclades Fast Ferries using your EUDI Wallet in a merchant-led payment flow. Powered by iGrant.io, this is the first live EUDI Wallet payment in production — combining Strong Customer Authentication (SCA) with verifiable credentials via 3D Secure and OpenID4VC, using the Visa/Worldline network with Banca Transilvania.",
       "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
       "website": "https://www.igrant.io/demo/merchant-led-payments.html",
-      "video": "https://www.youtube.com/watch?v=6GwCxyofSVE",
       "readiness": "production-pilot",
       "country": "EU",
       "status": "live",
@@ -2008,11 +2084,16 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
-      "isFeatured": true,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "isFeatured": false,
+      "updatedAt": "2026-05-17T23:00:00.000Z",
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "media": {
+        "videos": [
+          "https://www.youtube.com/watch?v=6GwCxyofSVE"
+        ]
+      }
     },
     {
       "id": "igrant-insurance-policy-demo",
@@ -2075,10 +2156,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2114,10 +2195,10 @@
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         }
       ],
       "vcFormat": [
@@ -2157,10 +2238,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2189,10 +2270,10 @@
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc"
@@ -2235,10 +2316,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2309,10 +2390,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2337,10 +2418,10 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
@@ -2382,10 +2463,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2447,10 +2528,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2508,10 +2589,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2548,7 +2629,7 @@
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
           "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
@@ -2590,10 +2671,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2663,10 +2744,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2730,10 +2811,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
     },
     {
@@ -2802,11 +2883,102 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.843Z",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-11T23:00:00.000Z",
+      "updatedAt": "2026-05-17T23:00:00.000Z",
       "firstSeenAt": "2026-02-11T23:00:00.000Z"
+    },
+    {
+      "id": "igrant-verifier-playground",
+      "name": "Verifier Playground",
+      "description": "Verify PID and Age Verification credentials using the iGrant.io Verifier Playground. This playground enables testing of credential verification flows with support for France Identite Wallet and Data Wallet by iGrant.io, supporting both SD-JWT VC and ISO mdoc formats via OpenID4VP, Digital Credentials API, and DCQL with HAIP compliance.",
+      "logo": "https://storage.googleapis.com/igrant-api-images/faviconV2.png",
+      "website": "https://verifier-playground.igrant.io/admin/",
+      "readiness": "technical-demo",
+      "country": "EU",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "pid-verification",
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID)",
+        "Age Verification",
+        "Mobile Driving Licence (mDL)"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+        }
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "Digital Credentials API",
+        "DCQL"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identite Wallet",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        }
+      ],
+      "features": [
+        "PID verification",
+        "Age Verification",
+        "mDL verification",
+        "SD-JWT VC and ISO mdoc formats",
+        "Digital Credentials API (W3C browser-based flow)",
+        "DCQL (Digital Credentials Query Language)",
+        "JAR (RFC 9101) signed request objects",
+        "JARM with JWE encryption",
+        "France Identite Wallet compatible",
+        "EUDI Wallet compatible"
+      ],
+      "documentation": "https://docs.igrant.io/docs/data-wallet-overview/",
+      "testCredentials": "https://issuer-playground.igrant.io/admin/offers/",
+      "languages": [
+        "en"
+      ],
+      "interactionMode": "remote",
+      "orgId": "org:igrant",
+      "provider": {
+        "name": "iGrant.io",
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-05-17T23:00:00.000Z",
+      "firstSeenAt": "2026-05-17T23:00:00.000Z"
     },
     {
       "id": "indigo",
@@ -2842,7 +3014,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
       "orgId": "org:indigo",
       "provider": {
         "name": "IndiGo",
@@ -2850,7 +3022,7 @@
         "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/indigo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.870Z",
+      "fetchedAt": "2026-07-05T11:44:31.197Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2893,7 +3065,7 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
       "orgId": "org:japan-airlines",
       "provider": {
         "name": "Japan Airlines",
@@ -2901,7 +3073,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/jal/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.914Z",
+      "fetchedAt": "2026-07-05T11:44:31.233Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2965,7 +3137,7 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.947Z",
+      "fetchedAt": "2026-07-05T11:44:31.270Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3026,7 +3198,7 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.947Z",
+      "fetchedAt": "2026-07-05T11:44:31.270Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3087,7 +3259,7 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.947Z",
+      "fetchedAt": "2026-07-05T11:44:31.270Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3149,7 +3321,7 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.947Z",
+      "fetchedAt": "2026-07-05T11:44:31.270Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3198,7 +3370,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:55.974Z",
+      "fetchedAt": "2026-07-05T11:44:31.308Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
@@ -3249,6 +3421,7 @@
         "de"
       ],
       "interactionMode": "remote",
+      "testCredentials": "https://www.bcs.admin.ch/bcs-web/#/beta-id/create",
       "orgId": "org:neovo",
       "provider": {
         "name": "Neovo",
@@ -3259,10 +3432,10 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/neovo/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.000Z",
+      "fetchedAt": "2026-07-05T11:44:31.333Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-04-22T17:47:11.000Z",
+      "updatedAt": "2026-06-10T19:19:27.000Z",
       "firstSeenAt": "2026-04-02T19:50:32.000Z"
     },
     {
@@ -3321,7 +3494,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3368,7 +3541,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3414,7 +3587,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3460,7 +3633,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3506,7 +3679,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3552,7 +3725,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3598,7 +3771,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3652,7 +3825,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3706,7 +3879,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.031Z",
+      "fetchedAt": "2026-07-05T11:44:31.369Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3741,7 +3914,8 @@
         "Movie Ticket",
         "Google Wallet ID pass",
         "Age Verification Credential",
-        "Loyalty"
+        "Loyalty",
+        "Aadhaar"
       ],
       "acceptedCredentialRefs": [
         {
@@ -3757,10 +3931,10 @@
           "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:eu:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
         },
         {
           "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
@@ -3776,6 +3950,9 @@
         },
         {
           "credentialCatalogId": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:uidai:aadhaar-mdoc:mdoc"
         }
       ],
       "vcFormat": [
@@ -3801,7 +3978,7 @@
         "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.058Z",
+      "fetchedAt": "2026-07-05T11:44:31.398Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -3860,7 +4037,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/sbb/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.085Z",
+      "fetchedAt": "2026-07-05T11:44:31.432Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
@@ -3914,13 +4091,14 @@
       "orgId": "org:stelausoftware",
       "provider": {
         "name": "Stelau Software",
-        "website": "https://www.stelau.com"
+        "website": "https://www.stelau.com",
+        "logo": "https://www.google.com/s2/favicons?domain=www.stelau.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.110Z",
+      "fetchedAt": "2026-07-05T11:44:31.472Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-04-22T17:47:11.000Z",
+      "updatedAt": "2026-04-22T18:24:58.000Z",
       "firstSeenAt": "2026-01-26T16:46:54.000Z"
     },
     {
@@ -3967,7 +4145,7 @@
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/swiyu/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.139Z",
+      "fetchedAt": "2026-07-05T11:44:31.523Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
@@ -4027,7 +4205,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/unchained/rp-catalog.json",
-      "fetchedAt": "2026-04-22T18:17:56.174Z",
+      "fetchedAt": "2026-07-05T11:44:31.561Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
@@ -4063,9 +4241,7 @@
     {
       "name": "California Department of Motor Vehicles (CA DMV)",
       "website": "https://www.dmv.ca.gov/portal/",
-      "contact": {
-        "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
-      }
+      "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
     },
     {
       "name": "Educa",
@@ -4079,8 +4255,7 @@
     },
     {
       "name": "EUDIPLO",
-      "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-      "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128"
+      "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
     },
     {
       "name": "EWC - European Wallet Consortium",
@@ -4091,7 +4266,15 @@
       "name": "FIDES Labs",
       "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
       "website": "https://fides.community",
-      "logo": "https://avatars.githubusercontent.com/u/119322214?v=4"
+      "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+      "contact": {
+        "email": "info@fides-labs.io"
+      }
+    },
+    {
+      "name": "Findynet",
+      "website": "https://findynet.fi/en/",
+      "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
     },
     {
       "name": "Google",
@@ -4164,7 +4347,8 @@
     },
     {
       "name": "Stelau Software",
-      "website": "https://www.stelau.com"
+      "website": "https://www.stelau.com",
+      "logo": "https://www.google.com/s2/favicons?domain=www.stelau.com&sz=128"
     },
     {
       "name": "Swiss Confederation",
@@ -4177,27 +4361,27 @@
       "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
     }
   ],
-  "lastUpdated": "2026-04-22T18:17:56.185Z",
+  "lastUpdated": "2026-07-05T11:44:31.568Z",
   "stats": {
-    "totalRPs": 64,
-    "totalProviders": 26,
+    "totalRPs": 66,
+    "totalProviders": 27,
     "byReadiness": {
-      "technical-demo": 21,
-      "use-case-demo": 39,
+      "technical-demo": 22,
+      "use-case-demo": 40,
       "production-pilot": 2,
       "production": 2
     },
     "bySector": {
       "mobility": 7,
       "public_sector": 23,
-      "digital": 36,
+      "digital": 38,
       "education": 1,
       "trade": 1
     },
     "byVcFormat": {
-      "mdoc": 18,
+      "mdoc": 19,
       "idemix": 6,
-      "sd_jwt_vc": 37,
+      "sd_jwt_vc": 39,
       "vcdm_2_0": 2
     }
   }

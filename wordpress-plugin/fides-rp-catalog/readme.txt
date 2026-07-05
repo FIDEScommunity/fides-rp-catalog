@@ -2,13 +2,29 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.3.6
+Stable tag: 2.6.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.6.0 =
+* RP detail modal: FIDES Ecosystem Model, accordion tables (issuers, credentials, supported wallets, reverse-linked use cases), Explain link, ecosystem stat boxes scroll to accordions (requires fides-community-tools-tiles ≥ 1.8.9 bundled modal library).
+* Grid cards: provider header, centered logo, Country / Readiness / Sector meta strip, Official listing badges when tier UI is enabled.
+* Quick filters: “Official listings only” replaces “Featured first”.
+* Settings: use case catalog URL, use case / wallet / issuer aggregated JSON URLs, ecosystem explorer URL for modal Explain link.
+* Bundled `assets/lib/fides-catalog-ui.*` synced from fides-community-tools-tiles 1.8.9.
+
+= 2.5.0 =
+* RP submission forms: media accordion with up to 10 cover images and 3 demo videos (same limits as wallet/org forms), including image upload via the shared card-image endpoint.
+* Schema: `media` object on relying parties (`media.videos` max 3, `media.images` max 10); legacy `video` field removed (use `media.videos`).
+
+= 2.4.0 =
+* Added WordPress submission flow: `[fides_rp_submit_form]` and `[fides_rp_update_form]` shortcodes (shared moderation in fides-community-tools-tiles).
+* Supported wallets and accepted credentials use catalog lookups; interop profiles load from the interop profiles catalog; use cases are reverse-linked from the use case catalog on export.
+* Modal pencil links to the update form for eligible users (requires fides-community-tools-tiles with shared catalog UI).
 
 = 2.3.6 =
 * Mobile detail modal layout via updated bundled `assets/lib/fides-catalog-ui.*` (sync from fides-community-tools-tiles ≥ 1.7.8).

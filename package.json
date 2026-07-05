@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "FIDES Community Relying Party Catalog - Overview of verifier websites and services that accept verifiable credentials",
   "main": "dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "crawl": "tsx src/crawler/index.ts",
     "build": "tsc",

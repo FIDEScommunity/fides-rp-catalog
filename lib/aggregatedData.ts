@@ -55,6 +55,8 @@ export interface AggregatedRP {
   documentation?: string;
   testCredentials?: string;
   apiEndpoint?: string;
+  media?: { videos?: string[]; images?: string[] };
+  /** @deprecated Read from source JSON only; stripped in aggregated output. */
   video?: string;
   country?: string;
   countries?: string[];

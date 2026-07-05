@@ -65,6 +65,12 @@ export interface RPProvider {
   };
 }
 
+/** Promotional videos and images. */
+export interface RPMedia {
+  videos?: string[];
+  images?: string[];
+}
+
 // Relying Party definition
 export interface RelyingParty {
   id: string;
@@ -98,7 +104,7 @@ export interface RelyingParty {
   documentation?: string;
   testCredentials?: string;
   apiEndpoint?: string;
-  video?: string;
+  media?: RPMedia;
   
   // Geographic availability
   countries?: string[];

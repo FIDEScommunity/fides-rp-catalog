@@ -49,6 +49,12 @@
 
   const ORGANIZATION_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.organizationCatalogUrl)
     || 'https://fides.community/ecosystem-explorer/organization-catalog/';
+
+  const USE_CASE_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.useCaseCatalogUrl)
+    || 'https://fides.community/use-cases/';
+
+  const ECOSYSTEM_EXPLORER_URL = (window.fidesRPCatalog && window.fidesRPCatalog.ecosystemExplorerUrl)
+    || 'https://fides.community/topics/ecosystem-explorer/';
   const RATINGS_API_BASE = (window.fidesRPCatalog && window.fidesRPCatalog.ratingsApiBase)
     ? String(window.fidesRPCatalog.ratingsApiBase).trim().replace(/\/$/, '')
     : '';
@@ -59,6 +65,15 @@
   const RATINGS_LOGIN_URL = (window.fidesRPCatalog && window.fidesRPCatalog.ratingsLoginUrl)
     ? String(window.fidesRPCatalog.ratingsLoginUrl)
     : '';
+  const UPDATE_FORM_URL = (window.fidesRPCatalog && window.fidesRPCatalog.updateFormUrl)
+    ? String(window.fidesRPCatalog.updateFormUrl).trim()
+    : '';
+  const EDIT_ACCESS = (window.fidesRPCatalog && window.fidesRPCatalog.editAccess
+    && typeof window.fidesRPCatalog.editAccess === 'object')
+    ? window.fidesRPCatalog.editAccess
+    : { isLoggedIn: false, isAdmin: false, ownedOrgIds: [], proOrgIds: [] };
+  const TIER_UI_ENABLED = !!(window.fidesRPCatalog && window.fidesRPCatalog.tierUiEnabled);
+  const OFFICIAL_FILTER_LABEL = 'Official listings only';
   const RATINGS_BATCH_LIMIT = 100;
 
   // Selected RP for modal
@@ -68,7 +83,10 @@
   const config = window.fidesRPCatalog || {
     pluginUrl: '',
     githubDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json',
-    credentialAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json'
+    credentialAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json',
+    issuerAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-issuer-catalog/main/data/aggregated.json',
+    walletAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-wallet-catalog/main/data/aggregated.json',
+    useCaseAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json'
   };
 
   // Country code to name mapping
@@ -126,10 +144,50 @@
   };
   const INTERACTION_MODE_ORDER = ['proximity', 'remote', 'both'];
 
+  const READINESS_LABELS = {
+    'technical-demo': 'Technical Demo',
+    'use-case-demo': 'Use Case Demo',
+    'production-pilot': 'Production Pilot',
+    'production': 'Production'
+  };
+
   function getRpInteractionMode(rp) {
     const m = rp && rp.interactionMode;
     if (m === 'proximity' || m === 'remote' || m === 'both') return m;
     return 'remote';
+  }
+
+  function resolveRpOrgIdForTier(rp) {
+    const orgId = rp && rp.orgId ? String(rp.orgId).trim() : '';
+    if (orgId) return orgId;
+    return rp && rp.provider && rp.provider.orgId ? String(rp.provider.orgId).trim() : '';
+  }
+
+  function rpCatalogTierIsCommunity(rp) {
+    if (!TIER_UI_ENABLED) return false;
+    if (!rp || !rp.catalogTier) return false;
+    const tier = String(rp.catalogTier).toLowerCase();
+    return tier === 'gratis' || tier === 'community';
+  }
+
+  function rpCatalogTierIsPro(rp) {
+    if (!TIER_UI_ENABLED) return false;
+    if (!rp) return false;
+    if (rp.catalogTier) {
+      return !rpCatalogTierIsCommunity(rp);
+    }
+    const orgId = resolveRpOrgIdForTier(rp);
+    const proOrgIds = Array.isArray(EDIT_ACCESS.proOrgIds) ? EDIT_ACCESS.proOrgIds : [];
+    return orgId !== '' && proOrgIds.indexOf(orgId) >= 0;
+  }
+
+  function rpPrimaryVideoUrl(rp) {
+    if (!rp || !rp.media || !Array.isArray(rp.media.videos) || !rp.media.videos.length) return '';
+    return String(rp.media.videos[0] || '').trim();
+  }
+
+  function rpHasVideo(rp) {
+    return Boolean(rpPrimaryVideoUrl(rp));
   }
 
   /** Same codes as credential catalog (English labels). */
@@ -250,6 +308,14 @@
   /** cred:… id → theme / ecosystem codes from credential catalog aggregated.json */
   let credentialThemesById = Object.create(null);
   let credentialEcosystemsById = Object.create(null);
+  /** cred:… id → { displayName, authorityName } */
+  let credentialById = Object.create(null);
+  /** wallet id → { displayName, providerName } */
+  let walletById = Object.create(null);
+  /** cred:… id → issuers[] from issuer catalog aggregated.json */
+  let issuerUsageByCredentialId = new Map();
+  /** rp id → use cases[] reverse-linked from use case catalog aggregated.json */
+  let useCasesByRpId = Object.create(null);
   /** Precomputed counts per filter option (set once after data load) */
   let filterFacets = null;
   // Vocabulary for [i] info popups (loaded from interop-profiles)
@@ -290,7 +356,7 @@
     supportedWallets: [],
     addedLast30Days: false,
     includesVideo: false,
-    featuredFirst: true,
+    officialOnly: false,
     ids: []
   };
 
@@ -447,6 +513,7 @@
   async function loadCredentialTaxonomyIndex() {
     credentialThemesById = Object.create(null);
     credentialEcosystemsById = Object.create(null);
+    credentialById = Object.create(null);
     const url = (config.credentialAggregatedDataUrl || '').trim();
     if (!url) return;
     try {
@@ -456,6 +523,10 @@
       const creds = Array.isArray(data.credentials) ? data.credentials : [];
       creds.forEach(c => {
         if (!c || typeof c.id !== 'string') return;
+        credentialById[c.id] = {
+          displayName: (c.displayName || '').trim(),
+          authorityName: c.authority && c.authority.name ? String(c.authority.name).trim() : ''
+        };
         const themes = Array.isArray(c.themes) ? c.themes : [];
         credentialThemesById[c.id] = themes.filter(
           t => typeof t === 'string' && Object.prototype.hasOwnProperty.call(THEME_LABELS, t)
@@ -468,6 +539,126 @@
     } catch (e) {
       console.warn('Credential catalog taxonomy index load failed:', e.message);
     }
+  }
+
+  /**
+   * Build cred:… id → issuers[] from issuer catalog aggregated.json (for ecosystem model).
+   */
+  async function loadIssuerUsageIndex() {
+    issuerUsageByCredentialId = new Map();
+    const url = (config.issuerAggregatedDataUrl || '').trim();
+    if (!url) return;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const data = await response.json();
+      const issuers = Array.isArray(data.issuers) ? data.issuers : [];
+      issuers.forEach(function(issuer) {
+        if (!issuer || !issuer.id) return;
+        const configs = Array.isArray(issuer.credentialConfigurations) ? issuer.credentialConfigurations : [];
+        configs.forEach(function(conf) {
+          const credId = conf && conf.credentialCatalogRef && conf.credentialCatalogRef.id;
+          if (!credId || typeof credId !== 'string') return;
+          const entry = {
+            id: issuer.id,
+            displayName: (issuer.displayName || issuer.id || '').trim(),
+            organizationName: (issuer.organization && issuer.organization.name) ? String(issuer.organization.name) : '',
+            logoUri: issuer.logoUri || (issuer.organization && issuer.organization.logoUri) || ''
+          };
+          const existing = issuerUsageByCredentialId.get(credId) || [];
+          if (!existing.some(function(e) { return e.id === entry.id; })) {
+            existing.push(entry);
+            issuerUsageByCredentialId.set(credId, existing);
+          }
+        });
+      });
+    } catch (e) {
+      console.warn('Issuer catalog usage index load failed:', e.message);
+    }
+  }
+
+  async function loadWalletIndex() {
+    walletById = Object.create(null);
+    const url = (config.walletAggregatedDataUrl || '').trim();
+    if (!url) return;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const data = await response.json();
+      const wallets = Array.isArray(data.wallets) ? data.wallets : [];
+      wallets.forEach(function(w) {
+        if (!w || typeof w.id !== 'string') return;
+        walletById[w.id] = {
+          displayName: (w.name || '').trim(),
+          providerName: w.provider && w.provider.name ? String(w.provider.name).trim() : ''
+        };
+      });
+    } catch (e) {
+      console.warn('Wallet catalog index load failed:', e.message);
+    }
+  }
+
+  /**
+   * Build rp id → use cases[] from use case catalog aggregated.json (links.rps[].refId).
+   */
+  async function loadUseCaseIndex() {
+    useCasesByRpId = Object.create(null);
+    const url = (config.useCaseAggregatedDataUrl || '').trim();
+    if (!url) return;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const data = await response.json();
+      const useCases = Array.isArray(data.useCases) ? data.useCases : [];
+      useCases.forEach(function(uc) {
+        if (!uc || typeof uc.id !== 'string') return;
+        const links = uc.links && typeof uc.links === 'object' ? uc.links : {};
+        const rps = Array.isArray(links.rps) ? links.rps : [];
+        const entry = {
+          id: uc.id,
+          title: (uc.title || '').trim() || uc.id,
+          organizationName: (uc.organizationName || '').trim()
+        };
+        rps.forEach(function(link) {
+          if (!link || typeof link !== 'object') return;
+          const rpId = link.refId ? String(link.refId).trim() : '';
+          if (!rpId) return;
+          if (!useCasesByRpId[rpId]) useCasesByRpId[rpId] = [];
+          if (!useCasesByRpId[rpId].some(function(e) { return e.id === entry.id; })) {
+            useCasesByRpId[rpId].push(entry);
+          }
+        });
+      });
+      Object.keys(useCasesByRpId).forEach(function(rpId) {
+        useCasesByRpId[rpId].sort(function(a, b) {
+          return String(a.title || a.id).localeCompare(String(b.title || b.id), undefined, { sensitivity: 'base' });
+        });
+      });
+    } catch (e) {
+      console.warn('Use case catalog index load failed:', e.message);
+    }
+  }
+
+  function getDerivedUseCasesForRp(rp) {
+    if (!rp || !rp.id) return [];
+    return useCasesByRpId[rp.id] || [];
+  }
+
+  function getEcosystemIssuersForRp(rp) {
+    if (!rp) return [];
+    const refs = Array.isArray(rp.acceptedCredentialRefs) ? rp.acceptedCredentialRefs : [];
+    const byId = new Map();
+    refs.forEach(function(ref) {
+      const credId = getCredentialRefCatalogId(ref);
+      if (!credId) return;
+      const issuers = issuerUsageByCredentialId.get(credId) || [];
+      issuers.forEach(function(issuer) {
+        if (issuer && issuer.id && !byId.has(issuer.id)) byId.set(issuer.id, issuer);
+      });
+    });
+    return Array.from(byId.values()).sort(function(a, b) {
+      return String(a.displayName || a.id).localeCompare(String(b.displayName || b.id), undefined, { sensitivity: 'base' });
+    });
   }
 
   /**
@@ -509,6 +700,9 @@
           const data = await response.json();
           relyingParties = source.transform(data);
           await loadCredentialTaxonomyIndex();
+          await loadIssuerUsageIndex();
+          await loadWalletIndex();
+          await loadUseCaseIndex();
           enrichRelyingPartiesCredentialTaxonomy(relyingParties);
           try {
             await loadRPRatingSummaries(relyingParties);
@@ -764,12 +958,12 @@
 
       // Quick filters
       if (filters.addedLast30Days && !isWithinLastDays(getRPAddedDate(rp), 30)) return false;
-      if (filters.includesVideo && !(rp.video && typeof rp.video === 'string' && rp.video.trim())) return false;
+      if (filters.includesVideo && !rpHasVideo(rp)) return false;
+      if (TIER_UI_ENABLED && filters.officialOnly && !rpCatalogTierIsPro(rp)) return false;
 
       return true;
     });
 
-    // Sort: when featuredFirst is on, featured items always first; then by chosen sort within each group
     const compareSecondary = (a, b) => {
       const providerCompare = a.provider.name.localeCompare(b.provider.name);
       if (providerCompare !== 0) return providerCompare;
@@ -777,10 +971,6 @@
     };
     if (sortBy === 'lastUpdated') {
       filtered.sort((a, b) => {
-        if (filters.featuredFirst) {
-          if (a.isFeatured && !b.isFeatured) return -1;
-          if (!a.isFeatured && b.isFeatured) return 1;
-        }
         const dateA = getRPUpdatedDate(a);
         const dateB = getRPUpdatedDate(b);
         const tA = new Date(dateA || 0).getTime();
@@ -790,23 +980,13 @@
       });
     } else if (sortBy === 'rating') {
       filtered.sort((a, b) => {
-        if (filters.featuredFirst) {
-          if (a.isFeatured && !b.isFeatured) return -1;
-          if (!a.isFeatured && b.isFeatured) return 1;
-        }
         const aRating = rpRatingSortValue(a);
         const bRating = rpRatingSortValue(b);
         if (bRating.stars !== aRating.stars) return bRating.stars - aRating.stars;
         return compareSecondary(a, b);
       });
     } else {
-      filtered.sort((a, b) => {
-        if (filters.featuredFirst) {
-          if (a.isFeatured && !b.isFeatured) return -1;
-          if (!a.isFeatured && b.isFeatured) return 1;
-        }
-        return compareSecondary(a, b);
-      });
+      filtered.sort((a, b) => compareSecondary(a, b));
     }
 
     return filtered;
@@ -850,6 +1030,7 @@
     count += filters.supportedWallets.length;
     if (filters.addedLast30Days) count += 1;
     if (filters.includesVideo) count += 1;
+    if (TIER_UI_ENABLED && filters.officialOnly) count += 1;
     if (filters.ids && filters.ids.length > 0) count += 1;
     return count;
   }
@@ -872,7 +1053,7 @@
     let addedLast30Days = 0;
     let updatedLast30Days = 0;
     let includesVideo = 0;
-    let featured = 0;
+    let officialOnly = 0;
 
     rps.forEach(rp => {
       if (rp.readiness) {
@@ -917,8 +1098,8 @@
       });
       if (isWithinLastDays(getRPAddedDate(rp), 30)) addedLast30Days += 1;
       if (isWithinLastDays(getRPUpdatedDate(rp), 30)) updatedLast30Days += 1;
-      if (rp.video && typeof rp.video === 'string' && rp.video.trim()) includesVideo += 1;
-      if (rp.isFeatured) featured += 1;
+      if (rpHasVideo(rp)) includesVideo += 1;
+      if (TIER_UI_ENABLED && rpCatalogTierIsPro(rp)) officialOnly += 1;
     });
 
     const supportedWallets = Array.from(walletMap.entries())
@@ -946,7 +1127,7 @@
       addedLast30Days,
       updatedLast30Days,
       includesVideo,
-      featured
+      officialOnly
     };
   }
 
@@ -1050,7 +1231,7 @@
 
   function renderRPRowLinks(rp) {
     const websiteUrl = (rp && typeof rp.website === 'string' ? rp.website.trim() : '');
-    const videoUrl = (rp && typeof rp.video === 'string' ? rp.video.trim() : '');
+    const videoUrl = rpPrimaryVideoUrl(rp);
     const websiteNode = websiteUrl
       ? `<a href="${escapeHtml(websiteUrl)}" target="_blank" rel="noopener" class="fides-rp-row-link" title="Visit website" aria-label="Visit website" onclick="event.stopPropagation();">${icons.externalLinkSmall}</a>`
       : `<span class="fides-rp-row-link fides-rp-row-link-muted" title="No website" aria-label="No website">${icons.externalLinkSmall}</span>`;
@@ -1145,10 +1326,12 @@
                 <input type="checkbox" data-filter="includesVideo" data-value="true" ${filters.includesVideo ? 'checked' : ''}>
                 <span>Includes video<span class="fides-filter-option-count">(${filterFacets ? filterFacets.includesVideo : ''})</span></span>
               </label>
+              ${TIER_UI_ENABLED ? `
               <label class="fides-filter-checkbox">
-                <input type="checkbox" data-filter="featuredFirst" data-value="true" ${filters.featuredFirst ? 'checked' : ''}>
-                <span>Featured first<span class="fides-filter-option-count">(${filterFacets ? filterFacets.featured : ''})</span></span>
+                <input type="checkbox" data-filter="officialOnly" data-value="true" ${filters.officialOnly ? 'checked' : ''}>
+                <span>${OFFICIAL_FILTER_LABEL}<span class="fides-filter-option-count">(${filterFacets ? filterFacets.officialOnly : ''})</span></span>
               </label>
+              ` : ''}
               ${originalIds.length > 0 ? `
               <label class="fides-filter-checkbox">
                 <input type="checkbox" data-filter="linkedRPs" data-value="true" ${filters.ids.length > 0 ? 'checked' : ''}>
@@ -1548,81 +1731,120 @@
     });
   }
 
+  function renderRPCountryFlag(rp) {
+    const code = rp && rp.country ? String(rp.country).trim().toUpperCase() : '';
+    if (!code || code.length !== 2) return '';
+    const label = countryNames[code] || code;
+    return '<span class="fides-rp-country" title="' + escapeHtml(label) + '" aria-label="' + escapeHtml(label) + '">' +
+      '<img src="https://flagcdn.com/w40/' + encodeURIComponent(code.toLowerCase()) + '.png" alt="" class="fides-rp-country-flag" width="16" height="12" loading="lazy" decoding="async" />' +
+      '</span>';
+  }
+
+  function renderRPCardLogoMain(rp) {
+    const logoUrl = rp.logo || (rp.country ? `https://flagcdn.com/w80/${String(rp.country).toLowerCase()}.png` : null);
+    if (logoUrl) {
+      return '<img src="' + escapeHtml(logoUrl) + '" alt="" width="64" height="64" loading="lazy" decoding="async">';
+    }
+    return icons.globe;
+  }
+
+  function renderRPCardFooterBadges(rp) {
+    if (TIER_UI_ENABLED && window.FidesCatalogUI && typeof window.FidesCatalogUI.buildCatalogListingHeaderBadgeHtml === 'function') {
+      const badge = window.FidesCatalogUI.buildCatalogListingHeaderBadgeHtml(rp, {
+        tierUiEnabled: TIER_UI_ENABLED,
+        editAccess: EDIT_ACCESS,
+        isLoggedIn: RATINGS_IS_LOGGED_IN,
+      });
+      if (badge) {
+        return '<div class="fides-rp-card-footer-badges fides-rp-card-footer-listing">' + badge + '</div>';
+      }
+    }
+    if (rp.isFeatured) {
+      return '<div class="fides-rp-card-footer-badges"><span class="fides-featured-badge">⭐ Featured</span></div>';
+    }
+    return '';
+  }
+
+  function getRpCountryDisplayLabel(rp) {
+    const code = normalizeCountryFilterCode(rp && rp.country ? rp.country : '');
+    if (!code) return '';
+    return countryNames[code] || code;
+  }
+
+  function getRpPrimarySectorLabel(rp) {
+    const sectors = Array.isArray(rp && rp.sectors) ? rp.sectors : [];
+    for (let i = 0; i < sectors.length; i++) {
+      const code = normalizeSectorFilterCode(sectors[i]);
+      if (code && SECTOR_LABELS[code]) return SECTOR_LABELS[code];
+    }
+    return '';
+  }
+
+  function renderRPCardMetaCountryIcon(rp) {
+    const code = normalizeCountryFilterCode(rp && rp.country ? rp.country : '');
+    if (code.length === 2) {
+      return '<img src="https://flagcdn.com/w20/' + encodeURIComponent(code.toLowerCase()) + '.png" alt="" class="fides-country-flag" width="20" height="15" loading="lazy" />';
+    }
+    return icons.globe;
+  }
+
+  function renderRPCardMetaStripItem(icon, label, value) {
+    const displayValue = value || '—';
+    const titleAttr = displayValue !== '—' ? ' title="' + escapeHtml(displayValue) + '"' : '';
+    return '<div class="fides-rp-meta-item">' +
+      '<div class="fides-rp-meta-heading">' +
+      '<span class="fides-rp-meta-icon" aria-hidden="true">' + icon + '</span>' +
+      '<span class="fides-rp-meta-label">' + escapeHtml(label) + '</span>' +
+      '</div>' +
+      '<p class="fides-rp-meta-value"' + titleAttr + '>' + escapeHtml(displayValue) + '</p>' +
+      '</div>';
+  }
+
+  function renderRPCardMetaStrip(rp) {
+    const countryValue = getRpCountryDisplayLabel(rp);
+    const readinessValue = rp && rp.readiness
+      ? (READINESS_LABELS[rp.readiness] || String(rp.readiness))
+      : '';
+    const sectorValue = getRpPrimarySectorLabel(rp);
+    return '<div class="fides-rp-meta-strip" aria-label="Relying party summary">' +
+      renderRPCardMetaStripItem(renderRPCardMetaCountryIcon(rp), 'Country', countryValue) +
+      renderRPCardMetaStripItem(icons.check, 'Readiness', readinessValue) +
+      renderRPCardMetaStripItem(icons.building, 'Sector', sectorValue) +
+      '</div>';
+  }
+
+  function rpCardAriaLabel(rp) {
+    const d = getRPDisplayData(rp);
+    return escapeHtml(d.displayName);
+  }
+
   /**
-   * Render a single RP card
+   * Render a single RP card (grid view — aligned with wallet catalog layout).
    */
   function renderRPCard(rp) {
-    const readinessLabels = {
-      'technical-demo': 'Technical Demo',
-      'use-case-demo': 'Use Case Demo',
-      'production-pilot': 'Production Pilot',
-      'production': 'Production'
-    };
-
-    // Use country flag as fallback logo
-    const logoUrl = rp.logo || (rp.country ? `https://flagcdn.com/w80/${rp.country.toLowerCase()}.png` : null);
-    const featuredClass = rp.isFeatured ? 'fides-rp-card-featured' : '';
+    const d = getRPDisplayData(rp);
+    const featuredClass = rp.isFeatured ? ' fides-rp-card-featured' : '';
+    const readinessClass = rp.readiness ? ` readiness-${rp.readiness}` : '';
+    const logoMain = renderRPCardLogoMain(rp);
 
     return `
-      <div class="fides-rp-card ${featuredClass}" data-rp-id="${rp.id}" role="button" tabindex="0">
-        <div class="fides-rp-header readiness-${rp.readiness}">
-          ${logoUrl 
-            ? `<img src="${escapeHtml(logoUrl)}" alt="${escapeHtml(rp.name)}" class="fides-rp-logo">`
-            : `<div class="fides-rp-logo-placeholder">${icons.globe}</div>`
-          }
+      <div class="fides-rp-card${featuredClass}" data-rp-id="${escapeHtml(rp.id)}" role="button" tabindex="0" aria-label="${rpCardAriaLabel(rp)}">
+        <header class="fides-rp-header fides-rp-card-header--text-only${readinessClass}">
           <div class="fides-rp-info">
-            <h3 class="fides-rp-name" title="${escapeHtml(rp.name)}">${escapeHtml(rp.name)}</h3>
-            <p class="fides-rp-provider">${escapeHtml(rp.provider.name)}</p>
+            <h3 class="fides-rp-name" title="${escapeHtml(d.displayName)}">${escapeHtml(d.displayName)}</h3>
+            <p class="fides-rp-provider"><span class="fides-rp-provider-text">${escapeHtml(d.providerName)}</span></p>
           </div>
-          ${rp.isFeatured 
-            ? '<span class="fides-featured-badge">⭐ Featured</span>' 
-            : `<span class="fides-rp-readiness-badge ${rp.readiness}">${readinessLabels[rp.readiness]}</span>`
-          }
-        </div>
+        </header>
         <div class="fides-rp-body">
           <p class="fides-rp-rating-summary">${renderRPRatingSummary(rp.id)}</p>
-          ${rp.description ? `<p class="fides-rp-description">${escapeHtml(rp.description)}</p>` : ''}
-          
-          ${rp.supportedWallets && rp.supportedWallets.length > 0 ? `
-            <div class="fides-rp-section">
-              <h4 class="fides-rp-section-title">Supported Wallets</h4>
-              <div class="fides-tags">
-                ${rp.supportedWallets.slice(0, 3).map(w => {
-                  // Handle both string and object format
-                  const name = typeof w === 'string' ? w : w.name;
-                  const walletId = typeof w === 'object' ? w.walletCatalogId : null;
-                  
-                  if (walletId && window.fidesRPCatalog && window.fidesRPCatalog.walletCatalogUrl) {
-                    return `<a href="${window.fidesRPCatalog.walletCatalogUrl}/?wallet=${escapeHtml(walletId)}" target="_blank" rel="noopener" class="fides-tag wallet-link" onclick="event.stopPropagation();">${icons.externalLink} ${escapeHtml(name)}</a>`;
-                  }
-                  return `<span class="fides-tag">${escapeHtml(name)}</span>`;
-                }).join('')}
-                ${rp.supportedWallets.length > 3 ? `<span class="fides-tag">+${rp.supportedWallets.length - 3}</span>` : ''}
-              </div>
-            </div>
-          ` : ''}
-          
-          ${getAcceptedCredentialRows(rp).length > 0 ? `
-            <div class="fides-rp-section">
-              <h4 class="fides-rp-section-title">Accepted Credentials</h4>
-              <div class="fides-tags">
-                ${renderAcceptedCredentialTagsHtml(rp, 4, true)}
-              </div>
-            </div>
-          ` : ''}
+          <div class="fides-rp-card-logo-panel" aria-hidden="true">
+            <div class="fides-rp-card-logo-main">${logoMain}</div>
+          </div>
         </div>
+        ${renderRPCardMetaStrip(rp)}
         <div class="fides-rp-footer">
-          <div class="fides-rp-links">
-            ${rp.website ? `
-              <a href="${escapeHtml(rp.website)}" target="_blank" rel="noopener" class="fides-rp-visit-button" onclick="event.stopPropagation();">
-                ${icons.externalLink} Visit Website
-              </a>
-            ` : ''}
-            ${rp.video ? `
-              <span class="fides-rp-video-badge">
-                ${icons.play} Video
-              </span>
-            ` : ''}
+          <div class="fides-rp-card-footer-start">
+            ${renderRPCardFooterBadges(rp)}
           </div>
           <span class="fides-view-details">${icons.eye} View details</span>
         </div>
@@ -1783,7 +2005,7 @@
               }
               <div class="fides-modal-title-wrap">
                 <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(rp.name)}</h2>
-                <p class="fides-modal-provider">${icons.building} ${providerNameHtml}${rp.provider.did ? ` <a href="${getBluePagesUrl(rp.provider.did)}" target="_blank" rel="noopener" class="fides-modal-provider-link" aria-label="View in Blue Pages">${icons.externalLink} View in Blue Pages</a>` : ''}</p>
+                <p class="fides-modal-provider">${icons.building} ${providerNameHtml}</p>
               </div>
             </div>
             <div class="fides-modal-header-actions">
@@ -1797,29 +2019,6 @@
           </div>
           
           <div class="fides-modal-body">
-            <!-- Type & Status badges with action button -->
-            <div class="fides-modal-badges">
-              <div class="fides-modal-badges-left">
-                <span class="fides-modal-badge readiness-${rp.readiness}">
-                  ${readinessLabels[rp.readiness]}
-                </span>
-                <span class="fides-modal-badge interaction-mode interaction-${interactionMode}">
-                  ${escapeHtml(INTERACTION_MODE_LABELS[interactionMode])}
-                </span>
-                ${rp.status ? `
-                  <span class="fides-modal-badge status-${rp.status}">
-                    ${statusLabels[rp.status] || rp.status}
-                  </span>
-                ` : ''}
-              </div>
-              ${rp.website ? `
-                <a href="${escapeHtml(rp.website)}" target="_blank" rel="noopener" class="fides-modal-visit-button">
-                  ${icons.externalLink} Visit Website
-                </a>
-              ` : ''}
-            </div>
-
-            <!-- Description -->
             ${rp.description ? `
               <div class="fides-modal-section">
                 <p class="fides-modal-description">${escapeHtml(rp.description)}</p>
@@ -1827,7 +2026,7 @@
             ` : ''}
 
             <!-- Video embed (if available) -->
-            ${rp.video ? getVideoEmbedHtml(rp.video) : ''}
+            ${rpPrimaryVideoUrl(rp) ? getVideoEmbedHtml(rpPrimaryVideoUrl(rp)) : ''}
 
             <!-- Quick info grid -->
             <div class="fides-modal-grid">
@@ -1933,16 +2132,19 @@
             </div>
 
             <!-- Use Cases -->
-            ${rp.useCases && rp.useCases.length > 0 ? `
+            ${(() => {
+              const derivedUseCases = getDerivedUseCasesForRp(rp);
+              return derivedUseCases.length > 0 ? `
               <div class="fides-modal-features">
                 <h4 class="fides-modal-section-title">Use Cases</h4>
                 <ul class="fides-features-list">
-                  ${rp.useCases.map(u => `
-                    <li>${icons.check} ${escapeHtml(u)}</li>
+                  ${derivedUseCases.map(u => `
+                    <li>${icons.check} ${escapeHtml(u.title || u.id)}</li>
                   `).join('')}
                 </ul>
               </div>
-            ` : ''}
+            ` : '';
+            })()}
 
             <!-- Links -->
             <div class="fides-modal-links">
@@ -2149,14 +2351,24 @@
       if (window.FidesCatalogUI && typeof window.FidesCatalogUI.openRpModal === 'function') {
         window.FidesCatalogUI.openRpModal(rp, {
           theme: container ? (container.getAttribute('data-theme') || 'dark') : 'dark',
+          vocabulary: vocabulary,
           walletCatalogUrl: WALLET_CATALOG_URL,
           bluePagesUrl: BLUE_PAGES_URL,
           credentialCatalogUrl: CREDENTIAL_CATALOG_PAGE_URL,
           organizationCatalogUrl: ORGANIZATION_CATALOG_PAGE_URL,
+          useCaseCatalogUrl: USE_CASE_CATALOG_PAGE_URL,
+          ecosystemExplorerUrl: ECOSYSTEM_EXPLORER_URL,
+          ecosystemIssuers: getEcosystemIssuersForRp(rp),
+          derivedUseCases: getDerivedUseCasesForRp(rp),
+          credentialById: credentialById,
+          walletById: walletById,
           ratingsApiBase: RATINGS_API_BASE,
           ratingsNonce: RATINGS_NONCE,
           ratingsIsLoggedIn: RATINGS_IS_LOGGED_IN,
           ratingsLoginUrl: RATINGS_LOGIN_URL,
+          updateFormUrl: UPDATE_FORM_URL,
+          editAccess: EDIT_ACCESS,
+          tierUiEnabled: TIER_UI_ENABLED,
           onOpen: function(openedRP) {
             (window.FidesCatalogUI && window.FidesCatalogUI.trackMatomoEvent) && window.FidesCatalogUI.trackMatomoEvent('RP Catalog', 'Modal Open', openedRP.name);
           },
@@ -2279,7 +2491,7 @@
     initVocabularyInfo(container);
 
     // Filter checkboxes
-    const quickFilterKeys = ['addedLast30Days', 'includesVideo', 'featuredFirst'];
+    const quickFilterKeys = ['addedLast30Days', 'includesVideo', 'officialOnly'];
     container.querySelectorAll('.fides-filter-checkbox input[type="checkbox"]').forEach(checkbox => {
       checkbox.addEventListener('change', () => {
         const filterType = checkbox.dataset.filter;
@@ -2331,7 +2543,7 @@
           supportedWallets: [],
           addedLast30Days: false,
           includesVideo: false,
-          featuredFirst: true,
+          officialOnly: false,
           ids: []
         };
         originalIds = [];

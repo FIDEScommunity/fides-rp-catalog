@@ -27,6 +27,7 @@ import {
   resolveCanonicalSectors,
   type CredentialSectorMap
 } from '../credentialSectors.js';
+import { applyRpMediaNormalization } from '../lib/normalize-rp-media.js';
 
 // Configuration
 const CONFIG = {
@@ -257,7 +258,7 @@ function normalizeRPs(
       lastSeenAt: fetchedAt
     };
 
-    return {
+    return applyRpMediaNormalization({
       ...rp,
       orgId: catalog.orgId,
       provider,
@@ -267,7 +268,7 @@ function normalizeRPs(
       isFeatured: featuredSet.has(rp.id),
       updatedAt,
       firstSeenAt
-    } as NormalizedRP;
+    }) as NormalizedRP;
   });
 }
 
