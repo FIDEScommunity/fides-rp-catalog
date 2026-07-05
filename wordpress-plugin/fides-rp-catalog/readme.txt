@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.1
+Stable tag: 2.7.2
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.2 =
+* RP modal mobile layout: ecosystem model stacks vertically (aligned with issuer catalog); external links use compact pills instead of large app-store buttons (bundled modal library from fides-community-tools-tiles 1.8.11).
 
 = 2.7.1 =
 * RP modal: documentation and API endpoint links moved into the Links row; removed the empty Resources section (bundled modal library synced from fides-community-tools-tiles 1.8.10).

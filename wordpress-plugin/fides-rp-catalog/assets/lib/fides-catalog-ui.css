@@ -3775,14 +3775,83 @@ a.fides-eco-entity svg {
   scroll-margin-top: 0.75rem;
 }
 
+/* RP modal external links (compact pills — aligned with issuer catalog visit/link pattern) */
+.fides-rp-modal-links {
+  margin-bottom: 1.25rem;
+}
+
+.fides-rp-modal-links .fides-modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+.fides-rp-modal-links .fides-modal-link svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* Responsive: stack ecosystem vertically on tablet/mobile (issuer catalog parity) */
+@media (max-width: 760px) {
+  .fides-modal-ecosystem {
+    padding: 0.35rem 0.25rem;
+  }
+
+  .fides-eco-wallet-row {
+    padding: 0 0.25rem;
+  }
+
+  .fides-eco-wallet-box {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .fides-eco-main-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 0.35rem;
+    padding: 0.25rem 0.35rem;
+  }
+
+  .fides-eco-wallet-box.fides-eco-stat-box {
+    max-width: none;
+  }
+
+  .fides-eco-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+    padding: 0;
+  }
+
+  .fides-eco-col-center {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--fides-border);
+    border-bottom: 1px solid var(--fides-border);
+  }
+
+  .fides-eco-center-card {
+    max-width: none;
+  }
+
+  .fides-rp-modal-links .fides-modal-link {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8125rem;
+    gap: 0.35rem;
+  }
+}
+
 /* RP modal entity tables + explore links (shared with credential catalog pattern) */
 .fides-modal-overlay .fides-modal-empty {
-.fides-modal-overlay   margin: 0;
-.fides-modal-overlay   font-size: 0.875rem;
-.fides-modal-overlay   color: var(--fides-text-muted);
-.fides-modal-overlay }
-.fides-modal-overlay 
-.fides-modal-overlay .fides-modal-links {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--fides-text-muted);
+}
+
 .fides-attributes-table .fides-col-type {
   width: 6rem;
   white-space: nowrap;
