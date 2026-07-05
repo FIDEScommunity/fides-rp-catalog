@@ -1617,6 +1617,22 @@
   .fides-modal-recognitions--accordion .fides-recognitions-section {
     padding: 0.75rem 0.85rem 0.65rem;
   }
+
+  /* RP modal: keep key|value side-by-side on mobile (use-case catalog pattern) */
+  .fides-modal-overlay.fides-modal-overlay--rp .fides-details-kv,
+  .fides-modal-overlay.fides-modal-overlay--rp .fides-details-kv--technical-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .fides-modal-overlay.fides-modal-overlay--rp .fides-kv-row {
+    grid-template-columns: minmax(7.5rem, max-content) minmax(0, 1fr);
+    gap: 0.5rem 0.75rem;
+  }
+
+  .fides-modal-overlay.fides-modal-overlay--rp .fides-kv-key {
+    white-space: nowrap;
+  }
 }
 
 /* Links section */
@@ -2262,6 +2278,16 @@
 .fides-modal-overlay.fides-modal-overlay--rp[data-theme="light"] .fides-rp-action-bar .fides-app-store-btn.fides-rp-link-secondary:hover {
   border-color: #0A6EF3;
   background: rgba(10, 110, 243, 0.06) !important;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-wallet-capabilities-list {
+  align-items: flex-start;
+}
+
+.fides-modal-overlay.fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn.fides-rp-link-secondary {
+  flex: 0 1 auto;
+  width: auto;
+  max-width: 100%;
 }
 
 
@@ -3897,6 +3923,12 @@ a.fides-eco-entity svg {
     flex: 1 1 calc(50% - 0.25rem);
     padding: 0.4rem 0.55rem;
     gap: 0.45rem;
+  }
+
+  .fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn.fides-rp-link-secondary {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: 100%;
   }
 
   .fides-modal-overlay--rp .fides-rp-action-bar .fides-app-store-btn svg {
