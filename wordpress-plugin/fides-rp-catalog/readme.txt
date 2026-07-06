@@ -2,13 +2,19 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.7
+Stable tag: 2.7.9
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.9 =
+* Fix RP modal country label: pass countryNames to shared modal so globe shows full name (e.g. Sweden) instead of ISO code (SE).
+
+= 2.7.8 =
+* RP modal header: country flag replaced with globe icon and full country name (bundled fides-catalog-ui from tiles ≥ 1.8.19).
 
 = 2.7.7 =
 * RP modal mobile: one key|value per row; Documentation link button matches primary button width (tiles 1.8.16).

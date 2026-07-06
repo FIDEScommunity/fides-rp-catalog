@@ -2352,6 +2352,7 @@
         window.FidesCatalogUI.openRpModal(rp, {
           theme: container ? (container.getAttribute('data-theme') || 'dark') : 'dark',
           vocabulary: vocabulary,
+          countryNames: countryNames,
           walletCatalogUrl: WALLET_CATALOG_URL,
           bluePagesUrl: BLUE_PAGES_URL,
           credentialCatalogUrl: CREDENTIAL_CATALOG_PAGE_URL,
