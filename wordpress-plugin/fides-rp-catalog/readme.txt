@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.9
+Stable tag: 2.7.10
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.10 =
+* RP detail modal: restore subtle Last updated footer above the contact footer; dates use the browser locale (bundled fides-catalog-ui from tiles ≥ 1.8.20).
 
 = 2.7.9 =
 * Fix RP modal country label: pass countryNames to shared modal so globe shows full name (e.g. Sweden) instead of ISO code (SE).
