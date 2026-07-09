@@ -1,6 +1,7 @@
 {
   "$schema": "https://fides.community/schemas/rp-catalog/v1",
   "orgId": "org:surf",
+  "lastUpdated": "2026-07-09T12:55:00Z",
   "relyingParties": [
     {
       "id": "eduwallet-demo-cv",
