@@ -1,0 +1,61 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:surf",
+  "relyingParties": [
+    {
+      "id": "eduwallet-demo-cv",
+      "name": "Eduwallet Demo CV (verifier)",
+      "description": "Demo verifier in the Npuls/SURF eduwallet proeftuin that requests and verifies education credentials (Academic Base, Academic Enrollment, Open Badge) via a QR-based OpenID4VP flow.",
+      "website": "https://democv.dev.eduwallet.nl",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "beta",
+      "sectors": ["education"],
+      "useCases": [
+        "Verify education credentials",
+        "Digital CV / skills verification"
+      ],
+      "acceptedCredentialRefs": [
+        { "credentialCatalogId": "cred:eduwallet:academic-base:sd-jwt-vc" },
+        { "credentialCatalogId": "cred:eduwallet:academic-enrollment:sd-jwt-vc" },
+        { "credentialCatalogId": "cred:eduwallet:open-badge:sd-jwt-vc" }
+      ],
+      "acceptedCredentials": [
+        "Academic Base Credential",
+        "Academic Enrollment Credential",
+        "Open Badge Credential"
+      ],
+      "vcFormat": ["sd_jwt_vc"],
+      "presentationProtocols": ["OpenID4VP via QR"],
+      "interoperabilityProfiles": ["DIIP v4"],
+      "supportedWallets": [
+        { "name": "wwWallet", "walletCatalogId": "wwwallet" }
+      ],
+      "interactionMode": "remote",
+      "languages": ["nl", "en"]
+    },
+    {
+      "id": "eduwallet-eduid-verifier",
+      "name": "eduID Verifier (Eduwallet proeftuin)",
+      "description": "Verifier in the Npuls/SURF eduwallet proeftuin that requests the eduID credential to authenticate a learner via OpenID4VP.",
+      "website": "https://pilots.eduid.nl",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "beta",
+      "sectors": ["education"],
+      "useCases": [
+        "Wallet-based login",
+        "Identity verification"
+      ],
+      "acceptedCredentials": ["eduID"],
+      "vcFormat": ["sd_jwt_vc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["DIIP v4"],
+      "supportedWallets": [
+        { "name": "wwWallet", "walletCatalogId": "wwwallet" }
+      ],
+      "interactionMode": "remote",
+      "languages": ["nl", "en"]
+    }
+  ]
+}
