@@ -1,15 +1,6 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "rp",
-  "lastImportAt": "2026-07-04T07:57:52.740Z",
-  "managedRps": [
-    {
-      "slug": "fides",
-      "rpId": "mijnoverheid-sandbox"
-    },
-    {
-      "slug": "fides",
-      "rpId": "test"
-    }
-  ]
+  "lastImportAt": "2026-07-18T21:16:55.263Z",
+  "managedRps": []
 }
