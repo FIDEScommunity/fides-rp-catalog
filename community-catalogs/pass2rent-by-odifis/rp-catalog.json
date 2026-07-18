@@ -1,0 +1,81 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:pass2rent-by-odifis",
+  "relyingParties": [
+    {
+      "id": "pass2rent-car-rental-verifier",
+      "name": "PASS2RENT - Car rental Verifier",
+      "description": "PASS2RENT Verifier is an in-house OpenID4VP relying party built and operated by Odifis, a Lithuanian SME, for contactless car rental. One unchanged verifier carries the whole rental journey across two EUDI wallets: a privacy-preserving age check at booking (France Identité PID), driver identification at the vehicle (a test mDL from the EU reference wallet), and a fresh, holder- and device-bound mDL presentation at key handover that releases an ephemeral, replay-protected unlock token.\n\nPrivacy is enforced in code, not policy. The rental platform receives a single predicate — age_over_18, with 21/25 thresholds for young-driver pricing — attested directly by the wallet when it serves it (as France Identité does), flagged as derived otherwise. Either way, any birth date disclosed stays at the verification point: read for milliseconds, then stripped before anything is stored or forwarded. No portrait can be stored (no field exists for one); the audit trail is hash-chained and contains zero personal data; claims are encrypted at rest; retention is fail-closed.\n\nTrust is never overstated: the playground PID verifies green against the France Identité IACA trust anchor; an unknown issuer yields an amber \"issuer not recognised\" — never a silent pass. Revocation uses IETF Token Status Lists. Unevaluated checks are labelled, never simulated — including contract signing: advanced electronic signature (AES) in the demo, not yet legal QES.\n\nOpen standards, cross-border by construction: OpenID4VP 1.0 with DCQL, encrypted direct_post.jwt responses, x509_san_dns reader authentication; ISO/IEC 18013-5 mso_mdoc and SD-JWT VC formats. A Lithuanian relying party consuming French national credentials — no bilateral agreement, no national API.\n\nDemo: synthetic identities, real cryptography — not production. Multi-tenant, built so further rental operators can onboard.",
+      "logo": "https://pass2rent.com/logo_pass2rent_web.svg",
+      "website": "https://api.playground.france-identite.gouv.fr/odifis/contactless-rent/en/",
+      "readiness": "use-case-demo",
+      "country": "LT",
+      "interactionMode": "remote",
+      "status": "development",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        }
+      ],
+      "acceptedCredentials": [
+        "cred:eu:pid-mdoc:mdoc",
+        "cred:iso:mdl-mdoc:mdoc",
+        "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Lissi ID-Wallet",
+          "walletCatalogId": "lissi-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        }
+      ],
+      "features": [
+        "Age verification (wallet-attested or derived)",
+        "selective disclosure",
+        "data minimisation",
+        "revocation checking (IETF Token Status List)",
+        "encrypted responses (direct_post.jwt)",
+        "reader authentication (x509_san_dns)",
+        "tamper-evident PII-free audit trail",
+        "multi-tenant"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/odifis/",
+      "testCredentials": "https://issuer.eudiw.dev/",
+      "media": {
+        "videos": [
+          "https://youtu.be/r-qwBeSzc8E",
+          "https://youtu.be/4LdFHYIwlPY"
+        ]
+      }
+    }
+  ],
+  "lastUpdated": "2026-07-18T21:18:59.710Z"
+}
