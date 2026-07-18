@@ -42,7 +42,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if [ -n "$(git status --porcelain community-catalogs/ data/aggregated.json data/rp-history-state.json data/wp-submission-state.json wordpress-plugin/fides-rp-catalog/data/)" ]; then
+          if [ -n "$(git status --porcelain community-catalogs/ data/aggregated.json data/rp-history-state.json data/wp-submission-state.json)" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
@@ -54,7 +54,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add community-catalogs/ data/aggregated.json data/rp-history-state.json data/wp-submission-state.json wordpress-plugin/fides-rp-catalog/data/aggregated.json
+          # Do not git add wordpress-plugin/*/data/ — that tree is gitignored
+          # (plugin loads aggregated.json from GitHub). Adding it fails with exit 1.
+          git add community-catalogs/ data/aggregated.json data/rp-history-state.json data/wp-submission-state.json
           git commit -m "chore: sync WordPress RP submissions [skip ci]"
           git push
 
