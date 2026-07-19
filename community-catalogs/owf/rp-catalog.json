@@ -84,12 +84,12 @@
       "supportedWallets": [
         "Multipaz Test App"
       ],
-      "documentation": "https://github.com/openwallet-foundation-labs/multipaz",
+      "documentation": "https://github.com/openwallet-foundation/multipaz",
       "languages": [
         "en"
       ],
       "interactionMode": "remote"
     }
   ],
-  "lastUpdated": "2025-01-16T00:00:00+01:00"
+  "lastUpdated": "2026-07-19T00:00:00+01:00"
 }

@@ -53,7 +53,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -105,7 +105,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -156,7 +156,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -211,7 +211,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -262,7 +262,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -270,5 +270,5 @@
       "interactionMode": "remote"
     }
   ],
-  "lastUpdated": "2026-01-26T21:30:00Z"
+  "lastUpdated": "2026-07-19T00:00:00Z"
 }
