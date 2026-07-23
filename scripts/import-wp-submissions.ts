@@ -160,11 +160,16 @@ export function mergeRpIntoCatalog(
   } else {
     relyingParties.push(rp);
   }
+  // Use the real last-modification time WordPress puts on the export document
+  // (submission updated_at) so lastUpdated reflects the actual last change and
+  // stays stable across pushes, instead of stamping "now" on every import.
+  const entryLastUpdated =
+    typeof entry.document.lastUpdated === 'string' ? entry.document.lastUpdated.trim() : '';
   return {
     $schema: 'https://fides.community/schemas/rp-catalog/v1',
     orgId: orgId || base?.orgId,
     relyingParties,
-    lastUpdated: new Date().toISOString(),
+    lastUpdated: entryLastUpdated || base?.lastUpdated || new Date().toISOString(),
   };
 }
 

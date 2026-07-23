@@ -95,6 +95,42 @@ test('mergeRpIntoCatalog appends and updates by RP id', () => {
   assert.equal(doc.relyingParties?.find((r) => r.id === 'example-rp')?.name, 'Example v2');
 });
 
+test('mergeRpIntoCatalog uses the export document lastUpdated (real date), not now', () => {
+  const realDate = '2026-01-15T09:30:00+00:00';
+  const entry: WpExportEntry = {
+    itemId: 'example-rp',
+    slug: 'fides',
+    filename: 'rp-catalog.json',
+    source: 'wordpress',
+    document: {
+      orgId: 'org:fides',
+      relyingParties: [{ id: 'example-rp', name: 'Example', readiness: 'production' }],
+      lastUpdated: realDate,
+    },
+  };
+  const doc = mergeRpIntoCatalog(null, entry);
+  assert.equal(doc.lastUpdated, realDate);
+});
+
+test('mergeRpIntoCatalog preserves base lastUpdated when export omits it', () => {
+  const entry: WpExportEntry = {
+    itemId: 'example-rp',
+    slug: 'fides',
+    filename: 'rp-catalog.json',
+    source: 'wordpress',
+    document: {
+      orgId: 'org:fides',
+      relyingParties: [{ id: 'example-rp', name: 'Example', readiness: 'production' }],
+    },
+  };
+  const base = mergeRpIntoCatalog(null, {
+    ...entry,
+    document: { ...entry.document, lastUpdated: '2025-12-01T00:00:00+00:00' },
+  });
+  const next = mergeRpIntoCatalog(base, entry);
+  assert.equal(next.lastUpdated, '2025-12-01T00:00:00+00:00');
+});
+
 test('buildImportPlan groups by slug and plans prune', () => {
   const entries: WpExportEntry[] = [
     {
