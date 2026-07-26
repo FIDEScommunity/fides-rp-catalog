@@ -4,7 +4,7 @@
  */
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { loadRPData } from '../../../lib/aggregatedData';
+import { loadRPData } from '../../../lib/aggregatedData.js';
 
 export default function handler(req: VercelRequest, res: VercelResponse): void {
   res.setHeader('Access-Control-Allow-Origin', '*');

@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { loadRPData, type AggregatedRP } from '../../lib/aggregatedData';
+import { loadRPData, type AggregatedRP } from '../../lib/aggregatedData.js';
 
 function toNumber(val: unknown, fallback: number): number {
   const n = Number(val);
