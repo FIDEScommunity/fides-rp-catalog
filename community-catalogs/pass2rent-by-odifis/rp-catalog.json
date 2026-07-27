@@ -74,8 +74,11 @@
           "https://youtu.be/r-qwBeSzc8E",
           "https://youtu.be/bgZNJDrLdcU"
         ]
-      }
+      },
+      "useCases": [
+        "PASS2RENT: From Proof of Age to Open Door — Car Rental on EUDI Wallets"
+      ]
     }
   ],
-  "lastUpdated": "2026-07-20T05:37:36.711Z"
+  "lastUpdated": "2026-07-20T05:37:19+00:00"
 }

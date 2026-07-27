@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "k4security",
+  "rps": {
+    "ksid-verifier": {
+      "itemId": "ksid-verifier",
+      "publishedAt": "2026-07-27 14:37:49"
+    }
+  },
+  "importedAt": "2026-07-27T14:38:08.788Z"
+}

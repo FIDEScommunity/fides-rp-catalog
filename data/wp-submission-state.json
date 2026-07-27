@@ -1,8 +1,12 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "rp",
-  "lastImportAt": "2026-07-20T05:37:36.713Z",
+  "lastImportAt": "2026-07-27T14:38:08.791Z",
   "managedRps": [
+    {
+      "slug": "k4security",
+      "rpId": "ksid-verifier"
+    },
     {
       "slug": "pass2rent-by-odifis",
       "rpId": "pass2rent-car-rental-verifier"

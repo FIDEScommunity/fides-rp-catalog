@@ -1,0 +1,33 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:k4security",
+  "relyingParties": [
+    {
+      "id": "ksid-verifier",
+      "name": "KSID Verifier",
+      "description": "A verifier within the KSID Wallet that is used to validate UNTP Digital Product Passports, Conformity Credentials, Digital Traceability Events, Digital Facility Records, and Digital Identity Anchor issued via KSPTS.",
+      "logo": "https://k4-security.com/assets/logo/k4-security/k4s_symbol_orange.png",
+      "readiness": "production",
+      "country": "KR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "vcFormat": [
+        "sd_jwt_vc",
+        "jwt_vc",
+        "vcdm_1_1",
+        "vcdm_2_0"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "SIOPv2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "KSID Wallet",
+          "walletCatalogId": "ksid-wallet"
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-07-27T14:37:49+00:00"
+}
