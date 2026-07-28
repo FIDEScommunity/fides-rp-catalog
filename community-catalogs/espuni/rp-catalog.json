@@ -1,0 +1,48 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:espuni",
+  "relyingParties": [
+    {
+      "id": "espuni-age-verification",
+      "name": "espuni Age Verification",
+      "description": "Age Verification-as-a-Service for platforms under DSA Article 28. EUDI Wallet-based verification (OID4VP, mso_mdoc, doctype eu.europa.ec.av.1) following the EU Age Verification Profile. Built on EUDIPLO (OpenWallet Foundation). Verified end-to-end against AltID (Denmark) in its test environment, including negative cases.",
+      "logo": "https://app.espuni.com/brand/espuni-favicon-transparent-512.png",
+      "website": "https://www.espuni.com",
+      "readiness": "production-pilot",
+      "country": "ES",
+      "interactionMode": "remote",
+      "status": "beta",
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        },
+        {
+          "name": "AltID",
+          "walletCatalogId": "altid"
+        }
+      ],
+      "features": [
+        "Age Verification",
+        "Selective Disclosure",
+        "Digital Credentials API"
+      ],
+      "documentation": "https://app.espuni.com/en/docs",
+      "testCredentials": "https://app.espuni.com/en/demo",
+      "apiEndpoint": "https://api.espuni.com",
+      "media": {
+        "images": [
+          "https://fides.community/app/uploads/2026/07/Stream3.jpg"
+        ]
+      }
+    }
+  ],
+  "lastUpdated": "2026-07-28T06:58:33+00:00"
+}

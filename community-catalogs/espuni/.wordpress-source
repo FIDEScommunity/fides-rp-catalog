@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "espuni",
+  "rps": {
+    "espuni-age-verification": {
+      "itemId": "espuni-age-verification",
+      "publishedAt": "2026-07-28 06:58:33"
+    }
+  },
+  "importedAt": "2026-07-28T06:58:53.224Z"
+}

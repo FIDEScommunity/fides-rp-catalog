@@ -1,8 +1,12 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "rp",
-  "lastImportAt": "2026-07-27T14:38:08.791Z",
+  "lastImportAt": "2026-07-28T06:58:53.229Z",
   "managedRps": [
+    {
+      "slug": "espuni",
+      "rpId": "espuni-age-verification"
+    },
     {
       "slug": "k4security",
       "rpId": "ksid-verifier"
