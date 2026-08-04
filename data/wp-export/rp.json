@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "rp",
-    "generatedAt": "2026-07-28T08:26:14+00:00",
+    "generatedAt": "2026-08-04T09:00:42+00:00",
     "entries": [
         {
             "itemId": "espuni-age-verification",
@@ -22,6 +22,14 @@
                         "country": "ES",
                         "interactionMode": "remote",
                         "status": "beta",
+                        "acceptedCredentialRefs": [
+                            {
+                                "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+                            }
+                        ],
+                        "acceptedCredentials": [
+                            "cred:eu:age-verification-mdoc:mdoc"
+                        ],
                         "vcFormat": [
                             "mdoc"
                         ],
@@ -42,22 +50,26 @@
                         "features": [
                             "Age Verification",
                             "Selective Disclosure",
-                            "Digital Credentials API"
+                            "Digital Credentials API",
+                            "Zero Knowledge Proofs"
                         ],
                         "documentation": "https://app.espuni.com/en/docs",
-                        "testCredentials": "https://app.espuni.com/en/demo",
+                        "testCredentials": "https://issuing.demo.ageverification.dev/",
                         "apiEndpoint": "https://api.espuni.com",
                         "media": {
                             "images": [
-                                "https://fides.community/app/uploads/2026/07/Captura-de-pantalla-2026-07-28-102351.png"
+                                "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104546.png",
+                                "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104709.png",
+                                "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104801.png",
+                                "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104948.png"
                             ]
                         }
                     }
                 ],
-                "lastUpdated": "2026-07-28T08:26:13+00:00"
+                "lastUpdated": "2026-08-04T09:00:41+00:00"
             },
-            "publishedAt": "2026-07-28 08:26:13",
-            "updatedAt": "2026-07-28 08:26:13"
+            "publishedAt": "2026-08-04 09:00:41",
+            "updatedAt": "2026-08-04 09:00:41"
         },
         {
             "itemId": "ksid-verifier",
