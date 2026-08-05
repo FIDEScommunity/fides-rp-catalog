@@ -51,7 +51,7 @@
     || 'https://fides.community/ecosystem-explorer/organization-catalog/';
 
   const USE_CASE_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.useCaseCatalogUrl)
-    || 'https://fides.community/use-cases/';
+    || 'https://fides.community/ecosystem-explorer/use-cases/';
 
   const ECOSYSTEM_EXPLORER_URL = (window.fidesRPCatalog && window.fidesRPCatalog.ecosystemExplorerUrl)
     || 'https://fides.community/topics/ecosystem-explorer/';

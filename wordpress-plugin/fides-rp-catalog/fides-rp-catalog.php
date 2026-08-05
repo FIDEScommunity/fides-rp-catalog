@@ -131,7 +131,7 @@ function fides_rp_catalog_enqueue_assets() {
         ),
         'useCaseCatalogUrl' => get_option(
             'fides_rp_catalog_use_case_catalog_url',
-            'https://fides.community/use-cases/'
+            'https://fides.community/ecosystem-explorer/use-cases/'
         ),
         'useCaseAggregatedDataUrl' => get_option(
             'fides_rp_catalog_use_case_aggregated_url',
