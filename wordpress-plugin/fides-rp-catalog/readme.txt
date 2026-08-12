@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.12
+Stable tag: 2.7.13
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.7.13 =
+* RP modal: Use cases accordion moved above Specifications / Ecosystem Model; bare name+likes table, same-window deep links (synced fides-catalog-ui).
 
 = 2.7.12 =
 * Fix light/fides modal contrast (accordions, ecosystem, close, Open in catalog), header-fixed scrolling, and issuer/credential table column layout.
