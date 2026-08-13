@@ -337,7 +337,53 @@
         "nl"
       ],
       "interactionMode": "remote"
+    },
+    {
+      "id": "fides-website",
+      "name": "FIDES Website",
+      "description": "Sign in with wallet on the fides.community website.",
+      "website": "https://fides.community/",
+      "readiness": "production",
+      "country": "NL",
+      "interactionMode": "remote",
+      "status": "live",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:fides:verified-email:sd-jwt-vc"
+        }
+      ],
+      "acceptedCredentials": [
+        "cred:fides:verified-email:sd-jwt-vc"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Heidi Wallet App",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        },
+        {
+          "name": "Sphereon Edge Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "Credenco Wallet",
+          "walletCatalogId": "credenco-wallet"
+        },
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-02-03T10:00:00Z"
+  "lastUpdated": "2026-08-13T14:50:03+00:00"
 }

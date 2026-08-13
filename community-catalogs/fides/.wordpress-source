@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "fides",
+  "rps": {
+    "fides-website": {
+      "itemId": "fides-website",
+      "publishedAt": "2026-08-13 14:50:03"
+    }
+  },
+  "importedAt": "2026-08-13T14:50:19.064Z"
+}
