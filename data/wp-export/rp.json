@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "rp",
-    "generatedAt": "2026-08-04T09:00:42+00:00",
+    "generatedAt": "2026-08-13T14:50:04+00:00",
     "entries": [
         {
             "itemId": "espuni-age-verification",
@@ -70,6 +70,67 @@
             },
             "publishedAt": "2026-08-04 09:00:41",
             "updatedAt": "2026-08-04 09:00:41"
+        },
+        {
+            "itemId": "fides-website",
+            "slug": "fides",
+            "filename": "rp-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/rp-catalog/v1",
+                "orgId": "org:fides",
+                "relyingParties": [
+                    {
+                        "id": "fides-website",
+                        "name": "FIDES Website",
+                        "description": "Sign in with wallet on the fides.community website.",
+                        "website": "https://fides.community/",
+                        "readiness": "production",
+                        "country": "NL",
+                        "interactionMode": "remote",
+                        "status": "live",
+                        "acceptedCredentialRefs": [
+                            {
+                                "credentialCatalogId": "cred:fides:verified-email:sd-jwt-vc"
+                            }
+                        ],
+                        "acceptedCredentials": [
+                            "cred:fides:verified-email:sd-jwt-vc"
+                        ],
+                        "vcFormat": [
+                            "sd_jwt_vc"
+                        ],
+                        "presentationProtocols": [
+                            "OpenID4VP"
+                        ],
+                        "supportedWallets": [
+                            {
+                                "name": "Heidi Wallet App",
+                                "walletCatalogId": "heidi-wallet"
+                            },
+                            {
+                                "name": "Data Wallet by iGrant.io",
+                                "walletCatalogId": "igrant-data-wallet"
+                            },
+                            {
+                                "name": "Sphereon Edge Wallet",
+                                "walletCatalogId": "sphereon-wallet"
+                            },
+                            {
+                                "name": "Credenco Wallet",
+                                "walletCatalogId": "credenco-wallet"
+                            },
+                            {
+                                "name": "Yivi",
+                                "walletCatalogId": "yivi"
+                            }
+                        ]
+                    }
+                ],
+                "lastUpdated": "2026-08-13T14:50:03+00:00"
+            },
+            "publishedAt": "2026-08-13 14:50:03",
+            "updatedAt": "2026-08-13 14:50:03"
         },
         {
             "itemId": "ksid-verifier",
