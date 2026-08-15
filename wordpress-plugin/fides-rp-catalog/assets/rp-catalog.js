@@ -39,10 +39,6 @@
   const BLUE_PAGES_URL = (window.fidesRPCatalog && window.fidesRPCatalog.bluePagesUrl)
     || 'https://fides.community/community-tools/blue-pages';
 
-  // Map page URL for "Show on map" link (configurable via WordPress)
-  const MAP_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.mapPageUrl)
-    || 'https://fides.community/community-tools/map/';
-
   // Credential catalog page for ?credential=cred:… deep links (configurable via WordPress)
   const CREDENTIAL_CATALOG_PAGE_URL = (window.fidesRPCatalog && window.fidesRPCatalog.credentialCatalogUrl)
     || 'https://fides.community/ecosystem-explorer/credential-catalog/';
@@ -55,6 +51,10 @@
 
   const ECOSYSTEM_EXPLORER_URL = (window.fidesRPCatalog && window.fidesRPCatalog.ecosystemExplorerUrl)
     || 'https://fides.community/topics/ecosystem-explorer/';
+  const ASK_FIDES_AVAILABLE = !!(window.fidesRPCatalog && window.fidesRPCatalog.askFidesAvailable);
+  const ASK_FIDES_PLACEHOLDER = (window.fidesRPCatalog && window.fidesRPCatalog.askFidesPlaceholder)
+    ? String(window.fidesRPCatalog.askFidesPlaceholder)
+    : 'Ask anything about relying parties…';
   const RATINGS_API_BASE = (window.fidesRPCatalog && window.fidesRPCatalog.ratingsApiBase)
     ? String(window.fidesRPCatalog.ratingsApiBase).trim().replace(/\/$/, '')
     : '';
@@ -1543,25 +1543,30 @@
     // Content area
     html += `<div class="fides-content">`;
 
-    // Results bar: search + sort + map (+ mobile filter) — same pattern as wallet catalog
+    // Results bar: search + Ask FIDES + sort (+ mobile filter)
     html += `
       <div class="fides-results-bar">
         ${settings.showSearch ? `
-          <div class="fides-topbar-search">
-            <div class="fides-search-wrapper">
-              <span class="fides-search-icon">${icons.search}</span>
-              <input
-                type="text"
-                class="fides-search-input"
-                placeholder="Search..."
-                value="${escapeHtml(filters.search)}"
-                id="fides-search-input"
-                autocomplete="off"
-              >
-              <button class="fides-search-clear ${filters.search ? '' : 'hidden'}" id="fides-search-clear" type="button" aria-label="Clear search">
-                ${icons.xSmall}
-              </button>
+          <div class="fides-search-actions">
+            <div class="fides-topbar-search">
+              <div class="fides-search-wrapper">
+                <span class="fides-search-icon">${icons.search}</span>
+                <input
+                  type="text"
+                  class="fides-search-input"
+                  placeholder="Search..."
+                  value="${escapeHtml(filters.search)}"
+                  id="fides-search-input"
+                  autocomplete="off"
+                >
+                <button class="fides-search-clear ${filters.search ? '' : 'hidden'}" id="fides-search-clear" type="button" aria-label="Clear search">
+                  ${icons.xSmall}
+                </button>
+              </div>
             </div>
+            ${ASK_FIDES_AVAILABLE
+              ? '<div class="fides-ask-fides-option"><span class="fides-ask-fides-separator">or</span><button class="fides-ask-fides-trigger" id="fides-ask-fides-trigger" type="button">Ask <strong>FIDES</strong></button></div>'
+              : ''}
           </div>
         ` : ''}
         <div class="fides-results-bar-actions">
@@ -1581,7 +1586,6 @@
             </select>
           </label>
         </div>
-        <a href="${MAP_PAGE_URL}" class="fides-show-on-map" target="_blank" rel="noopener" aria-label="Show on map (opens in new tab)">${icons.externalLink}<span class="fides-show-on-map-label fides-show-on-map-label--full">Show on map</span><span class="fides-show-on-map-label fides-show-on-map-label--short" aria-hidden="true">Map</span></a>
         ${renderViewToggle()}
       </div>
       <div class="fides-kpi-row">
@@ -2439,6 +2443,17 @@
         if (input) input.value = '';
         // Use grid-only render
         renderRPGridOnly();
+      });
+    }
+
+    const askFidesTrigger = document.getElementById('fides-ask-fides-trigger');
+    if (askFidesTrigger) {
+      askFidesTrigger.addEventListener('click', () => {
+        if (!window.FidesAssistant || typeof window.FidesAssistant.open !== 'function') return;
+        window.FidesAssistant.open({
+          prefill: searchInput ? String(searchInput.value || '').trim() : filters.search,
+          placeholder: ASK_FIDES_PLACEHOLDER,
+        });
       });
     }
 

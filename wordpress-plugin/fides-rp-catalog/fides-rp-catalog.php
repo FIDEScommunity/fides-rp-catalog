@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a WebApplication JSON-LD payload so RP detail URLs become indexable by search engines.
- * Version: 2.7.13
+ * Version: 2.8.0
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '2.7.13');
+define('FIDES_RP_CATALOG_VERSION', '2.8.0');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FIDES_RP_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/relying-parties-update/');
@@ -108,7 +108,6 @@ function fides_rp_catalog_enqueue_assets() {
         'vocabularyFallbackUrl' => FIDES_RP_CATALOG_PLUGIN_URL . 'assets/vocabulary.json',
         'walletCatalogUrl' => get_option('fides_rp_catalog_wallet_url', 'https://wallets.fides.community'),
         'bluePagesUrl' => get_option('fides_rp_catalog_blue_pages_url', 'https://fides.community/community-tools/blue-pages'),
-        'mapPageUrl' => get_option('fides_rp_catalog_map_url', 'https://fides.community/community-tools/map/'),
         'credentialCatalogUrl' => get_option(
             'fides_rp_catalog_credential_catalog_url',
             'https://fides.community/ecosystem-explorer/credential-catalog/'
@@ -155,6 +154,8 @@ function fides_rp_catalog_enqueue_assets() {
                 'proOrgIds'   => array(),
             ),
         'tierUiEnabled' => function_exists('fides_catalog_tier_ui_enabled') && fides_catalog_tier_ui_enabled(),
+        'askFidesAvailable' => has_action('fides_assistant_enqueue_headless') !== false,
+        'askFidesPlaceholder' => __('Ask anything about relying parties…', 'fides-rp-catalog'),
     ));
 }
 add_action('wp_enqueue_scripts', 'fides_rp_catalog_enqueue_assets');
@@ -240,6 +241,9 @@ function fides_rp_catalog_shortcode($atts) {
     $columns = in_array($atts['columns'], array('2', '3', '4')) ? $atts['columns'] : '3';
     $theme = in_array($atts['theme'], array('dark', 'light', 'fides')) ? $atts['theme'] : 'dark';
     $taxonomy_theme = sanitize_text_field((string) $atts['taxonomy_theme']);
+    if (has_action('fides_assistant_enqueue_headless') !== false) {
+        do_action('fides_assistant_enqueue_headless');
+    }
 
     $initial_html = '';
     if (class_exists('Fides_RP_Catalog_SSR')) {

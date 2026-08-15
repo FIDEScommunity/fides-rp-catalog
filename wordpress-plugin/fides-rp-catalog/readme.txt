@@ -2,13 +2,18 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.7.13
+Stable tag: 2.8.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.0 =
+* Add an “or Ask FIDES” button beside RP search when FIDES Assistant 0.6.1 or
+  newer is active, with search prefill and an RP-specific placeholder.
+* Remove the Show on map link and its configuration from the RP listing.
 
 = 2.7.13 =
 * RP modal: Use cases accordion moved above Specifications / Ecosystem Model; bare name+likes table, same-window deep links (synced fides-catalog-ui).
