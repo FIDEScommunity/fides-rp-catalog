@@ -2,13 +2,17 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.0
+Stable tag: 2.8.1
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.1 =
+* Restore readable light/FIDES RP modal colors and fixed header/body scrolling
+  by resynchronizing the canonical shared modal stylesheet.
 
 = 2.8.0 =
 * Add an “or Ask FIDES” button beside RP search when FIDES Assistant 0.6.1 or
