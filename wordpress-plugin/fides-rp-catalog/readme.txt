@@ -2,13 +2,19 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.1
+Stable tag: 2.8.3
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.3 =
+* After GitHub fails, use a 12-hour browser cache and the WP last-known-good aggregated feed before the bundled plugin snapshot.
+
+= 2.8.2 =
+* Show a dismissible notice when GitHub catalog data is unreachable and the plugin snapshot is used.
 
 = 2.8.1 =
 * Restore readable light/FIDES RP modal colors and fixed header/body scrolling

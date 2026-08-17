@@ -383,6 +383,16 @@
   // DOM Elements
   let container;
   let settings;
+  let catalogLoadMeta = { showStaleNotice: false, remoteFailed: false, snapshotDate: '' };
+
+  function applyStaleCatalogNotice() {
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.mountStaleCatalogNotice !== 'function') return;
+    window.FidesCatalogUI.mountStaleCatalogNotice(container, {
+      showStaleNotice: catalogLoadMeta.showStaleNotice,
+      catalogType: 'rp',
+      snapshotDate: catalogLoadMeta.snapshotDate
+    });
+  }
 
   let mobileFiltersController = null;
   function getMobileFilters() {
@@ -701,36 +711,56 @@
    * Default: GitHub first, then local plugin. Hostname/URL contains ".local": local first, then GitHub.
    */
   async function loadRelyingParties() {
-    const remote = { name: 'GitHub', url: config.githubDataUrl, transform: (d) => d.relyingParties || [] };
-    const local = { name: 'Local', url: `${config.pluginUrl}data/aggregated.json`, transform: (d) => d.relyingParties || [] };
-    const sources = isFidesLocalDevHost() ? [local, remote] : [remote, local];
+    const localUrl = `${config.pluginUrl}data/aggregated.json`;
+    const ui = window.FidesCatalogUI;
+    let sourceName = '';
 
-    for (const source of sources) {
-      if (!source.url) continue;
-
-      try {
-        const response = await fetch(source.url);
-        if (response.ok) {
-          const data = await response.json();
-          relyingParties = source.transform(data);
-          await loadCredentialTaxonomyIndex();
-          await loadIssuerUsageIndex();
-          await loadWalletIndex();
-          await loadUseCaseIndex();
-          enrichRelyingPartiesCredentialTaxonomy(relyingParties);
-          try {
-            await loadRPRatingSummaries(relyingParties);
-          } catch (ratingsError) {
-            console.warn('Failed to load RP likes:', ratingsError.message);
-          }
-          const rpsForFacets = getRPsForFacets(relyingParties);
-          filterFacets = computeFilterFacets(rpsForFacets);
-          console.log(`✅ Loaded ${relyingParties.length} relying parties from ${source.name}`);
-          break;
-        }
-      } catch (error) {
-        console.warn(`Failed to load from ${source.name}:`, error.message);
+    if (ui && typeof ui.loadCatalogAggregatedJson === 'function') {
+      const loaded = await ui.loadCatalogAggregatedJson({
+        remoteUrl: config.githubDataUrl,
+        cacheUrl: config.cacheDataUrl,
+        localUrl: localUrl
+      });
+      catalogLoadMeta.showStaleNotice = !!loaded.showStaleNotice;
+      catalogLoadMeta.remoteFailed = !!loaded.remoteFailed;
+      catalogLoadMeta.snapshotDate = loaded.snapshotDate || '';
+      if (loaded.ok && loaded.data) {
+        relyingParties = loaded.data.relyingParties || [];
+        sourceName = loaded.source === 'github' ? 'GitHub' : (loaded.source === 'cache' ? 'Cache' : 'Local');
       }
+    } else {
+      const remote = { name: 'GitHub', url: config.githubDataUrl };
+      const local = { name: 'Local', url: localUrl };
+      const sources = isFidesLocalDevHost() ? [local, remote] : [remote, local];
+      for (const source of sources) {
+        if (!source.url) continue;
+        try {
+          const response = await fetch(source.url);
+          if (!response.ok) continue;
+          const data = await response.json();
+          relyingParties = data.relyingParties || [];
+          sourceName = source.name;
+          break;
+        } catch (error) {
+          console.warn(`Failed to load from ${source.name}:`, error.message);
+        }
+      }
+    }
+
+    if (relyingParties.length > 0) {
+      await loadCredentialTaxonomyIndex();
+      await loadIssuerUsageIndex();
+      await loadWalletIndex();
+      await loadUseCaseIndex();
+      enrichRelyingPartiesCredentialTaxonomy(relyingParties);
+      try {
+        await loadRPRatingSummaries(relyingParties);
+      } catch (ratingsError) {
+        console.warn('Failed to load RP likes:', ratingsError.message);
+      }
+      const rpsForFacets = getRPsForFacets(relyingParties);
+      filterFacets = computeFilterFacets(rpsForFacets);
+      console.log(`Loaded ${relyingParties.length} relying parties from ${sourceName}`);
     }
 
     if (relyingParties.length === 0) {
@@ -1636,6 +1666,7 @@
     container.innerHTML = html;
     attachEventListeners();
     getMobileFilters()?.applyAfterRender(mobileFiltersOpen);
+    applyStaleCatalogNotice();
     
     // Restore focus
     if (wasSearchFocused) {
