@@ -343,7 +343,10 @@ if (! class_exists('Fides_RP_Catalog_Submission_Adapter')) {
                 'interactionMode' => $interaction_mode,
             );
 
-            $description = isset($payload['description']) ? trim(wp_kses_post((string) $payload['description'])) : '';
+            // Plain text: UI escapeHtml's on render. wp_kses_post would store "&amp;" and double-escape in the modal.
+            $description = isset($payload['description'])
+                ? self::normalize_plain_textarea((string) $payload['description'])
+                : '';
             if ($description !== '') {
                 if (mb_strlen($description) > self::DESCRIPTION_MAX_LENGTH) {
                     return new WP_Error(
@@ -867,6 +870,19 @@ if (! class_exists('Fides_RP_Catalog_Submission_Adapter')) {
                 $out[] = $value;
             }
             return $out;
+        }
+
+        /**
+         * Plain-text description for catalog UI (escapeHtml on render).
+         * Decodes stored HTML entities so "&amp;" is not double-escaped in modals.
+         *
+         * @param string $text Raw textarea value.
+         * @return string
+         */
+        private static function normalize_plain_textarea($text) {
+            $text = str_replace(array("\r\n", "\r"), "\n", (string) $text);
+            $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            return trim(sanitize_textarea_field($text));
         }
 
         /**
