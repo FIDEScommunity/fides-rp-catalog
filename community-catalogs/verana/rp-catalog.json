@@ -380,7 +380,8 @@
       ],
       "vcFormat": [
         "sd_jwt_vc",
-        "anoncreds"
+        "anoncreds",
+        "vcdm_2_0"
       ],
       "presentationProtocols": [
         "OpenID4VP",
