@@ -2,13 +2,21 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.3
+Stable tag: 2.8.5
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.5 =
+* After magic-link sign-in, Back reloads a cached logged-out catalog page so
+  the like star sees the new session.
+
+= 2.8.4 =
+* Store RP submission descriptions as plain text so ampersands are not
+  double-escaped as &amp; in the catalog modal.
 
 = 2.8.3 =
 * After GitHub fails, use a 12-hour browser cache and the WP last-known-good aggregated feed before the bundled plugin snapshot.
