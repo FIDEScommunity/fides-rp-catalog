@@ -2,13 +2,17 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.6
+Stable tag: 2.8.7
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.7 =
+* Official listing badge requires explicit catalogTier Pro; curated Community
+  can keep full fields via catalogListingDepth (tiles ≥ 1.10.0).
 
 = 2.8.6 =
 * After sign-in, Back from the logged-in page reloads a stale guest catalog
