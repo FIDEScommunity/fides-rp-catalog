@@ -2,13 +2,19 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.7
+Stable tag: 2.8.9
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.9 =
+* Sync shared modal UI: use-case card Matomo Use Case Click tracking.
+
+= 2.8.8 =
+* Sync shared modal UI: Use cases accordion shows cards (closed by default).
 
 = 2.8.7 =
 * Official listing badge requires explicit catalogTier Pro; curated Community
