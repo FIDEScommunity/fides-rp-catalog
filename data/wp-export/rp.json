@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "rp",
-    "generatedAt": "2026-08-13T14:50:04+00:00",
+    "generatedAt": "2026-09-01T08:24:25+00:00",
     "entries": [
         {
             "itemId": "espuni-age-verification",
@@ -172,6 +172,102 @@
             },
             "publishedAt": "2026-07-27 14:37:49",
             "updatedAt": "2026-07-27 14:37:49"
+        },
+        {
+            "itemId": "mdoc-web-verifier",
+            "slug": "stelausoftware",
+            "filename": "rp-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/rp-catalog/v1",
+                "orgId": "org:stelausoftware",
+                "relyingParties": [
+                    {
+                        "id": "mdoc-web-verifier",
+                        "name": "mDoc Web Verifier",
+                        "description": "Browser-based verifier for ISO/IEC 18013-5 mDoc credentials using proximity flows.",
+                        "logo": "https://mdoc-web-verifier.stelau.com/assets/icon-512.png",
+                        "website": "https://mdoc-web-verifier.stelau.com/",
+                        "readiness": "technical-demo",
+                        "country": "FR",
+                        "interactionMode": "proximity",
+                        "status": "live",
+                        "acceptedCredentialRefs": [
+                            {
+                                "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:ewc:pid-eudi-mdoc:mso-mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:iso:mvrc-mdoc:mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+                            }
+                        ],
+                        "acceptedCredentials": [
+                            "cred:iso:mdl-mdoc:mdoc",
+                            "cred:eu:pid-mdoc:mdoc",
+                            "cred:fides:pid:sd-jwt-vc",
+                            "cred:ewc:pid-eudi-mdoc:mso-mdoc",
+                            "cred:iso:photoid-mdoc:mdoc",
+                            "cred:iso:photoid-mdoc-alt:mdoc",
+                            "cred:iso:mvrc-mdoc:mdoc",
+                            "cred:eu:age-verification-mdoc:mdoc"
+                        ],
+                        "vcFormat": [
+                            "mdoc"
+                        ],
+                        "presentationProtocols": [
+                            "ISO 18013-5",
+                            "ISO 18013-5 proximity",
+                            "QR device engagement"
+                        ],
+                        "supportedWallets": [
+                            {
+                                "name": "Google Wallet (mDL)"
+                            },
+                            {
+                                "name": "Apple Wallet (mDL)"
+                            },
+                            {
+                                "name": "EUDI-compatible mDoc wallets"
+                            },
+                            {
+                                "name": "France Identité",
+                                "walletCatalogId": "france-identite"
+                            }
+                        ],
+                        "features": [
+                            "selective disclosure",
+                            "reader authentication"
+                        ],
+                        "documentation": "https://github.com/stelauconseil/mdoc-web-verifier",
+                        "languages": [
+                            "en"
+                        ],
+                        "useCases": [
+                            "Mobile Driving Licence (mDL) based on ISO/IEC 18013-5"
+                        ]
+                    }
+                ],
+                "lastUpdated": "2026-09-01T08:24:24+00:00"
+            },
+            "publishedAt": "2026-09-01 08:24:24",
+            "updatedAt": "2026-09-01 08:24:24"
         },
         {
             "itemId": "pass2rent-car-rental-verifier",
