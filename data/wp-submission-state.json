@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "rp",
-  "lastImportAt": "2026-08-13T14:50:19.067Z",
+  "lastImportAt": "2026-09-01T08:24:40.713Z",
   "managedRps": [
     {
       "slug": "espuni",
@@ -18,6 +18,10 @@
     {
       "slug": "pass2rent-by-odifis",
       "rpId": "pass2rent-car-rental-verifier"
+    },
+    {
+      "slug": "stelausoftware",
+      "rpId": "mdoc-web-verifier"
     }
   ]
 }

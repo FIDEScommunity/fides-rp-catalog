@@ -15,13 +15,17 @@
         "government"
       ],
       "useCases": [
-        "Mobile Driving License verification",
-        "Age verification",
-        "Identity proofing"
+        "Mobile Driving Licence (mDL) based on ISO/IEC 18013-5"
       ],
       "acceptedCredentials": [
-        "mDL",
-        "PID (mdoc profile)"
+        "cred:iso:mdl-mdoc:mdoc",
+        "cred:eu:pid-mdoc:mdoc",
+        "cred:fides:pid:sd-jwt-vc",
+        "cred:ewc:pid-eudi-mdoc:mso-mdoc",
+        "cred:iso:photoid-mdoc:mdoc",
+        "cred:iso:photoid-mdoc-alt:mdoc",
+        "cred:iso:mvrc-mdoc:mdoc",
+        "cred:eu:age-verification-mdoc:mdoc"
       ],
       "acceptedCredentialRefs": [
         {
@@ -29,24 +33,59 @@
         },
         {
           "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:pid-eudi-mdoc:mso-mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mvrc-mdoc:mdoc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
         }
       ],
       "vcFormat": [
         "mdoc"
       ],
       "presentationProtocols": [
+        "ISO 18013-5",
         "ISO 18013-5 proximity",
         "QR device engagement"
       ],
       "supportedWallets": [
-        "Google Wallet (mDL)",
-        "Apple Wallet (mDL)",
-        "EUDI-compatible mDoc wallets"
+        {
+          "name": "Google Wallet (mDL)"
+        },
+        {
+          "name": "Apple Wallet (mDL)"
+        },
+        {
+          "name": "EUDI-compatible mDoc wallets"
+        },
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
       ],
       "languages": [
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "proximity",
+      "features": [
+        "selective disclosure",
+        "reader authentication"
+      ],
+      "documentation": "https://github.com/stelauconseil/mdoc-web-verifier"
     }
-  ]
+  ],
+  "lastUpdated": "2026-09-01T08:24:24+00:00"
 }

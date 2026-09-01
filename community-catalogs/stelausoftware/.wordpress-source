@@ -1,0 +1,11 @@
+{
+  "source": "wordpress",
+  "slug": "stelausoftware",
+  "rps": {
+    "mdoc-web-verifier": {
+      "itemId": "mdoc-web-verifier",
+      "publishedAt": "2026-09-01 08:24:24"
+    }
+  },
+  "importedAt": "2026-09-01T08:24:40.711Z"
+}
