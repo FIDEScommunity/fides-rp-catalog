@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.13
+Stable tag: 2.8.14
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.8.14 =
+* Sync shared modal UI: icon-only Official/Community listing badge on mobile; more reliable modal close after several opens (tiles ≥ 1.13.22).
 
 = 2.8.13 =
 * Sync shared catalog analytics for uniform wallet and organization detail/outbound events with Matomo outlink deduplication (tiles ≥ 1.13.21).
