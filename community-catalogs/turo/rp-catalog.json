@@ -33,8 +33,9 @@
           "name": "Google Wallet",
           "walletCatalogId": "google-wallet"
         }
-      ]
+      ],
+      "logo": "https://fides.community/ecosystem-explorer/relying-party-catalog/?rp=turo-driver-verification"
     }
   ],
-  "lastUpdated": "2026-09-16T16:16:20+00:00"
+  "lastUpdated": "2026-09-16T20:08:20+00:00"
 }
