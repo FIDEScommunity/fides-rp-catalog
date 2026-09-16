@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "rp",
-  "lastImportAt": "2026-09-16T16:13:56.247Z",
+  "lastImportAt": "2026-09-16T16:16:36.705Z",
   "managedRps": [
     {
       "slug": "espuni",
@@ -22,6 +22,10 @@
     {
       "slug": "stelausoftware",
       "rpId": "mdoc-web-verifier"
+    },
+    {
+      "slug": "turo",
+      "rpId": "turo-driver-verification"
     },
     {
       "slug": "uber",
