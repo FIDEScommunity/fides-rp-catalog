@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "rp",
-    "generatedAt": "2026-09-16T16:13:34+00:00",
+    "generatedAt": "2026-09-16T16:16:20+00:00",
     "entries": [
         {
             "itemId": "espuni-age-verification",
@@ -360,6 +360,54 @@
             },
             "publishedAt": "2026-07-20 05:37:19",
             "updatedAt": "2026-07-20 05:37:19"
+        },
+        {
+            "itemId": "turo-driver-verification",
+            "slug": "turo",
+            "filename": "rp-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/rp-catalog/v1",
+                "orgId": "org:turo",
+                "relyingParties": [
+                    {
+                        "id": "turo-driver-verification",
+                        "name": "Turo Driver Verification",
+                        "description": "Enables Turo guests to verify their driving licence using a mobile driving licence (mDL).",
+                        "readiness": "production",
+                        "country": "US",
+                        "interactionMode": "remote",
+                        "status": "live",
+                        "acceptedCredentialRefs": [
+                            {
+                                "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:google:google-id-pass:mdoc"
+                            }
+                        ],
+                        "acceptedCredentials": [
+                            "cred:iso:mdl-mdoc:mdoc",
+                            "cred:google:google-id-pass:mdoc"
+                        ],
+                        "vcFormat": [
+                            "mdoc"
+                        ],
+                        "presentationProtocols": [
+                            "OpenID4VP"
+                        ],
+                        "supportedWallets": [
+                            {
+                                "name": "Google Wallet",
+                                "walletCatalogId": "google-wallet"
+                            }
+                        ]
+                    }
+                ],
+                "lastUpdated": "2026-09-16T16:16:20+00:00"
+            },
+            "publishedAt": "2026-09-16 16:16:20",
+            "updatedAt": "2026-09-16 16:16:20"
         },
         {
             "itemId": "uber-rider-verification",
