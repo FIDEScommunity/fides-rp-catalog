@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "rp",
-    "generatedAt": "2026-09-16T16:16:20+00:00",
+    "generatedAt": "2026-09-16T20:08:20+00:00",
     "entries": [
         {
             "itemId": "espuni-age-verification",
@@ -374,6 +374,7 @@
                         "id": "turo-driver-verification",
                         "name": "Turo Driver Verification",
                         "description": "Enables Turo guests to verify their driving licence using a mobile driving licence (mDL).",
+                        "logo": "https://fides.community/ecosystem-explorer/relying-party-catalog/?rp=turo-driver-verification",
                         "readiness": "production",
                         "country": "US",
                         "interactionMode": "remote",
@@ -404,10 +405,10 @@
                         ]
                     }
                 ],
-                "lastUpdated": "2026-09-16T16:16:20+00:00"
+                "lastUpdated": "2026-09-16T20:08:20+00:00"
             },
-            "publishedAt": "2026-09-16 16:16:20",
-            "updatedAt": "2026-09-16 16:16:20"
+            "publishedAt": "2026-09-16 20:08:20",
+            "updatedAt": "2026-09-16 20:08:20"
         },
         {
             "itemId": "uber-rider-verification",
