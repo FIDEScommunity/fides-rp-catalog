@@ -1,0 +1,45 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:khaklin-technologies",
+  "relyingParties": [
+    {
+      "id": "polaris-oid4vp",
+      "name": "polaris-oid4vp (open-source verifier)",
+      "description": "An open-source OpenID4VP 1.0 + HAIP 1.0 verifier you run yourself (pip install polaris-oid4vp). It asks for an SD-JWT VC by DCQL, nested claims and values included, over direct_post.jwt, and prints one verdict per presentation. 1.0.0rc7 is OpenID Certified to the OpenID4VP 1.0 + HAIP 1.0 Verifier profile. A test harness for wallet developers, not a hosted service.",
+      "website": "https://github.com/EgorKhaklin/polaris-id/tree/main/packages/polaris-oid4vp",
+      "readiness": "technical-demo",
+      "country": "US",
+      "interactionMode": "remote",
+      "status": "beta",
+      "useCases": [
+        "identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentials": [
+        "Person Identification Data (PID), SD-JWT VC"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        "eudi-dev v2.3.7",
+        "walt.id Wallet API 1.1.1",
+        "Credo 0.7",
+        "OID4VCgo 0.12.0",
+        "EUDI OpenID4VP Kotlin library 0.16.2",
+        "vck 8.0.0 (A-SIT Plus)"
+      ],
+      "documentation": "https://github.com/EgorKhaklin/polaris-id/blob/main/docs/STRANGER-PATH.md",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-04T00:00:00Z"
+}
