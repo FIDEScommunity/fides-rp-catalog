@@ -3,7 +3,7 @@
  * Plugin Name: FIDES RP Catalog
  * Plugin URI: https://github.com/FIDEScommunity/fides-rp-catalog
  * Description: Display an interactive catalog of relying parties (verifiers) that accept verifiable credentials. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and a WebApplication JSON-LD payload so RP detail URLs become indexable by search engines.
- * Version: 2.8.15
+ * Version: 2.9.1
  * Author: FIDES Community
  * Author URI: https://fides.community
  * License: Apache-2.0
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Plugin constants
-define('FIDES_RP_CATALOG_VERSION', '2.8.15');
+define('FIDES_RP_CATALOG_VERSION', '2.9.1');
 define('FIDES_RP_CATALOG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FIDES_RP_CATALOG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FIDES_RP_CATALOG_DEFAULT_UPDATE_FORM_PATH', '/relying-parties-update/');
@@ -187,7 +187,7 @@ function fides_rp_catalog_should_enqueue_assets() {
  * @return string[]
  */
 function fides_rp_catalog_query_vars($vars) {
-    foreach (array('theme', 'profile', 'sector', 'rps', 'country', 'rp') as $q) {
+    foreach (array('theme', 'profile', 'sector', 'rps', 'country', 'rp', 'catalog_page') as $q) {
         $vars[] = $q;
     }
     return $vars;
@@ -201,7 +201,7 @@ add_filter('query_vars', 'fides_rp_catalog_query_vars');
  * @return string|false
  */
 function fides_rp_catalog_preserve_redirect_canonical($redirect_url) {
-    $keys = array('theme', 'profile', 'sector', 'rps', 'country', 'rp');
+    $keys = array('theme', 'profile', 'sector', 'rps', 'country', 'rp', 'catalog_page');
     foreach ($keys as $key) {
         if (isset($_GET[$key]) && (string) $_GET[$key] !== '') {
             return false;

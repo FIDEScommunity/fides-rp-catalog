@@ -2,13 +2,20 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.8.15
+Stable tag: 2.9.1
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.9.1 =
+* Align pagination structure and styling with the wallet catalog, including result range and Previous/Next links.
+
+= 2.9.0 =
+* Add crawlable detail links and stable 30-item pagination to the JavaScript catalog.
+* Keep standalone SSR detail content visible after JavaScript loads (requires fides-community-tools-tiles ≥ 1.13.32 and respects the fides_catalog_ssr_enabled switch).
 
 = 2.8.15 =
 * Make the shared mobile filter drawer modal and keyboard-accessible (tiles ≥ 1.13.31).

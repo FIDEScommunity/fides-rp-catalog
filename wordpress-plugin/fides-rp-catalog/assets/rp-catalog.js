@@ -304,6 +304,9 @@
 
   // State
   let relyingParties = [];
+  const LISTING_PAGE_PARAM = 'catalog_page';
+  const LISTING_PAGE_SIZE = 30;
+  let listingPage = listingPageFromLocation();
   let ratingSummariesByRpId = Object.create(null);
   /** cred:… id → theme / ecosystem codes from credential catalog aggregated.json */
   let credentialThemesById = Object.create(null);
@@ -765,11 +768,13 @@
 
     if (relyingParties.length === 0) {
       console.error('Failed to load relying parties from any source');
+      if (revealSsrFallback()) return;
     }
 
     // Read query parameters for filtering
     readQueryParams();
-    
+
+    if (retainStandaloneDetailPage()) return;
     render();
     
     // Check for deep link after render
@@ -1036,6 +1041,88 @@
     return filtered;
   }
 
+  function listingPageFromLocation() {
+    const raw = Number.parseInt(new URLSearchParams(window.location.search).get(LISTING_PAGE_PARAM) || '1', 10);
+    return Number.isFinite(raw) && raw > 0 ? raw : 1;
+  }
+
+  function rpDetailHref(id) {
+    const url = new URL(window.location.origin + window.location.pathname);
+    url.searchParams.set('rp', id);
+    return url.toString();
+  }
+
+  function listingHrefForPage(page) {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('rp');
+    if (page > 1) url.searchParams.set(LISTING_PAGE_PARAM, String(page));
+    else url.searchParams.delete(LISTING_PAGE_PARAM);
+    url.hash = '';
+    return url.toString();
+  }
+
+  function pagedRPs(filtered) {
+    const totalPages = Math.max(1, Math.ceil(filtered.length / LISTING_PAGE_SIZE));
+    listingPage = Math.min(Math.max(1, listingPage), totalPages);
+    const start = (listingPage - 1) * LISTING_PAGE_SIZE;
+    return filtered.slice(start, start + LISTING_PAGE_SIZE);
+  }
+
+  function renderPaginationBar(totalItems) {
+    const totalPages = Math.ceil(totalItems / LISTING_PAGE_SIZE);
+    if (totalPages <= 1) return '';
+    const page = Math.min(listingPage, totalPages);
+    const start = (page - 1) * LISTING_PAGE_SIZE + 1;
+    const end = Math.min(page * LISTING_PAGE_SIZE, totalItems);
+    const links = Array.from({ length: totalPages }, (_value, index) => index + 1)
+      .map((number) => `<li><a class="fides-catalog-page-link${number === page ? ' is-current' : ''}" href="${escapeHtml(listingHrefForPage(number))}" data-catalog-page="${number}"${number === page ? ' aria-current="page"' : ''}>${number}</a></li>`)
+      .join('');
+    const previous = page > 1
+      ? `<a class="fides-catalog-pagination__prev" href="${escapeHtml(listingHrefForPage(page - 1))}" data-catalog-page="${page - 1}" rel="prev">Previous</a>`
+      : '';
+    const next = page < totalPages
+      ? `<a class="fides-catalog-pagination__next" href="${escapeHtml(listingHrefForPage(page + 1))}" data-catalog-page="${page + 1}" rel="next">Next</a>`
+      : '';
+    return `<nav class="fides-catalog-pagination" aria-label="Catalog pages">
+      <p class="fides-catalog-pagination__meta">Showing ${start}–${end} of ${totalItems}</p>
+      <div class="fides-catalog-pagination__nav">${previous}<ol class="fides-catalog-pagination__pages">${links}</ol>${next}</div>
+    </nav>`;
+  }
+
+  function bindPaginationLinks() {
+    container.querySelectorAll('[data-catalog-page]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        listingPage = Number.parseInt(link.dataset.catalogPage || '1', 10) || 1;
+        window.history.pushState({}, '', link.href);
+        renderRPGridOnly();
+        container.querySelector('.fides-rp-grid')?.scrollIntoView({ block: 'start' });
+      });
+    });
+  }
+
+  function retainStandaloneDetailPage() {
+    const detail = container.querySelector('[data-fides-ssr-page="detail"]');
+    if (!detail) return false;
+    const fallback = detail.closest('[data-fides-ssr="rp"]');
+    if (fallback) {
+      fallback.style.display = '';
+      fallback.removeAttribute('aria-hidden');
+    }
+    container.querySelector('[data-fides-ssr-spinner="1"]')?.remove();
+    return true;
+  }
+
+  function revealSsrFallback() {
+    const fallback = container.querySelector('[data-fides-ssr="rp"]');
+    if (!fallback) return false;
+    fallback.style.display = '';
+    fallback.removeAttribute('aria-hidden');
+    container.querySelector('[data-fides-ssr-spinner="1"]')?.remove();
+    return true;
+  }
+
   /**
    * Get KPI metrics for the current filtered result set
    */
@@ -1288,7 +1375,8 @@
   function renderRPRow(rp) {
     const d = getRPDisplayData(rp);
     return `
-      <div class="fides-rp-card${d.isFeatured ? ' fides-rp-row-featured' : ''}" data-rp-id="${escapeHtml(rp.id)}" role="button" tabindex="0" aria-label="${escapeHtml(d.providerName)} – ${escapeHtml(d.displayName)}">
+      <div class="fides-rp-card${d.isFeatured ? ' fides-rp-row-featured' : ''}" data-rp-id="${escapeHtml(rp.id)}">
+        <a class="fides-catalog-card-link" href="${escapeHtml(rpDetailHref(rp.id))}" aria-label="View ${escapeHtml(d.displayName)}"></a>
         <div class="fides-rp-row-icon" aria-hidden="true">
           ${d.logoUrl
             ? `<img src="${escapeHtml(d.logoUrl)}" alt="${escapeHtml(d.displayName)}" style="width:22px;height:22px;object-fit:contain;border-radius:3px;">`
@@ -1327,6 +1415,7 @@
    */
   function render() {
     const filtered = getFilteredAndSortedRPs();
+    const visibleRPs = pagedRPs(filtered);
     const metrics = getCatalogMetrics(filtered);
     const activeFilterCount = getActiveFilterCount();
     
@@ -1645,10 +1734,11 @@
       if (ev === 'list') {
         html += renderRPListHeader();
       }
-      filtered.forEach(rp => {
+      visibleRPs.forEach(rp => {
         html += ev === 'list' ? renderRPRow(rp) : renderRPCard(rp);
       });
       html += '</div>';
+      html += `<div class="fides-catalog-pagination-slot">${renderPaginationBar(filtered.length)}</div>`;
     } else {
       html += `
         <div class="fides-empty">
@@ -1665,6 +1755,7 @@
     const mobileFiltersOpen = getMobileFilters()?.captureOpenState() || false;
     container.innerHTML = html;
     attachEventListeners();
+    bindPaginationLinks();
     getMobileFilters()?.applyAfterRender(mobileFiltersOpen);
     applyStaleCatalogNotice();
     
@@ -1684,6 +1775,7 @@
    */
   function renderRPGridOnly() {
     const filtered = getFilteredAndSortedRPs();
+    const visibleRPs = pagedRPs(filtered);
     const metrics = getCatalogMetrics(filtered);
 
     const kpiTotal = container.querySelector('.fides-kpi-card[data-kpi-action="clear-added-filter"] .fides-kpi-value');
@@ -1736,7 +1828,7 @@
       if (ev === 'list') {
         html += renderRPListHeader();
       }
-      filtered.forEach(rp => {
+      visibleRPs.forEach(rp => {
         html += ev === 'list' ? renderRPRow(rp) : renderRPCard(rp);
       });
       grid.innerHTML = html;
@@ -1761,6 +1853,15 @@
         contentArea.appendChild(empty);
       }
     }
+
+    let paginationSlot = container.querySelector('.fides-catalog-pagination-slot');
+    if (!paginationSlot) {
+      paginationSlot = document.createElement('div');
+      paginationSlot.className = 'fides-catalog-pagination-slot';
+      contentArea.appendChild(paginationSlot);
+    }
+    paginationSlot.innerHTML = renderPaginationBar(filtered.length);
+    bindPaginationLinks();
   }
 
   /**
@@ -1770,7 +1871,10 @@
     const rpCards = container.querySelectorAll('.fides-rp-card');
     rpCards.forEach(card => {
       card.addEventListener('click', (e) => {
-        if (e.target.closest('a')) return;
+        const link = e.target.closest('.fides-catalog-card-link');
+        if (link && (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)) return;
+        if (e.target.closest('a') && !link) return;
+        if (link) e.preventDefault();
         openRPDetail(card.dataset.rpId);
       });
       card.addEventListener('keydown', (e) => {
@@ -1864,11 +1968,6 @@
       '</div>';
   }
 
-  function rpCardAriaLabel(rp) {
-    const d = getRPDisplayData(rp);
-    return escapeHtml(d.displayName);
-  }
-
   /**
    * Render a single RP card (grid view — aligned with wallet catalog layout).
    */
@@ -1879,7 +1978,8 @@
     const logoMain = renderRPCardLogoMain(rp);
 
     return `
-      <div class="fides-rp-card${featuredClass}" data-rp-id="${escapeHtml(rp.id)}" role="button" tabindex="0" aria-label="${rpCardAriaLabel(rp)}">
+      <div class="fides-rp-card${featuredClass}" data-rp-id="${escapeHtml(rp.id)}">
+        <a class="fides-catalog-card-link" href="${escapeHtml(rpDetailHref(rp.id))}" aria-label="View ${escapeHtml(d.displayName)}"></a>
         <header class="fides-rp-header fides-rp-card-header--text-only${readinessClass}">
           <div class="fides-rp-info">
             <h3 class="fides-rp-name" title="${escapeHtml(d.displayName)}">${escapeHtml(d.displayName)}</h3>
@@ -2581,7 +2681,10 @@
     // RP card click - open detail modal
     container.querySelectorAll('.fides-rp-card').forEach(card => {
       card.addEventListener('click', (e) => {
-        if (e.target.closest('a')) return;
+        const link = e.target.closest('.fides-catalog-card-link');
+        if (link && (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)) return;
+        if (e.target.closest('a') && !link) return;
+        if (link) e.preventDefault();
         const rpId = card.dataset.rpId;
         openRPDetail(rpId);
       });
@@ -2979,6 +3082,11 @@
   } else {
     init();
   }
+
+  window.addEventListener('popstate', () => {
+    listingPage = listingPageFromLocation();
+    if (container && !retainStandaloneDetailPage()) renderRPGridOnly();
+  });
 
 })();
 
