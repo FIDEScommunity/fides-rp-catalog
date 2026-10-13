@@ -20,14 +20,8 @@
         "business-licensing",
         "service-access"
       ],
-      "acceptedCredentials": [
-        "Student ID"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:student-id"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],

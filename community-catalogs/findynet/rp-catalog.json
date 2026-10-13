@@ -19,14 +19,8 @@
         "Pension eligibility verification",
         "Discount entitlement verification"
       ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:findynet:pension-credential"
-        }
-      ],
-      "acceptedCredentials": [
-        "Pension Credential"
-      ],
+      "acceptedCredentialRefs": [],
+      "acceptedCredentials": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
