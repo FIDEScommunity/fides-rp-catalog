@@ -47,7 +47,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/air-nz/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.017Z",
+      "fetchedAt": "2026-10-13T14:59:17.448Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -101,7 +101,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.026Z",
+      "fetchedAt": "2026-10-13T14:59:17.460Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -154,7 +154,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.026Z",
+      "fetchedAt": "2026-10-13T14:59:17.460Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -205,7 +205,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.026Z",
+      "fetchedAt": "2026-10-13T14:59:17.460Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -260,7 +260,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.026Z",
+      "fetchedAt": "2026-10-13T14:59:17.460Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -313,7 +313,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.026Z",
+      "fetchedAt": "2026-10-13T14:59:17.460Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -337,14 +337,8 @@
         "business-licensing",
         "service-access"
       ],
-      "acceptedCredentials": [
-        "Student ID"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:student-id"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -369,7 +363,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.031Z",
+      "fetchedAt": "2026-10-13T14:59:17.467Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -421,7 +415,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.036Z",
+      "fetchedAt": "2026-10-13T14:59:17.473Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -475,7 +469,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/british-airways/british-airways-logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/british-airways/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.041Z",
+      "fetchedAt": "2026-10-13T14:59:17.478Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -531,7 +525,7 @@
         "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.047Z",
+      "fetchedAt": "2026-10-13T14:59:17.484Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -582,7 +576,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/educa/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.053Z",
+      "fetchedAt": "2026-10-13T14:59:17.492Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -647,7 +641,7 @@
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.060Z",
+      "fetchedAt": "2026-10-13T14:59:17.498Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-09T12:55:00.000Z",
@@ -700,7 +694,7 @@
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.060Z",
+      "fetchedAt": "2026-10-13T14:59:17.498Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-09T12:55:00.000Z",
@@ -756,7 +750,7 @@
         "name": "espuni"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/espuni/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.065Z",
+      "fetchedAt": "2026-10-13T14:59:17.504Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-04T09:00:41.000Z",
@@ -827,7 +821,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.069Z",
+      "fetchedAt": "2026-10-13T14:59:17.510Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -914,7 +908,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.069Z",
+      "fetchedAt": "2026-10-13T14:59:17.510Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -1034,7 +1028,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.069Z",
+      "fetchedAt": "2026-10-13T14:59:17.510Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -1057,15 +1051,11 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Age Verification",
-        "Person Identification Data"
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
           "credentialCatalogId": "cred:eu:age-verification"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -1104,7 +1094,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.074Z",
+      "fetchedAt": "2026-10-13T14:59:17.516Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1128,14 +1118,8 @@
         "identity-verification",
         "kyc"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc",
         "mdoc"
@@ -1168,7 +1152,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.074Z",
+      "fetchedAt": "2026-10-13T14:59:17.516Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1191,14 +1175,8 @@
         "identity-verification",
         "sim-activation"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc",
         "mdoc"
@@ -1231,7 +1209,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.074Z",
+      "fetchedAt": "2026-10-13T14:59:17.516Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1255,13 +1233,9 @@
         "discount-eligibility"
       ],
       "acceptedCredentials": [
-        "Person Identification Data",
         "Certificate of Residence"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        },
         {
           "credentialCatalogId": "cred:eu:cor"
         }
@@ -1298,7 +1272,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.074Z",
+      "fetchedAt": "2026-10-13T14:59:17.516Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1321,14 +1295,8 @@
         "identity-verification",
         "parcel-pickup"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc",
         "mdoc"
@@ -1361,7 +1329,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.074Z",
+      "fetchedAt": "2026-10-13T14:59:17.516Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1384,14 +1352,8 @@
         "Remote signing initiation",
         "Identity verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -1414,203 +1376,12 @@
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.078Z",
+      "fetchedAt": "2026-10-13T14:59:17.523Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
       "firstSeenAt": "2026-01-07T23:00:00.000Z",
       "catalogTier": "Community"
-    },
-    {
-      "id": "circulacity-sandbox",
-      "name": "CirculaCity",
-      "description": "Sandbox portal demonstrating how government applications can use wallet-based credentials to enable trusted digital interactions in areas such as procurement, recruitment, and compliance.",
-      "logo": "https://fides.community/app/uploads/sites/2/2025/05/cropped-favicon-32x32.png",
-      "website": "https://circulacity.fides.community/",
-      "readiness": "use-case-demo",
-      "country": "NL",
-      "status": "live",
-      "sectors": [
-        "digital"
-      ],
-      "useCases": [
-        "Login",
-        "KYC/E",
-        "Recruitment",
-        "Procurement",
-        "HR"
-      ],
-      "acceptedCredentials": [
-        "PID Attestation",
-        "LPID Attestation",
-        "ISO Certificate",
-        "Upper Secondary Education Certificate",
-        "Higher Education Diploma",
-        "Criminal Record Check",
-        "Verified Employee"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        },
-        {
-          "credentialCatalogId": "cred:fides:lpid"
-        },
-        {
-          "credentialCatalogId": "cred:fides:iso-certificate"
-        },
-        {
-          "credentialCatalogId": "cred:fides:upper-secondary-education"
-        },
-        {
-          "credentialCatalogId": "cred:fides:higher-education-diploma"
-        },
-        {
-          "credentialCatalogId": "cred:fides:criminal-record-check"
-        },
-        {
-          "credentialCatalogId": "cred:fides:verified-employee"
-        }
-      ],
-      "vcFormat": [
-        "sd_jwt_vc"
-      ],
-      "presentationProtocols": [
-        "OpenID4VP"
-      ],
-      "interoperabilityProfiles": [
-        "DIIP v4"
-      ],
-      "supportedWallets": [
-        {
-          "name": "Heidi",
-          "walletCatalogId": "heidi-wallet"
-        },
-        {
-          "name": "iGrant Data Wallet",
-          "walletCatalogId": "igrant-data-wallet"
-        }
-      ],
-      "languages": [
-        "en",
-        "nl"
-      ],
-      "interactionMode": "remote",
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
-        "contact": {
-          "email": "info@fides-labs.io"
-        }
-      },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.083Z",
-      "source": "local",
-      "isFeatured": false,
-      "updatedAt": "2026-08-13T14:50:03.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z",
-      "media": {
-        "videos": [
-          "https://youtu.be/lK8ymw7Gei0"
-        ]
-      },
-      "catalogTier": "Pro"
-    },
-    {
-      "id": "rotterdam-sandbox",
-      "name": "Municipality of Rotterdam",
-      "description": "Sandbox portal for the Municipality of Rotterdam, showcasing how government services can rely on wallet-based credentials for trusted access, verification, and decision-making.",
-      "logo": "https://www.rotterdam.nl/default/apple-touch-icon.png",
-      "website": "https://rotterdam.fides.community/",
-      "readiness": "use-case-demo",
-      "country": "NL",
-      "status": "live",
-      "sectors": [
-        "digital"
-      ],
-      "useCases": [
-        "Login",
-        "KYC/E",
-        "Recruitment",
-        "Procurement",
-        "HR"
-      ],
-      "acceptedCredentials": [
-        "PID Attestation",
-        "LPID Attestation",
-        "ISO Certificate",
-        "Upper Secondary Education Certificate",
-        "Higher Education Diploma",
-        "Criminal Record Check",
-        "Verified Employee"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        },
-        {
-          "credentialCatalogId": "cred:fides:lpid"
-        },
-        {
-          "credentialCatalogId": "cred:fides:iso-certificate"
-        },
-        {
-          "credentialCatalogId": "cred:fides:upper-secondary-education"
-        },
-        {
-          "credentialCatalogId": "cred:fides:higher-education-diploma"
-        },
-        {
-          "credentialCatalogId": "cred:fides:criminal-record-check"
-        },
-        {
-          "credentialCatalogId": "cred:fides:verified-employee"
-        }
-      ],
-      "vcFormat": [
-        "sd_jwt_vc"
-      ],
-      "presentationProtocols": [
-        "OpenID4VP"
-      ],
-      "interoperabilityProfiles": [
-        "DIIP v4"
-      ],
-      "supportedWallets": [
-        {
-          "name": "Heidi",
-          "walletCatalogId": "heidi-wallet"
-        },
-        {
-          "name": "iGrant Data Wallet",
-          "walletCatalogId": "igrant-data-wallet"
-        }
-      ],
-      "languages": [
-        "en",
-        "nl"
-      ],
-      "interactionMode": "remote",
-      "orgId": "org:fides",
-      "provider": {
-        "name": "FIDES Labs",
-        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
-        "website": "https://fides.community",
-        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
-        "contact": {
-          "email": "info@fides-labs.io"
-        }
-      },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.083Z",
-      "source": "local",
-      "isFeatured": false,
-      "updatedAt": "2026-08-13T14:50:03.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z",
-      "catalogTier": "Pro"
     },
     {
       "id": "mijnoverheid-sandbox",
@@ -1627,14 +1398,8 @@
       "useCases": [
         "Login"
       ],
-      "acceptedCredentials": [
-        "PID Attestation"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -1670,7 +1435,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.083Z",
+      "fetchedAt": "2026-10-13T14:59:17.528Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1699,16 +1464,12 @@
         "KYC"
       ],
       "acceptedCredentials": [
-        "PID Attestation",
         "BRI Attestation",
         "BRP Attestation",
         "Company Roles Attestation",
         "Contact Details"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        },
         {
           "credentialCatalogId": "cred:fides:bri"
         },
@@ -1757,7 +1518,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.083Z",
+      "fetchedAt": "2026-10-13T14:59:17.528Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1781,15 +1542,11 @@
         "KYC"
       ],
       "acceptedCredentials": [
-        "PID Attestation",
         "BRI Attestation",
         "BRP Attestation",
         "Contact Details"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        },
         {
           "credentialCatalogId": "cred:fides:bri"
         },
@@ -1835,7 +1592,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.083Z",
+      "fetchedAt": "2026-10-13T14:59:17.528Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1898,7 +1655,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.083Z",
+      "fetchedAt": "2026-10-13T14:59:17.528Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1924,14 +1681,8 @@
         "Pension eligibility verification",
         "Discount entitlement verification"
       ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:findynet:pension-credential"
-        }
-      ],
-      "acceptedCredentials": [
-        "Pension Credential"
-      ],
+      "acceptedCredentialRefs": [],
+      "acceptedCredentials": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -1956,10 +1707,10 @@
         "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/findynet/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.087Z",
+      "fetchedAt": "2026-10-13T14:59:17.533Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-10-13T06:37:33.000Z",
+      "updatedAt": "2026-10-13T14:58:59.000Z",
       "firstSeenAt": "2026-04-28T19:08:05.000Z",
       "catalogTier": "Community"
     },
@@ -2014,7 +1765,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.092Z",
+      "fetchedAt": "2026-10-13T14:59:17.538Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -2068,7 +1819,7 @@
         "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hkia/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.096Z",
+      "fetchedAt": "2026-10-13T14:59:17.543Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2129,7 +1880,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.101Z",
+      "fetchedAt": "2026-10-13T14:59:17.547Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2156,14 +1907,8 @@
         "identity-verification",
         "kyc"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -2197,7 +1942,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2226,14 +1971,8 @@
         "identity-verification",
         "passwordless-authentication"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -2266,7 +2005,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2291,18 +2030,8 @@
         "strong-customer-authentication",
         "ticket-purchase"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data",
-        "Payment Wallet Attestation"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -2338,7 +2067,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2367,14 +2096,8 @@
         "kyc",
         "policy-issuance"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -2407,7 +2130,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2432,21 +2155,9 @@
         "alternative-identity-proofs"
       ],
       "acceptedCredentials": [
-        "Person Identification Data",
-        "ePassport",
-        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:epassport"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:photo-id"
-        },
         {
           "credentialCatalogId": "cred:iso:photoid"
         }
@@ -2484,7 +2195,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2509,19 +2220,11 @@
         "address-verification"
       ],
       "acceptedCredentials": [
-        "Photo ID",
-        "Photo ID",
-        "Personal Contact Details"
+        "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:photo-id"
-        },
-        {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:personal-contact-details"
         }
       ],
       "vcFormat": [
@@ -2557,7 +2260,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2581,22 +2284,8 @@
         "payment-authentication",
         "browser-native-credentials"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data",
-        "ePassport",
-        "Payment Wallet Attestation"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:epassport"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -2628,7 +2317,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2653,15 +2342,11 @@
         "digital-travel-credential"
       ],
       "acceptedCredentials": [
-        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:photo-id"
         }
       ],
       "vcFormat": [
@@ -2696,7 +2381,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2719,14 +2404,8 @@
         "credential-issuance",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -2758,7 +2437,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2817,7 +2496,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2842,26 +2521,11 @@
         "trusted-authority-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data",
-        "ePassport",
-        "Photo ID",
-        "Higher Education Diploma"
+        "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:epassport"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:photo-id"
-        },
-        {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:fides:higher-education-diploma"
         }
       ],
       "vcFormat": [
@@ -2896,7 +2560,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2921,13 +2585,9 @@
         "cross-border-employment"
       ],
       "acceptedCredentials": [
-        "Portable Document A1",
         "PDA1"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pda1"
-        },
         {
           "credentialCatalogId": "cred:eu:pda1"
         }
@@ -2964,7 +2624,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2988,14 +2648,8 @@
         "payment-authentication",
         "wallet-onboarding"
       ],
-      "acceptedCredentials": [
-        "Payment Wallet Attestation"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -3028,7 +2682,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3052,18 +2706,8 @@
         "bank-led-payment",
         "strong-customer-authentication"
       ],
-      "acceptedCredentials": [
-        "Payment Wallet Attestation",
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -3097,7 +2741,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3182,7 +2826,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.105Z",
+      "fetchedAt": "2026-10-13T14:59:17.552Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3236,7 +2880,7 @@
         "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/indigo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.109Z",
+      "fetchedAt": "2026-10-13T14:59:17.558Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -3293,7 +2937,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/jal/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.114Z",
+      "fetchedAt": "2026-10-13T14:59:17.563Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -3334,7 +2978,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/k4security/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.119Z",
+      "fetchedAt": "2026-10-13T14:59:17.569Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-27T14:37:49.000Z",
@@ -3387,7 +3031,7 @@
         "website": "https://github.com/EgorKhaklin/polaris-id"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/khaklin-technologies/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.124Z",
+      "fetchedAt": "2026-10-13T14:59:17.574Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-04T00:00:00.000Z",
@@ -3413,14 +3057,8 @@
         "account-opening",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -3448,7 +3086,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.128Z",
+      "fetchedAt": "2026-10-13T14:59:17.579Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3471,14 +3109,8 @@
         "document-issuance",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -3506,7 +3138,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.128Z",
+      "fetchedAt": "2026-10-13T14:59:17.579Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3529,14 +3161,8 @@
         "document-issuance",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -3564,7 +3190,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.128Z",
+      "fetchedAt": "2026-10-13T14:59:17.579Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3588,14 +3214,9 @@
         "financial-services"
       ],
       "acceptedCredentials": [
-        "Person Identification Data",
         "Qualified Electronic Signature Certificate"
       ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -3623,7 +3244,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.128Z",
+      "fetchedAt": "2026-10-13T14:59:17.579Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3674,7 +3295,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.132Z",
+      "fetchedAt": "2026-10-13T14:59:17.584Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -3737,7 +3358,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/neovo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.137Z",
+      "fetchedAt": "2026-10-13T14:59:17.589Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -3761,14 +3382,10 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "PID Attestation",
         "Contact Details",
         "MSISDN"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        },
         {
           "credentialCatalogId": "cred:fides:contact-details"
         },
@@ -3800,7 +3417,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3849,7 +3466,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3897,7 +3514,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3945,7 +3562,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3993,7 +3610,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4041,7 +3658,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4089,7 +3706,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4113,15 +3730,11 @@
         "Applying on behalf of another person"
       ],
       "acceptedCredentials": [
-        "Power Of Representation",
-        "PID Attestation"
+        "Power Of Representation"
       ],
       "acceptedCredentialRefs": [
         {
           "credentialCatalogId": "cred:eu:por"
-        },
-        {
-          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "presentationProtocols": [
@@ -4144,7 +3757,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4168,15 +3781,11 @@
         "Delegation and authorization"
       ],
       "acceptedCredentials": [
-        "Power Of Representation",
-        "PID Attestation"
+        "Power Of Representation"
       ],
       "acceptedCredentialRefs": [
         {
           "credentialCatalogId": "cred:eu:por"
-        },
-        {
-          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "presentationProtocols": [
@@ -4199,7 +3808,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.141Z",
+      "fetchedAt": "2026-10-13T14:59:17.594Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4228,13 +3837,10 @@
       "acceptedCredentials": [
         "mDL",
         "PID",
-        "PID Attestation",
-        "Photo ID",
         "Photo ID",
         "Certificate of Residence",
         "Age Verification",
         "Loyalty",
-        "Loyalty Card",
         "Aadhaar Verifiable Credential"
       ],
       "acceptedCredentialRefs": [
@@ -4245,13 +3851,7 @@
           "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:pid"
-        },
-        {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
           "credentialCatalogId": "cred:eu:cor"
@@ -4261,9 +3861,6 @@
         },
         {
           "credentialCatalogId": "cred:eu:loyalty"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:loyalty-card"
         },
         {
           "credentialCatalogId": "cred:uidai:aadhaar"
@@ -4292,7 +3889,7 @@
         "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.145Z",
+      "fetchedAt": "2026-10-13T14:59:17.600Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4375,7 +3972,7 @@
         "logo": "https://pass2rent.com/logo_pass2rent_web.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/pass2rent-by-odifis/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.150Z",
+      "fetchedAt": "2026-10-13T14:59:17.605Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-20T05:37:19.000Z",
@@ -4444,7 +4041,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/sbb/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.154Z",
+      "fetchedAt": "2026-10-13T14:59:17.610Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4529,7 +4126,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=www.stelau.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.159Z",
+      "fetchedAt": "2026-10-13T14:59:17.615Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T14:45:36.000Z",
@@ -4580,7 +4177,7 @@
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/swiyu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.163Z",
+      "fetchedAt": "2026-10-13T14:59:17.620Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4626,7 +4223,7 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Turo_company_logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/turo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.167Z",
+      "fetchedAt": "2026-10-13T14:59:17.625Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-16T20:08:20.000Z",
@@ -4680,7 +4277,7 @@
         "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/1920px-Uber_logo_2018.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/uber/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.172Z",
+      "fetchedAt": "2026-10-13T14:59:17.630Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-16T20:08:22.000Z",
@@ -4744,7 +4341,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/unchained/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.176Z",
+      "fetchedAt": "2026-10-13T14:59:17.635Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4849,7 +4446,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4954,7 +4551,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5059,7 +4656,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5148,7 +4745,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5248,7 +4845,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5352,7 +4949,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5456,7 +5053,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5552,7 +5149,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5651,7 +5248,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5750,7 +5347,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5847,7 +5444,7 @@
         "logo": "https://verana.io/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T14:45:53.181Z",
+      "fetchedAt": "2026-10-13T14:59:17.641Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6027,27 +5624,27 @@
       "logo": "https://verana.io/logo.svg"
     }
   ],
-  "lastUpdated": "2026-10-13T14:45:53.370Z",
+  "lastUpdated": "2026-10-13T14:59:17.868Z",
   "stats": {
-    "totalRPs": 86,
+    "totalRPs": 84,
     "totalProviders": 35,
     "byReadiness": {
       "technical-demo": 23,
-      "use-case-demo": 54,
+      "use-case-demo": 52,
       "production-pilot": 3,
       "production": 6
     },
     "bySector": {
       "mobility": 9,
       "public_sector": 23,
-      "digital": 54,
+      "digital": 52,
       "education": 3,
       "trade": 1
     },
     "byVcFormat": {
       "mdoc": 23,
       "idemix": 6,
-      "sd_jwt_vc": 56,
+      "sd_jwt_vc": 54,
       "vcdm_2_0": 7,
       "jwt_vc": 1,
       "vcdm_1_1": 1,
