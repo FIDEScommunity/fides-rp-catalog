@@ -73,7 +73,6 @@
         "PID",
         "mDL",
         "Photo ID",
-        "Photo ID",
         "EHIC",
         "PDA1",
         "Diploma"
@@ -87,9 +86,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:eu:ehic"
@@ -150,7 +146,6 @@
         "PID",
         "mDL",
         "Photo ID",
-        "Photo ID",
         "EHIC",
         "Health ID",
         "IBAN",
@@ -175,9 +170,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:eu:ehic"

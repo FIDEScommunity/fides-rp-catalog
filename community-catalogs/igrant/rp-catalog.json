@@ -253,7 +253,6 @@
         "Person Identification Data",
         "ePassport",
         "Photo ID",
-        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
@@ -268,9 +267,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         }
       ],
       "vcFormat": [
@@ -322,7 +318,6 @@
       "acceptedCredentials": [
         "Photo ID",
         "Photo ID",
-        "Photo ID",
         "Personal Contact Details"
       ],
       "acceptedCredentialRefs": [
@@ -331,9 +326,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:ewc:personal-contact-details"
@@ -447,13 +439,9 @@
       ],
       "acceptedCredentials": [
         "Photo ID",
-        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
-        },
         {
           "credentialCatalogId": "cred:iso:photoid"
         },
@@ -607,7 +595,6 @@
       "acceptedCredentials": [
         "Person Identification Data",
         "ePassport",
-        "Photo ID",
         "Photo ID",
         "Higher Education Diploma"
       ],

@@ -28,7 +28,6 @@
         "PID Attestation",
         "Photo ID",
         "Photo ID",
-        "Photo ID",
         "Certificate of Residence",
         "Age Verification",
         "Loyalty",
@@ -47,9 +46,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:ewc:photo-id"

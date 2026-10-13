@@ -10,7 +10,7 @@
       "country": "HK",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -38,7 +38,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ]

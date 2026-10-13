@@ -8,7 +8,7 @@
       "country": "NZ",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -36,7 +36,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ],
@@ -46,8 +46,8 @@
         "website": "https://www.airnewzealand.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/air-nz/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.636Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/air-nz/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.277Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -100,8 +100,8 @@
         "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.643Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.305Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -153,8 +153,8 @@
         "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.643Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.305Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -204,8 +204,8 @@
         "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.643Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.305Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -259,8 +259,8 @@
         "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.643Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.305Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -312,8 +312,8 @@
         "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.643Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.305Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -368,8 +368,8 @@
         "website": "https://www2.gov.bc.ca/",
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.647Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.326Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -420,8 +420,8 @@
         "website": "https://www.gov.br/gestao/",
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.652Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/brazil/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.348Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -436,7 +436,7 @@
       "country": "GB",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -464,7 +464,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ],
@@ -474,8 +474,8 @@
         "website": "https://www.britishairways.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/british-airways/british-airways-logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/british-airways/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.656Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/british-airways/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.367Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -530,8 +530,8 @@
         "website": "https://www.dmv.ca.gov/",
         "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.660Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.430Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -581,8 +581,8 @@
         "website": "https://www.educa.ch",
         "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/educa/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.665Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/educa/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.455Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -646,8 +646,8 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.668Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.507Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-09T12:55:00.000Z",
@@ -699,8 +699,8 @@
         "website": "https://www.surf.nl/en",
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.668Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.507Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-09T12:55:00.000Z",
@@ -755,8 +755,8 @@
       "provider": {
         "name": "espuni"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/espuni/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.672Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/espuni/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.530Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-04T09:00:41.000Z",
@@ -826,8 +826,8 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.675Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.573Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -858,7 +858,6 @@
         "PID",
         "mDL",
         "Photo ID",
-        "Photo ID",
         "EHIC",
         "PDA1",
         "Diploma"
@@ -872,9 +871,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:eu:ehic"
@@ -917,8 +913,8 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.675Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.573Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -948,7 +944,6 @@
         "PID",
         "mDL",
         "Photo ID",
-        "Photo ID",
         "EHIC",
         "Health ID",
         "IBAN",
@@ -973,9 +968,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:eu:ehic"
@@ -1041,8 +1033,8 @@
         "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.675Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.573Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -1111,8 +1103,8 @@
         "name": "EUDIPLO",
         "website": "https://eudiplo.dev/"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.678Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.630Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1175,8 +1167,8 @@
         "name": "EUDIPLO",
         "website": "https://eudiplo.dev/"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.678Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.630Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1238,8 +1230,8 @@
         "name": "EUDIPLO",
         "website": "https://eudiplo.dev/"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.678Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.630Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1305,8 +1297,8 @@
         "name": "EUDIPLO",
         "website": "https://eudiplo.dev/"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.678Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.630Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1368,8 +1360,8 @@
         "name": "EUDIPLO",
         "website": "https://eudiplo.dev/"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.678Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.630Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1421,8 +1413,8 @@
         "name": "EWC - European Wallet Consortium",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.682Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.655Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
@@ -1514,8 +1506,8 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.685Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.681Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1612,8 +1604,8 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.685Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.681Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1677,8 +1669,8 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.685Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.681Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1764,8 +1756,8 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.685Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.681Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1842,8 +1834,8 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.685Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.681Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1905,8 +1897,8 @@
           "email": "info@fides-labs.io"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.685Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.681Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -1963,8 +1955,8 @@
         "website": "https://findynet.fi/en/",
         "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/findynet/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.689Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/findynet/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.708Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -2021,8 +2013,8 @@
         "website": "https://www.google.com",
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.692Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.729Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -2037,7 +2029,7 @@
       "country": "HK",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -2065,7 +2057,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ],
@@ -2075,8 +2067,8 @@
         "website": "https://www.hongkongairport.com",
         "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hkia/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.695Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/hkia/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.789Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2094,7 +2086,7 @@
       "country": "IN",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -2126,7 +2118,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ],
@@ -2136,8 +2128,8 @@
         "website": "https://www.bengaluruairport.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.699Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.844Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2204,8 +2196,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2273,8 +2265,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2345,8 +2337,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2414,8 +2406,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2443,7 +2435,6 @@
         "Person Identification Data",
         "ePassport",
         "Photo ID",
-        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
@@ -2458,9 +2449,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         }
       ],
       "vcFormat": [
@@ -2495,8 +2483,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2523,7 +2511,6 @@
       "acceptedCredentials": [
         "Photo ID",
         "Photo ID",
-        "Photo ID",
         "Personal Contact Details"
       ],
       "acceptedCredentialRefs": [
@@ -2532,9 +2519,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:ewc:personal-contact-details"
@@ -2572,8 +2556,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2643,8 +2627,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2670,13 +2654,9 @@
       ],
       "acceptedCredentials": [
         "Photo ID",
-        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
-        },
         {
           "credentialCatalogId": "cred:iso:photoid"
         },
@@ -2715,8 +2695,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2777,8 +2757,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2836,8 +2816,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2864,7 +2844,6 @@
       "acceptedCredentials": [
         "Person Identification Data",
         "ePassport",
-        "Photo ID",
         "Photo ID",
         "Higher Education Diploma"
       ],
@@ -2916,8 +2895,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2984,8 +2963,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3048,8 +3027,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3117,8 +3096,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3202,8 +3181,8 @@
         "name": "iGrant.io",
         "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.702Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.899Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3218,7 +3197,7 @@
       "country": "IN",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -3246,7 +3225,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ],
@@ -3256,8 +3235,8 @@
         "website": "https://www.goindigo.in",
         "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/indigo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.706Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/indigo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:37.964Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -3275,7 +3254,7 @@
       "country": "JP",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
           "credentialCatalogId": "cred:iata:boarding-pass"
@@ -3303,7 +3282,7 @@
       ],
       "interactionMode": "proximity",
       "acceptedCredentials": [
-        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "cred:iso:photoid",
         "Boarding Pass",
         "Booking Order"
       ],
@@ -3313,8 +3292,8 @@
         "website": "https://www.jal.com",
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/jal/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.709Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/jal/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:38.031Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -3354,8 +3333,8 @@
         "name": "K4-Security",
         "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/k4security/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.713Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/k4security/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.194Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-27T14:37:49.000Z",
@@ -3407,8 +3386,8 @@
         "name": "Khaklin Technologies",
         "website": "https://github.com/EgorKhaklin/polaris-id"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/khaklin-technologies/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.717Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/khaklin-technologies/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.279Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-04T00:00:00.000Z",
@@ -3468,8 +3447,8 @@
         "name": "Lissi GmbH",
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.720Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.310Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3526,8 +3505,8 @@
         "name": "Lissi GmbH",
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.720Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.310Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3584,8 +3563,8 @@
         "name": "Lissi GmbH",
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.720Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.310Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3643,8 +3622,8 @@
         "name": "Lissi GmbH",
         "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.720Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.310Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
@@ -3694,8 +3673,8 @@
         "website": "https://www.mosip.io",
         "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.724Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.336Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -3757,8 +3736,8 @@
           "email": "info@neovo.ch"
         }
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/neovo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.727Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/neovo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.366Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -3820,8 +3799,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3869,8 +3848,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3917,8 +3896,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -3965,8 +3944,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4013,8 +3992,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4061,8 +4040,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4109,8 +4088,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4164,8 +4143,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4219,8 +4198,8 @@
         "website": "https://www.nijmegen.nl/",
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.730Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.418Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4252,7 +4231,6 @@
         "PID Attestation",
         "Photo ID",
         "Photo ID",
-        "Photo ID",
         "Certificate of Residence",
         "Age Verification",
         "Loyalty",
@@ -4271,9 +4249,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:ewc:photo-id"
@@ -4316,8 +4291,8 @@
         "website": "https://openwallet.foundation/",
         "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.734Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.522Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4395,8 +4370,8 @@
         "name": "PASS2RENT By Odifis",
         "logo": "https://pass2rent.com/logo_pass2rent_web.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/pass2rent-by-odifis/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.737Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/pass2rent-by-odifis/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.575Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-20T05:37:19.000Z",
@@ -4464,8 +4439,8 @@
         "website": "https://www.sbb.ch",
         "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/sbb/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.741Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/sbb/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:40.665Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4493,7 +4468,6 @@
         "PID Attestation",
         "PID EUDI",
         "Photo ID",
-        "Photo ID",
         "Vehicle Registration Certificate",
         "Age Verification"
       ],
@@ -4512,9 +4486,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:iso:mvrc"
@@ -4561,8 +4532,8 @@
         "website": "https://www.stelau.com",
         "logo": "https://www.google.com/s2/favicons?domain=www.stelau.com&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.744Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.175Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-01T08:24:24.000Z",
@@ -4612,8 +4583,8 @@
         "website": "https://www.eid.admin.ch/en",
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/swiyu/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.747Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/swiyu/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.322Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4658,8 +4629,8 @@
         "name": "Turo",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Turo_company_logo.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/turo/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.751Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/turo/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.354Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-16T20:08:20.000Z",
@@ -4711,8 +4682,8 @@
         "name": "Uber",
         "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/1920px-Uber_logo_2018.png"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/uber/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.754Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/uber/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.386Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-16T16:13:34.000Z",
@@ -4775,8 +4746,8 @@
         "website": "https://unchained.shop",
         "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/unchained/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.758Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/unchained/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.430Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4880,8 +4851,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4985,8 +4956,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5090,8 +5061,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5179,8 +5150,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5279,8 +5250,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5383,8 +5354,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5487,8 +5458,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5583,8 +5554,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5682,8 +5653,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5781,8 +5752,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5878,8 +5849,8 @@
         "name": "Verana",
         "logo": "https://verana.io/logo.svg"
       },
-      "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-10-13T07:34:46.761Z",
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-13T10:14:41.461Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6059,7 +6030,7 @@
       "logo": "https://verana.io/logo.svg"
     }
   ],
-  "lastUpdated": "2026-10-13T07:34:46.978Z",
+  "lastUpdated": "2026-10-13T10:14:41.473Z",
   "stats": {
     "totalRPs": 86,
     "totalProviders": 35,

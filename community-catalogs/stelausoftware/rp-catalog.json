@@ -23,7 +23,6 @@
         "PID Attestation",
         "PID EUDI",
         "Photo ID",
-        "Photo ID",
         "Vehicle Registration Certificate",
         "Age Verification"
       ],
@@ -42,9 +41,6 @@
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
           "credentialCatalogId": "cred:iso:mvrc"
