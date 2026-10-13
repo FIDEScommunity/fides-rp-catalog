@@ -12,15 +12,15 @@
       "status": "live",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl"
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:google:google-id-pass"
+          "credentialCatalogId": "cred:google:google-id-pass:mdoc"
         }
       ],
       "acceptedCredentials": [
-        "mDL",
-        "Google ID Pass"
+        "cred:iso:mdl-mdoc:mdoc",
+        "cred:google:google-id-pass:mdoc"
       ],
       "vcFormat": [
         "mdoc"
@@ -38,8 +38,9 @@
           "name": "Apple Wallet",
           "walletCatalogId": "apple-wallet"
         }
-      ]
+      ],
+      "logo": "https://fides.community/ecosystem-explorer/relying-party-catalog/?rp=uber-rider-verification"
     }
   ],
-  "lastUpdated": "2026-09-16T16:13:34+00:00"
+  "lastUpdated": "2026-09-16T20:08:22+00:00"
 }

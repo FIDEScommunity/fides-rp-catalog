@@ -18,13 +18,11 @@
         "Mobile Driving Licence (mDL) based on ISO/IEC 18013-5"
       ],
       "acceptedCredentials": [
-        "mDL",
-        "PID",
-        "PID Attestation",
-        "PID EUDI",
-        "Photo ID",
-        "Vehicle Registration Certificate",
-        "Age Verification"
+        "cred:iso:mdl",
+        "cred:eu:pid",
+        "cred:iso:photoid",
+        "cred:iso:mvrc",
+        "cred:eu:age-verification"
       ],
       "acceptedCredentialRefs": [
         {
@@ -32,12 +30,6 @@
         },
         {
           "credentialCatalogId": "cred:eu:pid"
-        },
-        {
-          "credentialCatalogId": "cred:fides:pid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:pid-eudi"
         },
         {
           "credentialCatalogId": "cred:iso:photoid"
@@ -83,5 +75,5 @@
       "documentation": "https://github.com/stelauconseil/mdoc-web-verifier"
     }
   ],
-  "lastUpdated": "2026-09-01T08:24:24+00:00"
+  "lastUpdated": "2026-10-13T14:45:36+00:00"
 }

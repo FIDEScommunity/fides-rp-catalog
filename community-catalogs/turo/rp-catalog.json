@@ -12,15 +12,15 @@
       "status": "live",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl"
+          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
         },
         {
-          "credentialCatalogId": "cred:google:google-id-pass"
+          "credentialCatalogId": "cred:google:google-id-pass:mdoc"
         }
       ],
       "acceptedCredentials": [
-        "mDL",
-        "Google ID Pass"
+        "cred:iso:mdl-mdoc:mdoc",
+        "cred:google:google-id-pass:mdoc"
       ],
       "vcFormat": [
         "mdoc"

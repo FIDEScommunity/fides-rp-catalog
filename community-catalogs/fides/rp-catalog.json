@@ -349,11 +349,11 @@
       "status": "live",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:verified-email"
+          "credentialCatalogId": "cred:fides:verified-email:sd-jwt-vc"
         }
       ],
       "acceptedCredentials": [
-        "Verified Email"
+        "cred:fides:verified-email:sd-jwt-vc"
       ],
       "vcFormat": [
         "sd_jwt_vc"
