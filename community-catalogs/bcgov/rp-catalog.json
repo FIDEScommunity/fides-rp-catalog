@@ -21,11 +21,11 @@
         "service-access"
       ],
       "acceptedCredentials": [
-        "Student Card"
+        "Student ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:student-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:student-id"
         }
       ],
       "vcFormat": [

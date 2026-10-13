@@ -18,39 +18,39 @@
         "Mobile Driving Licence (mDL) based on ISO/IEC 18013-5"
       ],
       "acceptedCredentials": [
-        "cred:iso:mdl-mdoc:mdoc",
-        "cred:eu:pid-mdoc:mdoc",
-        "cred:fides:pid:sd-jwt-vc",
-        "cred:ewc:pid-eudi-mdoc:mso-mdoc",
-        "cred:iso:photoid-mdoc:mdoc",
-        "cred:iso:photoid-mdoc-alt:mdoc",
-        "cred:iso:mvrc-mdoc:mdoc",
-        "cred:eu:age-verification-mdoc:mdoc"
+        "mDL",
+        "PID",
+        "PID Attestation",
+        "PID EUDI",
+        "Photo ID",
+        "Photo ID",
+        "Vehicle Registration Certificate",
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:pid-eudi-mdoc:mso-mdoc"
+          "credentialCatalogId": "cred:ewc:pid-eudi"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:mvrc-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mvrc"
         },
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "vcFormat": [

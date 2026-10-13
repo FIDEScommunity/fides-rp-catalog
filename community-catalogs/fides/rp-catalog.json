@@ -22,35 +22,35 @@
         "HR"
       ],
       "acceptedCredentials": [
-        "PID",
-        "LPID",
+        "PID Attestation",
+        "LPID Attestation",
         "ISO Certificate",
-        "Upper Secondary Certificate",
+        "Upper Secondary Education Certificate",
         "Higher Education Diploma",
         "Criminal Record Check",
         "Verified Employee"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:lpid"
         },
         {
-          "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:iso-certificate"
         },
         {
-          "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:upper-secondary-education"
         },
         {
-          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:higher-education-diploma"
         },
         {
-          "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:criminal-record-check"
         },
         {
-          "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:verified-employee"
         }
       ],
       "vcFormat": [
@@ -103,35 +103,35 @@
         "HR"
       ],
       "acceptedCredentials": [
-        "PID",
-        "LPID",
+        "PID Attestation",
+        "LPID Attestation",
         "ISO Certificate",
-        "Upper Secondary Certificate",
+        "Upper Secondary Education Certificate",
         "Higher Education Diploma",
         "Criminal Record Check",
         "Verified Employee"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:lpid"
         },
         {
-          "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:iso-certificate"
         },
         {
-          "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:upper-secondary-education"
         },
         {
-          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:higher-education-diploma"
         },
         {
-          "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:criminal-record-check"
         },
         {
-          "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:verified-employee"
         }
       ],
       "vcFormat": [
@@ -175,11 +175,11 @@
         "Login"
       ],
       "acceptedCredentials": [
-        "PID"
+        "PID Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "vcFormat": [
@@ -229,27 +229,27 @@
         "KYC"
       ],
       "acceptedCredentials": [
-        "PID",
-        "BRI",
-        "BRP",
-        "Company Roles",
+        "PID Attestation",
+        "BRI Attestation",
+        "BRP Attestation",
+        "Company Roles Attestation",
         "Contact Details"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:bri:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:bri"
         },
         {
-          "credentialCatalogId": "cred:fides:brp:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:brp"
         },
         {
-          "credentialCatalogId": "cred:fides:company-roles:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:company-roles"
         },
         {
-          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:contact-details"
         }
       ],
       "vcFormat": [
@@ -294,23 +294,23 @@
         "KYC"
       ],
       "acceptedCredentials": [
-        "PID",
-        "BRI",
-        "BRP",
+        "PID Attestation",
+        "BRI Attestation",
+        "BRP Attestation",
         "Contact Details"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:bri:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:bri"
         },
         {
-          "credentialCatalogId": "cred:fides:brp:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:brp"
         },
         {
-          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:contact-details"
         }
       ],
       "vcFormat": [
@@ -349,11 +349,11 @@
       "status": "live",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:verified-email:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:verified-email"
         }
       ],
       "acceptedCredentials": [
-        "cred:fides:verified-email:sd-jwt-vc"
+        "Verified Email"
       ],
       "vcFormat": [
         "sd_jwt_vc"

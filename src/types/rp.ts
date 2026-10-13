@@ -113,6 +113,9 @@ export interface RelyingParty {
   // Featured flag (added by crawler)
   isFeatured?: boolean;
 
+  /** Inherited from the organization catalog (explicit RP field wins). */
+  catalogTier?: string;
+
   // Semantic dates (added by crawler; do not set in provider JSON)
   updatedAt?: string;
   firstSeenAt?: string;

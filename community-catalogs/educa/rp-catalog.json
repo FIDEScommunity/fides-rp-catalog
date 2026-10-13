@@ -24,7 +24,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt"
         }
       ],
       "features": [

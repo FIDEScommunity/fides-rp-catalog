@@ -19,11 +19,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -65,11 +65,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -111,11 +111,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -157,12 +157,12 @@
         "financial-services"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
+        "Person Identification Data",
         "Qualified Electronic Signature Certificate"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [

@@ -17,11 +17,11 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Proof of Age"
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "vcFormat": [
@@ -70,44 +70,35 @@
         "credential-validation"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Mobile Driving Licence (MDL)",
+        "PID",
+        "mDL",
         "Photo ID",
-        "European Health Insurance Card (EHIC)",
-        "European Health Insurance Card",
-        "Portable Document A1 (PDA1)",
-        "Learning Credential"
+        "Photo ID",
+        "EHIC",
+        "PDA1",
+        "Diploma"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:eu:ehic"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pda1"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:diploma"
         }
       ],
       "vcFormat": [
@@ -156,91 +147,70 @@
       ],
       "acceptedCredentials": [
         "Certificate of Residence",
-        "European Health Insurance Card (EHIC)",
+        "PID",
+        "mDL",
+        "Photo ID",
+        "Photo ID",
+        "EHIC",
         "Health ID",
         "IBAN",
-        "Mobile Driving Licence (mDL)",
         "MSISDN",
-        "Portable Document A1 (PDA1)",
-        "Photo ID",
-        "Person Identification Data (PID)",
+        "PDA1",
         "Power Of Representation",
-        "Age Over 18 Pseudonym",
+        "Age Verification",
+        "Reservation",
+        "Diploma",
         "Tax Number",
-        "Reservation"
+        "Tax Residency"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:cor"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:eu:ehic"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:hiid"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:iban"
         },
         {
-          "credentialCatalogId": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:msisdn"
         },
         {
-          "credentialCatalogId": "cred:eu:hiid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pda1"
         },
         {
-          "credentialCatalogId": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:por"
         },
         {
-          "credentialCatalogId": "cred:eu:iban-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         },
         {
-          "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:iso:reservation"
         },
         {
-          "credentialCatalogId": "cred:eu:msisdn-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:diploma"
         },
         {
-          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:tax"
         },
         {
-          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:por-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:iso:reservation-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:tax-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:tax-residency"
         }
       ],
       "vcFormat": [

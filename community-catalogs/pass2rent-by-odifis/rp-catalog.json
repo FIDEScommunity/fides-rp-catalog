@@ -14,19 +14,15 @@
       "status": "development",
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:iso:mdl"
         }
       ],
       "acceptedCredentials": [
-        "cred:eu:pid-mdoc:mdoc",
-        "cred:iso:mdl-mdoc:mdoc",
-        "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+        "PID",
+        "mDL"
       ],
       "vcFormat": [
         "sd_jwt_vc",

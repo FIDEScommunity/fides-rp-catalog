@@ -18,11 +18,11 @@
         "Access to MyDMV online services"
       ],
       "acceptedCredentials": [
-        "mDL (Mobile Driver’s License)"
+        "mDL"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         }
       ],
       "vcFormat": [

@@ -88,10 +88,10 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:cexa-kyc:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:cexa-kyc"
         },
         {
-          "credentialCatalogId": "cred:verana:cexa-verified-counterparty:vcdm-2-0"
+          "credentialCatalogId": "cred:verana:cexa-verified-counterparty"
         }
       ]
     },
@@ -181,10 +181,10 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:cexa-kyc:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:cexa-kyc"
         },
         {
-          "credentialCatalogId": "cred:verana:cexa-verified-counterparty:vcdm-2-0"
+          "credentialCatalogId": "cred:verana:cexa-verified-counterparty"
         }
       ]
     },
@@ -274,10 +274,10 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:cexa-kyc:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:cexa-kyc"
         },
         {
-          "credentialCatalogId": "cred:verana:cexa-verified-counterparty:vcdm-2-0"
+          "credentialCatalogId": "cred:verana:cexa-verified-counterparty"
         }
       ]
     },
@@ -376,7 +376,7 @@
         "partner-login"
       ],
       "acceptedCredentials": [
-        "ECS Badge"
+        "ECS Badge Credential"
       ],
       "vcFormat": [
         "sd_jwt_vc",
@@ -442,7 +442,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:ecs-badge:vcdm-2-0"
+          "credentialCatalogId": "cred:verana:ecs-badge"
         }
       ]
     },
@@ -531,10 +531,10 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:verandia-citizen-id:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:verandia-citizen-id"
         },
         {
-          "credentialCatalogId": "cred:verana:verandia-legal-representative:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:verandia-legal-representative"
         }
       ]
     },
@@ -623,10 +623,10 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:verandia-citizen-id:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:verandia-citizen-id"
         },
         {
-          "credentialCatalogId": "cred:verana:verandia-legal-representative:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:verandia-legal-representative"
         }
       ]
     },
@@ -710,7 +710,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:verandia-citizen-id:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:verandia-citizen-id"
         }
       ]
     },
@@ -797,7 +797,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:demo-credential:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:demo-credential"
         }
       ]
     },
@@ -884,7 +884,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:demo-credential:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:demo-credential"
         }
       ]
     },
@@ -969,7 +969,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:verana:demo-credential:sd-jwt-vc"
+          "credentialCatalogId": "cred:verana:demo-credential"
         }
       ]
     }

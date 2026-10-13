@@ -13,10 +13,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -40,7 +40,12 @@
           "walletCatalogId": "google-wallet"
         }
       ],
-      "interactionMode": "proximity"
+      "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ]
     }
   ],
   "lastUpdated": "2026-04-22T12:25:00Z"

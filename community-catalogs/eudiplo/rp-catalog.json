@@ -18,15 +18,15 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Age Over 18",
-        "Person Identification Data (PID)"
+        "Age Verification",
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         },
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -78,11 +78,11 @@
         "kyc"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -129,11 +129,11 @@
         "sim-activation"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -180,15 +180,15 @@
         "discount-eligibility"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
+        "Person Identification Data",
         "Certificate of Residence"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:cor"
         }
       ],
       "vcFormat": [
@@ -235,11 +235,11 @@
         "parcel-pickup"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
