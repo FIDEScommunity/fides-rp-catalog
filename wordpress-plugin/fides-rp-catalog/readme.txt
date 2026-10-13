@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.9.2
+Stable tag: 2.9.3
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.9.3 =
+* Restore the styled interactive detail modal on deep links while retaining hidden SSR content, crawlable links, metadata, and pagination.
 
 = 2.9.2 =
 * Support type-level accepted credentials and alias resolution in the catalog UI (TS11 / tiles ≥ 1.13.32).

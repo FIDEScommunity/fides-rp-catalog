@@ -1134,15 +1134,9 @@
   }
 
   function retainStandaloneDetailPage() {
-    const detail = container.querySelector('[data-fides-ssr-page="detail"]');
-    if (!detail) return false;
-    const fallback = detail.closest('[data-fides-ssr="rp"]');
-    if (fallback) {
-      fallback.style.display = '';
-      fallback.removeAttribute('aria-hidden');
-    }
-    container.querySelector('[data-fides-ssr-spinner="1"]')?.remove();
-    return true;
+    // Detail deep links use the interactive catalog modal. The SSR remains a
+    // hidden crawler/no-JS fallback and must not replace the styled UI.
+    return false;
   }
 
   function revealSsrFallback() {
