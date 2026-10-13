@@ -11,29 +11,49 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "beta",
-      "sectors": ["education"],
+      "sectors": [
+        "education"
+      ],
       "useCases": [
         "Verify education credentials",
         "Digital CV / skills verification"
       ],
       "acceptedCredentialRefs": [
-        { "credentialCatalogId": "cred:eduwallet:academic-base:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eduwallet:academic-enrollment:sd-jwt-vc" },
-        { "credentialCatalogId": "cred:eduwallet:open-badge:sd-jwt-vc" }
+        {
+          "credentialCatalogId": "cred:eduwallet:academic-base"
+        },
+        {
+          "credentialCatalogId": "cred:eduwallet:academic-enrollment"
+        },
+        {
+          "credentialCatalogId": "cred:eduwallet:open-badge"
+        }
       ],
       "acceptedCredentials": [
-        "Academic Base Credential",
-        "Academic Enrollment Credential",
-        "Open Badge Credential"
+        "Academic Base Credential (ABC)",
+        "Academic Enrollment Credential (AEC)",
+        "Open Badge Credential (OBC)"
       ],
-      "vcFormat": ["sd_jwt_vc"],
-      "presentationProtocols": ["OpenID4VP via QR"],
-      "interoperabilityProfiles": ["DIIP v4"],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP via QR"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
       "supportedWallets": [
-        { "name": "wwWallet", "walletCatalogId": "wwwallet" }
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        }
       ],
       "interactionMode": "remote",
-      "languages": ["nl", "en"]
+      "languages": [
+        "nl",
+        "en"
+      ]
     },
     {
       "id": "eduwallet-eduid-verifier",
@@ -43,20 +63,37 @@
       "readiness": "use-case-demo",
       "country": "NL",
       "status": "beta",
-      "sectors": ["education"],
+      "sectors": [
+        "education"
+      ],
       "useCases": [
         "Wallet-based login",
         "Identity verification"
       ],
-      "acceptedCredentials": ["eduID"],
-      "vcFormat": ["sd_jwt_vc"],
-      "presentationProtocols": ["OpenID4VP"],
-      "interoperabilityProfiles": ["DIIP v4"],
+      "acceptedCredentials": [
+        "eduID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
       "supportedWallets": [
-        { "name": "wwWallet", "walletCatalogId": "wwwallet" }
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        }
       ],
       "interactionMode": "remote",
-      "languages": ["nl", "en"]
+      "languages": [
+        "nl",
+        "en"
+      ],
+      "acceptedCredentialRefs": []
     }
   ]
 }

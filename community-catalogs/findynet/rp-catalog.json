@@ -21,11 +21,11 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:findynet:pension-credential:sd-jwt-vc"
+          "credentialCatalogId": "cred:findynet:pension-credential"
         }
       ],
       "acceptedCredentials": [
-        "PensionCredential"
+        "Pension Credential"
       ],
       "vcFormat": [
         "sd_jwt_vc"

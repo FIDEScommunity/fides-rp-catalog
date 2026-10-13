@@ -20,11 +20,11 @@
         "kyc"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -78,11 +78,11 @@
         "passwordless-authentication"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -133,15 +133,15 @@
         "ticket-purchase"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
+        "Person Identification Data",
         "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         }
       ],
       "vcFormat": [
@@ -197,11 +197,11 @@
         "policy-issuance"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -250,25 +250,27 @@
         "alternative-identity-proofs"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Passport",
+        "Person Identification Data",
+        "ePassport",
+        "Photo ID",
+        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:epassport"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         }
       ],
       "vcFormat": [
@@ -319,20 +321,22 @@
       ],
       "acceptedCredentials": [
         "Photo ID",
-        "Address Proof"
+        "Photo ID",
+        "Photo ID",
+        "Personal Contact Details"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:personal-contact-details"
         }
       ],
       "vcFormat": [
@@ -382,19 +386,19 @@
         "browser-native-credentials"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Passport",
+        "Person Identification Data",
+        "ePassport",
         "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:epassport"
         },
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         }
       ],
       "vcFormat": [
@@ -442,17 +446,19 @@
         "digital-travel-credential"
       ],
       "acceptedCredentials": [
-        "Photo ID (DTC)"
+        "Photo ID",
+        "Photo ID",
+        "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         }
       ],
       "vcFormat": [
@@ -499,11 +505,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -576,7 +582,8 @@
       "languages": [
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "igrant-dcql-trusted-authority-demo",
@@ -598,26 +605,27 @@
         "trusted-authority-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Passport",
+        "Person Identification Data",
+        "ePassport",
         "Photo ID",
-        "University Degree"
+        "Photo ID",
+        "Higher Education Diploma"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:epassport"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:higher-education-diploma"
         }
       ],
       "vcFormat": [
@@ -666,17 +674,15 @@
         "cross-border-employment"
       ],
       "acceptedCredentials": [
-        "ESSPASS - PDA1"
+        "Portable Document A1",
+        "PDA1"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pda1-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pda1"
         },
         {
-          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pda1"
         }
       ],
       "vcFormat": [
@@ -724,11 +730,11 @@
         "wallet-onboarding"
       ],
       "acceptedCredentials": [
-        "Payment Authenticator"
+        "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         }
       ],
       "vcFormat": [
@@ -776,15 +782,15 @@
         "strong-customer-authentication"
       ],
       "acceptedCredentials": [
-        "Payment Authenticator",
-        "Person Identification Data (PID)"
+        "Payment Wallet Attestation",
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         },
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -832,22 +838,19 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Age Verification",
-        "Mobile Driving Licence (mDL)"
+        "PID",
+        "mDL",
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "vcFormat": [

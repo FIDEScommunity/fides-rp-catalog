@@ -313,6 +313,8 @@
   let credentialEcosystemsById = Object.create(null);
   /** cred:… id → { displayName, authorityName } */
   let credentialById = Object.create(null);
+  /** Alias-aware index: type id + legacy format ids → credential / canonical id */
+  let credentialAliasIndex = { byId: Object.create(null), canonicalIdByRef: Object.create(null) };
   /** wallet id → { displayName, providerName } */
   let walletById = Object.create(null);
   /** cred:… id → issuers[] from issuer catalog aggregated.json */
@@ -534,13 +536,24 @@
     }
   }
 
+  function resolveCredentialRefId(credentialId) {
+    const ui = window.FidesCatalogUI;
+    if (ui && typeof ui.resolveCredentialCanonicalId === 'function') {
+      return ui.resolveCredentialCanonicalId(credentialId, credentialAliasIndex);
+    }
+    return credentialId;
+  }
+
   /**
-   * Build cred:… id → themes[] and ecosystems[] from credential catalog aggregated.json
+   * Build cred:… id → themes[] and ecosystems[] from credential catalog aggregated.json.
+   * Indexes canonical type ids and legacy format aliases so RP refs keep resolving
+   * after the credential seed-merge.
    */
   async function loadCredentialTaxonomyIndex() {
     credentialThemesById = Object.create(null);
     credentialEcosystemsById = Object.create(null);
     credentialById = Object.create(null);
+    credentialAliasIndex = { byId: Object.create(null), canonicalIdByRef: Object.create(null) };
     const url = (config.credentialAggregatedDataUrl || '').trim();
     if (!url) return;
     try {
@@ -548,20 +561,32 @@
       if (!response.ok) return;
       const data = await response.json();
       const creds = Array.isArray(data.credentials) ? data.credentials : [];
+      const ui = window.FidesCatalogUI;
+      if (ui && typeof ui.buildCredentialAliasIndex === 'function') {
+        credentialAliasIndex = ui.buildCredentialAliasIndex(creds);
+      }
       creds.forEach(c => {
         if (!c || typeof c.id !== 'string') return;
-        credentialById[c.id] = {
+        const meta = {
           displayName: (c.displayName || '').trim(),
           authorityName: c.authority && c.authority.name ? String(c.authority.name).trim() : ''
         };
         const themes = Array.isArray(c.themes) ? c.themes : [];
-        credentialThemesById[c.id] = themes.filter(
+        const themeList = themes.filter(
           t => typeof t === 'string' && Object.prototype.hasOwnProperty.call(THEME_LABELS, t)
         );
         const ecosystems = Array.isArray(c.ecosystems) ? c.ecosystems : [];
-        credentialEcosystemsById[c.id] = ecosystems.filter(
+        const ecosystemList = ecosystems.filter(
           e => typeof e === 'string' && Object.prototype.hasOwnProperty.call(ECOSYSTEM_LABELS, e)
         );
+        const resolvable = (ui && typeof ui.credentialResolvableIds === 'function')
+          ? ui.credentialResolvableIds(c)
+          : [c.id];
+        resolvable.forEach(function(id) {
+          credentialById[id] = meta;
+          credentialThemesById[id] = themeList;
+          credentialEcosystemsById[id] = ecosystemList;
+        });
       });
     } catch (e) {
       console.warn('Credential catalog taxonomy index load failed:', e.message);
@@ -592,11 +617,14 @@
             organizationName: (issuer.organization && issuer.organization.name) ? String(issuer.organization.name) : '',
             logoUri: issuer.logoUri || (issuer.organization && issuer.organization.logoUri) || ''
           };
-          const existing = issuerUsageByCredentialId.get(credId) || [];
-          if (!existing.some(function(e) { return e.id === entry.id; })) {
-            existing.push(entry);
-            issuerUsageByCredentialId.set(credId, existing);
-          }
+          const keys = new Set([credId, resolveCredentialRefId(credId)].filter(Boolean));
+          keys.forEach(function(key) {
+            const existing = issuerUsageByCredentialId.get(key) || [];
+            if (!existing.some(function(e) { return e.id === entry.id; })) {
+              existing.push(entry);
+              issuerUsageByCredentialId.set(key, existing);
+            }
+          });
         });
       });
     } catch (e) {
@@ -678,9 +706,12 @@
     refs.forEach(function(ref) {
       const credId = getCredentialRefCatalogId(ref);
       if (!credId) return;
-      const issuers = issuerUsageByCredentialId.get(credId) || [];
-      issuers.forEach(function(issuer) {
-        if (issuer && issuer.id && !byId.has(issuer.id)) byId.set(issuer.id, issuer);
+      const keys = new Set([credId, resolveCredentialRefId(credId)].filter(Boolean));
+      keys.forEach(function(key) {
+        const issuers = issuerUsageByCredentialId.get(key) || [];
+        issuers.forEach(function(issuer) {
+          if (issuer && issuer.id && !byId.has(issuer.id)) byId.set(issuer.id, issuer);
+        });
       });
     });
     return Array.from(byId.values()).sort(function(a, b) {
@@ -2517,6 +2548,7 @@
           ecosystemIssuers: getEcosystemIssuersForRp(rp),
           derivedUseCases: getDerivedUseCasesForRp(rp),
           credentialById: credentialById,
+          credentialAliasIndex: credentialAliasIndex,
           walletById: walletById,
           ratingsApiBase: RATINGS_API_BASE,
           ratingsNonce: RATINGS_NONCE,

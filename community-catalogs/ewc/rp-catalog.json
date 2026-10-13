@@ -21,11 +21,11 @@
         "Identity verification"
       ],
       "acceptedCredentials": [
-        "PID"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [

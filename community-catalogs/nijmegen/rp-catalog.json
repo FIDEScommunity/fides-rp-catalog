@@ -19,19 +19,19 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Persoonsgegevens (Personal Data)",
-        "Email Address",
-        "Mobile Number"
+        "PID Attestation",
+        "Contact Details",
+        "MSISDN"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:contact-details"
         },
         {
-          "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:msisdn"
         }
       ],
       "vcFormat": [
@@ -85,7 +85,8 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "nijmegen-vergoedingenpas",
@@ -119,7 +120,8 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "nijmegen-busvoordeel",
@@ -154,7 +156,8 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "nijmegen-meedoenregeling",
@@ -188,7 +191,8 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "nijmegen-cultureel-erfgoed-pas",
@@ -223,7 +227,8 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "nijmegen-vergoedingencheck",
@@ -257,7 +262,8 @@
       "languages": [
         "nl"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "machtigen-bewindvoerder-jansen-bewind",
@@ -276,15 +282,15 @@
         "Applying on behalf of another person"
       ],
       "acceptedCredentials": [
-        "Mandate or authorization (demo)",
-        "Demo Personal Data"
+        "Power Of Representation",
+        "PID Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:por"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "presentationProtocols": [
@@ -318,15 +324,15 @@
         "Delegation and authorization"
       ],
       "acceptedCredentials": [
-        "Mandate or authorization (demo)",
-        "Demo Personal Data"
+        "Power Of Representation",
+        "PID Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:por"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "presentationProtocols": [

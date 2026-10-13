@@ -55,6 +55,7 @@ const ORGANIZATION_CATALOG_LOCAL_PATHS = [
 interface OrgCatalogEntry {
   id: string;
   name: string;
+  catalogTier?: string;
   sectors?: string[];
   identifiers?: { did?: string };
   website?: string;
@@ -75,6 +76,22 @@ function orgEntryToRPProvider(entry: OrgCatalogEntry): RPProvider {
   if (entry.logoUri) p.logo = entry.logoUri;
   if (entry.contact) p.contact = entry.contact;
   return p;
+}
+
+/** Resolve public catalogTier for an RP (explicit RP field, else organization catalog). */
+function resolveRpCatalogTier(
+  rp: NormalizedRP,
+  organizationById: Map<string, OrgCatalogEntry>
+): string | undefined {
+  const rpTier = rp.catalogTier;
+  if (typeof rpTier === 'string' && rpTier.trim()) {
+    return rpTier.trim();
+  }
+  const orgTier = organizationById.get(rp.orgId)?.catalogTier;
+  if (typeof orgTier === 'string' && orgTier.trim()) {
+    return orgTier.trim();
+  }
+  return undefined;
 }
 
 async function loadOrganizationCatalogMap(): Promise<Map<string, OrgCatalogEntry>> {
@@ -451,10 +468,14 @@ async function crawl(): Promise<void> {
   const dedupedRPs = deduplicateRPs(allRPs);
 
   const credSectorMap = await loadCredentialSectorMap(process.cwd());
-  const relyingPartiesWithSectors: NormalizedRP[] = dedupedRPs.map(rp => ({
-    ...rp,
-    sectors: resolveSectorsForAggregatedRp(rp, organizationById, credSectorMap)
-  }));
+  const relyingPartiesWithSectors: NormalizedRP[] = dedupedRPs.map(rp => {
+    const catalogTier = resolveRpCatalogTier(rp, organizationById);
+    return {
+      ...rp,
+      sectors: resolveSectorsForAggregatedRp(rp, organizationById, credSectorMap),
+      ...(catalogTier ? { catalogTier } : {})
+    };
+  });
 
   // Calculate stats
   const stats = calculateStats(relyingPartiesWithSectors, allProviders);

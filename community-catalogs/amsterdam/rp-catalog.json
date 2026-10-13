@@ -37,7 +37,8 @@
         "nl",
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "ideeen-voor-uw-buurt",
@@ -76,7 +77,8 @@
         "nl",
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "inloggen",
@@ -113,7 +115,8 @@
         "nl",
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "geveltuin-aanvragen",
@@ -154,7 +157,8 @@
         "nl",
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     },
     {
       "id": "overlast-melden",
@@ -193,7 +197,8 @@
         "nl",
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     }
   ],
   "lastUpdated": "2026-02-04T00:00:00Z"

@@ -48,11 +48,11 @@
       },
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "acceptedCredentials": [
-        "cred:eu:age-verification-mdoc:mdoc"
+        "Age Verification"
       ]
     }
   ],

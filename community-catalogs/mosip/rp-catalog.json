@@ -37,7 +37,8 @@
       "languages": [
         "en"
       ],
-      "interactionMode": "remote"
+      "interactionMode": "remote",
+      "acceptedCredentialRefs": []
     }
   ]
 }

@@ -11,10 +11,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -35,6 +35,11 @@
         }
       ],
       "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ],
       "orgId": "org:air-new-zealand",
       "provider": {
         "name": "Air New Zealand",
@@ -42,14 +47,15 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/air-nz/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.619Z",
+      "fetchedAt": "2026-10-12T20:29:15.826Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
       "firstSeenAt": "2026-04-22T12:25:00.000Z",
       "sectors": [
         "mobility"
-      ]
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "leeftijd-aantonen",
@@ -87,18 +93,20 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
-        "website": "https://amsterdam-demo.staging.yivi.app/",
+        "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.676Z",
+      "fetchedAt": "2026-10-12T20:29:15.930Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
-      "firstSeenAt": "2026-02-04T00:00:00.000Z"
+      "firstSeenAt": "2026-02-04T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "ideeen-voor-uw-buurt",
@@ -138,18 +146,20 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
-        "website": "https://amsterdam-demo.staging.yivi.app/",
+        "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.676Z",
+      "fetchedAt": "2026-10-12T20:29:15.930Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
-      "firstSeenAt": "2026-02-04T00:00:00.000Z"
+      "firstSeenAt": "2026-02-04T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "inloggen",
@@ -187,18 +197,20 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
-        "website": "https://amsterdam-demo.staging.yivi.app/",
+        "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.676Z",
+      "fetchedAt": "2026-10-12T20:29:15.930Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
-      "firstSeenAt": "2026-02-04T00:00:00.000Z"
+      "firstSeenAt": "2026-02-04T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "geveltuin-aanvragen",
@@ -240,18 +252,20 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
-        "website": "https://amsterdam-demo.staging.yivi.app/",
+        "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.676Z",
+      "fetchedAt": "2026-10-12T20:29:15.930Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
-      "firstSeenAt": "2026-02-04T00:00:00.000Z"
+      "firstSeenAt": "2026-02-04T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "overlast-melden",
@@ -291,18 +305,20 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:amsterdam",
       "provider": {
         "name": "City of Amsterdam",
-        "website": "https://amsterdam-demo.staging.yivi.app/",
+        "website": "https://www.amsterdam.nl/",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.676Z",
+      "fetchedAt": "2026-10-12T20:29:15.930Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
-      "firstSeenAt": "2026-02-04T00:00:00.000Z"
+      "firstSeenAt": "2026-02-04T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "bc-digital-trust-showcase",
@@ -322,11 +338,11 @@
         "service-access"
       ],
       "acceptedCredentials": [
-        "Student Card"
+        "Student ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:student-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:student-id"
         }
       ],
       "vcFormat": [
@@ -353,11 +369,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.714Z",
+      "fetchedAt": "2026-10-12T20:29:16.116Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
-      "firstSeenAt": "2025-01-15T23:00:00.000Z"
+      "firstSeenAt": "2025-01-15T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "br-car-vc-pilot",
@@ -396,6 +413,7 @@
       ],
       "documentation": "https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/marco/brasil-e-india-firmam-parceria-para-aprimorar-o-uso-de-infraestruturas-publicas-digitais",
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:brazil",
       "provider": {
         "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
@@ -403,11 +421,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.752Z",
+      "fetchedAt": "2026-10-12T20:29:16.197Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
-      "firstSeenAt": "2026-02-18T00:00:00.000Z"
+      "firstSeenAt": "2026-02-18T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "british-airways",
@@ -420,10 +439,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -444,6 +463,11 @@
         }
       ],
       "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ],
       "orgId": "org:british-airways",
       "provider": {
         "name": "British Airways",
@@ -451,14 +475,15 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/british-airways/british-airways-logo.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/british-airways/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.789Z",
+      "fetchedAt": "2026-10-12T20:29:16.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
       "firstSeenAt": "2026-04-22T12:25:00.000Z",
       "sectors": [
         "mobility"
-      ]
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "ca-dmv-mdl-login-opencred",
@@ -476,11 +501,11 @@
         "Access to MyDMV online services"
       ],
       "acceptedCredentials": [
-        "mDL (Mobile Driver’s License)"
+        "mDL"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         }
       ],
       "vcFormat": [
@@ -502,15 +527,16 @@
       "orgId": "org:ca-dmv",
       "provider": {
         "name": "California Department of Motor Vehicles (CA DMV)",
-        "website": "https://www.dmv.ca.gov/portal/",
+        "website": "https://www.dmv.ca.gov/",
         "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.826Z",
+      "fetchedAt": "2026-10-12T20:29:16.316Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
-      "firstSeenAt": "2026-02-18T00:00:00.000Z"
+      "firstSeenAt": "2026-02-18T00:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "educa-swiyu-demo",
@@ -536,7 +562,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt"
         }
       ],
       "features": [
@@ -556,11 +582,197 @@
         "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/educa/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.865Z",
+      "fetchedAt": "2026-10-12T20:29:16.372Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
-      "firstSeenAt": "2026-04-03T07:04:14.000Z"
+      "firstSeenAt": "2026-04-03T07:04:14.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "eduwallet-demo-cv",
+      "name": "Eduwallet Demo CV (verifier)",
+      "description": "Demo verifier in the Npuls/SURF eduwallet proeftuin that requests and verifies education credentials (Academic Base, Academic Enrollment, Open Badge) via a QR-based OpenID4VP flow.",
+      "website": "https://democv.dev.eduwallet.nl",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "beta",
+      "sectors": [
+        "education"
+      ],
+      "useCases": [
+        "Verify education credentials",
+        "Digital CV / skills verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eduwallet:academic-base"
+        },
+        {
+          "credentialCatalogId": "cred:eduwallet:academic-enrollment"
+        },
+        {
+          "credentialCatalogId": "cred:eduwallet:open-badge"
+        }
+      ],
+      "acceptedCredentials": [
+        "Academic Base Credential (ABC)",
+        "Academic Enrollment Credential (AEC)",
+        "Open Badge Credential (OBC)"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP via QR"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
+      "supportedWallets": [
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        }
+      ],
+      "interactionMode": "remote",
+      "languages": [
+        "nl",
+        "en"
+      ],
+      "orgId": "org:surf",
+      "provider": {
+        "name": "SURF",
+        "website": "https://www.surf.nl/en",
+        "logo": "https://www.surf.nl/themes/surf/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:16.409Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-07-09T12:55:00.000Z",
+      "firstSeenAt": "2026-07-09T12:55:00.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "eduwallet-eduid-verifier",
+      "name": "eduID Verifier (Eduwallet proeftuin)",
+      "description": "Verifier in the Npuls/SURF eduwallet proeftuin that requests the eduID credential to authenticate a learner via OpenID4VP.",
+      "website": "https://pilots.eduid.nl",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "beta",
+      "sectors": [
+        "education"
+      ],
+      "useCases": [
+        "Wallet-based login",
+        "Identity verification"
+      ],
+      "acceptedCredentials": [
+        "eduID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4"
+      ],
+      "supportedWallets": [
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        }
+      ],
+      "interactionMode": "remote",
+      "languages": [
+        "nl",
+        "en"
+      ],
+      "acceptedCredentialRefs": [],
+      "orgId": "org:surf",
+      "provider": {
+        "name": "SURF",
+        "website": "https://www.surf.nl/en",
+        "logo": "https://www.surf.nl/themes/surf/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:16.409Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-07-09T12:55:00.000Z",
+      "firstSeenAt": "2026-07-09T12:55:00.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "espuni-age-verification",
+      "name": "espuni Age Verification",
+      "description": "Age Verification-as-a-Service for platforms under DSA Article 28. EUDI Wallet-based verification (OID4VP, mso_mdoc, doctype eu.europa.ec.av.1) following the EU Age Verification Profile. Built on EUDIPLO (OpenWallet Foundation). Verified end-to-end against AltID (Denmark) in its test environment, including negative cases.",
+      "logo": "https://app.espuni.com/brand/espuni-favicon-transparent-512.png",
+      "website": "https://www.espuni.com",
+      "readiness": "production-pilot",
+      "country": "ES",
+      "interactionMode": "remote",
+      "status": "beta",
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "EUDI Age Verification App (Reference)",
+          "walletCatalogId": "eudi-age-verification-wallet"
+        },
+        {
+          "name": "AltID",
+          "walletCatalogId": "altid"
+        }
+      ],
+      "features": [
+        "Age Verification",
+        "Selective Disclosure",
+        "Digital Credentials API",
+        "Zero Knowledge Proofs"
+      ],
+      "documentation": "https://app.espuni.com/en/docs",
+      "testCredentials": "https://issuing.demo.ageverification.dev/",
+      "apiEndpoint": "https://api.espuni.com",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "Age Verification"
+      ],
+      "orgId": "org:espuni",
+      "provider": {
+        "name": "espuni"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/espuni/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:16.434Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-04T09:00:41.000Z",
+      "firstSeenAt": "2026-07-28T06:58:33.000Z",
+      "media": {
+        "images": [
+          "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104546.png",
+          "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104709.png",
+          "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104801.png",
+          "https://fides.community/app/uploads/2026/08/Captura-de-pantalla-2026-08-04-104948.png"
+        ]
+      },
+      "sectors": [
+        "digital"
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "eudi-cinema-age-verification",
@@ -577,11 +789,11 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Proof of Age"
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "vcFormat": [
@@ -610,12 +822,12 @@
       "interactionMode": "remote",
       "orgId": "org:eu",
       "provider": {
-        "name": "European Commission - Government",
-        "website": "https://github.com/eu-digital-identity-wallet",
+        "name": "European Commission",
+        "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.886Z",
+      "fetchedAt": "2026-10-12T20:29:16.469Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -624,7 +836,8 @@
         "videos": [
           "https://www.youtube.com/watch?v=ULFTrTznG7Y"
         ]
-      }
+      },
+      "catalogTier": "Community"
     },
     {
       "id": "eudi-reference-verifier",
@@ -642,44 +855,35 @@
         "credential-validation"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Mobile Driving Licence (MDL)",
+        "PID",
+        "mDL",
         "Photo ID",
-        "European Health Insurance Card (EHIC)",
-        "European Health Insurance Card",
-        "Portable Document A1 (PDA1)",
-        "Learning Credential"
+        "Photo ID",
+        "EHIC",
+        "PDA1",
+        "Diploma"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:eu:ehic"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pda1"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:diploma"
         }
       ],
       "vcFormat": [
@@ -709,16 +913,17 @@
       "interactionMode": "remote",
       "orgId": "org:eu",
       "provider": {
-        "name": "European Commission - Government",
-        "website": "https://github.com/eu-digital-identity-wallet",
+        "name": "European Commission",
+        "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.886Z",
+      "fetchedAt": "2026-10-12T20:29:16.469Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
-      "firstSeenAt": "2026-01-26T22:15:00.000Z"
+      "firstSeenAt": "2026-01-26T22:15:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "eudi-test-relying-party",
@@ -740,91 +945,70 @@
       ],
       "acceptedCredentials": [
         "Certificate of Residence",
-        "European Health Insurance Card (EHIC)",
+        "PID",
+        "mDL",
+        "Photo ID",
+        "Photo ID",
+        "EHIC",
         "Health ID",
         "IBAN",
-        "Mobile Driving Licence (mDL)",
         "MSISDN",
-        "Portable Document A1 (PDA1)",
-        "Photo ID",
-        "Person Identification Data (PID)",
+        "PDA1",
         "Power Of Representation",
-        "Age Over 18 Pseudonym",
+        "Age Verification",
+        "Reservation",
+        "Diploma",
         "Tax Number",
-        "Reservation"
+        "Tax Residency"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:cor"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:eu:ehic"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:hiid"
         },
         {
-          "credentialCatalogId": "cred:eu:ehic-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:iban"
         },
         {
-          "credentialCatalogId": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:msisdn"
         },
         {
-          "credentialCatalogId": "cred:eu:hiid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pda1"
         },
         {
-          "credentialCatalogId": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:por"
         },
         {
-          "credentialCatalogId": "cred:eu:iban-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         },
         {
-          "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:iso:reservation"
         },
         {
-          "credentialCatalogId": "cred:eu:msisdn-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:diploma"
         },
         {
-          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:tax"
         },
         {
-          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:por-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:iso:reservation-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:tax-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:tax-residency"
         }
       ],
       "vcFormat": [
@@ -853,16 +1037,17 @@
       "interactionMode": "remote",
       "orgId": "org:eu",
       "provider": {
-        "name": "European Commission - Government",
-        "website": "https://github.com/eu-digital-identity-wallet",
+        "name": "European Commission",
+        "website": "https://commission.europa.eu/",
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.886Z",
+      "fetchedAt": "2026-10-12T20:29:16.469Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
-      "firstSeenAt": "2026-01-26T22:15:00.000Z"
+      "firstSeenAt": "2026-01-26T22:15:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "eudiplo-vineyard-select",
@@ -880,15 +1065,15 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Age Over 18",
-        "Person Identification Data (PID)"
+        "Age Verification",
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         },
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -915,7 +1100,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -924,14 +1109,15 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
+        "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.923Z",
+      "fetchedAt": "2026-10-12T20:29:16.501Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-26T21:30:00.000Z",
-      "firstSeenAt": "2026-01-26T21:30:00.000Z"
+      "updatedAt": "2026-07-19T00:00:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "eudiplo-nordic-digital-bank",
@@ -951,11 +1137,11 @@
         "kyc"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -978,7 +1164,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -987,14 +1173,15 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
+        "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.923Z",
+      "fetchedAt": "2026-10-12T20:29:16.501Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-26T21:30:00.000Z",
-      "firstSeenAt": "2026-01-26T21:30:00.000Z"
+      "updatedAt": "2026-07-19T00:00:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "eudiplo-techmarkt-sim-activation",
@@ -1013,11 +1200,11 @@
         "sim-activation"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -1040,7 +1227,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -1049,14 +1236,15 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
+        "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.923Z",
+      "fetchedAt": "2026-10-12T20:29:16.501Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-26T21:30:00.000Z",
-      "firstSeenAt": "2026-01-26T21:30:00.000Z"
+      "updatedAt": "2026-07-19T00:00:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "eudiplo-berlin-history-museum",
@@ -1075,15 +1263,15 @@
         "discount-eligibility"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
+        "Person Identification Data",
         "Certificate of Residence"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:cor"
         }
       ],
       "vcFormat": [
@@ -1106,7 +1294,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -1115,14 +1303,15 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
+        "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.923Z",
+      "fetchedAt": "2026-10-12T20:29:16.501Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-26T21:30:00.000Z",
-      "firstSeenAt": "2026-01-26T21:30:00.000Z"
+      "updatedAt": "2026-07-19T00:00:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "eudiplo-swiftbox-parcel-locker",
@@ -1141,11 +1330,11 @@
         "parcel-pickup"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -1168,7 +1357,7 @@
           "walletCatalogId": "paradym-wallet"
         }
       ],
-      "documentation": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "documentation": "https://openwallet-foundation.github.io/eudiplo/",
       "testCredentials": "https://playground.eudi-wallet.org/get-pid/",
       "languages": [
         "en"
@@ -1177,14 +1366,15 @@
       "orgId": "org:eudiplo",
       "provider": {
         "name": "EUDIPLO",
-        "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
+        "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.923Z",
+      "fetchedAt": "2026-10-12T20:29:16.501Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-26T21:30:00.000Z",
-      "firstSeenAt": "2026-01-26T21:30:00.000Z"
+      "updatedAt": "2026-07-19T00:00:00.000Z",
+      "firstSeenAt": "2026-01-26T21:30:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "ewc-rpcentric-signer",
@@ -1203,11 +1393,11 @@
         "Identity verification"
       ],
       "acceptedCredentials": [
-        "PID"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -1229,15 +1419,15 @@
       "orgId": "org:ewc",
       "provider": {
         "name": "EWC - European Wallet Consortium",
-        "website": "https://dss.aegean.gr",
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.962Z",
+      "fetchedAt": "2026-10-12T20:29:16.553Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
-      "firstSeenAt": "2026-01-07T23:00:00.000Z"
+      "firstSeenAt": "2026-01-07T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "circulacity-sandbox",
@@ -1259,35 +1449,35 @@
         "HR"
       ],
       "acceptedCredentials": [
-        "PID",
-        "LPID",
+        "PID Attestation",
+        "LPID Attestation",
         "ISO Certificate",
-        "Upper Secondary Certificate",
+        "Upper Secondary Education Certificate",
         "Higher Education Diploma",
         "Criminal Record Check",
         "Verified Employee"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:lpid"
         },
         {
-          "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:iso-certificate"
         },
         {
-          "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:upper-secondary-education"
         },
         {
-          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:higher-education-diploma"
         },
         {
-          "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:criminal-record-check"
         },
         {
-          "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:verified-employee"
         }
       ],
       "vcFormat": [
@@ -1325,16 +1515,17 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.987Z",
+      "fetchedAt": "2026-10-12T20:29:16.576Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "updatedAt": "2026-08-13T14:50:03.000Z",
       "firstSeenAt": "2026-02-03T10:00:00.000Z",
       "media": {
         "videos": [
           "https://youtu.be/lK8ymw7Gei0"
         ]
-      }
+      },
+      "catalogTier": "Pro"
     },
     {
       "id": "rotterdam-sandbox",
@@ -1356,35 +1547,35 @@
         "HR"
       ],
       "acceptedCredentials": [
-        "PID",
-        "LPID",
+        "PID Attestation",
+        "LPID Attestation",
         "ISO Certificate",
-        "Upper Secondary Certificate",
+        "Upper Secondary Education Certificate",
         "Higher Education Diploma",
         "Criminal Record Check",
         "Verified Employee"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:lpid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:lpid"
         },
         {
-          "credentialCatalogId": "cred:fides:iso-certificate:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:iso-certificate"
         },
         {
-          "credentialCatalogId": "cred:fides:upper-secondary-education:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:upper-secondary-education"
         },
         {
-          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:higher-education-diploma"
         },
         {
-          "credentialCatalogId": "cred:fides:criminal-record-check:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:criminal-record-check"
         },
         {
-          "credentialCatalogId": "cred:fides:verified-employee:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:verified-employee"
         }
       ],
       "vcFormat": [
@@ -1422,11 +1613,12 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.987Z",
+      "fetchedAt": "2026-10-12T20:29:16.576Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-03T10:00:00.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z"
+      "updatedAt": "2026-08-13T14:50:03.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z",
+      "catalogTier": "Pro"
     },
     {
       "id": "mijnoverheid-sandbox",
@@ -1444,11 +1636,11 @@
         "Login"
       ],
       "acceptedCredentials": [
-        "PID"
+        "PID Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "vcFormat": [
@@ -1486,16 +1678,17 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.987Z",
+      "fetchedAt": "2026-10-12T20:29:16.576Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-03T10:00:00.000Z",
+      "updatedAt": "2026-08-13T14:50:03.000Z",
       "firstSeenAt": "2026-02-03T10:00:00.000Z",
       "media": {
         "videos": [
           "https://youtu.be/ywjnjoBEGK0"
         ]
-      }
+      },
+      "catalogTier": "Pro"
     },
     {
       "id": "hak-rein-vos-notarissen-sandbox",
@@ -1514,27 +1707,27 @@
         "KYC"
       ],
       "acceptedCredentials": [
-        "PID",
-        "BRI",
-        "BRP",
-        "Company Roles",
+        "PID Attestation",
+        "BRI Attestation",
+        "BRP Attestation",
+        "Company Roles Attestation",
         "Contact Details"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:bri:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:bri"
         },
         {
-          "credentialCatalogId": "cred:fides:brp:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:brp"
         },
         {
-          "credentialCatalogId": "cred:fides:company-roles:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:company-roles"
         },
         {
-          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:contact-details"
         }
       ],
       "vcFormat": [
@@ -1572,11 +1765,12 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.987Z",
+      "fetchedAt": "2026-10-12T20:29:16.576Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-03T10:00:00.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z"
+      "updatedAt": "2026-08-13T14:50:03.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z",
+      "catalogTier": "Pro"
     },
     {
       "id": "kvk-frontoffice-sandbox",
@@ -1595,23 +1789,23 @@
         "KYC"
       ],
       "acceptedCredentials": [
-        "PID",
-        "BRI",
-        "BRP",
+        "PID Attestation",
+        "BRI Attestation",
+        "BRP Attestation",
         "Contact Details"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:bri:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:bri"
         },
         {
-          "credentialCatalogId": "cred:fides:brp:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:brp"
         },
         {
-          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:contact-details"
         }
       ],
       "vcFormat": [
@@ -1649,11 +1843,78 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:30.987Z",
+      "fetchedAt": "2026-10-12T20:29:16.576Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-02-03T10:00:00.000Z",
-      "firstSeenAt": "2026-02-03T10:00:00.000Z"
+      "updatedAt": "2026-08-13T14:50:03.000Z",
+      "firstSeenAt": "2026-02-03T10:00:00.000Z",
+      "catalogTier": "Pro"
+    },
+    {
+      "id": "fides-website",
+      "name": "FIDES Website",
+      "description": "Sign in with wallet on the fides.community website.",
+      "website": "https://fides.community/",
+      "readiness": "production",
+      "country": "NL",
+      "interactionMode": "remote",
+      "status": "live",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:fides:verified-email"
+        }
+      ],
+      "acceptedCredentials": [
+        "Verified Email"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Heidi Wallet App",
+          "walletCatalogId": "heidi-wallet"
+        },
+        {
+          "name": "Data Wallet by iGrant.io",
+          "walletCatalogId": "igrant-data-wallet"
+        },
+        {
+          "name": "Sphereon Edge Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "Credenco Wallet",
+          "walletCatalogId": "credenco-wallet"
+        },
+        {
+          "name": "Yivi",
+          "walletCatalogId": "yivi"
+        }
+      ],
+      "orgId": "org:fides",
+      "provider": {
+        "name": "FIDES Labs",
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "website": "https://fides.community",
+        "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+        "contact": {
+          "email": "info@fides-labs.io"
+        }
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/fides/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:16.576Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-13T14:50:03.000Z",
+      "firstSeenAt": "2026-08-13T14:50:03.000Z",
+      "sectors": [
+        "digital"
+      ],
+      "catalogTier": "Pro"
     },
     {
       "id": "pension-demo-waltid-verifier",
@@ -1673,11 +1934,11 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:findynet:pension-credential:sd-jwt-vc"
+          "credentialCatalogId": "cred:findynet:pension-credential"
         }
       ],
       "acceptedCredentials": [
-        "PensionCredential"
+        "Pension Credential"
       ],
       "vcFormat": [
         "sd_jwt_vc"
@@ -1703,11 +1964,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/findynet/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.024Z",
+      "fetchedAt": "2026-10-12T20:29:16.624Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-28T19:08:05.000Z",
-      "firstSeenAt": "2026-04-28T19:08:05.000Z"
+      "firstSeenAt": "2026-04-28T19:08:05.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "google-digital-credentials-demo",
@@ -1726,17 +1988,14 @@
       ],
       "acceptedCredentials": [
         "mDL",
-        "National ID cards"
+        "PID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pid"
         }
       ],
       "vcFormat": [
@@ -1763,11 +2022,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.061Z",
+      "fetchedAt": "2026-10-12T20:29:16.674Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
-      "firstSeenAt": "2025-01-15T23:00:00.000Z"
+      "firstSeenAt": "2025-01-15T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "hong-kong-international-airport",
@@ -1780,10 +2040,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -1804,6 +2064,11 @@
         }
       ],
       "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ],
       "orgId": "org:hong-kong-international-airport",
       "provider": {
         "name": "Hong Kong International Airport",
@@ -1811,14 +2076,15 @@
         "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/hkia/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.099Z",
+      "fetchedAt": "2026-10-12T20:29:16.726Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
       "firstSeenAt": "2026-04-22T12:25:00.000Z",
       "sectors": [
         "mobility"
-      ]
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "bengaluru-international-airport",
@@ -1831,10 +2097,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -1859,6 +2125,11 @@
         }
       ],
       "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ],
       "orgId": "org:bengaluru-international-airport",
       "provider": {
         "name": "Bengaluru International Airport",
@@ -1866,14 +2137,15 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.137Z",
+      "fetchedAt": "2026-10-12T20:29:16.778Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
       "firstSeenAt": "2026-04-22T12:25:00.000Z",
       "sectors": [
         "mobility"
-      ]
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-open-bank-account-demo",
@@ -1893,11 +2165,11 @@
         "kyc"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -1930,14 +2202,10 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -1946,7 +2214,8 @@
         "videos": [
           "https://youtu.be/3VktTStWHs8"
         ]
-      }
+      },
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-bank-login-demo",
@@ -1966,11 +2235,11 @@
         "passwordless-authentication"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -2002,18 +2271,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-fast-ferries-merchant-payments",
@@ -2034,15 +2300,15 @@
         "ticket-purchase"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
+        "Person Identification Data",
         "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         }
       ],
       "vcFormat": [
@@ -2077,14 +2343,10 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2093,7 +2355,8 @@
         "videos": [
           "https://www.youtube.com/watch?v=6GwCxyofSVE"
         ]
-      }
+      },
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-insurance-policy-demo",
@@ -2113,11 +2376,11 @@
         "policy-issuance"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -2149,18 +2412,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-dcql-credential-query-demo",
@@ -2180,25 +2440,27 @@
         "alternative-identity-proofs"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Passport",
+        "Person Identification Data",
+        "ePassport",
+        "Photo ID",
+        "Photo ID",
         "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:epassport"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         }
       ],
       "vcFormat": [
@@ -2231,18 +2493,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-kyc-photoid-demo",
@@ -2263,20 +2522,22 @@
       ],
       "acceptedCredentials": [
         "Photo ID",
-        "Address Proof"
+        "Photo ID",
+        "Photo ID",
+        "Personal Contact Details"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:personal-contact-details"
         }
       ],
       "vcFormat": [
@@ -2309,18 +2570,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-w3c-digital-credentials-demo",
@@ -2340,19 +2598,19 @@
         "browser-native-credentials"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Passport",
+        "Person Identification Data",
+        "ePassport",
         "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:epassport"
         },
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         }
       ],
       "vcFormat": [
@@ -2383,18 +2641,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-photo-id-issuance",
@@ -2414,17 +2669,19 @@
         "digital-travel-credential"
       ],
       "acceptedCredentials": [
-        "Photo ID (DTC)"
+        "Photo ID",
+        "Photo ID",
+        "Photo ID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         }
       ],
       "vcFormat": [
@@ -2456,18 +2713,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-issue-test-pid",
@@ -2486,11 +2740,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -2521,18 +2775,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-issue-test-qesac",
@@ -2579,21 +2830,19 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-dcql-trusted-authority-demo",
@@ -2613,26 +2862,27 @@
         "trusted-authority-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Passport",
+        "Person Identification Data",
+        "ePassport",
         "Photo ID",
-        "University Degree"
+        "Photo ID",
+        "Higher Education Diploma"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         },
         {
-          "credentialCatalogId": "cred:ewc:epassport-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:epassport"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:fides:higher-education-diploma:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:higher-education-diploma"
         }
       ],
       "vcFormat": [
@@ -2664,18 +2914,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-esspass-pda1",
@@ -2695,17 +2942,15 @@
         "cross-border-employment"
       ],
       "acceptedCredentials": [
-        "ESSPASS - PDA1"
+        "Portable Document A1",
+        "PDA1"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pda1-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pda1"
         },
         {
-          "credentialCatalogId": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pda1-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pda1"
         }
       ],
       "vcFormat": [
@@ -2737,18 +2982,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-payment-authenticator",
@@ -2768,11 +3010,11 @@
         "wallet-onboarding"
       ],
       "acceptedCredentials": [
-        "Payment Authenticator"
+        "Payment Wallet Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         }
       ],
       "vcFormat": [
@@ -2804,18 +3046,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-payment-bank-led",
@@ -2835,15 +3074,15 @@
         "strong-customer-authentication"
       ],
       "acceptedCredentials": [
-        "Payment Authenticator",
-        "Person Identification Data (PID)"
+        "Payment Wallet Attestation",
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:payment-wallet-attestation"
         },
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -2876,18 +3115,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-02-11T23:00:00.000Z"
+      "firstSeenAt": "2026-02-11T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "igrant-verifier-playground",
@@ -2906,22 +3142,19 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
-        "Age Verification",
-        "Mobile Driving Licence (mDL)"
+        "PID",
+        "mDL",
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "vcFormat": [
@@ -2967,18 +3200,15 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "website": "https://igrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-        "contact": {
-          "email": "support@igrant.io"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.159Z",
+      "fetchedAt": "2026-10-12T20:29:16.816Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
-      "firstSeenAt": "2026-05-17T23:00:00.000Z"
+      "firstSeenAt": "2026-05-17T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "indigo",
@@ -2991,10 +3221,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -3015,6 +3245,11 @@
         }
       ],
       "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ],
       "orgId": "org:indigo",
       "provider": {
         "name": "IndiGo",
@@ -3022,14 +3257,15 @@
         "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/indigo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.197Z",
+      "fetchedAt": "2026-10-12T20:29:16.866Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
       "firstSeenAt": "2026-04-22T12:25:00.000Z",
       "sectors": [
         "mobility"
-      ]
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "japan-airlines",
@@ -3042,10 +3278,10 @@
           "credentialCatalogId": "cred:iso:photoid-mdoc-iso23220:mdoc"
         },
         {
-          "credentialCatalogId": "cred:iata:boarding-pass-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:boarding-pass"
         },
         {
-          "credentialCatalogId": "cred:iata:booking-order-mdoc:mdoc"
+          "credentialCatalogId": "cred:iata:booking-order"
         }
       ],
       "vcFormat": [
@@ -3066,6 +3302,11 @@
         }
       ],
       "interactionMode": "proximity",
+      "acceptedCredentials": [
+        "cred:iso:photoid-mdoc-iso23220:mdoc",
+        "Boarding Pass",
+        "Booking Order"
+      ],
       "orgId": "org:japan-airlines",
       "provider": {
         "name": "Japan Airlines",
@@ -3073,14 +3314,56 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/jal/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.233Z",
+      "fetchedAt": "2026-10-12T20:29:16.918Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
       "firstSeenAt": "2026-04-22T12:25:00.000Z",
       "sectors": [
         "mobility"
-      ]
+      ],
+      "catalogTier": "Community"
+    },
+    {
+      "id": "ksid-verifier",
+      "name": "KSID Verifier",
+      "description": "A verifier within the KSID Wallet that is used to validate UNTP Digital Product Passports, Conformity Credentials, Digital Traceability Events, Digital Facility Records, and Digital Identity Anchor issued via KSPTS.",
+      "logo": "https://k4-security.com/assets/logo/k4-security/k4s_symbol_orange.png",
+      "readiness": "production",
+      "country": "KR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "vcFormat": [
+        "sd_jwt_vc",
+        "jwt_vc",
+        "vcdm_1_1",
+        "vcdm_2_0"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "SIOPv2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "KSID Wallet",
+          "walletCatalogId": "ksid-wallet"
+        }
+      ],
+      "orgId": "org:k4security",
+      "provider": {
+        "name": "K4-Security",
+        "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/k4security/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:16.945Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-07-27T14:37:49.000Z",
+      "firstSeenAt": "2026-07-27T14:37:49.000Z",
+      "sectors": [
+        "digital"
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "lissi-bank-account-demo",
@@ -3099,11 +3382,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -3130,18 +3413,15 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "website": "https://lissi.id",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
-        "contact": {
-          "email": "info@lissi.id"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.270Z",
+      "fetchedAt": "2026-10-12T20:29:16.995Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "lissi-tax-authority-demo",
@@ -3160,11 +3440,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -3191,18 +3471,15 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "website": "https://lissi.id",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
-        "contact": {
-          "email": "info@lissi.id"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.270Z",
+      "fetchedAt": "2026-10-12T20:29:16.995Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "lissi-municipality-demo",
@@ -3221,11 +3498,11 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)"
+        "Person Identification Data"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -3252,18 +3529,15 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "website": "https://lissi.id",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
-        "contact": {
-          "email": "info@lissi.id"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.270Z",
+      "fetchedAt": "2026-10-12T20:29:16.995Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "lissi-loan-qes-demo",
@@ -3282,12 +3556,12 @@
         "financial-services"
       ],
       "acceptedCredentials": [
-        "Person Identification Data (PID)",
+        "Person Identification Data",
         "Qualified Electronic Signature Certificate"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:ewc:pid-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -3314,18 +3588,15 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "website": "https://lissi.id",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
-        "contact": {
-          "email": "info@lissi.id"
-        }
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.270Z",
+      "fetchedAt": "2026-10-12T20:29:16.995Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "inji-web-verifier",
@@ -3363,6 +3634,7 @@
         "en"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:mosip",
       "provider": {
         "name": "MOSIP",
@@ -3370,11 +3642,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.308Z",
+      "fetchedAt": "2026-10-12T20:29:17.046Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
-      "firstSeenAt": "2026-01-26T16:50:59.000Z"
+      "firstSeenAt": "2026-01-26T16:50:59.000Z",
+      "catalogTier": "Pro"
     },
     {
       "id": "neovo-shop-playground",
@@ -3397,7 +3670,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt"
         }
       ],
       "vcFormat": [
@@ -3432,11 +3705,12 @@
         }
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/neovo/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.333Z",
+      "fetchedAt": "2026-10-12T20:29:17.084Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-06-10T19:19:27.000Z",
-      "firstSeenAt": "2026-04-02T19:50:32.000Z"
+      "firstSeenAt": "2026-04-02T19:50:32.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-mijn-nijmegen-login",
@@ -3455,19 +3729,19 @@
         "identity-verification"
       ],
       "acceptedCredentials": [
-        "Persoonsgegevens (Personal Data)",
-        "Email Address",
-        "Mobile Number"
+        "PID Attestation",
+        "Contact Details",
+        "MSISDN"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:contact-details:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:contact-details"
         },
         {
-          "credentialCatalogId": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:msisdn"
         }
       ],
       "vcFormat": [
@@ -3482,7 +3756,7 @@
           "walletCatalogId": "yivi"
         }
       ],
-      "documentation": "https://privacybydesign.foundation/issuance/",
+      "documentation": "https://docs.yivi.app/",
       "languages": [
         "nl"
       ],
@@ -3494,11 +3768,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-iit",
@@ -3534,6 +3809,7 @@
         "nl"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
@@ -3541,11 +3817,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-vergoedingenpas",
@@ -3580,6 +3857,7 @@
         "nl"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
@@ -3587,11 +3865,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-busvoordeel",
@@ -3626,6 +3905,7 @@
         "nl"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
@@ -3633,11 +3913,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-meedoenregeling",
@@ -3672,6 +3953,7 @@
         "nl"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
@@ -3679,11 +3961,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-cultureel-erfgoed-pas",
@@ -3718,6 +4001,7 @@
         "nl"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
@@ -3725,11 +4009,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "nijmegen-vergoedingencheck",
@@ -3764,6 +4049,7 @@
         "nl"
       ],
       "interactionMode": "remote",
+      "acceptedCredentialRefs": [],
       "orgId": "org:nijmegen",
       "provider": {
         "name": "City of Nijmegen",
@@ -3771,11 +4057,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "machtigen-bewindvoerder-jansen-bewind",
@@ -3794,15 +4081,15 @@
         "Applying on behalf of another person"
       ],
       "acceptedCredentials": [
-        "Mandate or authorization (demo)",
-        "Demo Personal Data"
+        "Power Of Representation",
+        "PID Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:por"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "presentationProtocols": [
@@ -3825,11 +4112,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "machtigen-centraal-machtigingsregister",
@@ -3848,15 +4136,15 @@
         "Delegation and authorization"
       ],
       "acceptedCredentials": [
-        "Mandate or authorization (demo)",
-        "Demo Personal Data"
+        "Power Of Representation",
+        "PID Attestation"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:eu:por-sd-jwt-vc:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:por"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:fides:pid"
         }
       ],
       "presentationProtocols": [
@@ -3879,11 +4167,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.369Z",
+      "fetchedAt": "2026-10-12T20:29:17.115Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-01-21T23:00:00.000Z",
-      "firstSeenAt": "2026-01-21T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2026-01-21T23:00:00.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "multipaz-verifier",
@@ -3905,54 +4194,51 @@
         "loyalty-programs"
       ],
       "acceptedCredentials": [
-        "Driving License",
-        "EU Personal ID",
-        "German Personal ID",
+        "mDL",
+        "PID",
+        "PID Attestation",
         "Photo ID",
-        "EU Certificate of Residency",
-        "Utopia Naturalization Certificate",
-        "Movie Ticket",
-        "Google Wallet ID pass",
-        "Age Verification Credential",
+        "Photo ID",
+        "Photo ID",
+        "Certificate of Residence",
+        "Age Verification",
         "Loyalty",
-        "Aadhaar"
+        "Loyalty Card",
+        "Aadhaar Verifiable Credential"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:cor"
         },
         {
-          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         },
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:loyalty"
         },
         {
-          "credentialCatalogId": "cred:eu:loyalty-mdoc:mdoc"
+          "credentialCatalogId": "cred:ewc:loyalty-card"
         },
         {
-          "credentialCatalogId": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:uidai:aadhaar-mdoc:mdoc"
+          "credentialCatalogId": "cred:uidai:aadhaar"
         }
       ],
       "vcFormat": [
@@ -3966,7 +4252,7 @@
       "supportedWallets": [
         "Multipaz Test App"
       ],
-      "documentation": "https://github.com/openwallet-foundation-labs/multipaz",
+      "documentation": "https://github.com/openwallet-foundation/multipaz",
       "languages": [
         "en"
       ],
@@ -3978,11 +4264,100 @@
         "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.398Z",
+      "fetchedAt": "2026-10-12T20:29:17.147Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2025-01-15T23:00:00.000Z",
-      "firstSeenAt": "2025-01-15T23:00:00.000Z"
+      "updatedAt": "2026-07-18T23:00:00.000Z",
+      "firstSeenAt": "2025-01-15T23:00:00.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "pass2rent-car-rental-verifier",
+      "name": "PASS2RENT - Car rental Verifier",
+      "description": "PASS2RENT Verifier is an in-house OpenID4VP relying party built and operated by Odifis, a Lithuanian SME, for contactless car rental. One unchanged verifier carries the whole rental journey across two EUDI wallets: a privacy-preserving age check at booking (France Identité PID), driver identification at the vehicle (a test mDL from the EU reference wallet), and a fresh, holder- and device-bound mDL presentation at key handover that releases an ephemeral, replay-protected unlock token.\n\nPrivacy is enforced in code, not policy. The rental platform receives a single predicate — age_over_18, with 21/25 thresholds for young-driver pricing — attested directly by the wallet when it serves it (as France Identité does), flagged as derived otherwise. Either way, any birth date disclosed stays at the verification point: read for milliseconds, then stripped before anything is stored or forwarded. No portrait can be stored (no field exists for one); the audit trail is hash-chained and contains zero personal data; claims are encrypted at rest; retention is fail-closed.\n\nTrust is never overstated: the playground PID verifies green against the France Identité IACA trust anchor; an unknown issuer yields an amber \"issuer not recognised\" — never a silent pass. Revocation uses IETF Token Status Lists. Unevaluated checks are labelled, never simulated — including contract signing: advanced electronic signature (AES) in the demo, not yet legal QES.\n\nOpen standards, cross-border by construction: OpenID4VP 1.0 with DCQL, encrypted direct_post.jwt responses, x509_san_dns reader authentication; ISO/IEC 18013-5 mso_mdoc and SD-JWT VC formats. A Lithuanian relying party consuming French national credentials — no bilateral agreement, no national API.\n\nDemo: synthetic identities, real cryptography — not production. Multi-tenant, built so further rental operators can onboard.",
+      "logo": "https://pass2rent.com/logo_pass2rent_web.svg",
+      "website": "https://api.playground.france-identite.gouv.fr/odifis/contactless-rent/en/",
+      "readiness": "use-case-demo",
+      "country": "LT",
+      "interactionMode": "remote",
+      "status": "development",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        }
+      ],
+      "acceptedCredentials": [
+        "PID",
+        "mDL"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "EUDI Wallet Reference Implementation",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Lissi ID-Wallet",
+          "walletCatalogId": "lissi-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        }
+      ],
+      "features": [
+        "Age verification (wallet-attested or derived)",
+        "selective disclosure",
+        "data minimisation",
+        "revocation checking (IETF Token Status List)",
+        "encrypted responses (direct_post.jwt)",
+        "reader authentication (x509_san_dns)",
+        "tamper-evident PII-free audit trail",
+        "multi-tenant"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/odifis/",
+      "testCredentials": "https://issuer.eudiw.dev/",
+      "useCases": [
+        "PASS2RENT: From Proof of Age to Open Door — Car Rental on EUDI Wallets"
+      ],
+      "orgId": "org:pass2rent-by-odifis",
+      "provider": {
+        "name": "PASS2RENT By Odifis",
+        "logo": "https://pass2rent.com/logo_pass2rent_web.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/pass2rent-by-odifis/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.174Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-07-20T05:37:19.000Z",
+      "firstSeenAt": "2026-07-18T21:18:59.710Z",
+      "media": {
+        "videos": [
+          "https://youtu.be/r-qwBeSzc8E",
+          "https://youtu.be/bgZNJDrLdcU"
+        ]
+      },
+      "sectors": [
+        "digital"
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "sbb-swiyu-verifier-showcase",
@@ -4006,7 +4381,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt"
         }
       ],
       "vcFormat": [
@@ -4037,11 +4412,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/sbb/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.432Z",
+      "fetchedAt": "2026-10-12T20:29:17.223Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
-      "firstSeenAt": "2026-04-03T06:53:47.000Z"
+      "firstSeenAt": "2026-04-03T06:53:47.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "mdoc-web-verifier",
@@ -4056,38 +4432,76 @@
         "digital"
       ],
       "useCases": [
-        "Mobile Driving License verification",
-        "Age verification",
-        "Identity proofing"
+        "Mobile Driving Licence (mDL) based on ISO/IEC 18013-5"
       ],
       "acceptedCredentials": [
         "mDL",
-        "PID (mdoc profile)"
+        "PID",
+        "PID Attestation",
+        "PID EUDI",
+        "Photo ID",
+        "Photo ID",
+        "Vehicle Registration Certificate",
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:fides:pid"
+        },
+        {
+          "credentialCatalogId": "cred:ewc:pid-eudi"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mvrc"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
         }
       ],
       "vcFormat": [
         "mdoc"
       ],
       "presentationProtocols": [
+        "ISO 18013-5",
         "ISO 18013-5 proximity",
         "QR device engagement"
       ],
       "supportedWallets": [
-        "Google Wallet (mDL)",
-        "Apple Wallet (mDL)",
-        "EUDI-compatible mDoc wallets"
+        {
+          "name": "Google Wallet (mDL)"
+        },
+        {
+          "name": "Apple Wallet (mDL)"
+        },
+        {
+          "name": "EUDI-compatible mDoc wallets"
+        },
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
       ],
       "languages": [
         "en"
       ],
-      "interactionMode": "remote",
+      "interactionMode": "proximity",
+      "features": [
+        "selective disclosure",
+        "reader authentication"
+      ],
+      "documentation": "https://github.com/stelauconseil/mdoc-web-verifier",
       "orgId": "org:stelausoftware",
       "provider": {
         "name": "Stelau Software",
@@ -4095,11 +4509,12 @@
         "logo": "https://www.google.com/s2/favicons?domain=www.stelau.com&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.472Z",
+      "fetchedAt": "2026-10-12T20:29:17.240Z",
       "source": "local",
       "isFeatured": false,
-      "updatedAt": "2026-04-22T18:24:58.000Z",
-      "firstSeenAt": "2026-01-26T16:46:54.000Z"
+      "updatedAt": "2026-09-01T08:24:24.000Z",
+      "firstSeenAt": "2026-01-26T16:46:54.000Z",
+      "catalogTier": "Community"
     },
     {
       "id": "swiyu-alphaoffice-demo",
@@ -4122,7 +4537,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt"
         }
       ],
       "features": [
@@ -4145,11 +4560,114 @@
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/swiyu/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.523Z",
+      "fetchedAt": "2026-10-12T20:29:17.290Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
-      "firstSeenAt": "2026-04-03T07:08:55.000Z"
+      "firstSeenAt": "2026-04-03T07:08:55.000Z",
+      "catalogTier": "Pro"
+    },
+    {
+      "id": "turo-driver-verification",
+      "name": "Turo Driver Verification",
+      "description": "Enables Turo guests to verify their driving licence using a mobile driving licence (mDL).",
+      "readiness": "production",
+      "country": "US",
+      "interactionMode": "remote",
+      "status": "live",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:google:google-id-pass"
+        }
+      ],
+      "acceptedCredentials": [
+        "mDL",
+        "Google ID Pass"
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Google Wallet",
+          "walletCatalogId": "google-wallet"
+        }
+      ],
+      "logo": "https://fides.community/ecosystem-explorer/relying-party-catalog/?rp=turo-driver-verification",
+      "orgId": "org:turo",
+      "provider": {
+        "name": "Turo",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Turo_company_logo.png"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/turo/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.305Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-09-16T20:08:20.000Z",
+      "firstSeenAt": "2026-09-16T16:16:20.000Z",
+      "sectors": [
+        "mobility"
+      ],
+      "catalogTier": "Community"
+    },
+    {
+      "id": "uber-rider-verification",
+      "name": "Uber Rider Verification",
+      "description": "Enables Uber riders to verify their identity using a mobile driving licence (mDL).",
+      "readiness": "production",
+      "country": "US",
+      "interactionMode": "remote",
+      "status": "live",
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:google:google-id-pass"
+        }
+      ],
+      "acceptedCredentials": [
+        "mDL",
+        "Google ID Pass"
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Google Wallet",
+          "walletCatalogId": "google-wallet"
+        },
+        {
+          "name": "Apple Wallet",
+          "walletCatalogId": "apple-wallet"
+        }
+      ],
+      "orgId": "org:uber",
+      "provider": {
+        "name": "Uber",
+        "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/1920px-Uber_logo_2018.png"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/uber/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.318Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-09-16T16:13:34.000Z",
+      "firstSeenAt": "2026-09-16T16:13:34.000Z",
+      "sectors": [
+        "mobility"
+      ],
+      "catalogTier": "Community"
     },
     {
       "id": "unchained-swiyu-demo-store",
@@ -4173,7 +4691,7 @@
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:swiyu:betaid-sdjwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:swiyu:betaid-sdjwt"
         }
       ],
       "vcFormat": [
@@ -4205,11 +4723,1115 @@
         "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
       },
       "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/unchained/rp-catalog.json",
-      "fetchedAt": "2026-07-05T11:44:31.561Z",
+      "fetchedAt": "2026-10-12T20:29:17.368Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T17:47:11.000Z",
-      "firstSeenAt": "2026-04-03T06:40:04.000Z"
+      "firstSeenAt": "2026-04-03T06:40:04.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "cexa-aurum",
+      "name": "Aurum Exchange (demo)",
+      "description": "Swiss member exchange of the Crypto Exchange Association (demo). As an accredited VERIFIER it relies on the reusable CEXA-Kyc credential to onboard customers checked by any other member, and verifies CEXA-VerifiedCounterparty credentials for free Travel Rule counterparty checks. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/cexa-aurum.svg",
+      "website": "https://aurum.cexa.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "reusable-kyc",
+        "customer-onboarding",
+        "travel-rule-counterparty-check"
+      ],
+      "acceptedCredentials": [
+        "CEXA-Kyc",
+        "CEXA-VerifiedCounterparty"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds",
+        "vcdm_2_0"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:cexa-kyc"
+        },
+        {
+          "credentialCatalogId": "cred:verana:cexa-verified-counterparty"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "cexa-novara",
+      "name": "Novara Bank (demo)",
+      "description": "Italian bank and CEXA member (demo), demonstrating the bank-exchange corridor: it relies on the reusable CEXA-Kyc credential from its own due diligence or any member's, and verifies CEXA-VerifiedCounterparty credentials for free Travel Rule counterparty checks. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/cexa-novara.svg",
+      "website": "https://novara.cexa.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "IT",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "reusable-kyc",
+        "customer-onboarding",
+        "travel-rule-counterparty-check"
+      ],
+      "acceptedCredentials": [
+        "CEXA-Kyc",
+        "CEXA-VerifiedCounterparty"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds",
+        "vcdm_2_0"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:cexa-kyc"
+        },
+        {
+          "credentialCatalogId": "cred:verana:cexa-verified-counterparty"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "cexa-borealis",
+      "name": "Borealis Markets (demo)",
+      "description": "Estonian VERIFIER member of the Crypto Exchange Association (demo). It issues nothing: it onboards customers purely by relying on CEXA-Kyc credentials issued by other members, paying the original issuer per reuse, and verifies CEXA-VerifiedCounterparty credentials for Travel Rule checks. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/cexa-borealis.svg",
+      "website": "https://borealis.cexa.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "EE",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "reusable-kyc",
+        "customer-onboarding",
+        "travel-rule-counterparty-check"
+      ],
+      "acceptedCredentials": [
+        "CEXA-Kyc",
+        "CEXA-VerifiedCounterparty"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds",
+        "vcdm_2_0"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:cexa-kyc"
+        },
+        {
+          "credentialCatalogId": "cred:verana:cexa-verified-counterparty"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "cexa-darkpool",
+      "name": "DarkPool Exchange (demo)",
+      "description": "The deliberate outsider of the CEXA use case (demo): a verifiable organization that is NOT a member of the Crypto Exchange Association - no membership, no CEXA permission, no counterparty credential. Its presentation requests are real so that compliant wallets have something genuine to refuse. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/cexa-darkpool.svg",
+      "website": "https://darkpool.cexa.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "KY",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "refused-presentation-request"
+      ],
+      "acceptedCredentials": [],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "vesta-portal",
+      "name": "Vesta Portal (demo)",
+      "description": "Customer and partner portal of Vesta Appliances (demo), a delegated sub-service of the manufacturer's anchor. It verifies ECS-Badge credentials presented by employees and partner technicians, granting the partner seal only when the badge issuer chains to an Authorized Repairer of the Vesta Repair Network. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/vesta-portal.svg",
+      "website": "https://portal.vesta.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "employee-badge-verification",
+        "partner-login"
+      ],
+      "acceptedCredentials": [
+        "ECS Badge Credential"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds",
+        "vcdm_2_0"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:ecs-badge"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "verandia-tax-buro",
+      "name": "Tax Buro (demo)",
+      "description": "Tax portal of the Republic of Verandia (demo), a registered relying party of the Verandia Citizen ID ecosystem: citizens log in with their Citizen ID, and company representatives prove their mandate with the Legal Representative credential. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/tax-buro.svg",
+      "website": "https://tax-buro.verandia.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "EE",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "citizen-login",
+        "tax-filing",
+        "legal-representation-check"
+      ],
+      "acceptedCredentials": [
+        "Verandia Citizen ID",
+        "Legal Representative (Verandia)"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:verandia-citizen-id"
+        },
+        {
+          "credentialCatalogId": "cred:verana:verandia-legal-representative"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "verandia-meridian-bank",
+      "name": "Meridian Bank (demo)",
+      "description": "Verifiable bank of the Republic of Verandia (demo), a registered relying party of the Verandia Citizen ID ecosystem: it opens accounts against the Citizen ID and checks company mandates with the Legal Representative credential. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/meridian-bank.svg",
+      "website": "https://meridian-bank.verandia.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "EE",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "account-opening",
+        "identity-verification",
+        "legal-representation-check"
+      ],
+      "acceptedCredentials": [
+        "Verandia Citizen ID",
+        "Legal Representative (Verandia)"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:verandia-citizen-id"
+        },
+        {
+          "credentialCatalogId": "cred:verana:verandia-legal-representative"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "verandia-quickcash",
+      "name": "QuickCash Loans (demo)",
+      "description": "The over-asking verifier of the Verandia use case (demo): a verifiable company that holds NO relying-party registration on the Verandia Citizen ID, yet requests the FULL credential, portrait included. Compliant wallets refuse the request before any attribute leaves the device - that refusal is the demo. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/quickcash.svg",
+      "website": "https://quickcash.verandia.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "EE",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "over-asking-refusal"
+      ],
+      "acceptedCredentials": [
+        "Verandia Citizen ID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:verandia-citizen-id"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "demo-verifier-accredited",
+      "name": "Accredited Verifier (demo)",
+      "description": "Reference verifier of the Playground Ecosystem (demo): a Verifiable Service holding an open VERIFIER permission on the DemoCredential. Its presentation requests succeed end to end, showing playground visitors what a legitimate, trust-resolved request looks like in their wallet. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/demo-verifier.svg",
+      "website": "https://demo-verifier-accredited.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "playground-walkthrough",
+        "presentation-demo"
+      ],
+      "acceptedCredentials": [
+        "DemoCredential"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:demo-credential"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "demo-verifier-unaccredited",
+      "name": "Unaccredited Verifier (demo)",
+      "description": "The contrast case of the Playground Ecosystem (demo): a fully Verifiable Service without any DemoCredential permission. Because verification of the DemoCredential is open, its requests still succeed - teaching visitors the difference between a service's identity and its per-credential accreditation. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/demo-verifier-unaccredited.svg",
+      "website": "https://demo-verifier-unaccredited.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "playground-walkthrough",
+        "presentation-demo"
+      ],
+      "acceptedCredentials": [
+        "DemoCredential"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "anoncreds"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "DIDComm Present Proof v2"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:demo-credential"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
+    },
+    {
+      "id": "demo-verifier-untrusted",
+      "name": "Untrusted Verifier (demo)",
+      "description": "The negative control of the Playground Ecosystem (demo): a service that is not a Verifiable Service at all - no trust chain, no accreditation. Its presentation requests are real so compliant wallets can demonstrate refusing them at trust resolution, before any data is exchanged. Part of the Verana Playground; for demonstration only.",
+      "logo": "https://raw.githubusercontent.com/verana-labs/playground/main/public/images/cast/demo-verifier-untrusted.svg",
+      "website": "https://demo-verifier-untrusted.playground.testnet.verana.network",
+      "readiness": "use-case-demo",
+      "country": "CH",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "digital"
+      ],
+      "useCases": [
+        "playground-walkthrough",
+        "refused-presentation-request"
+      ],
+      "acceptedCredentials": [
+        "DemoCredential"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Inji Wallet",
+          "walletCatalogId": "inji-wallet"
+        },
+        {
+          "name": "EUDI Wallet (reference)",
+          "walletCatalogId": "eudi-reference-personal-wallet"
+        },
+        {
+          "name": "Authbound Wallet",
+          "walletCatalogId": "authbound-wallet"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        },
+        {
+          "name": "BC Wallet",
+          "walletCatalogId": "bc-wallet"
+        },
+        {
+          "name": "wwWallet",
+          "walletCatalogId": "wwwallet"
+        },
+        {
+          "name": "Hologram Messaging",
+          "walletCatalogId": "hologram-messaging"
+        },
+        {
+          "name": "Sphereon Wallet",
+          "walletCatalogId": "sphereon-wallet"
+        },
+        {
+          "name": "swiyu Wallet",
+          "walletCatalogId": "swiyu-wallet"
+        },
+        {
+          "name": "Altme Wallet",
+          "walletCatalogId": "altme-wallet"
+        },
+        {
+          "name": "NL Wallet",
+          "walletCatalogId": "national-eudi-wallet-netherlands"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:verana:demo-credential"
+        }
+      ],
+      "orgId": "org:verana",
+      "provider": {
+        "name": "Verana",
+        "logo": "https://verana.io/logo.svg"
+      },
+      "catalogUrl": "/Users/victorvanderhulst/Projects/rp-catalog/community-catalogs/verana/rp-catalog.json",
+      "fetchedAt": "2026-10-12T20:29:17.389Z",
+      "source": "local",
+      "isFeatured": false,
+      "updatedAt": "2026-08-18T06:44:53.000Z",
+      "firstSeenAt": "2026-08-18T06:44:53.000Z",
+      "catalogTier": "Community"
     }
   ],
   "providers": [
@@ -4220,7 +5842,7 @@
     },
     {
       "name": "City of Amsterdam",
-      "website": "https://amsterdam-demo.staging.yivi.app/",
+      "website": "https://www.amsterdam.nl/",
       "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
     },
     {
@@ -4240,7 +5862,7 @@
     },
     {
       "name": "California Department of Motor Vehicles (CA DMV)",
-      "website": "https://www.dmv.ca.gov/portal/",
+      "website": "https://www.dmv.ca.gov/",
       "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
     },
     {
@@ -4249,17 +5871,24 @@
       "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
     },
     {
-      "name": "European Commission - Government",
-      "website": "https://github.com/eu-digital-identity-wallet",
+      "name": "SURF",
+      "website": "https://www.surf.nl/en",
+      "logo": "https://www.surf.nl/themes/surf/logo.svg"
+    },
+    {
+      "name": "espuni"
+    },
+    {
+      "name": "European Commission",
+      "website": "https://commission.europa.eu/",
       "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
     },
     {
       "name": "EUDIPLO",
-      "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/"
+      "website": "https://eudiplo.dev/"
     },
     {
       "name": "EWC - European Wallet Consortium",
-      "website": "https://dss.aegean.gr",
       "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
     },
     {
@@ -4293,11 +5922,7 @@
     },
     {
       "name": "iGrant.io",
-      "website": "https://igrant.io",
-      "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
-      "contact": {
-        "email": "support@igrant.io"
-      }
+      "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
     },
     {
       "name": "IndiGo",
@@ -4310,12 +5935,12 @@
       "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
     },
     {
+      "name": "K4-Security",
+      "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128"
+    },
+    {
       "name": "Lissi GmbH",
-      "website": "https://lissi.id",
-      "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
-      "contact": {
-        "email": "info@lissi.id"
-      }
+      "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
     },
     {
       "name": "MOSIP",
@@ -4341,6 +5966,10 @@
       "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
     },
     {
+      "name": "PASS2RENT By Odifis",
+      "logo": "https://pass2rent.com/logo_pass2rent_web.svg"
+    },
+    {
       "name": "SBB",
       "website": "https://www.sbb.ch",
       "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
@@ -4356,33 +5985,48 @@
       "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
     },
     {
+      "name": "Turo",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Turo_company_logo.png"
+    },
+    {
+      "name": "Uber",
+      "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/1920px-Uber_logo_2018.png"
+    },
+    {
       "name": "Unchained Commerce",
       "website": "https://unchained.shop",
       "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
+    },
+    {
+      "name": "Verana",
+      "logo": "https://verana.io/logo.svg"
     }
   ],
-  "lastUpdated": "2026-07-05T11:44:31.568Z",
+  "lastUpdated": "2026-10-12T20:29:17.396Z",
   "stats": {
-    "totalRPs": 66,
-    "totalProviders": 27,
+    "totalRPs": 85,
+    "totalProviders": 34,
     "byReadiness": {
       "technical-demo": 22,
-      "use-case-demo": 40,
-      "production-pilot": 2,
-      "production": 2
+      "use-case-demo": 54,
+      "production-pilot": 3,
+      "production": 6
     },
     "bySector": {
-      "mobility": 7,
+      "mobility": 9,
       "public_sector": 23,
-      "digital": 38,
-      "education": 1,
+      "digital": 53,
+      "education": 3,
       "trade": 1
     },
     "byVcFormat": {
-      "mdoc": 19,
+      "mdoc": 23,
       "idemix": 6,
-      "sd_jwt_vc": 39,
-      "vcdm_2_0": 2
+      "sd_jwt_vc": 55,
+      "vcdm_2_0": 7,
+      "jwt_vc": 1,
+      "vcdm_1_1": 1,
+      "anoncreds": 8
     }
   }
 }

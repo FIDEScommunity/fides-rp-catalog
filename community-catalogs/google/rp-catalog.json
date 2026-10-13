@@ -19,17 +19,14 @@
       ],
       "acceptedCredentials": [
         "mDL",
-        "National ID cards"
+        "PID"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:pid"
         }
       ],
       "vcFormat": [

@@ -23,54 +23,51 @@
         "loyalty-programs"
       ],
       "acceptedCredentials": [
-        "Driving License",
-        "EU Personal ID",
-        "German Personal ID",
+        "mDL",
+        "PID",
+        "PID Attestation",
         "Photo ID",
-        "EU Certificate of Residency",
-        "Utopia Naturalization Certificate",
-        "Movie Ticket",
-        "Google Wallet ID pass",
-        "Age Verification Credential",
+        "Photo ID",
+        "Photo ID",
+        "Certificate of Residence",
+        "Age Verification",
         "Loyalty",
-        "Aadhaar"
+        "Loyalty Card",
+        "Aadhaar Verifiable Credential"
       ],
       "acceptedCredentialRefs": [
         {
-          "credentialCatalogId": "cred:iso:mdl-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:mdl"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:eu:pid-mdoc:mdoc"
+          "credentialCatalogId": "cred:fides:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:pid:sd-jwt-vc"
+          "credentialCatalogId": "cred:iso:photoid"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc:mdoc"
+          "credentialCatalogId": "cred:iso:photoid-mdoc-alt"
         },
         {
-          "credentialCatalogId": "cred:iso:photoid-mdoc-alt:mdoc"
+          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
-          "credentialCatalogId": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc"
+          "credentialCatalogId": "cred:eu:cor"
         },
         {
-          "credentialCatalogId": "cred:eu:cor-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:age-verification"
         },
         {
-          "credentialCatalogId": "cred:eu:age-verification-mdoc:mdoc"
+          "credentialCatalogId": "cred:eu:loyalty"
         },
         {
-          "credentialCatalogId": "cred:eu:loyalty-mdoc:mdoc"
+          "credentialCatalogId": "cred:ewc:loyalty-card"
         },
         {
-          "credentialCatalogId": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc"
-        },
-        {
-          "credentialCatalogId": "cred:uidai:aadhaar-mdoc:mdoc"
+          "credentialCatalogId": "cred:uidai:aadhaar"
         }
       ],
       "vcFormat": [

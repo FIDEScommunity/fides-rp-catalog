@@ -48,6 +48,46 @@ function fides_rp_catalog_resolve_update_form_url($override = '') {
 }
 
 /**
+ * True on Local / localhost so sibling catalog plugins can supply aggregated.json.
+ */
+function fides_rp_catalog_is_local_site() {
+    $host = '';
+    if (function_exists('get_site_url')) {
+        $url = get_site_url();
+        if (is_string($url)) {
+            $parsed = parse_url($url);
+            $host = isset($parsed['host']) ? $parsed['host'] : '';
+        }
+    }
+    if ($host === '' && ! empty($_SERVER['HTTP_HOST'])) {
+        $host = (string) $_SERVER['HTTP_HOST'];
+    }
+    $host = strtolower(trim($host));
+    return ($host !== '' && (preg_match('/\.local$/i', $host) || $host === 'localhost'));
+}
+
+/**
+ * URL for credential catalog aggregated.json (alias index + taxonomy for RP UI).
+ * On local sites prefer the sibling plugin file so seed-merge aliases resolve
+ * before they are published to GitHub.
+ */
+function fides_rp_catalog_resolve_credential_aggregated_url() {
+    $github = 'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json';
+    $opt    = trim((string) get_option('fides_rp_catalog_credential_aggregated_url', ''));
+    if ($opt !== '') {
+        return esc_url_raw($opt);
+    }
+    if (fides_rp_catalog_is_local_site()) {
+        $cred_main = WP_PLUGIN_DIR . '/fides-credential-catalog/fides-credential-catalog.php';
+        $cred_json = WP_PLUGIN_DIR . '/fides-credential-catalog/data/aggregated.json';
+        if (file_exists($cred_json) && file_exists($cred_main)) {
+            return plugins_url('data/aggregated.json', $cred_main);
+        }
+    }
+    return $github;
+}
+
+/**
  * Enqueue plugin assets
  */
 function fides_rp_catalog_enqueue_assets() {
@@ -117,10 +157,7 @@ function fides_rp_catalog_enqueue_assets() {
             'fides_rp_catalog_organization_catalog_url',
             'https://fides.community/ecosystem-explorer/organization-catalog/'
         ),
-        'credentialAggregatedDataUrl' => get_option(
-            'fides_rp_catalog_credential_aggregated_url',
-            'https://raw.githubusercontent.com/FIDEScommunity/fides-credential-catalog/main/data/aggregated.json'
-        ),
+        'credentialAggregatedDataUrl' => fides_rp_catalog_resolve_credential_aggregated_url(),
         'issuerAggregatedDataUrl' => get_option(
             'fides_rp_catalog_issuer_aggregated_url',
             'https://raw.githubusercontent.com/FIDEScommunity/fides-issuer-catalog/main/data/aggregated.json'
