@@ -20,14 +20,8 @@
         "Remote signing initiation",
         "Identity verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],

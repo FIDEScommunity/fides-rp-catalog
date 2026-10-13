@@ -25,13 +25,10 @@
       "acceptedCredentials": [
         "mDL",
         "PID",
-        "PID Attestation",
-        "Photo ID",
         "Photo ID",
         "Certificate of Residence",
         "Age Verification",
         "Loyalty",
-        "Loyalty Card",
         "Aadhaar Verifiable Credential"
       ],
       "acceptedCredentialRefs": [
@@ -42,13 +39,7 @@
           "credentialCatalogId": "cred:eu:pid"
         },
         {
-          "credentialCatalogId": "cred:fides:pid"
-        },
-        {
           "credentialCatalogId": "cred:iso:photoid"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:photo-id"
         },
         {
           "credentialCatalogId": "cred:eu:cor"
@@ -58,9 +49,6 @@
         },
         {
           "credentialCatalogId": "cred:eu:loyalty"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:loyalty-card"
         },
         {
           "credentialCatalogId": "cred:uidai:aadhaar"

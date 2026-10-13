@@ -18,14 +18,8 @@
         "account-opening",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -64,14 +58,8 @@
         "document-issuance",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -110,14 +98,8 @@
         "document-issuance",
         "identity-verification"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],
@@ -157,14 +139,9 @@
         "financial-services"
       ],
       "acceptedCredentials": [
-        "Person Identification Data",
         "Qualified Electronic Signature Certificate"
       ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc"
       ],

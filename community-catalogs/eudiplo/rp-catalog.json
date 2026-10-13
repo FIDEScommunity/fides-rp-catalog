@@ -18,15 +18,11 @@
         "age-verification"
       ],
       "acceptedCredentials": [
-        "Age Verification",
-        "Person Identification Data"
+        "Age Verification"
       ],
       "acceptedCredentialRefs": [
         {
           "credentialCatalogId": "cred:eu:age-verification"
-        },
-        {
-          "credentialCatalogId": "cred:ewc:pid"
         }
       ],
       "vcFormat": [
@@ -77,14 +73,8 @@
         "identity-verification",
         "kyc"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc",
         "mdoc"
@@ -128,14 +118,8 @@
         "identity-verification",
         "sim-activation"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc",
         "mdoc"
@@ -180,13 +164,9 @@
         "discount-eligibility"
       ],
       "acceptedCredentials": [
-        "Person Identification Data",
         "Certificate of Residence"
       ],
       "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        },
         {
           "credentialCatalogId": "cred:eu:cor"
         }
@@ -234,14 +214,8 @@
         "identity-verification",
         "parcel-pickup"
       ],
-      "acceptedCredentials": [
-        "Person Identification Data"
-      ],
-      "acceptedCredentialRefs": [
-        {
-          "credentialCatalogId": "cred:ewc:pid"
-        }
-      ],
+      "acceptedCredentials": [],
+      "acceptedCredentialRefs": [],
       "vcFormat": [
         "sd_jwt_vc",
         "mdoc"
