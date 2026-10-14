@@ -163,7 +163,110 @@
         "de"
       ],
       "interactionMode": "remote"
+    },
+    {
+      "id": "lissi-employee-onboarding-demo",
+      "name": "Employee Onboarding",
+      "description": "A combined employee-onboarding flow in which an employer first verifies the new employee's PID and then issues an Employee ID credential in the same wallet interaction.",
+      "website": "https://api.playground.france-identite.gouv.fr/lissi/unfold-playground",
+      "readiness": "use-case-demo",
+      "country": "DE",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "employment"
+      ],
+      "useCases": [
+        "employee-onboarding",
+        "identity-verification",
+        "employee-id-issuance"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Lissi ID-Wallet",
+          "walletCatalogId": "lissi-wallet"
+        }
+      ],
+      "features": [
+        "combined presentation and issuance",
+        "PID verification",
+        "Employee ID credential issuance"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/lissi/",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "lissi-flight-registration-demo",
+      "name": "Flight Registration",
+      "description": "A flight check-in demo that verifies the traveller's identity through a browser-to-wallet Digital Credentials API interaction and then issues a digital boarding pass.",
+      "website": "https://api.playground.france-identite.gouv.fr/lissi/unfold-playground",
+      "readiness": "use-case-demo",
+      "country": "DE",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "travel"
+      ],
+      "useCases": [
+        "flight-check-in",
+        "traveller-identity-verification",
+        "boarding-pass-issuance"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "W3C Digital Credentials API"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Lissi ID-Wallet",
+          "walletCatalogId": "lissi-wallet"
+        }
+      ],
+      "features": [
+        "browser-native wallet interaction",
+        "traveller identity verification",
+        "boarding-pass credential issuance"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/lissi/",
+      "languages": [
+        "en"
+      ]
     }
   ],
-  "lastUpdated": "2026-01-22T00:00:00+01:00"
+  "lastUpdated": "2026-10-14T00:00:00Z"
 }

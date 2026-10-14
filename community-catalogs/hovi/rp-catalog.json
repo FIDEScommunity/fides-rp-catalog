@@ -1,0 +1,186 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:hovi",
+  "relyingParties": [
+    {
+      "id": "hovi-omaapteekki-demo",
+      "name": "OmaApteekki",
+      "description": "A cross-border pharmacy purchase demo in which an EEA traveller presents an EU PID to prove eligibility, prefill identity details and complete a prescription purchase abroad.",
+      "website": "https://omaapteekki.hovi.app/",
+      "readiness": "use-case-demo",
+      "country": "FI",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "healthcare",
+        "retail",
+        "travel"
+      ],
+      "useCases": [
+        "cross-border-pharmacy-purchase",
+        "identity-verification",
+        "eea-residency-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "cross-border eligibility verification",
+        "identity-data prefilling",
+        "selective disclosure"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/hovi/",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "hovi-valko-demo",
+      "name": "Valko",
+      "description": "An age-restricted retail demo for online or in-store purchases. The wallet discloses only the age_over_18 result, without sharing the holder's name, date of birth, address or other identity data.",
+      "website": "https://valko.hovi.app/",
+      "readiness": "use-case-demo",
+      "country": "FI",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "retail"
+      ],
+      "useCases": [
+        "age-restricted-purchase",
+        "privacy-preserving-age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "age-over-18 verification",
+        "minimal disclosure",
+        "no date-of-birth disclosure"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/hovi/",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "hovi-nordcap-demo",
+      "name": "NordCap",
+      "description": "A financial-services demo in which a customer signs in to an investment platform using an EUDI Wallet instead of a username and password. The customer presents identity data, approves the request in the wallet and returns authenticated.",
+      "website": "https://nordcap.hovi.app/",
+      "readiness": "use-case-demo",
+      "country": "FI",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "finance"
+      ],
+      "useCases": [
+        "passwordless-authentication",
+        "financial-services-login",
+        "identity-verification"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "passwordless login",
+        "wallet-based authentication",
+        "cross-device QR presentation"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/hovi/",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "hovi-vpost-demo",
+      "name": "vPost",
+      "description": "A parcel-pickup demo in which a postal counter verifies the recipient's identity directly from an EUDI Wallet over Bluetooth before releasing the parcel.",
+      "website": "https://vpost.hovi.app/",
+      "readiness": "use-case-demo",
+      "country": "FI",
+      "interactionMode": "proximity",
+      "status": "live",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "parcel-pickup",
+        "in-person-identity-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "BLE proximity verification",
+        "face-to-face identity verification",
+        "browser-based counter terminal"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/hovi/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-14T00:00:00Z"
+}

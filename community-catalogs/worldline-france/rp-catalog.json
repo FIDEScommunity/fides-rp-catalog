@@ -1,0 +1,65 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:worldline-france",
+  "relyingParties": [
+    {
+      "id": "worldline-digital-identity-hub",
+      "name": "Worldline Digital Identity Hub",
+      "description": "Worldline Digital Identity Hub gives banks and other service providers one managed connection to EUDI Wallets, identity providers, attribute issuers and trust services. It supports wallet-based customer onboarding, identity verification, age checks, authentication and attestation exchange while managing wallet connectivity and trust-list complexity.",
+      "website": "https://worldline.com/en/home/main-navigation/resources/publications/digital-identity-hub-simplify-digital-identity-adoption",
+      "readiness": "production-pilot",
+      "country": "FR",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "finance",
+        "retail",
+        "other"
+      ],
+      "useCases": [
+        "customer-onboarding",
+        "identity-verification",
+        "age-verification",
+        "strong-customer-authentication"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "multi-wallet connectivity",
+        "trust-list management",
+        "identity and attribute verification",
+        "attestation issuance",
+        "strong customer authentication"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/worldline/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-14T00:00:00Z"
+}

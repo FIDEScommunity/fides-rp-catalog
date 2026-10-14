@@ -1,0 +1,61 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:izertis",
+  "relyingParties": [
+    {
+      "id": "izertis-novabank-demo",
+      "name": "NovaBank Onboarding",
+      "description": "An end-to-end banking demo built with the Izertis Identfy platform. A customer presents a PID to open an account, receives a wallet-bound Strong Customer Authentication credential, uses it for passwordless bank login and then receives an IBAN credential.",
+      "website": "https://api.playground.france-identite.gouv.fr/izertis/identfy-demo-bank-front/tour",
+      "readiness": "use-case-demo",
+      "country": "ES",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "finance"
+      ],
+      "useCases": [
+        "bank-account-opening",
+        "customer-onboarding",
+        "passwordless-banking-login",
+        "strong-customer-authentication"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Strong Customer Authentication credential"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "Identfy",
+          "walletCatalogId": "identfy-personal-wallet"
+        }
+      ],
+      "features": [
+        "PID verification",
+        "bank-account onboarding",
+        "SCA credential issuance and verification",
+        "passwordless login",
+        "IBAN credential issuance"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/izertis/",
+      "languages": [
+        "en",
+        "es"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-14T00:00:00Z"
+}

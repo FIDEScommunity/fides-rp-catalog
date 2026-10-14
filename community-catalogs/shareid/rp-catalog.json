@@ -1,0 +1,65 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:shareid",
+  "relyingParties": [
+    {
+      "id": "shareid-eudi-wallet-verification",
+      "name": "ShareID EUDI Wallet Verification",
+      "description": "ShareID enables regulated organizations and digital platforms to verify EUDI Wallet PID, EAA and QEAA attestations and use them for onboarding and passwordless strong authentication. Wallet verification can be combined with document checks and biometric liveness in one identity journey.",
+      "website": "https://www.shareid.ai/en/product-pages/eudiw-attestation",
+      "readiness": "production-pilot",
+      "country": "FR",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "finance",
+        "insurance",
+        "other"
+      ],
+      "useCases": [
+        "customer-onboarding",
+        "identity-verification",
+        "passwordless-authentication",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "EAA and QEAA attestations",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "PID attestation verification",
+        "EAA and QEAA verification",
+        "passwordless strong authentication",
+        "document verification and biometric liveness fallback"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/shareid/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-14T00:00:00Z"
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:datakeen",
+  "relyingParties": [
+    {
+      "id": "datakeen-identity-verification",
+      "name": "Datakeen Identity Verification",
+      "description": "Datakeen provides identity verification for banks, insurers and other regulated businesses. Its EUDI Wallet integration verifies identity attributes online through OpenID4VP and supports in-person proximity verification, with data minimization for checks such as proving that a customer is over 18.",
+      "website": "https://www.datakeen.co/",
+      "readiness": "production-pilot",
+      "country": "FR",
+      "interactionMode": "both",
+      "status": "live",
+      "sectors": [
+        "finance",
+        "insurance",
+        "real-estate"
+      ],
+      "useCases": [
+        "customer-onboarding",
+        "kyc-identity-verification",
+        "in-person-identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "remote identity verification",
+        "BLE proximity verification",
+        "selective disclosure",
+        "document and biometric verification fallback"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/datakeen/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-14T00:00:00Z"
+}

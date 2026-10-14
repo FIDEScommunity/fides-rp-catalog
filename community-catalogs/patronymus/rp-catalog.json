@@ -1,0 +1,52 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:patronymus",
+  "relyingParties": [
+    {
+      "id": "patronymus-caller-identity-verification",
+      "name": "Patronymus Caller Identity Verification",
+      "description": "Patronymus helps employees verify the identity of people contacting them by phone or video call. Its EUDI Wallet flow verifies a person's PID before an identity card is issued for later caller identification, helping organizations reduce impersonation and social-engineering fraud.",
+      "website": "https://patronymus.com/",
+      "readiness": "production-pilot",
+      "country": "FR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "caller-identity-verification",
+        "social-engineering-prevention",
+        "remote-identity-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP draft 18"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "caller identity verification",
+        "phone and video-call fraud prevention",
+        "EUDI Wallet identity proofing"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/patronymus/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-14T00:00:00Z"
+}
