@@ -1,0 +1,159 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:eideasy",
+  "relyingParties": [
+    {
+      "id": "eideasy-roadready-car-rental-demo",
+      "name": "RoadReady",
+      "description": "Illustrative car-rental journey in which a customer selects a vehicle, presents a mobile driving licence from a digital identity wallet and reviews prefilled driver and rental information. No real reservation, payment or signature is made.",
+      "website": "https://eudiw-playground.eideasy.com/demos/car-rental/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "travel",
+        "automotive"
+      ],
+      "useCases": [
+        "car-rental-onboarding",
+        "mobile-driving-licence-verification",
+        "rental-agreement-prefill"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        }
+      ],
+      "acceptedCredentials": [
+        "ISO mobile Driving Licence"
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "Wallet-based driving licence presentation",
+        "Optional existing eID authentication route",
+        "Prefilled rental information"
+      ],
+      "documentation": "https://eudiw-playground.eideasy.com/industry",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "eideasy-nova-bank-account-demo",
+      "name": "Nova",
+      "description": "Illustrative bank-account onboarding journey using Personal Identification Data from a digital identity wallet to prefill an application. An existing eID provider can be used as an alternative; no real account, card or payment is created.",
+      "website": "https://eudiw-playground.eideasy.com/demos/bank-account/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "finance"
+      ],
+      "useCases": [
+        "bank-account-opening",
+        "customer-onboarding",
+        "identity-verification",
+        "identity-data-prefill"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU Personal Identification Data"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "Wallet-based PID presentation",
+        "Existing eID provider alternative",
+        "Prefilled onboarding application"
+      ],
+      "documentation": "https://eudiw-playground.eideasy.com/industry",
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "eideasy-afterhours-cinema-demo",
+      "name": "Afterhours Cinema",
+      "description": "Illustrative cinema checkout that asks a wallet to confirm whether the customer meets a film's age requirement without requesting their name or date of birth. No real booking or payment is made.",
+      "website": "https://eudiw-playground.eideasy.com/demos/cinema/",
+      "readiness": "use-case-demo",
+      "country": "EU",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "entertainment"
+      ],
+      "useCases": [
+        "age-verification",
+        "privacy-preserving-age-verification",
+        "event-ticketing"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU Age Verification Attestation"
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "Age-over-12, age-over-16 and age-over-18 checks",
+        "Minimal disclosure without name or date of birth"
+      ],
+      "documentation": "https://eudiw-playground.eideasy.com/industry",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}
