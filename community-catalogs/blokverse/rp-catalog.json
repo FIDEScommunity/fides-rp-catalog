@@ -1,0 +1,70 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:blokverse",
+  "relyingParties": [
+    {
+      "id": "blokverse-maenada-playground",
+      "name": "Maenada Playground",
+      "description": "France Identité playground verifier for Maenada Synapse. Holders present credentials remotely over OID4VP or through the browser Digital Credentials API.",
+      "logo": "https://www.google.com/s2/favicons?domain=blokverse.com&sz=128",
+      "website": "https://api.playground.france-identite.gouv.fr/blokverse/mnd-ui/",
+      "readiness": "technical-demo",
+      "country": "MK",
+      "interactionMode": "remote",
+      "status": "live",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Mobile Driving Licence",
+        "Photo ID",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "W3C Digital Credentials API"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "features": [
+        "remote OID4VP presentation",
+        "Digital Credentials API"
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/blokverse/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-10-20T07:00:00Z"
+}
