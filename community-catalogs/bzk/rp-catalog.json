@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:bzk",
+  "relyingParties": [
+    {
+      "id": "moza-wallet-login-test",
+      "name": "MijnOverheid Zakelijk – Wallet Login",
+      "description": "Proof of concept for logging in to MijnOverheid Zakelijk by sharing a name and an attestation showing authority to act for a company from the MOZa test version of NL Wallet. The authority comes from a fictional KVK, and the environment uses fictional data only.",
+      "website": "https://proef.moza.rijksapp.nl/inloggen/zakelijk",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "status": "live",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "Business login",
+        "Representation authority verification"
+      ],
+      "supportedWallets": [
+        "NL Wallet MOZa (test version)"
+      ],
+      "documentation": "https://www.mijnoverheidzakelijk.nl/onderwerpen/wallets/",
+      "languages": [
+        "nl"
+      ],
+      "interactionMode": "remote"
+    }
+  ],
+  "lastUpdated": "2026-11-03T10:42:00+01:00"
+}
