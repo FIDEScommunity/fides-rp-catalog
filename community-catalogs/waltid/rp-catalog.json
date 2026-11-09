@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:waltid",
+  "relyingParties": [
+    {
+      "id": "waltid-demo-verifier",
+      "name": "walt.id Demo Verifier",
+      "description": "Public demo of the walt.id Verifier (Community Stack), for testing only. Requests and verifies SD-JWT VCs, mdocs/mDLs and W3C VCs from any compliant ID wallet via OpenID4VP 1.0.",
+      "logo": "https://walt.id/logo.svg",
+      "website": "https://portal2.demo.walt.id",
+      "readiness": "technical-demo",
+      "country": "AT",
+      "interactionMode": "remote",
+      "status": "live",
+      "vcFormat": ["sd_jwt_vc", "mdoc", "jwt_vc", "vcdm_1_1", "vcdm_2_0"],
+      "presentationProtocols": ["OpenID4VP"],
+      "interoperabilityProfiles": ["HAIP v1", "EUDI Wallet ARF"],
+      "documentation": "https://docs.walt.id/community-stack/verifier2/getting-started",
+      "apiEndpoint": "https://verifier2.demo.walt.id/swagger/index.html",
+      "languages": ["en"]
+    }
+  ],
+  "lastUpdated": "2026-11-09T00:00:00Z"
+}
