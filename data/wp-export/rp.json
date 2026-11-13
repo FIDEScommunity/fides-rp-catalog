@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "rp",
-    "generatedAt": "2026-10-13T14:45:36+00:00",
+    "generatedAt": "2026-11-13T13:50:04+00:00",
     "entries": [
         {
             "itemId": "espuni-age-verification",
@@ -70,6 +70,97 @@
             },
             "publishedAt": "2026-08-04 09:00:41",
             "updatedAt": "2026-08-04 09:00:41"
+        },
+        {
+            "itemId": "eudi-wallet-gateway",
+            "slug": "idakto",
+            "filename": "rp-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/rp-catalog/v1",
+                "orgId": "org:idakto",
+                "relyingParties": [
+                    {
+                        "id": "eudi-wallet-gateway",
+                        "name": "EUDI Wallet Gateway",
+                        "description": "iDAKTO's online verifier deployed on the France Identité playground initially deployed as the reference for Aptitude interoperability testing.\nOffers a use case gallery as well as a technical interface.\nIt is used by service providers for deployment less PoC's.",
+                        "logo": "https://www.idakto.com/wp-content/uploads/2023/06/logo-idakto-fond-blanc-540x340px-tagless.png",
+                        "website": "https://api.playground.france-identite.gouv.fr/v2/idakto/verifier/vp/demo",
+                        "readiness": "use-case-demo",
+                        "country": "FR",
+                        "interactionMode": "remote",
+                        "status": "live",
+                        "acceptedCredentialRefs": [
+                            {
+                                "credentialCatalogId": "cred:iso:mdl"
+                            },
+                            {
+                                "credentialCatalogId": "cred:eu:pid"
+                            },
+                            {
+                                "credentialCatalogId": "cred:iso:photoid"
+                            },
+                            {
+                                "credentialCatalogId": "cred:iso:mvrc"
+                            },
+                            {
+                                "credentialCatalogId": "cred:eu:age-verification"
+                            }
+                        ],
+                        "acceptedCredentials": [
+                            "cred:iso:mdl",
+                            "cred:eu:pid",
+                            "cred:iso:photoid",
+                            "cred:iso:mvrc",
+                            "cred:eu:age-verification"
+                        ],
+                        "vcFormat": [
+                            "sd_jwt_vc",
+                            "mdoc"
+                        ],
+                        "presentationProtocols": [
+                            "OpenID4VP",
+                            "ISO 18013-5"
+                        ],
+                        "interoperabilityProfiles": [
+                            "HAIP v1"
+                        ],
+                        "supportedWallets": [
+                            {
+                                "name": "France Identité",
+                                "walletCatalogId": "france-identite"
+                            },
+                            {
+                                "name": "mObywatel",
+                                "walletCatalogId": "mobywatel"
+                            },
+                            {
+                                "name": "AltID",
+                                "walletCatalogId": "altid"
+                            },
+                            {
+                                "name": "EUDI Reference Verifier",
+                                "walletCatalogId": "eudi-reference-verifier"
+                            },
+                            {
+                                "name": "EUDI Wallet Reference Implementation",
+                                "walletCatalogId": "eudi-reference-personal-wallet"
+                            },
+                            {
+                                "name": "EUDI Age Verification App (Reference)",
+                                "walletCatalogId": "eudi-age-verification-wallet"
+                            }
+                        ],
+                        "features": [
+                            "Age verification",
+                            "Selective disclosure"
+                        ]
+                    }
+                ],
+                "lastUpdated": "2026-11-13T13:50:04+00:00"
+            },
+            "publishedAt": "2026-11-13 13:50:04",
+            "updatedAt": "2026-11-13 13:50:04"
         },
         {
             "itemId": "fides-website",
