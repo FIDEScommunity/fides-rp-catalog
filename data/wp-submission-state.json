@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "rp",
-  "lastImportAt": "2026-10-13T14:45:51.744Z",
+  "lastImportAt": "2026-11-13T13:50:27.938Z",
   "managedRps": [
     {
       "slug": "espuni",
@@ -10,6 +10,10 @@
     {
       "slug": "fides",
       "rpId": "fides-website"
+    },
+    {
+      "slug": "idakto",
+      "rpId": "eudi-wallet-gateway"
     },
     {
       "slug": "k4security",

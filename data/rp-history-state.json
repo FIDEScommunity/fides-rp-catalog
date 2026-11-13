@@ -1,71 +1,71 @@
 {
   "leeftijd-aantonen": {
     "firstSeenAt": "2026-02-04T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.695Z"
+    "lastSeenAt": "2026-11-13T13:50:28.671Z"
   },
   "ideeen-voor-uw-buurt": {
     "firstSeenAt": "2026-02-04T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.695Z"
+    "lastSeenAt": "2026-11-13T13:50:28.671Z"
   },
   "inloggen": {
     "firstSeenAt": "2026-02-04T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.695Z"
+    "lastSeenAt": "2026-11-13T13:50:28.671Z"
   },
   "geveltuin-aanvragen": {
     "firstSeenAt": "2026-02-04T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.695Z"
+    "lastSeenAt": "2026-11-13T13:50:28.671Z"
   },
   "overlast-melden": {
     "firstSeenAt": "2026-02-04T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.695Z"
+    "lastSeenAt": "2026-11-13T13:50:28.671Z"
   },
   "bc-digital-trust-showcase": {
     "firstSeenAt": "2025-01-15T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.738Z"
+    "lastSeenAt": "2026-11-13T13:50:28.677Z"
   },
   "br-car-vc-pilot": {
     "firstSeenAt": "2026-02-18T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.759Z"
+    "lastSeenAt": "2026-11-13T13:50:28.685Z"
   },
   "ca-dmv-mdl-login-opencred": {
     "firstSeenAt": "2026-02-18T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.802Z"
+    "lastSeenAt": "2026-11-13T13:50:28.695Z"
   },
   "eudi-cinema-age-verification": {
     "firstSeenAt": "2026-01-26T22:15:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.560Z"
+    "lastSeenAt": "2026-11-13T13:50:28.713Z"
   },
   "eudi-reference-verifier": {
     "firstSeenAt": "2026-01-26T22:15:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.560Z"
+    "lastSeenAt": "2026-11-13T13:50:28.713Z"
   },
   "eudi-test-relying-party": {
     "firstSeenAt": "2026-01-26T22:15:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.560Z"
+    "lastSeenAt": "2026-11-13T13:50:28.713Z"
   },
   "eudiplo-vineyard-select": {
     "firstSeenAt": "2026-01-26T21:30:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.584Z"
+    "lastSeenAt": "2026-11-13T13:50:28.716Z"
   },
   "eudiplo-nordic-digital-bank": {
     "firstSeenAt": "2026-01-26T21:30:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.584Z"
+    "lastSeenAt": "2026-11-13T13:50:28.716Z"
   },
   "eudiplo-techmarkt-sim-activation": {
     "firstSeenAt": "2026-01-26T21:30:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.584Z"
+    "lastSeenAt": "2026-11-13T13:50:28.716Z"
   },
   "eudiplo-berlin-history-museum": {
     "firstSeenAt": "2026-01-26T21:30:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.584Z"
+    "lastSeenAt": "2026-11-13T13:50:28.716Z"
   },
   "eudiplo-swiftbox-parcel-locker": {
     "firstSeenAt": "2026-01-26T21:30:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.584Z"
+    "lastSeenAt": "2026-11-13T13:50:28.716Z"
   },
   "ewc-rpcentric-signer": {
     "firstSeenAt": "2026-01-07T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.602Z"
+    "lastSeenAt": "2026-11-13T13:50:28.720Z"
   },
   "circulacity-sandbox": {
     "firstSeenAt": "2026-02-03T10:00:00.000Z",
@@ -77,191 +77,191 @@
   },
   "mijnoverheid-sandbox": {
     "firstSeenAt": "2026-02-03T10:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.637Z"
+    "lastSeenAt": "2026-11-13T13:50:28.723Z"
   },
   "hak-rein-vos-notarissen-sandbox": {
     "firstSeenAt": "2026-02-03T10:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.637Z"
+    "lastSeenAt": "2026-11-13T13:50:28.723Z"
   },
   "kvk-frontoffice-sandbox": {
     "firstSeenAt": "2026-02-03T10:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.637Z"
+    "lastSeenAt": "2026-11-13T13:50:28.723Z"
   },
   "google-digital-credentials-demo": {
     "firstSeenAt": "2025-01-15T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.684Z"
+    "lastSeenAt": "2026-11-13T13:50:28.729Z"
   },
   "igrant-open-bank-account-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-bank-login-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-fast-ferries-merchant-payments": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-insurance-policy-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-dcql-credential-query-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-kyc-photoid-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-w3c-digital-credentials-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-photo-id-issuance": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-issue-test-pid": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-issue-test-qesac": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-dcql-trusted-authority-demo": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-esspass-pda1": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-payment-authenticator": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "igrant-payment-bank-led": {
     "firstSeenAt": "2026-02-11T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "lissi-bank-account-demo": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.952Z"
+    "lastSeenAt": "2026-11-13T13:50:28.766Z"
   },
   "lissi-tax-authority-demo": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.952Z"
+    "lastSeenAt": "2026-11-13T13:50:28.766Z"
   },
   "lissi-municipality-demo": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.952Z"
+    "lastSeenAt": "2026-11-13T13:50:28.766Z"
   },
   "lissi-loan-qes-demo": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.952Z"
+    "lastSeenAt": "2026-11-13T13:50:28.766Z"
   },
   "inji-web-verifier": {
     "firstSeenAt": "2026-01-26T16:50:59.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.975Z"
+    "lastSeenAt": "2026-11-13T13:50:28.770Z"
   },
   "nijmegen-mijn-nijmegen-login": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "nijmegen-iit": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "nijmegen-vergoedingenpas": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "nijmegen-busvoordeel": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "nijmegen-meedoenregeling": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "nijmegen-cultureel-erfgoed-pas": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "nijmegen-vergoedingencheck": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "machtigen-bewindvoerder-jansen-bewind": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "machtigen-centraal-machtigingsregister": {
     "firstSeenAt": "2026-01-21T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.015Z"
+    "lastSeenAt": "2026-11-13T13:50:28.776Z"
   },
   "multipaz-verifier": {
     "firstSeenAt": "2025-01-15T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.031Z"
+    "lastSeenAt": "2026-11-13T13:50:28.779Z"
   },
   "mdoc-web-verifier": {
     "firstSeenAt": "2026-01-26T16:46:54.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.199Z"
+    "lastSeenAt": "2026-11-13T13:50:28.799Z"
   },
   "neovo-shop-playground": {
     "firstSeenAt": "2026-04-02T19:50:32.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.998Z"
+    "lastSeenAt": "2026-11-13T13:50:28.773Z"
   },
   "educa-swiyu-demo": {
     "firstSeenAt": "2026-04-03T07:04:14.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.851Z"
+    "lastSeenAt": "2026-11-13T13:50:28.701Z"
   },
   "sbb-swiyu-verifier-showcase": {
     "firstSeenAt": "2026-04-03T06:53:47.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.110Z"
+    "lastSeenAt": "2026-11-13T13:50:28.793Z"
   },
   "swiyu-alphaoffice-demo": {
     "firstSeenAt": "2026-04-03T07:08:55.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.223Z"
+    "lastSeenAt": "2026-11-13T13:50:28.802Z"
   },
   "unchained-swiyu-demo-store": {
     "firstSeenAt": "2026-04-03T06:40:04.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.295Z"
+    "lastSeenAt": "2026-11-13T13:50:28.811Z"
   },
   "air-new-zealand": {
     "firstSeenAt": "2026-04-22T12:25:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.651Z"
+    "lastSeenAt": "2026-11-13T13:50:28.663Z"
   },
   "british-airways": {
     "firstSeenAt": "2026-04-22T12:25:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.779Z"
+    "lastSeenAt": "2026-11-13T13:50:28.688Z"
   },
   "hong-kong-international-airport": {
     "firstSeenAt": "2026-04-22T12:25:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.703Z"
+    "lastSeenAt": "2026-11-13T13:50:28.732Z"
   },
   "bengaluru-international-airport": {
     "firstSeenAt": "2026-04-22T12:25:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.748Z"
+    "lastSeenAt": "2026-11-13T13:50:28.738Z"
   },
   "indigo": {
     "firstSeenAt": "2026-04-22T12:25:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.791Z"
+    "lastSeenAt": "2026-11-13T13:50:28.751Z"
   },
   "japan-airlines": {
     "firstSeenAt": "2026-04-22T12:25:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.843Z"
+    "lastSeenAt": "2026-11-13T13:50:28.757Z"
   },
   "pension-demo-waltid-verifier": {
     "firstSeenAt": "2026-04-28T19:08:05.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.658Z"
+    "lastSeenAt": "2026-11-13T13:50:28.726Z"
   },
   "igrant-verifier-playground": {
     "firstSeenAt": "2026-05-17T23:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.769Z"
+    "lastSeenAt": "2026-11-13T13:50:28.748Z"
   },
   "test": {
     "firstSeenAt": "2026-07-04T07:53:18.742Z",
@@ -269,154 +269,170 @@
   },
   "eduwallet-demo-cv": {
     "firstSeenAt": "2026-07-09T12:55:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.876Z"
+    "lastSeenAt": "2026-11-13T13:50:28.704Z"
   },
   "eduwallet-eduid-verifier": {
     "firstSeenAt": "2026-07-09T12:55:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.876Z"
+    "lastSeenAt": "2026-11-13T13:50:28.704Z"
   },
   "pass2rent-car-rental-verifier": {
     "firstSeenAt": "2026-07-18T21:18:59.710Z",
-    "lastSeenAt": "2026-10-15T05:34:35.048Z"
+    "lastSeenAt": "2026-11-13T13:50:28.782Z"
   },
   "ksid-verifier": {
     "firstSeenAt": "2026-07-27T14:37:49.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.907Z"
+    "lastSeenAt": "2026-11-13T13:50:28.760Z"
   },
   "espuni-age-verification": {
     "firstSeenAt": "2026-07-28T06:58:33.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.532Z"
+    "lastSeenAt": "2026-11-13T13:50:28.710Z"
   },
   "fides-website": {
     "firstSeenAt": "2026-08-13T14:50:03.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.637Z"
+    "lastSeenAt": "2026-11-13T13:50:28.723Z"
   },
   "cexa-aurum": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "cexa-novara": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "cexa-borealis": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "cexa-darkpool": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "vesta-portal": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "verandia-tax-buro": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "verandia-meridian-bank": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "verandia-quickcash": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "demo-verifier-accredited": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "demo-verifier-unaccredited": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "demo-verifier-untrusted": {
     "firstSeenAt": "2026-08-18T06:44:53.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.338Z"
+    "lastSeenAt": "2026-11-13T13:50:28.814Z"
   },
   "uber-rider-verification": {
     "firstSeenAt": "2026-09-16T16:13:34.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.268Z"
+    "lastSeenAt": "2026-11-13T13:50:28.808Z"
   },
   "turo-driver-verification": {
     "firstSeenAt": "2026-09-16T16:16:20.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.246Z"
+    "lastSeenAt": "2026-11-13T13:50:28.805Z"
   },
   "polaris-oid4vp": {
     "firstSeenAt": "2026-10-04T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.932Z"
+    "lastSeenAt": "2026-11-13T13:50:28.763Z"
   },
   "authologic-identity": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.711Z"
+    "lastSeenAt": "2026-11-13T13:50:28.674Z"
   },
   "authologic-bank-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.711Z"
+    "lastSeenAt": "2026-11-13T13:50:28.674Z"
   },
   "authologic-vinoteca-store-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.711Z"
+    "lastSeenAt": "2026-11-13T13:50:28.674Z"
   },
   "datakeen-identity-verification": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:33.822Z"
+    "lastSeenAt": "2026-11-13T13:50:28.698Z"
   },
   "hovi-omaapteekki-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.728Z"
+    "lastSeenAt": "2026-11-13T13:50:28.735Z"
   },
   "hovi-valko-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.728Z"
+    "lastSeenAt": "2026-11-13T13:50:28.735Z"
   },
   "hovi-nordcap-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.728Z"
+    "lastSeenAt": "2026-11-13T13:50:28.735Z"
   },
   "hovi-vpost-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.728Z"
+    "lastSeenAt": "2026-11-13T13:50:28.735Z"
   },
   "izertis-novabank-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.822Z"
+    "lastSeenAt": "2026-11-13T13:50:28.754Z"
   },
   "lissi-employee-onboarding-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.952Z"
+    "lastSeenAt": "2026-11-13T13:50:28.766Z"
   },
   "lissi-flight-registration-demo": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.952Z"
+    "lastSeenAt": "2026-11-13T13:50:28.766Z"
   },
   "passportreader-digital-identity-verification": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.067Z"
+    "lastSeenAt": "2026-11-13T13:50:28.785Z"
   },
   "patronymus-caller-identity-verification": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.084Z"
+    "lastSeenAt": "2026-11-13T13:50:28.790Z"
   },
   "shareid-eudi-wallet-verification": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.132Z"
+    "lastSeenAt": "2026-11-13T13:50:28.796Z"
   },
   "worldline-digital-identity-hub": {
     "firstSeenAt": "2026-10-14T00:00:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:35.374Z"
+    "lastSeenAt": "2026-11-13T13:50:28.820Z"
   },
   "eideasy-roadready-car-rental-demo": {
     "firstSeenAt": "2026-10-15T05:20:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.511Z"
+    "lastSeenAt": "2026-11-13T13:50:28.707Z"
   },
   "eideasy-nova-bank-account-demo": {
     "firstSeenAt": "2026-10-15T05:20:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.511Z"
+    "lastSeenAt": "2026-11-13T13:50:28.707Z"
   },
   "eideasy-afterhours-cinema-demo": {
     "firstSeenAt": "2026-10-15T05:20:00.000Z",
-    "lastSeenAt": "2026-10-15T05:34:34.511Z"
+    "lastSeenAt": "2026-11-13T13:50:28.707Z"
+  },
+  "blokverse-maenada-playground": {
+    "firstSeenAt": "2026-10-20T07:00:00.000Z",
+    "lastSeenAt": "2026-11-13T13:50:28.682Z"
+  },
+  "moza-wallet-login-test": {
+    "firstSeenAt": "2026-11-03T09:42:00.000Z",
+    "lastSeenAt": "2026-11-13T13:50:28.691Z"
+  },
+  "eudi-wallet-gateway": {
+    "firstSeenAt": "2026-11-13T13:50:04.000Z",
+    "lastSeenAt": "2026-11-13T13:50:28.744Z"
+  },
+  "waltid-demo-verifier": {
+    "firstSeenAt": "2026-11-09T00:00:00.000Z",
+    "lastSeenAt": "2026-11-13T13:50:28.817Z"
   }
 }
