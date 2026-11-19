@@ -2,13 +2,16 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 2.9.3
+Stable tag: 2.9.4
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Relying party catalog with search, filters, and optional SSR/SEO via fides-community-tools-tiles.
 
 == Changelog ==
+
+= 2.9.4 =
+* Sync shared catalog UI so full listing fields stay visible when open listing fields is on. Community and Official badges are unchanged (tiles ≥ 1.13.33).
 
 = 2.9.3 =
 * Restore the styled interactive detail modal on deep links while retaining hidden SSR content, crawlable links, metadata, and pagination.
