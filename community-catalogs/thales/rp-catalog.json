@@ -1,0 +1,58 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:thales",
+  "relyingParties": [
+    {
+      "id": "thales-verification-portal",
+      "name": "Thales Verification Portal",
+      "description": "Online verifier for digital credential presentations. The playground front end is registered as a logical verifier and handles wallet and trust-framework interaction for the relying party.",
+      "website": "https://api.playground.france-identite.gouv.fr/thales/verification-portal/verification-request",
+      "readiness": "technical-demo",
+      "country": "FR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "interoperability-testing"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/thales/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

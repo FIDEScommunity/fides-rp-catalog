@@ -18,7 +18,35 @@
       "documentation": "https://docs.walt.id/community-stack/verifier2/getting-started",
       "apiEndpoint": "https://verifier2.demo.walt.id/swagger/index.html",
       "languages": ["en"]
+    },
+    {
+      "id": "waltid-demo-portal",
+      "name": "walt.id Demo Portal",
+      "description": "Demo portal hosted on the France Identité sandbox. The Verify section can request an EU PID from the France Identité app and show the verification result.",
+      "website": "https://api.playground.france-identite.gouv.fr/waltid/portal",
+      "readiness": "technical-demo",
+      "country": "AT",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": ["other"],
+      "useCases": ["interoperability-testing", "identity-verification"],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": ["EU PID"],
+      "vcFormat": ["sd_jwt_vc", "mdoc"],
+      "presentationProtocols": ["OpenID4VP"],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/waltid/",
+      "languages": ["en"]
     }
   ],
-  "lastUpdated": "2026-11-09T00:00:00Z"
+  "lastUpdated": "2026-11-23T18:00:00Z"
 }

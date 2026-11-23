@@ -1,0 +1,62 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:animo",
+  "relyingParties": [
+    {
+      "id": "paradym-playground",
+      "name": "Paradym Playground",
+      "description": "Preconfigured OpenID4VP 1.0 verifier for PID, mDL and proof of age in SD-JWT VC and mdoc. France Identité can verify PID and proof of age. mDL verification needs a wallet that holds an mDL.",
+      "website": "https://playground.paradym.id/",
+      "readiness": "technical-demo",
+      "country": "NL",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Paradym Wallet",
+          "walletCatalogId": "paradym-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/paradym/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

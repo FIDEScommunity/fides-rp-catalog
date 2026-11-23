@@ -1,0 +1,71 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:credenco",
+  "relyingParties": [
+    {
+      "id": "credenco-france-playground",
+      "name": "Credenco Playground",
+      "description": "Sandbox verifier and demo scenarios for the France Identité playground. France Identité can complete the age check directly. Other flows use the Credenco wallet and cover identity, a driving licence and a car-rental payment.",
+      "website": "https://api.playground.france-identite.gouv.fr/credenco/demo/",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "finance",
+        "automotive"
+      ],
+      "useCases": [
+        "age-verification",
+        "identity-verification",
+        "car-rental"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Proof of Age",
+        "mDL"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc",
+        "jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "interoperabilityProfiles": [
+        "DIIP v4",
+        "DIIP v5",
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Credenco Wallet",
+          "walletCatalogId": "credenco-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/credenco/",
+      "languages": [
+        "en",
+        "fr",
+        "nl"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

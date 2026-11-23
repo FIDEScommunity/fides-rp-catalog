@@ -1,0 +1,49 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:lutra-labs",
+  "relyingParties": [
+    {
+      "id": "lutraid-verifier",
+      "name": "LutraID Playground",
+      "description": "Verifier playground that builds an OpenID4VP request, shows a QR code or same-device link, and displays the verification result. The same deployment also issues test credentials.",
+      "website": "https://api.playground.france-identite.gouv.fr/lutralabs/lutraid",
+      "readiness": "technical-demo",
+      "country": "SI",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "identity-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/lutralabs/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

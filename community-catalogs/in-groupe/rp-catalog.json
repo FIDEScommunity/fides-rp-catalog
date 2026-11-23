@@ -1,0 +1,51 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:in-groupe",
+  "relyingParties": [
+    {
+      "id": "ingroupe-aptitude-verifier",
+      "name": "IN Groupe Aptitude Verifier",
+      "description": "Public Aptitude verifier playground for OpenID4VP presentation flows against EUDI wallets. Intended for interoperability tests and demonstrations, not for production identity.",
+      "website": "https://aptitude-verifier-playground.utoconnect.com/",
+      "readiness": "technical-demo",
+      "country": "FR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "government",
+        "other"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "identity-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/ingroupe/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:toppan",
+  "relyingParties": [
+    {
+      "id": "toppan-verifier",
+      "name": "TOPPAN Verifier",
+      "description": "OpenID4VP and W3C Digital Credentials API verifier for EU PID, ISO mDL and ISO 23220 Photo ID. Public playground for evaluation, with example flows for a passport application, eSIM provisioning and opening a bank account.",
+      "website": "https://dev-ls.goidonpremise.toppanapps.com:455/",
+      "readiness": "technical-demo",
+      "country": "JP",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "government",
+        "finance",
+        "telecom"
+      ],
+      "useCases": [
+        "identity-verification",
+        "interoperability-testing"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL",
+        "Photo ID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "W3C Digital Credentials API"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "TOPPAN Wallet",
+          "walletCatalogId": "toppan-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/toppan/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "id": "toppan-proximity-verifier",
+      "name": "TOPPAN Proximity Verifier",
+      "description": "ISO 18013-5 proximity verifier in the TOPPAN SuperApp. Engagement is by NFC tap or QR code, and the credential is transferred over Bluetooth.",
+      "website": "https://play.google.com/store/apps/details?id=com.toppansecurity.superapp",
+      "readiness": "technical-demo",
+      "country": "JP",
+      "interactionMode": "proximity",
+      "status": "beta",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "in-person-identity-verification",
+        "interoperability-testing"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL"
+      ],
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "TOPPAN Wallet",
+          "walletCatalogId": "toppan-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/toppan-proximity/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

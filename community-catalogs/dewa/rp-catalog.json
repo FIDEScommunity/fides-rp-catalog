@@ -1,0 +1,54 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:dewa",
+  "relyingParties": [
+    {
+      "id": "dewa-verify",
+      "name": "dewa verify",
+      "description": "Sandbox that confirms identity or age from a digital identity wallet. The user approves a QR request and the service receives only the requested attributes.",
+      "website": "https://api.playground.france-identite.gouv.fr/dewa/verifier-demo/",
+      "readiness": "use-case-demo",
+      "country": "DK",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "identity-verification",
+        "age-verification",
+        "account-opening"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/dewa/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

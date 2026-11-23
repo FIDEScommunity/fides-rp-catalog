@@ -1,0 +1,60 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:infocert",
+  "relyingParties": [
+    {
+      "id": "infocert-conformance-playground",
+      "name": "Tinexta Infocert Conformance Playground",
+      "description": "Public test verifier for wallet interoperability. A presentation result reports whether verification succeeded and which claims were disclosed or withheld. SD-JWT VC and ISO mdoc are both supported.",
+      "website": "https://api.playground.france-identite.gouv.fr/tinexta-infocert/conformance-playground/eudiwunfold/verify",
+      "readiness": "technical-demo",
+      "country": "IT",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "government",
+        "finance"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/tinexta-infocert/",
+      "languages": [
+        "en",
+        "it"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

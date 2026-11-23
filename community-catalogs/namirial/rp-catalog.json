@@ -1,0 +1,68 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:namirial",
+  "relyingParties": [
+    {
+      "id": "namirial-eudi-unfold-playground",
+      "name": "Namirial EUDI Unfold Playground",
+      "description": "Sandbox for remote presentation and verification with France Identité, covering ISO/IEC 18013-7, OpenID4VP with HAIP or the age-verification profile, and PID, mDL and proof of age in SD-JWT VC and mdoc.",
+      "website": "https://api.playground.france-identite.gouv.fr/namirial/wallet-demo/eudiw_unfold/login/",
+      "readiness": "technical-demo",
+      "country": "IT",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "government",
+        "finance"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-7"
+      ],
+      "interoperabilityProfiles": [
+        "HAIP v1"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Namirial Wallet",
+          "walletCatalogId": "namirial-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/namirial/",
+      "languages": [
+        "en",
+        "it"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

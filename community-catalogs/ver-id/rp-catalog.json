@@ -1,0 +1,55 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:ver-id",
+  "relyingParties": [
+    {
+      "id": "verid-playground",
+      "name": "Ver.iD Playground",
+      "description": "Credential lifecycle playground with scenarios across telecom, tourism, hospitality, retail, mobility, housing, finance and government. Scenarios are marked concept, pilot or live.",
+      "website": "https://api.playground.france-identite.gouv.fr/verid",
+      "readiness": "use-case-demo",
+      "country": "NL",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "finance",
+        "government",
+        "telecom",
+        "travel",
+        "hospitality"
+      ],
+      "useCases": [
+        "kyc-identity-verification",
+        "identity-verification",
+        "benefits-eligibility"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/verid/",
+      "languages": [
+        "en",
+        "nl"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

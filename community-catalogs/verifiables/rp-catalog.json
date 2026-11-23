@@ -1,0 +1,59 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:verifiables",
+  "relyingParties": [
+    {
+      "id": "verifiables-verifier",
+      "name": "Verifiables",
+      "description": "Verifier for technical testing and industry demos that embed credential checks in museum ticketing, hotel check-in and car rental. Remote and proximity presentation are both available.",
+      "website": "https://api.playground.france-identite.gouv.fr/verifiables/verifier/",
+      "readiness": "use-case-demo",
+      "country": "FR",
+      "interactionMode": "both",
+      "status": "beta",
+      "sectors": [
+        "entertainment",
+        "hospitality",
+        "automotive"
+      ],
+      "useCases": [
+        "age-verification",
+        "identity-verification",
+        "hotel-check-in",
+        "car-rental"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-5"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/verifiables/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

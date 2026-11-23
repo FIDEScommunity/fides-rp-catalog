@@ -1,0 +1,51 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:entrust-eu",
+  "relyingParties": [
+    {
+      "id": "entrust-eudi-verifier",
+      "name": "Entrust EUDI Wallet Verification",
+      "description": "Sandbox identity verification with government-issued wallet credentials. The current demo accepts France Identité and the German d-You sandbox wallet.",
+      "website": "https://api.playground.france-identite.gouv.fr/entrust/verifier/",
+      "readiness": "technical-demo",
+      "country": "ES",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "finance",
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "kyc-identity-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/entrust/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

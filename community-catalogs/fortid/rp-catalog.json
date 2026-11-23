@@ -1,0 +1,49 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:fortid",
+  "relyingParties": [
+    {
+      "id": "fortid-verifier",
+      "name": "FortID Verifier",
+      "description": "Interactive verifier playground. You choose a document type, delivery method and claims, and the page shows the API request next to the wallet flow.",
+      "website": "https://api.playground.france-identite.gouv.fr/fortid/playground#/verifier",
+      "readiness": "technical-demo",
+      "country": "HR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "identity-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/fortid/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

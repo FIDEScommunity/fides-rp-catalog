@@ -1,0 +1,63 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:procivis",
+  "relyingParties": [
+    {
+      "id": "procivis-playground",
+      "name": "Procivis One Playground",
+      "description": "Demo portal that verifies PID and mDL presentations and runs an age-verification flow. The same portal can issue those credentials and suspend them.",
+      "website": "https://api.playground.france-identite.gouv.fr/procivis/portal/embedded-verification",
+      "readiness": "technical-demo",
+      "country": "CH",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "government"
+      ],
+      "useCases": [
+        "identity-verification",
+        "age-verification",
+        "interoperability-testing"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "mDL",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Procivis One Wallet",
+          "walletCatalogId": "procivis-one-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/procivis/",
+      "languages": [
+        "en",
+        "de"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

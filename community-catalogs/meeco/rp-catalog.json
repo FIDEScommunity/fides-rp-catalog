@@ -1,0 +1,58 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:meeco",
+  "relyingParties": [
+    {
+      "id": "meeco-svx-verifier",
+      "name": "Meeco SVX Wallet Demo",
+      "description": "Demo of the Secure Value Exchange platform requesting and verifying credentials from EUDI wallets, including identity and age checks.",
+      "website": "https://api.playground.france-identite.gouv.fr/meeco/wallet-demo/",
+      "readiness": "technical-demo",
+      "country": "AU",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "finance",
+        "travel"
+      ],
+      "useCases": [
+        "identity-verification",
+        "age-verification"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID",
+        "Proof of Age"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        },
+        {
+          "name": "Meeco Personal Wallet",
+          "walletCatalogId": "meeco-personal-wallet"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/meeco/",
+      "languages": [
+        "en"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

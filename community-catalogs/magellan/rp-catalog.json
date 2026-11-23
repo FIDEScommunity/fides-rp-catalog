@@ -1,0 +1,50 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:magellan",
+  "relyingParties": [
+    {
+      "id": "magellan-verifier",
+      "name": "Magellan EUDI Verifier",
+      "description": "Developer playground for OpenID4VP 1.0 presentation requests against EUDI wallets, aligned with the EUDI Architecture Reference Framework.",
+      "website": "https://api.playground.france-identite.gouv.fr/magellan/verifier/",
+      "readiness": "technical-demo",
+      "country": "FR",
+      "interactionMode": "remote",
+      "status": "beta",
+      "sectors": [
+        "other"
+      ],
+      "useCases": [
+        "interoperability-testing",
+        "protocol-validation"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        }
+      ],
+      "acceptedCredentials": [
+        "EU PID"
+      ],
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "supportedWallets": [
+        {
+          "name": "France Identité",
+          "walletCatalogId": "france-identite"
+        }
+      ],
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/magellan/",
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}
