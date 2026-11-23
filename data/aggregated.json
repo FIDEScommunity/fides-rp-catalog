@@ -47,7 +47,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/air-nz/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.295Z",
+      "fetchedAt": "2026-11-23T16:32:54.067Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -101,7 +101,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.307Z",
+      "fetchedAt": "2026-11-23T16:32:54.075Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -154,7 +154,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.307Z",
+      "fetchedAt": "2026-11-23T16:32:54.075Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -205,7 +205,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.307Z",
+      "fetchedAt": "2026-11-23T16:32:54.075Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -260,7 +260,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.307Z",
+      "fetchedAt": "2026-11-23T16:32:54.075Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -313,7 +313,7 @@
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/amsterdam/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.307Z",
+      "fetchedAt": "2026-11-23T16:32:54.075Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-04T00:00:00.000Z",
@@ -387,7 +387,7 @@
         "logo": "https://mobywatel.authologic.com/_nuxt/logo.DrrOjNXC.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/authologic/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.313Z",
+      "fetchedAt": "2026-11-23T16:32:54.080Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -445,7 +445,7 @@
         "logo": "https://mobywatel.authologic.com/_nuxt/logo.DrrOjNXC.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/authologic/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.313Z",
+      "fetchedAt": "2026-11-23T16:32:54.080Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -502,7 +502,7 @@
         "logo": "https://mobywatel.authologic.com/_nuxt/logo.DrrOjNXC.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/authologic/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.313Z",
+      "fetchedAt": "2026-11-23T16:32:54.080Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -552,7 +552,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bcgov/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.319Z",
+      "fetchedAt": "2026-11-23T16:32:54.084Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -628,7 +628,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=blokverse.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/blokverse/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.324Z",
+      "fetchedAt": "2026-11-23T16:32:54.088Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-20T07:00:00.000Z",
@@ -680,7 +680,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=gov.br&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/brazil/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.332Z",
+      "fetchedAt": "2026-11-23T16:32:54.095Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -734,7 +734,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/british-airways/british-airways-logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/british-airways/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.337Z",
+      "fetchedAt": "2026-11-23T16:32:54.099Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -775,7 +775,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=rijksoverheid.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/bzk/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.342Z",
+      "fetchedAt": "2026-11-23T16:32:54.103Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-11-03T09:42:00.000Z",
@@ -828,7 +828,7 @@
         "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ca-dmv/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.347Z",
+      "fetchedAt": "2026-11-23T16:32:54.108Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-02-18T00:00:00.000Z",
@@ -897,7 +897,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=datakeen.co&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/datakeen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.352Z",
+      "fetchedAt": "2026-11-23T16:32:54.112Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -948,7 +948,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/educa/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.357Z",
+      "fetchedAt": "2026-11-23T16:32:54.116Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -1013,7 +1013,7 @@
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.362Z",
+      "fetchedAt": "2026-11-23T16:32:54.120Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-09T12:55:00.000Z",
@@ -1066,7 +1066,7 @@
         "logo": "https://www.surf.nl/themes/surf/logo.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eduwallet/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.362Z",
+      "fetchedAt": "2026-11-23T16:32:54.120Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-09T12:55:00.000Z",
@@ -1129,7 +1129,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eideasy.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eideasy/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.366Z",
+      "fetchedAt": "2026-11-23T16:32:54.124Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-15T05:20:00.000Z",
@@ -1194,7 +1194,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eideasy.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eideasy/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.366Z",
+      "fetchedAt": "2026-11-23T16:32:54.124Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-15T05:20:00.000Z",
@@ -1256,7 +1256,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=eideasy.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eideasy/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.366Z",
+      "fetchedAt": "2026-11-23T16:32:54.124Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-15T05:20:00.000Z",
@@ -1312,7 +1312,7 @@
         "name": "espuni"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/espuni/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.371Z",
+      "fetchedAt": "2026-11-23T16:32:54.128Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-04T09:00:41.000Z",
@@ -1383,7 +1383,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.378Z",
+      "fetchedAt": "2026-11-23T16:32:54.132Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -1470,7 +1470,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.378Z",
+      "fetchedAt": "2026-11-23T16:32:54.132Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -1590,7 +1590,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eu/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.378Z",
+      "fetchedAt": "2026-11-23T16:32:54.132Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-26T22:15:00.000Z",
@@ -1656,7 +1656,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.383Z",
+      "fetchedAt": "2026-11-23T16:32:54.136Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1714,7 +1714,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.383Z",
+      "fetchedAt": "2026-11-23T16:32:54.136Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1771,7 +1771,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.383Z",
+      "fetchedAt": "2026-11-23T16:32:54.136Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1834,7 +1834,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.383Z",
+      "fetchedAt": "2026-11-23T16:32:54.136Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1891,7 +1891,7 @@
         "website": "https://eudiplo.dev/"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/eudiplo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.383Z",
+      "fetchedAt": "2026-11-23T16:32:54.136Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-19T00:00:00.000Z",
@@ -1938,7 +1938,7 @@
         "logo": "https://avatars.githubusercontent.com/u/140810559?v=4"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ewc/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.388Z",
+      "fetchedAt": "2026-11-23T16:32:54.140Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-01-07T23:00:00.000Z",
@@ -1997,7 +1997,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.393Z",
+      "fetchedAt": "2026-11-23T16:32:54.145Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -2080,7 +2080,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.393Z",
+      "fetchedAt": "2026-11-23T16:32:54.145Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -2154,7 +2154,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.393Z",
+      "fetchedAt": "2026-11-23T16:32:54.145Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -2217,7 +2217,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/fides/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.393Z",
+      "fetchedAt": "2026-11-23T16:32:54.145Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-08-13T14:50:03.000Z",
@@ -2269,7 +2269,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/findynet/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.398Z",
+      "fetchedAt": "2026-11-23T16:32:54.149Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T14:58:59.000Z",
@@ -2327,7 +2327,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/google/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.403Z",
+      "fetchedAt": "2026-11-23T16:32:54.153Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2025-01-15T23:00:00.000Z",
@@ -2381,7 +2381,7 @@
         "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hkia/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.408Z",
+      "fetchedAt": "2026-11-23T16:32:54.157Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2441,10 +2441,14 @@
       "orgId": "org:hovi",
       "provider": {
         "name": "Hovi",
-        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png"
+        "website": "https://www.hovi.id/",
+        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+        "contact": {
+          "email": "contact@hovi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hovi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.413Z",
+      "fetchedAt": "2026-11-23T16:32:54.161Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -2500,10 +2504,14 @@
       "orgId": "org:hovi",
       "provider": {
         "name": "Hovi",
-        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png"
+        "website": "https://www.hovi.id/",
+        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+        "contact": {
+          "email": "contact@hovi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hovi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.413Z",
+      "fetchedAt": "2026-11-23T16:32:54.161Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -2548,10 +2556,14 @@
       "orgId": "org:hovi",
       "provider": {
         "name": "Hovi",
-        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png"
+        "website": "https://www.hovi.id/",
+        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+        "contact": {
+          "email": "contact@hovi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hovi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.413Z",
+      "fetchedAt": "2026-11-23T16:32:54.161Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -2606,10 +2618,14 @@
       "orgId": "org:hovi",
       "provider": {
         "name": "Hovi",
-        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png"
+        "website": "https://www.hovi.id/",
+        "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+        "contact": {
+          "email": "contact@hovi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/hovi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.413Z",
+      "fetchedAt": "2026-11-23T16:32:54.161Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -2667,7 +2683,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/ia-benga/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.418Z",
+      "fetchedAt": "2026-11-23T16:32:54.165Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -2758,7 +2774,7 @@
         "logo": "https://www.idakto.com/wp-content/uploads/2024/05/logo-idakto-couleur.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/idakto/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.422Z",
+      "fetchedAt": "2026-11-23T16:32:54.168Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-11-13T13:50:04.000Z",
@@ -2817,10 +2833,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2880,10 +2900,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -2942,10 +2966,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3005,10 +3033,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3070,10 +3102,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3135,10 +3171,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3192,10 +3232,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3256,10 +3300,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3312,10 +3360,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3371,10 +3423,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3435,10 +3491,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3499,10 +3559,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3557,10 +3621,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3616,10 +3684,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3701,10 +3773,14 @@
       "orgId": "org:igrant",
       "provider": {
         "name": "iGrant.io",
-        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+        "website": "https://igrant.io",
+        "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+        "contact": {
+          "email": "support@igrant.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/igrant/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.427Z",
+      "fetchedAt": "2026-11-23T16:32:54.172Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-05-17T23:00:00.000Z",
@@ -3758,7 +3834,7 @@
         "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/indigo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.432Z",
+      "fetchedAt": "2026-11-23T16:32:54.177Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -3824,10 +3900,11 @@
       "orgId": "org:izertis",
       "provider": {
         "name": "Izertis S.A.",
+        "website": "https://www.izertis.com/",
         "logo": "https://www.izertis.com/documents/35913/207169/IMAGEN_OG.webp/6a09f6d5-9741-d367-41e1-fbd048febb54?version=1.0&t=1760599004227&imagePreview=1"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/izertis/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.437Z",
+      "fetchedAt": "2026-11-23T16:32:54.180Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -3881,7 +3958,7 @@
         "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/jal/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.442Z",
+      "fetchedAt": "2026-11-23T16:32:54.185Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-04-22T12:25:00.000Z",
@@ -3919,10 +3996,14 @@
       "orgId": "org:k4security",
       "provider": {
         "name": "K4-Security",
-        "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128"
+        "website": "https://www.k4-security.com/",
+        "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
+        "contact": {
+          "email": "contact@k4-security.com"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/k4security/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.448Z",
+      "fetchedAt": "2026-11-23T16:32:54.189Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-27T14:37:49.000Z",
@@ -3975,7 +4056,7 @@
         "website": "https://github.com/EgorKhaklin/polaris-id"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/khaklin-technologies/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.453Z",
+      "fetchedAt": "2026-11-23T16:32:54.194Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-04T00:00:00.000Z",
@@ -4027,10 +4108,14 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+        "website": "https://lissi.id",
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.458Z",
+      "fetchedAt": "2026-11-23T16:32:54.198Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -4079,10 +4164,14 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+        "website": "https://lissi.id",
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.458Z",
+      "fetchedAt": "2026-11-23T16:32:54.198Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -4131,10 +4220,14 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+        "website": "https://lissi.id",
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.458Z",
+      "fetchedAt": "2026-11-23T16:32:54.198Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -4185,10 +4278,14 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+        "website": "https://lissi.id",
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.458Z",
+      "fetchedAt": "2026-11-23T16:32:54.198Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -4248,10 +4345,14 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+        "website": "https://lissi.id",
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.458Z",
+      "fetchedAt": "2026-11-23T16:32:54.198Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -4312,10 +4413,14 @@
       "orgId": "org:lissi",
       "provider": {
         "name": "Lissi GmbH",
-        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+        "website": "https://lissi.id",
+        "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+        "contact": {
+          "email": "info@lissi.id"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/lissi/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.458Z",
+      "fetchedAt": "2026-11-23T16:32:54.198Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -4366,7 +4471,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/mosip/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.463Z",
+      "fetchedAt": "2026-11-23T16:32:54.202Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4429,7 +4534,7 @@
         }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/neovo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.468Z",
+      "fetchedAt": "2026-11-23T16:32:54.206Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -4488,7 +4593,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4537,7 +4642,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4585,7 +4690,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4633,7 +4738,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4681,7 +4786,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4729,7 +4834,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4777,7 +4882,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4828,7 +4933,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4879,7 +4984,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/nijmegen/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.473Z",
+      "fetchedAt": "2026-11-23T16:32:54.210Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -4960,7 +5065,7 @@
         "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/owf/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.478Z",
+      "fetchedAt": "2026-11-23T16:32:54.215Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-18T23:00:00.000Z",
@@ -5043,7 +5148,7 @@
         "logo": "https://pass2rent.com/logo_pass2rent_web.svg"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/pass2rent-by-odifis/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.483Z",
+      "fetchedAt": "2026-11-23T16:32:54.220Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-07-20T05:37:19.000Z",
@@ -5122,7 +5227,7 @@
         "logo": "https://passportreader.app/asset/apple-touch-icon.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/passportreader/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.488Z",
+      "fetchedAt": "2026-11-23T16:32:54.224Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -5180,7 +5285,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=patronymus.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/patronymus/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.493Z",
+      "fetchedAt": "2026-11-23T16:32:54.229Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -5240,7 +5345,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/sbb/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.498Z",
+      "fetchedAt": "2026-11-23T16:32:54.234Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5309,7 +5414,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=shareid.ai&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/shareid/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.503Z",
+      "fetchedAt": "2026-11-23T16:32:54.238Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -5394,7 +5499,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=www.stelau.com&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/stelausoftware/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.508Z",
+      "fetchedAt": "2026-11-23T16:32:54.242Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T14:45:36.000Z",
@@ -5445,7 +5550,7 @@
         "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/swiyu/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.513Z",
+      "fetchedAt": "2026-11-23T16:32:54.246Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5491,7 +5596,7 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Turo_company_logo.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/turo/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.518Z",
+      "fetchedAt": "2026-11-23T16:32:54.251Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-16T20:08:20.000Z",
@@ -5545,7 +5650,7 @@
         "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/1920px-Uber_logo_2018.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/uber/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.523Z",
+      "fetchedAt": "2026-11-23T16:32:54.254Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-09-16T20:08:22.000Z",
@@ -5609,7 +5714,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/unchained/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.528Z",
+      "fetchedAt": "2026-11-23T16:32:54.259Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5711,10 +5816,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5816,10 +5925,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -5921,10 +6034,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6010,10 +6127,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6110,10 +6231,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6214,10 +6339,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6318,10 +6447,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6414,10 +6547,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6513,10 +6650,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6612,10 +6753,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6709,10 +6854,14 @@
       "orgId": "org:verana",
       "provider": {
         "name": "Verana",
-        "logo": "https://verana.io/logo.svg"
+        "website": "https://verana.io",
+        "logo": "https://verana.io/logo.svg",
+        "contact": {
+          "email": "fabrice@verana.io"
+        }
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/verana/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.533Z",
+      "fetchedAt": "2026-11-23T16:32:54.263Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-13T06:37:33.000Z",
@@ -6755,7 +6904,7 @@
         "logo": "https://www.google.com/s2/favicons?domain=walt.id&sz=128"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/waltid/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.538Z",
+      "fetchedAt": "2026-11-23T16:32:54.267Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-11-09T00:00:00.000Z",
@@ -6827,7 +6976,7 @@
         "logo": "https://www.mediacert.com/images/favicon-33x33.png"
       },
       "catalogUrl": "/home/runner/work/fides-rp-catalog/fides-rp-catalog/community-catalogs/worldline-france/rp-catalog.json",
-      "fetchedAt": "2026-11-22T13:38:37.543Z",
+      "fetchedAt": "2026-11-23T16:32:54.271Z",
       "source": "local",
       "isFeatured": false,
       "updatedAt": "2026-10-14T00:00:00.000Z",
@@ -6942,7 +7091,11 @@
     },
     {
       "name": "Hovi",
-      "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png"
+      "website": "https://www.hovi.id/",
+      "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+      "contact": {
+        "email": "contact@hovi.id"
+      }
     },
     {
       "name": "Bengaluru International Airport",
@@ -6955,7 +7108,11 @@
     },
     {
       "name": "iGrant.io",
-      "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128"
+      "website": "https://igrant.io",
+      "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+      "contact": {
+        "email": "support@igrant.io"
+      }
     },
     {
       "name": "IndiGo",
@@ -6964,6 +7121,7 @@
     },
     {
       "name": "Izertis S.A.",
+      "website": "https://www.izertis.com/",
       "logo": "https://www.izertis.com/documents/35913/207169/IMAGEN_OG.webp/6a09f6d5-9741-d367-41e1-fbd048febb54?version=1.0&t=1760599004227&imagePreview=1"
     },
     {
@@ -6973,7 +7131,11 @@
     },
     {
       "name": "K4-Security",
-      "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128"
+      "website": "https://www.k4-security.com/",
+      "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
+      "contact": {
+        "email": "contact@k4-security.com"
+      }
     },
     {
       "name": "Khaklin Technologies",
@@ -6981,7 +7143,11 @@
     },
     {
       "name": "Lissi GmbH",
-      "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128"
+      "website": "https://lissi.id",
+      "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+      "contact": {
+        "email": "info@lissi.id"
+      }
     },
     {
       "name": "MOSIP",
@@ -7054,7 +7220,11 @@
     },
     {
       "name": "Verana",
-      "logo": "https://verana.io/logo.svg"
+      "website": "https://verana.io",
+      "logo": "https://verana.io/logo.svg",
+      "contact": {
+        "email": "fabrice@verana.io"
+      }
     },
     {
       "name": "walt.id",
@@ -7067,7 +7237,7 @@
       "logo": "https://www.mediacert.com/images/favicon-33x33.png"
     }
   ],
-  "lastUpdated": "2026-11-22T13:38:37.662Z",
+  "lastUpdated": "2026-11-23T16:32:54.375Z",
   "stats": {
     "totalRPs": 106,
     "totalProviders": 48,
