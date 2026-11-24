@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:hopae",
+  "relyingParties": [
+    {
+      "id": "hopae-playground-verifier",
+      "name": "Hopae Playground",
+      "description": "Public interoperability playground for testing wallet credential presentation over OpenID4VP 1.0 and the W3C Digital Credentials API.",
+      "website": "https://api.playground.france-identite.gouv.fr/hopae/playground/",
+      "readiness": "technical-demo",
+      "country": "LU",
+      "interactionMode": "remote",
+      "documentation": "https://playground.france-identite.gouv.fr/doc/marketplace/verifiers/hopae/"
+    }
+  ],
+  "lastUpdated": "2026-11-24T13:20:13.575Z"
+}
