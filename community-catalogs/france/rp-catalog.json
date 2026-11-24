@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:france",
+  "relyingParties": [
+    {
+      "id": "france-identite-dc-api-verifier",
+      "name": "France Identité DC API Verifier",
+      "description": "Browser-based technical demo that requests a PID or proof of age via the Digital Credentials API using OpenID4VP or ISO 18013-7 DeviceRequest.",
+      "website": "https://api.playground.france-identite.gouv.fr/france-titres/dc-api-verifier-playground/",
+      "readiness": "technical-demo",
+      "country": "FR",
+      "interactionMode": "remote",
+      "documentation": "https://playground.france-identite.gouv.fr/doc/marketplace/"
+    }
+  ],
+  "lastUpdated": "2026-11-24T13:20:13.577Z"
+}
