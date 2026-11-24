@@ -10,8 +10,24 @@
       "readiness": "technical-demo",
       "country": "FR",
       "interactionMode": "remote",
-      "documentation": "https://playground.france-identite.gouv.fr/doc/marketplace/"
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/dc-api/",
+      "vcFormat": [
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-7",
+        "W3C Digital Credentials API"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-24T13:20:13.577Z"
+  "lastUpdated": "2026-11-24T13:28:41.988Z"
 }
