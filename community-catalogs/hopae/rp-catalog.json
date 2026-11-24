@@ -10,8 +10,31 @@
       "readiness": "technical-demo",
       "country": "LU",
       "interactionMode": "remote",
-      "documentation": "https://playground.france-identite.gouv.fr/doc/marketplace/verifiers/hopae/"
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/hopae/",
+      "vcFormat": [
+        "sd_jwt_vc",
+        "mdoc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP",
+        "ISO 18013-7",
+        "W3C Digital Credentials API"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:iso:mdl"
+        },
+        {
+          "credentialCatalogId": "cred:iso:photoid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-24T13:20:13.575Z"
+  "lastUpdated": "2026-11-24T13:28:41.988Z"
 }
