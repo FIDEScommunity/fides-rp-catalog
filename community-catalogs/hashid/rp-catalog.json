@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/rp-catalog/v1",
+  "orgId": "org:hashid",
+  "relyingParties": [
+    {
+      "id": "hashid-hidcap-verifier",
+      "name": "hashID hIDcap Verifier",
+      "description": "OpenID4VP technical demo for age, identity and health insurance credential presentation. The documented demo uses dummy validation while cryptographic verification is in development.",
+      "website": "https://api.playground.france-identite.gouv.fr/hashid/hidcap-verifier/",
+      "readiness": "technical-demo",
+      "country": "ES",
+      "interactionMode": "remote",
+      "documentation": "https://playground.france-identite.gouv.fr/doc/marketplace/verifiers/hashid/"
+    }
+  ],
+  "lastUpdated": "2026-11-24T13:20:13.577Z"
+}
