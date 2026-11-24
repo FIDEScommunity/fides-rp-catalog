@@ -10,8 +10,26 @@
       "readiness": "technical-demo",
       "country": "ES",
       "interactionMode": "remote",
-      "documentation": "https://playground.france-identite.gouv.fr/doc/marketplace/verifiers/hashid/"
+      "documentation": "https://playground.france-identite.gouv.fr/marketplace/verifiers/hashid/",
+      "vcFormat": [
+        "mdoc",
+        "sd_jwt_vc"
+      ],
+      "presentationProtocols": [
+        "OpenID4VP"
+      ],
+      "acceptedCredentialRefs": [
+        {
+          "credentialCatalogId": "cred:eu:age-verification"
+        },
+        {
+          "credentialCatalogId": "cred:eu:pid"
+        },
+        {
+          "credentialCatalogId": "cred:eu:ehic"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-24T13:20:13.577Z"
+  "lastUpdated": "2026-11-24T13:28:42.005Z"
 }
